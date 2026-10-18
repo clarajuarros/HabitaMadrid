@@ -119,6 +119,7 @@ def load_map_data(root: str | Path) -> dict:
     if (root / MANIFEST).exists():
         manifests, records = read_snapshot(root)
         total_bytes = 0
+        ancestry_count = 0
     else:
         manifests = {phase: _json(path) for phase, path in paths.items()}
         for phase, manifest in manifests.items():
@@ -129,6 +130,7 @@ def load_map_data(root: str | Path) -> dict:
         if len(phase2_records) != 1:
             raise AppDataError("El mapa no declara una procedencia municipal única")
         total_bytes = _verify(paths[2], phase2_records[0])
+        ancestry_count = 1
     consumed = [(2, "maestro_municipios.csv"), (4, "limites_municipales.geojson"),
                 (4, "jurisdicciones_compartidas.geojson"), (4, "origenes_municipales.geojson")]
     for phase, filename in consumed:
@@ -190,7 +192,7 @@ def load_map_data(root: str | Path) -> dict:
                      float(boxes[:, 2].max()), float(boxes[:, 3].max())]
     return {"geojson": geojson, "shared": shared, "origenes": pd.DataFrame(origin_rows), "maestro": master,
             "bounds_region": region_bounds, "bounds_municipios": municipal_bounds,
-            "verificacion": {"archivos_verificados": len(consumed) + 1, "bytes_verificados": total_bytes,
+            "verificacion": {"archivos_verificados": len(consumed) + ancestry_count, "bytes_verificados": total_bytes,
                               "municipios": 179, "municipios_elegibles": 155, "areas_compartidas": 2,
                               "crs": "EPSG:4326", "geometrias_simplificadas": False,
                               "bytes_limites": manifests[4]["archivos"]["limites_municipales.geojson"]["bytes"]}}

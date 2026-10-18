@@ -25,6 +25,7 @@ class CloudSnapshotTests(unittest.TestCase):
         self.assertEqual(len(data['municipios']), 155)
         maps = load_map_data(ROOT)
         self.assertEqual(len(maps['geojson']['features']), 179)
+        self.assertEqual(maps['verificacion']['archivos_verificados'], 4)
         self.assertEqual(len(load_urban_origins(ROOT, maps)), 155)
         self.assertTrue(load_service_tables(ROOT))
         expansion = load_expansion(ROOT)
