@@ -71,3 +71,8 @@ Repositorio: [clarajuarros/HabitaMadrid](https://github.com/clarajuarros/HabitaM
 [Informe de navegación, contraste INE y calidad de datos](docs/AUDITORIA_2026-10-18.md). Se mantienen las 179 identidades oficiales y los 155 municipios elegibles; los datos de edad, hogares y viviendas son contexto y no modifican el IVP.
 
 La auditoría offline puede repetirse con `python scripts/audit_data_quality.py`; escribe un informe nuevo en `reports/data_quality/`. Las fuentes INE agregadas se conservan comprimidas, con fechas y huellas, en `data/raw/ine_municipal/`. El contraste completo con el Excel original de SERPAVI requiere la copia de investigación.
+
+
+### Reinicio requerido al publicar
+
+El servidor usa `fileWatcherType = "none"` para impedir la expulsión de módulos durante un `git pull` con sesiones concurrentes. Después de publicar y de que Cloud haya descargado el commit, usar **Manage app → Reboot app → Reboot** y recargar la página. El reinicio carga código y manifiestos como una edición completa. Las actualizaciones de datos conservan la invalidación de caché por firma de archivos. Para desarrollo local con recarga de código, puede ejecutarse `streamlit run app.py --server.fileWatcherType=poll`. No se deben publicar archivos de datos sellados por separado de su manifiesto.

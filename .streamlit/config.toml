@@ -1,6 +1,9 @@
 [server]
 headless = true
 runOnSave = false
+# Publish a complete verified edition, then reboot the Cloud process. Avoid
+# module eviction while concurrent sessions import code during a Git pull.
+fileWatcherType = "none"
 
 [browser]
 gatherUsageStats = false

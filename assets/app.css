@@ -328,3 +328,7 @@ button:focus-visible, a:focus-visible { outline:3px solid #6b893b !important; ou
  .st-key-site_navigation > :has(.st-key-mobile_navigation) {display:flex!important;flex:0 0 auto!important;width:auto!important;}
  .st-key-site_navigation > :has(.st-key-nav_identity) {flex:1 1 auto!important;width:auto!important;min-width:0!important;}
 }
+
+/* Compact demographic context follows the existing raw-data cards. */
+.raw-grid.ine-context-grid {grid-template-columns:repeat(3,minmax(0,1fr));}
+@media(max-width:760px){.raw-grid.ine-context-grid {grid-template-columns:1fr;}}

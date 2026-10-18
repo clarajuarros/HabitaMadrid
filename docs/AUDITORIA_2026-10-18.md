@@ -18,7 +18,7 @@ El callback del mapa actualizaba municipio y URL, pero no solicitaba cambiar a F
 
 Reiniciar limpia también la modalidad del Top 5, además de selección, cuestionario, filtros, prioridades, comparación, cámara y plan compartido. Inicio conserva preferencias cuando se utiliza como navegación normal. Las pruebas cubren cambios repetidos de vista y selección, ambos perfiles, códigos excluidos, eventos nativos de Streamlit y ausencia de selección inicial.
 
-La recarga automática de Cloud actualizó el código principal pero una sesión abierta mantuvo un callback anterior. Se comprobó el comportamiento real, se reinició el proceso y se reconectó la sesión. Para futuras publicaciones, deben comprobarse los registros de actualización y los clics reales; una pantalla con texto nuevo no demuestra que todos los callbacks se hayan renovado.
+La recarga automática de Cloud actualizó el código principal pero una sesión abierta mantuvo un callback anterior. Después, una actualización con sesiones concurrentes produjo errores de importación `KeyError: src` y de submódulos durante la expulsión de módulos del recargador. Se declaró `src` como paquete Python y se desactivó la vigilancia de archivos en producción; cada publicación se completa reiniciando el proceso después de descargar el commit. Se comprobó el comportamiento real, se reinició el proceso y se reconectó la sesión. Para futuras publicaciones, deben comprobarse los registros de actualización y los clics reales; una pantalla con texto nuevo no demuestra que todos los callbacks se hayan renovado.
 
 ## Rozas de Puerto Real: 3,76 €/m²/mes
 
@@ -77,7 +77,7 @@ Las fechas de descarga, URL exacta con filtros, bytes y SHA-256 están en los ma
 
 ## Archivos e instrucciones de reproducción
 
-Cambios de navegación: `assets/app.css`, `src/app_selection.py`, `src/app_state.py`, `app.py`, pruebas de mapa y navegación.
+Cambios de navegación y despliegue: `src/__init__.py`, `.streamlit/config.toml`, `assets/app.css`, `src/app_selection.py`, `src/app_state.py`, `app.py`, pruebas de mapa y navegación.
 
 INE: `src/ine_municipal.py`, `src/app_ine_ui.py`, scripts `download_ine_municipal.py` y `prepare_ine_municipal.py`, `data/raw/ine_municipal/`, `data/processed/ine_municipal/` y sus pruebas.
 
