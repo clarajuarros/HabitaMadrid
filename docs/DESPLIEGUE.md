@@ -2,7 +2,7 @@
 
 ## Antes de publicar
 
-La primera publicación requiere revisión del inventario exacto de archivos y autorización de la propietaria. No sobrescribir repositorios ni cambiar visibilidad sin esa confirmación. Resolver también los puntos pendientes de licencia del informe de fuentes. El repositorio preferido es `clarajuarros/HabitaMadrid`; su existencia y los repositorios privados deben verificarse con la cuenta conectada.
+La primera publicación requiere revisión del inventario exacto de archivos y autorización de la propietaria. No sobrescribir repositorios ni cambiar visibilidad sin esa confirmación. Conservar las atribuciones y condiciones del informe de fuentes. Las condiciones de reutilización de SERPAVI se verificaron en el portal oficial del MIVAU el 18/10/2026. El repositorio preferido es `clarajuarros/HabitaMadrid`; su existencia y los repositorios privados deben verificarse con la cuenta conectada.
 
 ## Streamlit Community Cloud
 
