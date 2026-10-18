@@ -95,7 +95,7 @@ def render_welcome(municipalities, navigate):
     st.html('<div class="home-section-title"><h2>Una mirada más cercana a cada municipio</h2></div>')
     features = [
         ('01', 'Explora el mapa', 'Sitúa tus opciones y descubre de un vistazo sus indicadores.', 'Abrir mapa', 'mapa'),
-        ('02', 'Conoce el lugar', 'Fotografías, servicios, transporte, vivienda y población en su ficha.', 'Buscar un municipio', 'fichas'),
+        ('02', 'Conoce el lugar', 'Fotografías, servicios, transporte, vivienda y población en su ficha.', 'Buscar mi municipio', 'fichas'),
         ('03', 'Empieza por ti', 'Responde unas preguntas y encuentra opciones según lo que te importa.', 'Ir al cuestionario', 'ideal'),
         ('04', 'Compara tus opciones', 'Consulta diferencias entre dos o tres municipios con datos y gráficos.', 'Comparar municipios', 'comparar'),
     ]
@@ -103,7 +103,8 @@ def render_welcome(municipalities, navigate):
         for column, (index, title, description, label, destination) in zip(st.columns(4, gap='medium'), features):
             with column:
                 st.html('<article class="home-feature"><span>'+index+'</span><h3>'+title+'</h3><p>'+description+'</p></article>')
-                st.button(label, key='feature_'+destination, type='tertiary', on_click=navigate, args=(destination,))
+                st.button(label, key='feature_'+destination, type='secondary', width='stretch',
+                          on_click=navigate, args=(destination,))
     with st.container(key='home_ivp'):
         st.html('<section class="ivp-intro"><div><p class="eyebrow">Cuatro aspectos, una referencia</p>'
                 '<h2>¿Qué es el IVP?</h2></div><div><p>El Índice de Vida Ponderado permite comparar municipios '

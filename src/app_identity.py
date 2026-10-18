@@ -15,6 +15,13 @@ def brand_symbol():
             'alt="" decoding="sync"/></span>')
 
 
+def brand_button_label():
+    """Reuse the seven-star image in Streamlit's accessible native home button."""
+    path = Path(__file__).resolve().parents[1] / 'assets/brand-seven-stars.png'
+    data = _image(str(path), path.stat().st_mtime_ns)
+    return f'![](data:image/png;base64,{data}) **Habita**Madrid'
+
+
 @lru_cache(maxsize=4)
 def _catalog(path, modified):
     return json.loads(Path(path).read_text(encoding='utf-8'))

@@ -1,4 +1,4 @@
-"""Citizen-facing housing context and transparent proposal comparison."""
+"""Public housing context and an internal, unpublished proposal review renderer."""
 from pathlib import Path
 import pandas as pd
 import streamlit as st
@@ -31,7 +31,7 @@ def render_extended_housing(root,code,profile):
  if finite(context.valor_tasado_eur_m2):
   st.markdown('### Compra · valor tasado')
   st.html(raw_item('Tasación media por superficie',number(context.valor_tasado_eur_m2,2)+' €/m²',str(int(context.tasacion_anio))+' · '+context.tasacion_trimestre+' · MIVAU'))
-  st.caption('Son valoraciones de tasación, no precios de compraventa ni anuncios. No se separan pisos y casas. Se muestran como contexto y no intervienen en el IVP vigente ni en la propuesta de alquiler.')
+  st.caption('Son valoraciones de tasación, no precios de compraventa ni anuncios. No se separan pisos y casas. Se muestran como contexto y no intervienen en el IVP.')
   st.link_button('Fuente de las tasaciones',sources['purchase']['pagina'])
  if finite(row.relacion_pct):
   st.markdown('### Alquiler e ingresos del municipio')
@@ -57,11 +57,6 @@ def render_extended_housing(root,code,profile):
    st.link_button('Tipo de vivienda · Censo 2021',sources['census_type']['pagina'])
    st.link_button('Año de construcción · Censo 2021',sources['census_age']['pagina'])
    if finite(context.viviendas_vacias_consumo_num):st.link_button('Uso según consumo eléctrico · Censo 2021',sources['census_usage']['pagina'])
- with st.expander('Cómo se está ampliando la valoración de vivienda'):
-  st.write('El IVP vigente sigue valorando el alquiler por metro cuadrado de 2024. Hemos preparado una propuesta que combina coste y relación alquiler-ingresos, con datos de 2023 para que ambas cifras correspondan al mismo año. La revisión concluye que no hay evidencia suficiente para sustituir el IVP vigente; tu puntuación actual se conserva.')
-  r=data['comparacion'].loc[data['comparacion'].codigo_ine.eq(code)&data['comparacion'].perfil.eq(profile)].iloc[0]
-  st.write('IVP vigente: **'+number(r.ivp_original,2)+'** · IVP propuesto: **'+number(r.ivp_propuesto,2)+'**.')
-  st.caption('La comparación completa, las ponderaciones y sus limitaciones están en Cómo se calcula y fuentes.')
 
 
 def render_housing_review(root,profile):

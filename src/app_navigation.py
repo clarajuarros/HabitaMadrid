@@ -85,22 +85,35 @@ def retain_view_state(state):
 
 
 def render_site_navigation(reset, query):
-    from src.app_identity import brand_symbol
+    from src.app_identity import brand_button_label
     active = st.session_state.get('_active_view', 'inicio')
-    with st.container(key='site_navigation', horizontal=True, vertical_alignment='center', gap='small'):
-        with st.container(key='nav_identity', width=220):
-            st.html('<div class="nav-lockup">'+brand_symbol()+'<span>Habita<strong>Madrid</strong></span></div>')
-        with st.container(key='desktop_navigation', horizontal=True, gap='small'):
-            for view, label in list(VIEWS.items())[:5]:
-                st.button(label, key='nav_'+view, type='primary' if active == view else 'tertiary',
-                          on_click=change_view, args=(view,))
-        with st.container(key='mobile_navigation', width='content'):
-            with st.popover('Menú', key='mobile_menu', width='content', on_change='rerun'):
+    with st.container(key='site_navigation'):
+        left, center, options, right = st.columns([1, 3, 8, 1], vertical_alignment='center', gap='small')
+        with left, st.container(key='nav_menu'):
+            with st.popover('Abrir menú de navegación', icon=':material/menu:',
+                            help='Abrir o cerrar la navegación', key='mobile_menu',
+                            width='stretch', on_change='rerun'):
                 st.caption('Estás en: '+VIEWS[active])
                 for view, label in VIEWS.items():
                     st.button(label, key='mobile_nav_'+view, width='stretch',
                               type='primary' if active == view else 'tertiary',
                               on_click=change_view, args=(view,))
-        st.button('Reiniciar', key='reset_application', type='tertiary',
-                  on_click=reset, args=(st.session_state, query),
-                  help='Borra la selección, las respuestas, la comparación y los filtros.')
+                st.button('Cerrar menú', icon=':material/close:', key='nav_close',
+                          width='stretch', on_click=close_menu)
+        with center, st.container(key='nav_identity'):
+            st.button(brand_button_label(), key='nav_home_logo', type='tertiary',
+                      help='Volver a Inicio', on_click=change_view, args=('inicio',))
+        with options, st.container(key='desktop_navigation', horizontal=True, gap='small'):
+            for view, label in list(VIEWS.items())[:5]:
+                st.button(label, key='nav_'+view,
+                          type='primary' if active == view else 'tertiary',
+                          on_click=change_view, args=(view,))
+        with right, st.container(key='nav_reset'):
+            st.button('Reiniciar aplicación', icon=':material/restart_alt:',
+                      key='reset_application', type='tertiary', width='stretch',
+                      on_click=reset, args=(st.session_state, query),
+                      help='Reiniciar aplicación')
+
+
+def close_menu():
+    st.session_state['mobile_menu'] = False

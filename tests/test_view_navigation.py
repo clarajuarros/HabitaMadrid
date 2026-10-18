@@ -21,7 +21,7 @@ class ViewJourneys(unittest.TestCase):
         self.assertFalse(app.exception, [e.value for e in app.exception])
 
     def goto(self,app,view,mobile=False):
-        app.button(key=('mobile_nav_' if mobile else 'nav_')+view).click().run()
+        app.button(key=('mobile_nav_' if mobile or view=='fuentes' else 'nav_')+view).click().run()
         self.check(app)
         self.assertEqual(app.session_state['_active_view'],view)
         self.assertFalse(app.session_state['mobile_menu'])
@@ -112,3 +112,32 @@ class ViewJourneys(unittest.TestCase):
         app.selectbox(key='home_housing').set_value('VU').run();self.check(app)
         self.assertEqual(app.session_state['perfil_vivienda'],'VU')
         self.goto(app,'fichas');self.assertEqual(app.selectbox(key='perfil_vivienda').value,'VU')
+
+    def test_home_buttons_and_clickable_identity_preserve_the_current_work(self):
+        app=self.new()
+        for destination in ('mapa','fichas','ideal','comparar'):
+            button=app.button(key='feature_'+destination)
+            self.assertEqual(button.proto.type,'secondary')
+            button.click().run();self.check(app)
+            self.assertEqual(app.session_state['_active_view'],destination)
+            if destination=='fichas':
+                app.selectbox(key='municipio_codigo').set_value('28120').run();self.check(app)
+            app.button(key='nav_home_logo').click().run();self.check(app)
+            self.assertEqual(app.session_state['_active_view'],'inicio')
+        self.assertEqual(app.session_state['municipio_codigo'],'28120')
+        self.assertEqual(app.button(key='feature_fichas').label,'Buscar mi municipio')
+        self.assertEqual(app.button(key='reset_application').label,'Reiniciar aplicación')
+        app.button(key='nav_close').click().run();self.check(app)
+        self.assertFalse(app.session_state['mobile_menu'])
+
+    def test_public_views_keep_housing_context_without_the_experimental_comparison(self):
+        app=self.new()
+        for destination in ('fuentes','fichas','comparar'):
+            self.goto(app,destination)
+            if destination=='fichas':
+                app.selectbox(key='municipio_codigo').set_value('28120').run();self.check(app)
+                self.assertIn('### Características del parque residencial',[e.value for e in app.markdown])
+            labels=[e.label for e in app.expander]
+            self.assertFalse(any('propuesta ampliada' in label or 'ampliando la valoración' in label for label in labels))
+            self.assertFalse(any('IVP propuesto' in e.value for e in app.markdown))
+            self.assertFalse(any(e.key=='housing_proposal_comparison' for e in app.get('plotly_chart')))

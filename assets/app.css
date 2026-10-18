@@ -214,21 +214,52 @@ button:focus-visible, a:focus-visible { outline:3px solid #6b893b !important; ou
 
 /* Refined home and native, persistent navigation. All st-key selectors
    refer to explicit application container keys, not generated CSS classes. */
-:root {--habita-nav-height:76px;}
+:root {--habita-nav-height:68px;}
 [data-testid="stMainBlockContainer"] {padding-top:calc(var(--habita-nav-height) + 18px);}
 .st-key-site_navigation {position:fixed;top:0;left:0;right:0;width:100%;z-index:999;
- min-height:var(--habita-nav-height);padding:12px max(24px,calc((100vw - 1376px)/2));
+ height:var(--habita-nav-height);padding:11px max(24px,calc((100vw - 1232px)/2));
  box-sizing:border-box;background:#f5f7f2;border-bottom:1px solid var(--line);
- box-shadow:0 3px 15px #173d3508;flex-wrap:nowrap!important;gap:14px!important;}
-.st-key-site_navigation button {font-size:13px;min-height:44px;border-radius:9px;}
+ box-shadow:0 3px 15px #173d3508;gap:0!important;container-type:inline-size;}
+.st-key-site_navigation > [data-testid="stHorizontalBlock"] {
+ display:grid!important;grid-template-columns:44px minmax(0,1fr) 44px;
+ align-items:center;gap:12px!important;}
+/* Compact layout is the safe baseline; the query measures the header's
+   available content width, including its margins, rather than device type. */
+.st-key-site_navigation > [data-testid="stHorizontalBlock"] > :has(.st-key-nav_menu) {grid-column:1;grid-row:1;}
+.st-key-site_navigation > [data-testid="stHorizontalBlock"] > :has(.st-key-nav_identity) {grid-column:2;grid-row:1;}
+.st-key-site_navigation > [data-testid="stHorizontalBlock"] > :has(.st-key-desktop_navigation) {display:none!important;}
+.st-key-site_navigation > [data-testid="stHorizontalBlock"] > :has(.st-key-nav_reset) {grid-column:3;grid-row:1;}
 .st-key-desktop_navigation {justify-content:center;flex-wrap:nowrap!important;gap:2px!important;}
-.st-key-desktop_navigation button {padding:9px 10px;}
+.st-key-desktop_navigation button {font-size:13px;padding:9px 10px;white-space:nowrap;}
 .st-key-desktop_navigation button p {white-space:nowrap;}
-.st-key-mobile_navigation {display:none!important;}
-.nav-lockup {display:flex;align-items:center;gap:9px;color:var(--forest);white-space:nowrap;}
-.nav-lockup > span:last-child {font-size:23px;font-weight:700;letter-spacing:-.9px;}
-.nav-lockup strong {font-weight:450;}
-.nav-lockup .brand-symbol {width:40px;height:36px;flex:0 0 40px;border-radius:9px;}
+.st-key-site_navigation [data-testid="stColumn"] {width:100%!important;min-width:0!important;}
+.st-key-site_navigation button {min-height:44px;border-radius:9px;color:var(--forest);}
+.st-key-nav_menu button,.st-key-nav_reset button {width:44px;height:44px;padding:9px;}
+/* Keep full accessible names while displaying just the native icons. */
+.st-key-nav_menu button [data-testid="stMarkdownContainer"],
+.st-key-nav_reset button [data-testid="stMarkdownContainer"] {
+ position:absolute!important;width:1px!important;height:1px!important;padding:0!important;
+ margin:-1px!important;overflow:hidden!important;clip-path:inset(50%);white-space:nowrap!important;}
+.st-key-nav_menu button[data-testid="stPopoverButton"] > div > [aria-hidden="true"] {display:none;}
+.st-key-nav_identity {display:flex;align-items:center;}
+.st-key-nav_identity > div {align-self:center;}
+.st-key-nav_identity button {padding:2px 6px;max-width:100%;background:transparent;}
+.st-key-nav_identity button [data-testid="stMarkdownContainer"] p {
+ display:flex;align-items:center;justify-content:center;gap:8px;font-size:23px;
+ font-weight:450;letter-spacing:-.9px;white-space:nowrap;line-height:1.2;}
+.st-key-nav_identity button strong {font-weight:700;margin-right:-8px;}
+.st-key-nav_identity button img {display:block;width:40px!important;height:36px!important;
+ max-width:none;max-height:none;object-fit:contain;border-radius:8px;flex-shrink:0;}
+.st-key-nav_identity button:hover {background:#e9eee3;}
+.st-key-nav_menu button:hover,.st-key-nav_reset button:hover {background:#e9eee3;border-color:#a6b8a1;}
+/* 1000px accommodates the unchanged brand, five complete labels and
+   44px reset target. Shorter headers retain the accessible native popover. */
+@container (min-width:1000px) {
+ .st-key-site_navigation > [data-testid="stHorizontalBlock"] {grid-template-columns:220px minmax(0,1fr) 44px;}
+ .st-key-site_navigation > [data-testid="stHorizontalBlock"] > :has(.st-key-nav_menu) {display:none!important;}
+ .st-key-site_navigation > [data-testid="stHorizontalBlock"] > :has(.st-key-nav_identity) {grid-column:1;}
+ .st-key-site_navigation > [data-testid="stHorizontalBlock"] > :has(.st-key-desktop_navigation) {display:flex!important;grid-column:2;grid-row:1;}
+}
 .view-start,#habita-inicio,#ficha-municipal,#descubre-tu-municipio,#resultados-personalizados {scroll-margin-top:calc(var(--habita-nav-height) + 20px);}
 .view-heading {padding:8px 0 18px;}
 .view-heading .eyebrow {margin-bottom:8px;}
@@ -249,7 +280,10 @@ button:focus-visible, a:focus-visible { outline:3px solid #6b893b !important; ou
 .home-feature > span {font-size:11px;letter-spacing:.12em;color:#6a7c63;}
 .home-feature h3 {font-size:19px!important;font-weight:600;margin:10px 0 8px;}
 .home-feature p {font-size:14px;color:#52675d;line-height:1.65;min-height:70px;max-width:270px;margin:0;}
-.st-key-home_features button {min-height:44px;padding-left:0;font-size:13px;font-weight:600;}
+.st-key-home_features button {min-height:46px;padding:10px 12px;font-size:13px;font-weight:600;
+ border:1px solid #cbd8c2;border-radius:10px;background:#fbfcf9;color:var(--forest);}
+.st-key-home_features button:hover {background:#e9eee3;border-color:#a6b8a1;}
+.st-key-home_features button:focus-visible {outline:3px solid #6b893b!important;outline-offset:3px;}
 .st-key-home_ivp {border:1px solid var(--line);border-radius:16px;background:#edf2e7;padding:24px 28px;margin:0 0 28px;}
 .ivp-intro {display:grid;grid-template-columns:1fr 2.15fr;gap:36px;}
 .ivp-intro h2 {font-size:26px!important;font-weight:550;padding:0;margin:0;}
@@ -273,22 +307,15 @@ button:focus-visible, a:focus-visible { outline:3px solid #6b893b !important; ou
 .sheet-empty {margin:30px auto;padding:32px 0;max-width:680px;text-align:center;}
 .sheet-empty h2 {font-size:28px!important;font-weight:550;}
 .sheet-empty p {color:var(--muted);}
-@media(max-width:1200px) {
- .st-key-desktop_navigation {display:none!important;}
- .st-key-mobile_navigation {display:block!important;flex:0 0 auto!important;}
- .st-key-site_navigation {justify-content:space-between;}
- .st-key-nav_identity {flex:1 1 auto!important;}
-}
 @media(max-width:760px) {
  :root {--habita-nav-height:68px;}
  [data-testid="stMainBlockContainer"] {padding:calc(var(--habita-nav-height) + 10px) 16px 30px;}
- .st-key-site_navigation {padding:10px 12px;gap:7px!important;align-items:center!important;}
- .st-key-site_navigation > * {min-width:0!important;}
- .st-key-nav_identity {width:auto!important;max-width:none!important;}
- .nav-lockup {gap:6px;}
- .nav-lockup > span:last-child {font-size:20px;}
- .nav-lockup .brand-symbol {width:36px;height:34px;flex-basis:36px;border-radius:8px;}
- .st-key-site_navigation button {padding:8px;font-size:12px;}
+ .st-key-site_navigation {padding:11px 12px;}
+ .st-key-site_navigation > [data-testid="stHorizontalBlock"] {gap:6px!important;}
+ .st-key-nav_identity button {padding:2px;}
+ .st-key-nav_identity button [data-testid="stMarkdownContainer"] p {font-size:20px;gap:6px;}
+ .st-key-nav_identity button strong {margin-right:-6px;}
+ .st-key-nav_identity button img {width:36px!important;height:34px!important;}
  .welcome-hero {grid-template-columns:1fr;gap:0;padding:22px 0 14px;}
  .welcome-hero h1 {font-size:36px;letter-spacing:-1.1px;margin-bottom:14px;}
  .welcome-intro {font-size:15px;line-height:1.6;}
@@ -319,14 +346,12 @@ button:focus-visible, a:focus-visible { outline:3px solid #6b893b !important; ou
  .view-heading {padding-bottom:8px;}
 }
 
-/* Collapse native layout wrappers as well as their keyed content on mobile. */
-@media(min-width:1201px) {
- .st-key-site_navigation > :has(.st-key-mobile_navigation) {display:none!important;}
-}
-@media(max-width:1200px) {
- .st-key-site_navigation > :has(.st-key-desktop_navigation) {display:none!important;}
- .st-key-site_navigation > :has(.st-key-mobile_navigation) {display:flex!important;flex:0 0 auto!important;width:auto!important;}
- .st-key-site_navigation > :has(.st-key-nav_identity) {flex:1 1 auto!important;width:auto!important;min-width:0!important;}
+@media(max-width:360px) {
+ .st-key-nav_identity button [data-testid="stMarkdownContainer"] p {font-size:18px;gap:5px;letter-spacing:-.7px;}
+ .st-key-nav_identity button strong {margin-right:-5px;}
+ .st-key-nav_identity button img {width:30px!important;height:30px!important;}
+ .st-key-home_features [data-testid="stHorizontalBlock"] {grid-template-columns:1fr;}
+ .home-feature h3,.home-feature p {min-height:0;}
 }
 
 /* Compact demographic context follows the existing raw-data cards. */

@@ -121,13 +121,14 @@ class RealHousingDataTests(unittest.TestCase):
    with self.assertRaises(IntegrationError):load_expansion(root)
 
 class HousingUiTests(unittest.TestCase):
- def test_home_stays_original_and_sources_show_both_editions(self):
+ def test_home_stays_original_and_public_sources_hide_the_internal_proposal(self):
   app=AppTest.from_file(str(ROOT/'app.py'),default_timeout=60).run()
   self.assertFalse(app.exception)
   self.assertEqual([b.key for b in app.button if b.key and b.key.startswith('top5_')],['top5_28128','top5_28055','top5_28120','top5_28180','top5_28060'])
   app.button(key='home_methodology').click().run();self.assertFalse(app.exception)
-  self.assertTrue(any('no está activada' in e.value for e in app.info))
-  self.assertTrue(any(e.key=='housing_proposal_csv' for e in app.get('download_button')))
+  self.assertFalse(any('propuesta ampliada' in e.label for e in app.expander))
+  self.assertFalse(any(e.key=='housing_proposal_csv' for e in app.get('download_button')))
+  self.assertIn('Fuentes utilizadas y enlaces de descarga',[e.label for e in app.expander])
  def test_real_municipal_housing_context_and_no_empty_purchase_category(self):
   app=AppTest.from_file(str(ROOT/'app.py'),default_timeout=60)
   app.query_params['municipio']='28120';app.run();self.assertFalse(app.exception)

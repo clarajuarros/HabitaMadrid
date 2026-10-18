@@ -19,7 +19,7 @@ from src.app_selection import apply_map_selection
 from src.app_navigation import (SHEET, HOME, VIEW, VIEWS, request_navigation, target_attributes,
                                 render_navigation, change_view, retain_view_state, render_site_navigation)
 from src.app_state import reset_application, close_sheet
-from src.app_housing_ui import render_extended_housing, render_housing_review
+from src.app_housing_ui import render_extended_housing
 from src.app_home_ui import (render_top_five, render_description, render_public_transport,
                              render_welcome, render_home_sources)
 from src.app_identity import brand_symbol, municipality_photo
@@ -372,8 +372,6 @@ def render_population(view):
 
 
 def render_methodology(data, view=None):
-    with st.expander('Comparar IVP vigente y propuesta ampliada de vivienda'):
-        render_housing_review(ROOT, view['perfil_vivienda'] if view else st.session_state.get('perfil_vivienda','VU'))
     section_heading("Un índice que puedes revisar", "IVP propio · edición 1.0")
     st.write("El IVP combina proximidad a atención primaria, centros educativos seleccionados, paradas del feed parcial de autobús y coste del alquiler de la tipología elegida. En el índice general cada dimensión pesa un 25 %. El personalizado utiliza los pesos efectivos del panel de prioridades.")
     st.caption("La escala principal compara cada indicador con sus extremos observados: 0 es el extremo menos favorable y 100 el más favorable dentro de esta edición. No representa un umbral de suficiencia. Los pesos iguales no garantizan igual influencia de cada variable.")

@@ -3,7 +3,7 @@ import tempfile
 import json
 from xml.etree import ElementTree as ET
 from pathlib import Path
-from src.app_identity import municipality_photo, brand_symbol
+from src.app_identity import municipality_photo, brand_symbol, brand_button_label
 
 class IdentityTests(unittest.TestCase):
     def test_brand_has_seven_stars(self):
@@ -18,8 +18,10 @@ class IdentityTests(unittest.TestCase):
         self.assertTrue(image.attrib['src'].startswith('data:image/png;base64,'))
         png=Image.open(BytesIO(base64.b64decode(image.attrib['src'].split(',',1)[1])))
         self.assertEqual(png.size,(232,192))
+        self.assertIn(image.attrib['src'],brand_button_label())
+        self.assertTrue(brand_button_label().endswith('**Habita**Madrid'))
         # Count seven distinct white shapes in the actual image sent to the UI.
-        for size in [(58,48),(45,43),(40,36),(36,34)]:
+        for size in [(58,48),(45,43),(40,36),(36,34),(30,30)]:
             with self.subTest(size=size):
                 scaled=png.copy();scaled.thumbnail(size,Image.Resampling.LANCZOS)
                 scaled=scaled.convert('RGB')
