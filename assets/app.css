@@ -253,9 +253,9 @@ button:focus-visible, a:focus-visible { outline:3px solid #6b893b !important; ou
  max-width:none;max-height:none;object-fit:contain;border-radius:8px;flex-shrink:0;}
 .st-key-nav_identity button:hover {background:#e9eee3;}
 .st-key-nav_menu button:hover,.st-key-nav_reset button:hover {background:#e9eee3;border-color:#a6b8a1;}
-/* 960px accommodates the unchanged brand, five complete labels and
+/* 858px accommodates the unchanged brand, five complete labels and
    44px reset target. Shorter headers retain the accessible native popover. */
-@container (min-width:960px) {
+@container (min-width:858px) {
  .st-key-site_navigation > [data-testid="stLayoutWrapper"] > [data-testid="stHorizontalBlock"] {grid-template-columns:220px minmax(0,1fr) 44px;}
  .st-key-site_navigation > [data-testid="stLayoutWrapper"] > [data-testid="stHorizontalBlock"] > :has(.st-key-nav_menu) {display:none!important;}
  .st-key-site_navigation > [data-testid="stLayoutWrapper"] > [data-testid="stHorizontalBlock"] > :has(.st-key-nav_identity) {grid-column:1;}
