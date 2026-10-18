@@ -228,11 +228,11 @@ def render_map(data, map_data, view, explorer_frame, filtered, mode):
             score_label = number(selected.valor, 0 if indicator == "poblacion" else 1, missing="Sin datos")
             detail = f'<span>{esc(selected.municipio)} · {esc(legend["label"])}: {esc(score_label)}</span>'
         st.html(f'''<div class="map-topline"><div><strong>Explora la Comunidad de Madrid</strong>
-          <span>Pasa el cursor para consultar · Haz clic para seleccionar</span></div>{detail}</div>''')
+          <span>Pasa el cursor para consultar · Haz clic para abrir su ficha</span></div>{detail}</div>''')
         st.pydeck_chart(deck,
                         key=event_key, width="stretch", height=440,
                         selection_mode="single-object", on_select=select_on_map,
-                        alt="Límites reales de Madrid. Municipios coloreados por su IVP; sin datos en gris. Haz clic para seleccionar un municipio; pulsa Abrir ficha para conocerlo.")
+                        alt="Límites reales de Madrid. Municipios coloreados por su IVP; sin datos en gris. Haz clic en un municipio para abrir su ficha.")
         if selected_code:
             st.button('Abrir la ficha de '+str(selected.municipio), key='map_open_sheet',
                       on_click=choose_municipality, args=(selected_code,))

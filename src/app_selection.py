@@ -40,7 +40,8 @@ def apply_map_selection(
     can be changed safely. Reading the retained map event during every render
     would instead overwrite a subsequent search selection.
 
-    Empty/invalid events and selecting the current municipality are no-ops.
+    Empty/invalid events are no-ops. A new click on the current municipality
+    opens its sheet again, without changing the map identity or camera.
     ``event_key`` identifies the chart that emitted the callback, including
     when an explicit framing command renews the chart. ``layer_id`` allows
     search to clear native picking without replacing the chart or its camera.
@@ -51,7 +52,7 @@ def apply_map_selection(
 
     code = selection_code(state.get(event_key), allowed_codes, layer_id=layer_id)
     profile = state.get("perfil_vivienda", "VU")
-    if code is None or code == state.get("municipio_codigo"):
+    if code is None:
         return False
     if profile not in ("VC", "VU"):
         return False
@@ -61,4 +62,6 @@ def apply_map_selection(
     query_params["municipio"] = code
     query_params["vivienda"] = profile
     state["_last_query"] = (code, profile)
+    from src.app_navigation import SHEET, request_navigation
+    request_navigation(state, SHEET, code)
     return True

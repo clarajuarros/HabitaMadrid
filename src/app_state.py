@@ -25,7 +25,7 @@ def reset_application(state, query):
     revision = state.get('_mapa_municipios_revision', 0) + 1
     keys = {'municipio_codigo', 'perfil_vivienda', 'modo_indice', 'indicador_mapa',
             'encuadre_mapa', 'busqueda_nombre', 'comparar_codigos', 'vistas_municipales',
-            'vistas_inicio', '_last_query', '_restored_plan', '_navigation_pending'}
+            'vistas_inicio', 'home_housing', '_last_query', '_restored_plan', '_navigation_pending'}
     prefixes = ('peso_', 'filtro_', 'assistant_', '_assistant_', '_mapa_',
                 '_ranking_', 'ranking_municipios_', 'mapa_municipios_', 'timetable_',
                 'servicio_', 'service_', 'mapa_servicios_', 'localizador_')

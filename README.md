@@ -62,4 +62,6 @@ Los datos y recursos de terceros conservan sus propias condiciones. Esta prepara
 
 Preparado para Streamlit Community Cloud: rama `main`, archivo `app.py`, Python 3.14. Consulta `docs/DESPLIEGUE.md`. Los nuevos commits en la rama desplegada se aplican mediante el mecanismo de actualización del proveedor.
 
-**Web pública:** pendiente de publicación y verificación. No existe todavía una URL pública confirmada ni un código QR definitivo.
+**Web pública:** [Abrir HabitaMadrid](https://habitamadrid.streamlit.app/).
+
+Repositorio: [clarajuarros/HabitaMadrid](https://github.com/clarajuarros/HabitaMadrid).

@@ -99,7 +99,7 @@ def export(root, destination):
             shutil.copyfile(root / 'deployment' / name, destination / 'docs' / name)
         # Runtime tests do not require excluded research archives or pipelines.
         (destination / 'tests').mkdir()
-        for name in ('test_cloud_snapshot.py', 'test_view_navigation.py', 'test_living_features.py',
+        for name in ('test_cloud_snapshot.py', 'test_navigation.py', 'test_map_selection.py', 'test_view_navigation.py', 'test_living_features.py',
                      'test_living_ui.py', 'test_app_identity.py', 'test_housing_expansion.py',
                      'test_app_explorer.py', 'test_app_comparison.py', 'test_app_service_map.py',
                      'test_app_presenter.py', 'test_service_routes.py', 'test_ivp_calculation.py'):
