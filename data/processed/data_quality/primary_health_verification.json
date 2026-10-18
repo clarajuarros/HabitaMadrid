@@ -1,0 +1,20 @@
+{
+  "fuentes": [
+    {
+      "url": "https://www.comunidad.madrid/centros/buscador-centros-sanitarios?f%5B0%5D=tipo_centro_paragraph%3A687",
+      "sha256_original": "a4e1e338fe270dd303d465fa106f4c147c31c246acbf1702d8a7f3480fd820e7",
+      "consultado_utc": "2026-10-18T14:30:17.474118+00:00",
+      "registros": 268
+    },
+    {
+      "url": "https://www.comunidad.madrid/centros/buscador-centros-sanitarios?f%5B0%5D=tipo_centro_paragraph%3A688",
+      "sha256_original": "1c48c6aaa8539851f61cc94e89fe2e2f81b774da2a9df6159e65abdbfb0b8384",
+      "consultado_utc": "2026-10-18T14:30:17.712889+00:00",
+      "registros": 163
+    }
+  ],
+  "registros_directorio": 431,
+  "registros_previos": 431,
+  "cambios": [],
+  "nota": "Estar publicado no certifica apertura, horarios, asignación o capacidad."
+}

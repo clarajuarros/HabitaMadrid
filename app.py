@@ -343,10 +343,15 @@ def render_housing(view):
                       raw_item("Testigos publicados", number(row.get("testigos")), "Observaciones de la estadística; no viviendas disponibles")]
             st.html('<div class="raw-grid">' + "".join(values) + '</div>')
     st.caption("Son rentas declaradas de vivienda habitual, no anuncios actuales. No describen la oferta disponible ni el esfuerzo económico de un hogar. Las tipologías colectiva y unifamiliar/rural se mantienen separadas.")
+    if finite(row.get("testigos")) and finite(row.get("alquiler_m2_mes_mediana")) and row["testigos"] < 25:
+        st.caption("Referencia basada en " + number(row["testigos"]) + " observaciones: pocos alquileres pueden influir mucho en esta mediana. No permite conocer la antigüedad de los contratos ni el precio de un nuevo anuncio.")
+    st.link_button("Fuente y metodología del alquiler · MIVAU", "https://www.mivau.gob.es/vivienda/alquila-bien-es-tu-derecho/serpavi")
     render_extended_housing(ROOT, view['municipio']['codigo_ine'], profile)
 
 
 def render_population(view):
+    from src.app_ine_ui import render_ine_context
+    render_ine_context(ROOT, view["municipio"]["codigo_ine"], section_heading)
     context = view["contexto_demografico"]
     left, right = st.columns([1.5, 1], gap="large")
     with left:
@@ -523,7 +528,7 @@ def main():
     elif active == 'fuentes':
         render_methodology(data, view)
     st.html('<div class="footer-line"><span>HabitaMadrid · Datos abiertos para decisiones informadas.<br>Proyecto independiente · Índice orientativo propio.<br><a href="https://www.crtm.es/" target="_blank" rel="noopener noreferrer">Powered by CRTM</a> · Datos de transporte elaborados a partir del CRTM.</span>'
-            '<span>Comunidad de Madrid · Municipios de hasta 50.000 habitantes<br>Edición de datos · 15 de octubre de 2026</span></div>')
+            '<span>Comunidad de Madrid · Municipios de hasta 50.000 habitantes<br>Revisión de datos · 18 de octubre de 2026</span></div>')
     render_navigation()
 
 

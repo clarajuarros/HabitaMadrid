@@ -41,6 +41,9 @@ def export(root, destination):
     selected.add('data/reference/urban_centres/ign_capitales_seleccionadas.geojson')
     for directory, patterns in {
         'data/processed/housing_expansion': ('*',),
+        'data/processed/ine_municipal': ('*',),
+        'data/raw/ine_municipal': ('*',),
+        'data/processed/data_quality': ('*',),
         'data/reference/municipality_photos': ('*.webp',),
         'data/reference/housing_expansion': ('*_metadata.json',),
     }.items():
@@ -88,7 +91,9 @@ def export(root, destination):
             shutil.copytree(root / directory, destination / directory,
                             ignore=shutil.ignore_patterns('__pycache__', '.DS_Store', '*.pyc'))
         for name in ('app.py', 'requirements.txt', 'requirements-dev.txt', '.gitignore', '.streamlit/config.toml', 'constraints.txt', '.github/workflows/ci.yml',
-                     'scripts/prepare_cloud_release.py', 'scripts/prepare_housing_expansion.py'):
+                     'scripts/prepare_cloud_release.py', 'scripts/prepare_housing_expansion.py',
+                     'scripts/download_ine_municipal.py', 'scripts/prepare_ine_municipal.py',
+                     'scripts/audit_data_quality.py', 'scripts/verify_housing_source.py', 'scripts/verify_sector_sources.py'):
             target = destination / name
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(root / name, target)
@@ -97,9 +102,10 @@ def export(root, destination):
         (destination / 'docs').mkdir()
         for name in ('DESPLIEGUE.md', 'FUENTES_Y_LICENCIAS.md'):
             shutil.copyfile(root / 'deployment' / name, destination / 'docs' / name)
+        shutil.copyfile(root / 'docs/AUDITORIA_2026-10-18.md', destination / 'docs/AUDITORIA_2026-10-18.md')
         # Runtime tests do not require excluded research archives or pipelines.
         (destination / 'tests').mkdir()
-        for name in ('test_cloud_snapshot.py', 'test_navigation.py', 'test_map_selection.py', 'test_view_navigation.py', 'test_living_features.py',
+        for name in ('test_cloud_snapshot.py', 'test_ine_municipal.py', 'test_data_quality.py', 'test_navigation.py', 'test_map_selection.py', 'test_view_navigation.py', 'test_living_features.py',
                      'test_living_ui.py', 'test_app_identity.py', 'test_housing_expansion.py',
                      'test_app_explorer.py', 'test_app_comparison.py', 'test_app_service_map.py',
                      'test_app_presenter.py', 'test_service_routes.py', 'test_ivp_calculation.py'):

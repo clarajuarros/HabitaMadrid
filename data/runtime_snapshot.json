@@ -65,6 +65,10 @@
         "paradas_geolocalizadas.csv": {
           "sha256": "e2653ac951ced58e4af48aa699c14493e314a8dbee27b26b66c77184b78d0449",
           "bytes": 5352905
+        },
+        "proximidad_servicios.csv": {
+          "sha256": "bd425d05e59f8dc29b89ddf93dc0b0a06330495e46dda909287c94ce1cb77664",
+          "bytes": 764461
         }
       }
     },
@@ -188,6 +192,38 @@
     }
   },
   "files": {
+    "data/processed/data_quality/anomalias.csv": {
+      "sha256": "e3e7b23020ae6ec87631b9443dc94cea313d3a9e9d52dfd0d81ebcbdad424fcc",
+      "bytes": 112527
+    },
+    "data/processed/data_quality/audit.json": {
+      "sha256": "953affcfeb519b001beeb6248ad8b8e49e847bf194ddd4948f36dc26da3368ef",
+      "bytes": 221395
+    },
+    "data/processed/data_quality/datasets.csv": {
+      "sha256": "f356edac41920a7a177775c5836f78392f2c04d05d948b881d12610d2e16fbe7",
+      "bytes": 1581
+    },
+    "data/processed/data_quality/health_register_changes.csv": {
+      "sha256": "a7342b4c928e09ca71371f56446223e9d46cb20771892fa65f83c65bfbdfb2fb",
+      "bytes": 6397
+    },
+    "data/processed/data_quality/housing_source_verification.json": {
+      "sha256": "6aac5cdff6ad17414488bf6fe9fa36c4458a5712324877b53eed6dea2b0a3c38",
+      "bytes": 704
+    },
+    "data/processed/data_quality/primary_health_verification.json": {
+      "sha256": "41ed7682801095d944ca34476567b1826bacf5cc71f86e01f371e34ae5558458",
+      "bytes": 799
+    },
+    "data/processed/data_quality/sector_source_verification.json": {
+      "sha256": "0a681a002527797ec61bcce976afe2f8c1d0eb06cb3ff4a5d8d4281126a7eefc",
+      "bytes": 2211
+    },
+    "data/processed/data_quality/validaciones.csv": {
+      "sha256": "d73223e904e6e7d5b83abc40bba059588ce27328de4bf03d6bb7a21cde847398",
+      "bytes": 6392
+    },
     "data/processed/geografia/catalogo_servicios_geograficos.csv": {
       "sha256": "d9127ad3e0c55b0ee3679b07476e0b30486e7be9343b1196e7a55afb6739953e",
       "bytes": 3652506
@@ -215,6 +251,10 @@
     "data/processed/geografia/paradas_geolocalizadas.csv": {
       "sha256": "e2653ac951ced58e4af48aa699c14493e314a8dbee27b26b66c77184b78d0449",
       "bytes": 5352905
+    },
+    "data/processed/geografia/proximidad_servicios.csv": {
+      "sha256": "bd425d05e59f8dc29b89ddf93dc0b0a06330495e46dda909287c94ce1cb77664",
+      "bytes": 764461
     },
     "data/processed/housing_expansion/comparacion_ivp.csv": {
       "sha256": "ee4d0c327349a3f4b8d552f61f96d7296ac1a9ff676128febc6c2db7970997e9",
@@ -284,6 +324,18 @@
       "sha256": "ffc75c4ce120908c7b36df786076886d48536d80a11cc11b0f09e9885103a380",
       "bytes": 7247850
     },
+    "data/processed/ine_municipal/contexto_municipal.csv": {
+      "sha256": "b0ecb6c8a4f00cede266a51490d74b04c420612cef1becaa90bfe4cb2673f9af",
+      "bytes": 34533
+    },
+    "data/processed/ine_municipal/manifest.json": {
+      "sha256": "efac122e68fdaff73323241f21ae0c974611d7342e36338ae6243ed11d77061d",
+      "bytes": 1753
+    },
+    "data/processed/ine_municipal/padron_historico_ine.csv": {
+      "sha256": "a4622f7302494ec98df52d1d54458899c226232ba5ab762bf5d6b25661b37a07",
+      "bytes": 95518
+    },
     "data/processed/integracion/evolucion_poblacion.csv": {
       "sha256": "7944b59777d9d5fe59d5831f4793464b9ea60378f54291654f6c4e78ec946c6b",
       "bytes": 783800
@@ -339,6 +391,26 @@
     "data/processed/municipios/maestro_municipios.csv": {
       "sha256": "ce0388c6be823b4b904b9eb3e69df6d066053c60a16473583da0067bbbcef287",
       "bytes": 21854
+    },
+    "data/raw/ine_municipal/ine_edades_68540.json.gz": {
+      "sha256": "dee0e4659c954d3a3a0f89c11b1f961060aaeea2c99bc5167533d81bba129ec4",
+      "bytes": 15613
+    },
+    "data/raw/ine_municipal/ine_hogares_59543.csv.gz": {
+      "sha256": "e28e1260922d83a5e44082acda129aad55dd07398053982380096cd115be3f6c",
+      "bytes": 305549
+    },
+    "data/raw/ine_municipal/ine_padron_2881.csv.gz": {
+      "sha256": "0c2e1c09863ac4bd6f3a596a2c8c78940e7c2451bc62a1201b8d616d6c5c8ed2",
+      "bytes": 92098
+    },
+    "data/raw/ine_municipal/ine_viviendas_59525.csv.gz": {
+      "sha256": "f610f35f98671810d69ad4219528ed9e81cec45100a9a247585c8fa7a0f802fa",
+      "bytes": 195735
+    },
+    "data/raw/ine_municipal/sources.json": {
+      "sha256": "213ec474bbaae21a1c1ccc7c70a9af708c0b9ddf05be8c10ae0bcfac98d9e64e",
+      "bytes": 4882
     },
     "data/reference/housing_expansion/atlas_metadata.json": {
       "sha256": "eedcd6996053e3f9a3d16134412c74bdb8585895920dff918fc1bb98a68a00d1",

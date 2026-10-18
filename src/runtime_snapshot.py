@@ -22,7 +22,8 @@ MAP_FILES = ('data/processed/municipios/maestro_municipios.csv',
  'data/processed/geografia/limites_municipales.geojson',
  'data/processed/geografia/jurisdicciones_compartidas.geojson',
  'data/processed/geografia/origenes_municipales.geojson')
-REFERENCE_FILES = ('data/reference/living/connectivity.json',
+REFERENCE_FILES = ('data/processed/geografia/proximidad_servicios.csv',
+ 'data/reference/living/connectivity.json',
  'data/reference/living/transport.json', 'data/reference/living/timetable.sqlite',
  'data/reference/municipal_context/descriptions.json',
  'data/reference/municipal_context/transport_lines.json',
@@ -31,7 +32,17 @@ REFERENCE_FILES = ('data/reference/living/connectivity.json',
  'data/reference/urban_centres/manifest.json',
  'data/reference/urban_centres/ign_capitales_seleccionadas.geojson',
  'data/processed/housing_expansion/manifest.json',
- 'data/reference/housing_expansion/sources.json')
+ 'data/reference/housing_expansion/sources.json',
+ 'data/processed/ine_municipal/manifest.json',
+ 'data/processed/ine_municipal/contexto_municipal.csv',
+ 'data/processed/ine_municipal/padron_historico_ine.csv',
+ 'data/raw/ine_municipal/sources.json',
+ 'data/raw/ine_municipal/ine_padron_2881.csv.gz',
+ 'data/raw/ine_municipal/ine_edades_68540.json.gz',
+ 'data/raw/ine_municipal/ine_hogares_59543.csv.gz',
+ 'data/raw/ine_municipal/ine_viviendas_59525.csv.gz',
+ 'data/processed/data_quality/housing_source_verification.json',
+ 'data/processed/data_quality/primary_health_verification.json')
 
 
 def read_snapshot(root):

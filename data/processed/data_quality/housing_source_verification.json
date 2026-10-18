@@ -1,0 +1,21 @@
+{
+  "source_sha256": "f00ca4d7f27d23f811b229d97e65e3854c4563f8a5f3f16afdb023e326226ce9",
+  "records": 5012,
+  "municipalities": 179,
+  "numeric_cells_compared": 50120,
+  "unpublished_cells_preserved": 9941,
+  "errors": [],
+  "rozas": {
+    "code": "28128",
+    "sheet": "Municipios",
+    "row": 4415,
+    "cell": "JJ4415",
+    "raw": 3.7572254335260116,
+    "verified_value": 3.7572254335260116,
+    "testigos": 13,
+    "monthly_median": 320,
+    "median_surface": 117
+  },
+  "derived_sha256": "de03b3030a4f7f4d424f091143b88fdd0ff5d42df8e37c992e830b86bd45c9ff",
+  "source_url": "https://cdn.mivau.gob.es/portal-web-mivau/vivienda/serpavi/2026-03_09_bd_SERPAVI_2011-2024%20-%20DEFINITIVO%20WEB_v2.xlsx"
+}

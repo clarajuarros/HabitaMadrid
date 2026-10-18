@@ -65,3 +65,9 @@ Preparado para Streamlit Community Cloud: rama `main`, archivo `app.py`, Python 
 **Web pública:** [Abrir HabitaMadrid](https://habitamadrid.streamlit.app/).
 
 Repositorio: [clarajuarros/HabitaMadrid](https://github.com/clarajuarros/HabitaMadrid).
+
+## Revisión municipal del 18 de octubre de 2026
+
+[Informe de navegación, contraste INE y calidad de datos](docs/AUDITORIA_2026-10-18.md). Se mantienen las 179 identidades oficiales y los 155 municipios elegibles; los datos de edad, hogares y viviendas son contexto y no modifican el IVP.
+
+La auditoría offline puede repetirse con `python scripts/audit_data_quality.py`; escribe un informe nuevo en `reports/data_quality/`. Las fuentes INE agregadas se conservan comprimidas, con fechas y huellas, en `data/raw/ine_municipal/`. El contraste completo con el Excel original de SERPAVI requiere la copia de investigación.

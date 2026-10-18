@@ -1,0 +1,54 @@
+{
+  "padron": {
+    "archivo": "ine_padron_2881.csv.gz",
+    "url": "https://www.ine.es/jaxiT3/files/t/csv_bdsc/2881.csv",
+    "pagina": "https://www.ine.es/jaxiT3/Tabla.htm?t=2881",
+    "referencia": "2025-01-01",
+    "publicacion": "2025-12-11",
+    "descarga_utc": "2026-10-18T14:10:39.911774+00:00",
+    "http_last_modified": null,
+    "sha256_original": "6b4e89a8733244c799fed59ad15784aed948fc4cb68b25072c77a1477f83dd3c",
+    "sha256_archivo": "0c2e1c09863ac4bd6f3a596a2c8c78940e7c2451bc62a1201b8d616d6c5c8ed2",
+    "bytes_originales": 654362,
+    "licencia": "https://www.ine.es/aviso_legal"
+  },
+  "edades": {
+    "archivo": "ine_edades_68540.json.gz",
+    "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/68540?nult=1&tip=AM&tv=18%3A451&tv=771%3A304582&tv=19%3A2782&tv=19%3A3031&tv=19%3A2783&tv=19%3A3032&tv=19%3A3033&tv=19%3A2784&tv=19%3A3034&tv=19%3A2785&tv=19%3A3035&tv=19%3A3036&tv=19%3A2786&tv=19%3A3037&tv=19%3A2787&tv=19%3A3038&tv=19%3A2788&tv=19%3A3039&tv=19%3A2789&tv=19%3A2790&tv=19%3A3040&tv=19%3A3041&tv=19%3A2791&tv=19%3A3042&tv=19%3A2792&tv=19%3A3043&tv=19%3A2793&tv=19%3A3044&tv=19%3A2794&tv=19%3A3045&tv=19%3A2795&tv=19%3A3046&tv=19%3A3047&tv=19%3A2796&tv=19%3A3048&tv=19%3A3049&tv=19%3A3050&tv=19%3A2797&tv=19%3A3051&tv=19%3A2798&tv=19%3A3052&tv=19%3A2799&tv=19%3A3053&tv=19%3A2800&tv=19%3A3054&tv=19%3A3055&tv=19%3A2801&tv=19%3A3056&tv=19%3A2802&tv=19%3A3057&tv=19%3A3058&tv=19%3A2803&tv=19%3A3059&tv=19%3A3060&tv=19%3A2804&tv=19%3A3061&tv=19%3A2805&tv=19%3A2806&tv=19%3A3062&tv=19%3A3063&tv=19%3A2807&tv=19%3A3064&tv=19%3A3065&tv=19%3A2808&tv=19%3A2809&tv=19%3A3066&tv=19%3A3067&tv=19%3A3068&tv=19%3A3069&tv=19%3A3070&tv=19%3A3071&tv=19%3A2810&tv=19%3A3072&tv=19%3A2811&tv=19%3A3073&tv=19%3A3074&tv=19%3A2812&tv=19%3A3075&tv=19%3A3076&tv=19%3A2813&tv=19%3A2814&tv=19%3A3077&tv=19%3A2815&tv=19%3A2816&tv=19%3A3078&tv=19%3A1097&tv=19%3A3079&tv=19%3A2817&tv=19%3A3080&tv=19%3A2818&tv=19%3A3081&tv=19%3A2819&tv=19%3A2837&tv=19%3A2838&tv=19%3A2839&tv=19%3A2840&tv=19%3A2841&tv=19%3A2842&tv=19%3A2843&tv=19%3A2844&tv=19%3A2845&tv=19%3A2846&tv=19%3A2847&tv=19%3A2848&tv=19%3A2849&tv=19%3A2850&tv=19%3A2851&tv=19%3A2852&tv=19%3A2853&tv=19%3A2854&tv=19%3A2855&tv=19%3A2856&tv=19%3A2857&tv=19%3A2858&tv=19%3A2859&tv=19%3A2860&tv=19%3A2861&tv=19%3A2862&tv=19%3A2863&tv=19%3A2864&tv=19%3A2865&tv=19%3A2866&tv=19%3A2867&tv=19%3A2868&tv=19%3A2869&tv=19%3A2870&tv=19%3A2871&tv=19%3A2872&tv=19%3A2873&tv=19%3A2874&tv=19%3A2875&tv=19%3A2876&tv=19%3A2877&tv=19%3A2878&tv=19%3A2879&tv=19%3A2880&tv=19%3A2881&tv=19%3A2882&tv=19%3A2883&tv=19%3A2884&tv=19%3A2885&tv=19%3A2886&tv=19%3A2887&tv=19%3A2888&tv=19%3A2889&tv=19%3A2890&tv=19%3A2891&tv=19%3A2737&tv=19%3A2892&tv=19%3A2893&tv=19%3A2738&tv=19%3A2894&tv=19%3A2739&tv=19%3A2895&tv=19%3A2740&tv=19%3A2896&tv=19%3A2741&tv=19%3A2897&tv=19%3A2898&tv=19%3A2742&tv=19%3A2743&tv=19%3A2899&tv=19%3A2900&tv=19%3A2744&tv=19%3A2745&tv=19%3A2901&tv=19%3A2746&tv=19%3A2902&tv=19%3A2747&tv=19%3A2903&tv=19%3A2748&tv=19%3A2904&tv=19%3A2749&tv=19%3A2905&tv=19%3A2750&tv=19%3A2906&tv=19%3A2751&tv=19%3A2907&tv=19%3A2752&tv=19%3A2908&tv=19%3A2909",
+    "pagina": "https://www.ine.es/jaxiT3/Tabla.htm?t=68540",
+    "referencia": "2025-01-01",
+    "publicacion": "2025-12-02",
+    "descarga_utc": "2026-10-18T14:16:50.995237+00:00",
+    "http_last_modified": "Sun, 18 Oct 2026 14:16:50 GMT",
+    "sha256_original": "714348054298caa2d271708d67df9e3fce7fe6df93df0478ebfa27c6bbda8986",
+    "sha256_archivo": "dee0e4659c954d3a3a0f89c11b1f961060aaeea2c99bc5167533d81bba129ec4",
+    "bytes_originales": 514246,
+    "licencia": "https://www.ine.es/aviso_legal"
+  },
+  "hogares": {
+    "archivo": "ine_hogares_59543.csv.gz",
+    "url": "https://www.ine.es/jaxi/files/tpx/csv_bdsc/59543.csv",
+    "pagina": "https://www.ine.es/jaxi/Tabla.htm?tpx=59543",
+    "referencia": "2021-01-01",
+    "publicacion": "2023-06-29",
+    "descarga_utc": "2026-10-18T14:15:46.059769+00:00",
+    "http_last_modified": "Mon, 02 Mar 2026 13:17:25 GMT",
+    "sha256_original": "1fbc781ab009580acfa219fa9859a5ede8dae445a8a98eddc9924dd23efadf45",
+    "sha256_archivo": "e28e1260922d83a5e44082acda129aad55dd07398053982380096cd115be3f6c",
+    "bytes_originales": 2610863,
+    "licencia": "https://www.ine.es/aviso_legal"
+  },
+  "viviendas": {
+    "archivo": "ine_viviendas_59525.csv.gz",
+    "url": "https://www.ine.es/jaxi/files/tpx/csv_bdsc/59525.csv",
+    "pagina": "https://www.ine.es/jaxi/Tabla.htm?tpx=59525",
+    "referencia": "2021-01-01",
+    "publicacion": "2023-06-29",
+    "descarga_utc": "2026-10-18T14:18:01.797554+00:00",
+    "http_last_modified": "Mon, 02 Mar 2026 13:17:25 GMT",
+    "sha256_original": "cb518176fd7e35db24476a419e6d48a8bf120caa24657f74e51dc9975f58d804",
+    "sha256_archivo": "f610f35f98671810d69ad4219528ed9e81cec45100a9a247585c8fa7a0f802fa",
+    "bytes_originales": 1356480,
+    "licencia": "https://www.ine.es/aviso_legal"
+  }
+}

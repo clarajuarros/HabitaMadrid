@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "generado_utc": "2026-10-18T14:19:54.021821+00:00",
+  "municipios": 179,
+  "elegibles": 155,
+  "padron_anio": 2025,
+  "censo_anio": 2025,
+  "poblaciones_discrepantes": 0,
+  "nombres_discrepantes": [],
+  "uso": "Contexto y contraste; no incorpora indicadores ni altera el IVP",
+  "script_sha256": "79b16eaa33f018e38d67a77b5072da265b50591d74b133faa46d8d24a4b8c09f",
+  "files": {
+    "data/processed/ine_municipal/contexto_municipal.csv": {
+      "sha256": "b0ecb6c8a4f00cede266a51490d74b04c420612cef1becaa90bfe4cb2673f9af",
+      "bytes": 34533
+    },
+    "data/processed/ine_municipal/padron_historico_ine.csv": {
+      "sha256": "a4622f7302494ec98df52d1d54458899c226232ba5ab762bf5d6b25661b37a07",
+      "bytes": 95518
+    },
+    "data/raw/ine_municipal/sources.json": {
+      "sha256": "213ec474bbaae21a1c1ccc7c70a9af708c0b9ddf05be8c10ae0bcfac98d9e64e",
+      "bytes": 4882
+    },
+    "data/processed/municipios/maestro_municipios.csv": {
+      "sha256": "ce0388c6be823b4b904b9eb3e69df6d066053c60a16473583da0067bbbcef287",
+      "bytes": 21854
+    },
+    "data/raw/ine_municipal/ine_padron_2881.csv.gz": {
+      "sha256": "0c2e1c09863ac4bd6f3a596a2c8c78940e7c2451bc62a1201b8d616d6c5c8ed2",
+      "bytes": 92098
+    },
+    "data/raw/ine_municipal/ine_edades_68540.json.gz": {
+      "sha256": "dee0e4659c954d3a3a0f89c11b1f961060aaeea2c99bc5167533d81bba129ec4",
+      "bytes": 15613
+    },
+    "data/raw/ine_municipal/ine_hogares_59543.csv.gz": {
+      "sha256": "e28e1260922d83a5e44082acda129aad55dd07398053982380096cd115be3f6c",
+      "bytes": 305549
+    },
+    "data/raw/ine_municipal/ine_viviendas_59525.csv.gz": {
+      "sha256": "f610f35f98671810d69ad4219528ed9e81cec45100a9a247585c8fa7a0f802fa",
+      "bytes": 195735
+    }
+  }
+}

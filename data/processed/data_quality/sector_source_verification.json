@@ -1,0 +1,35 @@
+{
+  "centros_educativos": {
+    "url": "https://datos.comunidad.madrid/dataset/c750856d-3166-4dac-8e80-d1b824c968b5/resource/28d60557-1d73-4281-ab08-6cfd3b2f5f83/download/centros_educativos.csv",
+    "reference_sha256": "aaeb63b52db8af9683bc326dad9ece03380f7b867e74493cc080de2488cf8e84",
+    "download_sha256": "aaeb63b52db8af9683bc326dad9ece03380f7b867e74493cc080de2488cf8e84",
+    "unchanged": true,
+    "downloaded_utc": "2026-10-18T14:28:48.766580+00:00",
+    "last_modified": "Tue, 05 May 2026 10:27:04 GMT",
+    "archivo": "centros_educativos.csv.gz",
+    "sha256_archivo": "a0e51a3fe03920db38a15be8a26f7d1c35e961717f15c56762c7a1caf7386cf6",
+    "bytes": 2284653
+  },
+  "centros_servicios_establecimientos_sanitarios": {
+    "url": "https://datos.comunidad.madrid/dataset/d8a0a444-adf5-4c04-8999-0eac3de52cb7/resource/2948b4da-8b39-42b7-b667-779a5284f39d/download/centros_servicios_establecimientos_sanitarios.csv",
+    "reference_sha256": "e561df1af70552a5cd8e3a9d4f7f057d4350837d4d09d6627ac7b1689003747c",
+    "download_sha256": "4315fd4ca3b9ee8888334fc68c23c402e0a8ebc294b0dc8cc87d03ce2a072fbe",
+    "unchanged": false,
+    "downloaded_utc": "2026-10-18T14:28:49.051637+00:00",
+    "last_modified": "Sun, 18 Oct 2026 05:06:32 GMT",
+    "archivo": "centros_servicios_establecimientos_sanitarios.csv.gz",
+    "sha256_archivo": "370e7aef8a6d3bf7716cb9ec3ae258eae52027380ac15c5258b5420a6ecbcc57",
+    "bytes": 7886986
+  },
+  "migraciones_por_procedencia_destino_y_sexo": {
+    "url": "https://datos.comunidad.madrid/dataset/113bbf83-ec65-41f7-ac23-b5d22d0a8936/resource/4a5b7054-b539-4d23-900b-59c57ed1628b/download/migraciones-y-cambios-de-residencia-por-procedencia-y-destino-y-sexo.-municipios.csv",
+    "reference_sha256": "31be0e25548ab8aa6e06fec339f0ac8c865a6c8bd8b721c6f3d37c6166de8863",
+    "download_sha256": "31be0e25548ab8aa6e06fec339f0ac8c865a6c8bd8b721c6f3d37c6166de8863",
+    "unchanged": true,
+    "downloaded_utc": "2026-10-18T14:28:48.732390+00:00",
+    "last_modified": "Wed, 04 Mar 2026 06:30:10 GMT",
+    "archivo": "migraciones_por_procedencia_destino_y_sexo.csv.gz",
+    "sha256_archivo": "02e44982a53ed6b6bb08aec67603f64851bb563017a6a9e82fe2344a32420b36",
+    "bytes": 1327019
+  }
+}

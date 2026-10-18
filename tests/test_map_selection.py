@@ -45,6 +45,7 @@ class MapSelectionStateTests(unittest.TestCase):
         self.assertTrue(apply_map_selection(state, query, ALLOWED))
         self.assertEqual(state["municipio_codigo"], "28052")
         self.assertEqual(state["busqueda_nombre"], "")
+        self.assertEqual(state["_mapa_pick_revision"], 1)
         self.assertEqual(state["perfil_vivienda"], "VC")
         self.assertEqual(state["_last_query"], ("28052", "VC"))
         self.assertEqual(query, {"municipio": "28052", "vivienda": "VC", "origen": "presentacion"})

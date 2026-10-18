@@ -62,6 +62,10 @@ def apply_map_selection(
     query_params["municipio"] = code
     query_params["vivienda"] = profile
     state["_last_query"] = (code, profile)
+    # Clear the native pick by renewing only its layer, so the same polygon
+    # can be opened with one click after returning from its sheet. The chart
+    # key and client camera remain mounted.
+    state["_mapa_pick_revision"] = state.get("_mapa_pick_revision", 0) + 1
     from src.app_navigation import SHEET, request_navigation
     request_navigation(state, SHEET, code)
     return True
