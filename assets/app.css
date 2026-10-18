@@ -220,18 +220,19 @@ button:focus-visible, a:focus-visible { outline:3px solid #6b893b !important; ou
  height:var(--habita-nav-height);padding:11px max(24px,calc((100vw - 1232px)/2));
  box-sizing:border-box;background:#f5f7f2;border-bottom:1px solid var(--line);
  box-shadow:0 3px 15px #173d3508;gap:0!important;container-type:inline-size;}
-.st-key-site_navigation > [data-testid="stHorizontalBlock"] {
+.st-key-site_navigation > [data-testid="stLayoutWrapper"] > [data-testid="stHorizontalBlock"] {
  display:grid!important;grid-template-columns:44px minmax(0,1fr) 44px;
  align-items:center;gap:12px!important;}
 /* Compact layout is the safe baseline; the query measures the header's
    available content width, including its margins, rather than device type. */
-.st-key-site_navigation > [data-testid="stHorizontalBlock"] > :has(.st-key-nav_menu) {grid-column:1;grid-row:1;}
-.st-key-site_navigation > [data-testid="stHorizontalBlock"] > :has(.st-key-nav_identity) {grid-column:2;grid-row:1;}
-.st-key-site_navigation > [data-testid="stHorizontalBlock"] > :has(.st-key-desktop_navigation) {display:none!important;}
-.st-key-site_navigation > [data-testid="stHorizontalBlock"] > :has(.st-key-nav_reset) {grid-column:3;grid-row:1;}
+.st-key-site_navigation > [data-testid="stLayoutWrapper"] > [data-testid="stHorizontalBlock"] > :has(.st-key-nav_menu) {grid-column:1;grid-row:1;}
+.st-key-site_navigation > [data-testid="stLayoutWrapper"] > [data-testid="stHorizontalBlock"] > :has(.st-key-nav_identity) {grid-column:2;grid-row:1;}
+.st-key-site_navigation > [data-testid="stLayoutWrapper"] > [data-testid="stHorizontalBlock"] > :has(.st-key-desktop_navigation) {display:none!important;}
+.st-key-site_navigation > [data-testid="stLayoutWrapper"] > [data-testid="stHorizontalBlock"] > :has(.st-key-nav_reset) {grid-column:3;grid-row:1;}
 .st-key-desktop_navigation {justify-content:center;flex-wrap:nowrap!important;gap:2px!important;}
 .st-key-desktop_navigation button {font-size:13px;padding:9px 10px;white-space:nowrap;}
 .st-key-desktop_navigation button p {white-space:nowrap;}
+.st-key-desktop_navigation button[kind="primary"] {color:white;}
 .st-key-site_navigation [data-testid="stColumn"] {width:100%!important;min-width:0!important;}
 .st-key-site_navigation button {min-height:44px;border-radius:9px;color:var(--forest);}
 .st-key-nav_menu button,.st-key-nav_reset button {width:44px;height:44px;padding:9px;}
@@ -255,10 +256,10 @@ button:focus-visible, a:focus-visible { outline:3px solid #6b893b !important; ou
 /* 1000px accommodates the unchanged brand, five complete labels and
    44px reset target. Shorter headers retain the accessible native popover. */
 @container (min-width:1000px) {
- .st-key-site_navigation > [data-testid="stHorizontalBlock"] {grid-template-columns:220px minmax(0,1fr) 44px;}
- .st-key-site_navigation > [data-testid="stHorizontalBlock"] > :has(.st-key-nav_menu) {display:none!important;}
- .st-key-site_navigation > [data-testid="stHorizontalBlock"] > :has(.st-key-nav_identity) {grid-column:1;}
- .st-key-site_navigation > [data-testid="stHorizontalBlock"] > :has(.st-key-desktop_navigation) {display:flex!important;grid-column:2;grid-row:1;}
+ .st-key-site_navigation > [data-testid="stLayoutWrapper"] > [data-testid="stHorizontalBlock"] {grid-template-columns:220px minmax(0,1fr) 44px;}
+ .st-key-site_navigation > [data-testid="stLayoutWrapper"] > [data-testid="stHorizontalBlock"] > :has(.st-key-nav_menu) {display:none!important;}
+ .st-key-site_navigation > [data-testid="stLayoutWrapper"] > [data-testid="stHorizontalBlock"] > :has(.st-key-nav_identity) {grid-column:1;}
+ .st-key-site_navigation > [data-testid="stLayoutWrapper"] > [data-testid="stHorizontalBlock"] > :has(.st-key-desktop_navigation) {display:flex!important;grid-column:2;grid-row:1;}
 }
 .view-start,#habita-inicio,#ficha-municipal,#descubre-tu-municipio,#resultados-personalizados {scroll-margin-top:calc(var(--habita-nav-height) + 20px);}
 .view-heading {padding:8px 0 18px;}
@@ -311,7 +312,7 @@ button:focus-visible, a:focus-visible { outline:3px solid #6b893b !important; ou
  :root {--habita-nav-height:68px;}
  [data-testid="stMainBlockContainer"] {padding:calc(var(--habita-nav-height) + 10px) 16px 30px;}
  .st-key-site_navigation {padding:11px 12px;}
- .st-key-site_navigation > [data-testid="stHorizontalBlock"] {gap:6px!important;}
+ .st-key-site_navigation > [data-testid="stLayoutWrapper"] > [data-testid="stHorizontalBlock"] {gap:6px!important;}
  .st-key-nav_identity button {padding:2px;}
  .st-key-nav_identity button [data-testid="stMarkdownContainer"] p {font-size:20px;gap:6px;}
  .st-key-nav_identity button strong {margin-right:-6px;}
