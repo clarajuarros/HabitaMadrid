@@ -1,0 +1,222 @@
+{
+  "license_title": "Creative Commons Attribution",
+  "maintainer": null,
+  "relationships_as_object": [],
+  "private": false,
+  "maintainer_email": null,
+  "num_tags": 16,
+  "id": "8a594474-a275-4c74-8d2f-8f864e6d3d45",
+  "metadata_created": "2025-06-02T10:01:34.449733",
+  "metadata_modified": "2026-08-06T16:28:25.407404",
+  "author": null,
+  "author_email": null,
+  "state": "active",
+  "version": null,
+  "creator_user_id": "1b0067e9-eb08-424a-819a-709640541b70",
+  "type": "dataset",
+  "resources": [
+    {
+      "mimetype": "text/csv",
+      "cache_url": null,
+      "name": "Censo de vivienda y locales 2021. Viviendas familiares por año de construcción.csv",
+      "hash": "",
+      "description": "Censo de vivienda y locales 2021. Viviendas familiares por año de construcción. Municipios.csv",
+      "metadata_modified": "2025-10-28T06:56:01.649375",
+      "cache_last_updated": null,
+      "url": "https://datos.comunidad.madrid/dataset/8a594474-a275-4c74-8d2f-8f864e6d3d45/resource/2a557691-7e54-42b0-ae31-1b88b1f753c0/download/censo-de-vivienda-y-locales-2021.-viviendas-familiares-por-ano-de-construccion.-municipios.csv",
+      "datastore_active": true,
+      "format": "CSV",
+      "package_id": "8a594474-a275-4c74-8d2f-8f864e6d3d45",
+      "created": "2025-06-02T10:01:39.107095",
+      "state": "active",
+      "mimetype_inner": null,
+      "last_modified": "2025-10-28T06:56:01.637431",
+      "position": 0,
+      "url_type": "upload",
+      "id": "2a557691-7e54-42b0-ae31-1b88b1f753c0",
+      "resource_type": null,
+      "size": 170587
+    },
+    {
+      "mimetype": "application/json",
+      "cache_url": null,
+      "name": "Censo de vivienda y locales 2021. Viviendas familiares por año de construcción. Municipios.json",
+      "hash": "",
+      "description": "Censo de vivienda y locales 2021. Viviendas familiares por año de construcción. Municipios.json",
+      "metadata_modified": "2025-10-28T06:56:10.456033",
+      "cache_last_updated": null,
+      "url": "https://datos.comunidad.madrid/dataset/8a594474-a275-4c74-8d2f-8f864e6d3d45/resource/305408ab-0dcb-43a9-b7bc-190660286f87/download/censo-de-vivienda-y-locales-2021.-viviendas-familiares-por-ano-de-construccion.-municipios.json",
+      "datastore_active": false,
+      "format": "JSON",
+      "package_id": "8a594474-a275-4c74-8d2f-8f864e6d3d45",
+      "created": "2025-06-02T10:01:44.377516",
+      "state": "active",
+      "mimetype_inner": null,
+      "last_modified": "2025-10-28T06:56:10.442253",
+      "position": 1,
+      "url_type": "upload",
+      "id": "305408ab-0dcb-43a9-b7bc-190660286f87",
+      "resource_type": null,
+      "size": 510142
+    }
+  ],
+  "num_resources": 2,
+  "tags": [
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Censo 2021",
+      "id": "b1738b88-d3e4-47cd-81a9-a326ae70f1ed",
+      "name": "Censo 2021"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Censo de vivienda y locales",
+      "id": "6d03e15a-a092-430d-bb85-e33d0f6a4ce5",
+      "name": "Censo de vivienda y locales"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Por año de construcción",
+      "id": "4b5f419a-6649-4109-98aa-0e90582961f9",
+      "name": "Por año de construcción"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Urbanismo vivienda y construcción",
+      "id": "45efe5ac-3719-417f-8336-d6801e162936",
+      "name": "Urbanismo vivienda y construcción"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Viviendas familiares construidas antes del año 1900",
+      "id": "bee8b454-07d1-4802-bbd5-6217c609862a",
+      "name": "Viviendas familiares construidas antes del año 1900"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Viviendas familiares construidas entre los años 1900 y 1920",
+      "id": "48483ddd-06b9-4f5f-9c2d-bd42bbfe2635",
+      "name": "Viviendas familiares construidas entre los años 1900 y 1920"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Viviendas familiares construidas entre los años 1921 y 1940",
+      "id": "20fdf1d2-7672-4742-948e-50e40dcc7f68",
+      "name": "Viviendas familiares construidas entre los años 1921 y 1940"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Viviendas familiares construidas entre los años 1941 y 1950",
+      "id": "7d61af6d-a227-41a0-844f-db941db82a7f",
+      "name": "Viviendas familiares construidas entre los años 1941 y 1950"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Viviendas familiares construidas entre los años 1951 y 1960",
+      "id": "cb8ef909-e9d8-4d27-ae36-7c7e9ea9aef6",
+      "name": "Viviendas familiares construidas entre los años 1951 y 1960"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Viviendas familiares construidas entre los años 1961 y 1970",
+      "id": "05111474-657b-4add-9f3d-338eadab827d",
+      "name": "Viviendas familiares construidas entre los años 1961 y 1970"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Viviendas familiares construidas entre los años 1971 y 1980",
+      "id": "c83633d6-bce3-43d3-bd79-4abfe4eda9cb",
+      "name": "Viviendas familiares construidas entre los años 1971 y 1980"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Viviendas familiares construidas entre los años 1981 y 1990",
+      "id": "4c04fa3b-86a1-4c5e-9867-9d48158c8e58",
+      "name": "Viviendas familiares construidas entre los años 1981 y 1990"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Viviendas familiares construidas entre los años 1991 y 2000",
+      "id": "c5bc2c2a-8526-4f7d-a0e4-7c7ad1a96ffd",
+      "name": "Viviendas familiares construidas entre los años 1991 y 2000"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Viviendas familiares construidas entre los años 2001 y 2010",
+      "id": "33c747db-7d82-45b0-8ce0-ccaff9ce2e97",
+      "name": "Viviendas familiares construidas entre los años 2001 y 2010"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Viviendas familiares construidas entre los años 2011 y 2020",
+      "id": "bf531407-15f3-4486-9e61-a4e01a498910",
+      "name": "Viviendas familiares construidas entre los años 2011 y 2020"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Viviendas familiares en las que no consta año de construcción",
+      "id": "a1b40433-054a-48e3-90a5-6650af18c7d4",
+      "name": "Viviendas familiares en las que no consta año de construcción"
+    }
+  ],
+  "groups": [],
+  "license_id": "cc-by",
+  "relationships_as_subject": [],
+  "organization": {
+    "description": "Instituto de Estadística de la Comunidad de Madrid",
+    "created": "2025-06-02T09:53:23.552735",
+    "title": "Instituto de Estadística",
+    "name": "estadistica",
+    "is_organization": true,
+    "state": "active",
+    "image_url": "",
+    "type": "organization",
+    "id": "estadistica",
+    "approval_status": "approved"
+  },
+  "name": "censo_2021_viviendas_familiares_por_anyo",
+  "isopen": true,
+  "url": null,
+  "notes": "Vivienda familiar: vivienda destinada a ser habitada por una o varias personas que no constituyen un colectivo, independientemente de los vínculos existentes entre ellas.\n\nPara garantizar el secreto estadístico todos los datos están redondeados aleatoriamente a múltiplos de tres.\n\nLa información de algún municipio ha sido suprimida para proteger el secreto estadístico.",
+  "owner_org": "estadistica",
+  "extras": [
+    {
+      "key": "Fecha Actualización",
+      "value": "14-06-2024"
+    },
+    {
+      "key": "Fuente",
+      "value": "Censo de Población y Vivienda. INE."
+    },
+    {
+      "key": "Origen",
+      "value": "Almudena"
+    },
+    {
+      "key": "Unidad",
+      "value": "Número"
+    },
+    {
+      "key": "Ámbito",
+      "value": "Toda la Comunidad"
+    }
+  ],
+  "license_url": "https://creativecommons.org/licenses/by/4.0/legalcode.es",
+  "title": "Censo de vivienda y locales 2021. Viviendas familiares por año de construcción. Municipios"
+}

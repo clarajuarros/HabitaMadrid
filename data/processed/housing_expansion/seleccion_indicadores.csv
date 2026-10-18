@@ -1,0 +1,8 @@
+﻿indicador,papel,peso_interno,anio,unidad,fuente,criterio,limitacion
+Coste del alquiler por m2,propuesta,0.75,2023,EUR/m2/mes,MIVAU SERPAVI,menor_mejor,Alquiler declarado; no oferta actual
+Relación alquiler-ingresos agregada,propuesta,0.25,2023,porcentaje de cociente agregado,MIVAU SERPAVI + INE ADRH,menor_mejor,No mide esfuerzo real; hogares de distintas poblaciones estadísticas; solapamiento con coste
+Valor tasado,contexto,0.0,2026,EUR/m2,MIVAU/CM,sin puntuación,Solo cuatro municipios elegibles; no precio de compraventa
+Evolución IPVA,contexto,0.0,2024,variación anual porcentual,INE/CM,sin puntuación,27 municipios; resto agregado no asignable
+Vivienda principal/no principal,contexto,0.0,2021,porcentaje,INE Censo/CM,sin dirección objetiva,No principal no equivale a secundaria o vacía ni disponible
+Viviendas vacías según consumo eléctrico,contexto,0.0,2021,Número,INE Censo/CM,sin puntuación,Recuento provisional; no viviendas disponibles ni calidad residencial
+Antigüedad anterior a 1981,contexto,0.0,2021,porcentaje,INE Censo/CM,sin dirección objetiva,No acredita conservación o rehabilitación; sin cálculo con celdas ausentes

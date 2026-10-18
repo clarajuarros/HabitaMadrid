@@ -1,0 +1,1406 @@
+{
+  "source_url": "https://digital.gob.es/telecomunicaciones-infraestructuras-digitales/areas-interes/banda-ancha/informacion-cobertura",
+  "period": "2025-06-30",
+  "unit": "% de hogares del municipio",
+  "source": "SETELECO · Ministerio para la Transformación Digital",
+  "downloaded": "2026-10-17",
+  "sheet": "Municipio_%hogar",
+  "sha256": "4fe38973946c77c6df70499a7b23567f8916c29347acf8d75310ca6be9415dba",
+  "municipalities": {
+    "28001": {
+      "municipio": "La Acebeda",
+      "nombre_fuente": "La Acebeda",
+      "fibra_pct": 85.1852,
+      "banda100_pct": 85.1852,
+      "giga_pct": 85.1852,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28002": {
+      "municipio": "Ajalvir",
+      "nombre_fuente": "Ajalvir",
+      "fibra_pct": 98.6293,
+      "banda100_pct": 98.8162,
+      "giga_pct": 97.5078,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28003": {
+      "municipio": "Alameda del Valle",
+      "nombre_fuente": "Alameda del Valle",
+      "fibra_pct": 94.3089,
+      "banda100_pct": 94.3089,
+      "giga_pct": 94.3089,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28004": {
+      "municipio": "El Álamo",
+      "nombre_fuente": "El Álamo",
+      "fibra_pct": 97.0993,
+      "banda100_pct": 99.7608,
+      "giga_pct": 97.0993,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28008": {
+      "municipio": "Aldea del Fresno",
+      "nombre_fuente": "Aldea del Fresno",
+      "fibra_pct": 90.8085,
+      "banda100_pct": 97.617,
+      "giga_pct": 90.8085,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28009": {
+      "municipio": "Algete",
+      "nombre_fuente": "Algete",
+      "fibra_pct": 97.9467,
+      "banda100_pct": 99.628,
+      "giga_pct": 97.8575,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28010": {
+      "municipio": "Alpedrete",
+      "nombre_fuente": "Alpedrete",
+      "fibra_pct": 96.3508,
+      "banda100_pct": 98.2499,
+      "giga_pct": 96.2391,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28011": {
+      "municipio": "Ambite",
+      "nombre_fuente": "Ambite",
+      "fibra_pct": 90.5923,
+      "banda100_pct": 90.9408,
+      "giga_pct": 90.5923,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28012": {
+      "municipio": "Anchuelo",
+      "nombre_fuente": "Anchuelo",
+      "fibra_pct": 90.9962,
+      "banda100_pct": 90.9962,
+      "giga_pct": 90.9962,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28015": {
+      "municipio": "Arroyomolinos",
+      "nombre_fuente": "Arroyomolinos",
+      "fibra_pct": 99.467,
+      "banda100_pct": 99.9813,
+      "giga_pct": 98.4011,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28016": {
+      "municipio": "El Atazar",
+      "nombre_fuente": "El Atazar",
+      "fibra_pct": 90.7407,
+      "banda100_pct": 100.0,
+      "giga_pct": 90.7407,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28017": {
+      "municipio": "Batres",
+      "nombre_fuente": "Batres",
+      "fibra_pct": 93.6137,
+      "banda100_pct": 98.2866,
+      "giga_pct": 93.6137,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 98.3717
+    },
+    "28018": {
+      "municipio": "Becerril de la Sierra",
+      "nombre_fuente": "Becerril de la Sierra",
+      "fibra_pct": 94.0693,
+      "banda100_pct": 99.3506,
+      "giga_pct": 93.5498,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28019": {
+      "municipio": "Belmonte de Tajo",
+      "nombre_fuente": "Belmonte de Tajo",
+      "fibra_pct": 96.3173,
+      "banda100_pct": 99.7167,
+      "giga_pct": 96.3173,
+      "movil4g_pct": 99.9837,
+      "movil5g_pct": 100.0
+    },
+    "28020": {
+      "municipio": "Berzosa del Lozoya",
+      "nombre_fuente": "Berzosa del Lozoya",
+      "fibra_pct": 98.7342,
+      "banda100_pct": 98.7342,
+      "giga_pct": 98.7342,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 96.9089
+    },
+    "28021": {
+      "municipio": "El Berrueco",
+      "nombre_fuente": "El Berrueco",
+      "fibra_pct": 79.2857,
+      "banda100_pct": 83.9286,
+      "giga_pct": 79.2857,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 97.7735
+    },
+    "28023": {
+      "municipio": "El Boalo",
+      "nombre_fuente": "El Boalo",
+      "fibra_pct": 88.4974,
+      "banda100_pct": 98.5147,
+      "giga_pct": 88.4974,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28024": {
+      "municipio": "Braojos",
+      "nombre_fuente": "Braojos",
+      "fibra_pct": 85.8696,
+      "banda100_pct": 93.4783,
+      "giga_pct": 85.8696,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28025": {
+      "municipio": "Brea de Tajo",
+      "nombre_fuente": "Brea de Tajo",
+      "fibra_pct": 74.3697,
+      "banda100_pct": 94.5378,
+      "giga_pct": 74.3697,
+      "movil4g_pct": 98.3177,
+      "movil5g_pct": 98.9877
+    },
+    "28026": {
+      "municipio": "Brunete",
+      "nombre_fuente": "Brunete",
+      "fibra_pct": 96.1686,
+      "banda100_pct": 98.6043,
+      "giga_pct": 96.0865,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 99.9974
+    },
+    "28027": {
+      "municipio": "Buitrago del Lozoya",
+      "nombre_fuente": "Buitrago del Lozoya",
+      "fibra_pct": 96.087,
+      "banda100_pct": 98.1159,
+      "giga_pct": 96.087,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28028": {
+      "municipio": "Bustarviejo",
+      "nombre_fuente": "Bustarviejo",
+      "fibra_pct": 93.5652,
+      "banda100_pct": 99.1304,
+      "giga_pct": 93.5652,
+      "movil4g_pct": 99.9966,
+      "movil5g_pct": 100.0
+    },
+    "28029": {
+      "municipio": "Cabanillas de la Sierra",
+      "nombre_fuente": "Cabanillas de la Sierra",
+      "fibra_pct": 87.5,
+      "banda100_pct": 100.0,
+      "giga_pct": 87.5,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28030": {
+      "municipio": "La Cabrera",
+      "nombre_fuente": "La Cabrera",
+      "fibra_pct": 85.6593,
+      "banda100_pct": 99.4225,
+      "giga_pct": 85.6593,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28031": {
+      "municipio": "Cadalso de los Vidrios",
+      "nombre_fuente": "Cadalso de los Vidrios",
+      "fibra_pct": 91.3918,
+      "banda100_pct": 98.9541,
+      "giga_pct": 91.3918,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 99.9047
+    },
+    "28032": {
+      "municipio": "Camarma de Esteruelas",
+      "nombre_fuente": "Camarma de Esteruelas",
+      "fibra_pct": 98.5932,
+      "banda100_pct": 98.6692,
+      "giga_pct": 97.7947,
+      "movil4g_pct": 99.9366,
+      "movil5g_pct": 99.7857
+    },
+    "28033": {
+      "municipio": "Campo Real",
+      "nombre_fuente": "Campo Real",
+      "fibra_pct": 98.5144,
+      "banda100_pct": 99.4907,
+      "giga_pct": 97.7504,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28034": {
+      "municipio": "Canencia",
+      "nombre_fuente": "Canencia",
+      "fibra_pct": 80.4545,
+      "banda100_pct": 97.2727,
+      "giga_pct": 80.4545,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28035": {
+      "municipio": "Carabaña",
+      "nombre_fuente": "Carabaña",
+      "fibra_pct": 87.4858,
+      "banda100_pct": 87.4858,
+      "giga_pct": 87.4858,
+      "movil4g_pct": 99.7662,
+      "movil5g_pct": 99.7634
+    },
+    "28036": {
+      "municipio": "Casarrubuelos",
+      "nombre_fuente": "Casarrubuelos",
+      "fibra_pct": 100.0,
+      "banda100_pct": 100.0,
+      "giga_pct": 99.7748,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28037": {
+      "municipio": "Cenicientos",
+      "nombre_fuente": "Cenicientos",
+      "fibra_pct": 73.1009,
+      "banda100_pct": 99.7509,
+      "giga_pct": 73.1009,
+      "movil4g_pct": 99.7957,
+      "movil5g_pct": 99.7957
+    },
+    "28038": {
+      "municipio": "Cercedilla",
+      "nombre_fuente": "Cercedilla",
+      "fibra_pct": 91.844,
+      "banda100_pct": 95.0,
+      "giga_pct": 91.5603,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 98.8188
+    },
+    "28039": {
+      "municipio": "Cervera de Buitrago",
+      "nombre_fuente": "Cervera de Buitrago",
+      "fibra_pct": 83.3333,
+      "banda100_pct": 83.3333,
+      "giga_pct": 83.3333,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28040": {
+      "municipio": "Ciempozuelos",
+      "nombre_fuente": "Ciempozuelos",
+      "fibra_pct": 97.7156,
+      "banda100_pct": 99.9522,
+      "giga_pct": 96.7946,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28041": {
+      "municipio": "Cobeña",
+      "nombre_fuente": "Cobeña",
+      "fibra_pct": 97.9676,
+      "banda100_pct": 99.7926,
+      "giga_pct": 96.7234,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28042": {
+      "municipio": "Colmenar del Arroyo",
+      "nombre_fuente": "Colmenar del Arroyo",
+      "fibra_pct": 85.1003,
+      "banda100_pct": 98.8539,
+      "giga_pct": 85.1003,
+      "movil4g_pct": 99.795,
+      "movil5g_pct": 100.0
+    },
+    "28043": {
+      "municipio": "Colmenar de Oreja",
+      "nombre_fuente": "Colmenar de Oreja",
+      "fibra_pct": 94.3372,
+      "banda100_pct": 97.9705,
+      "giga_pct": 93.748,
+      "movil4g_pct": 99.9134,
+      "movil5g_pct": 99.9943
+    },
+    "28044": {
+      "municipio": "Colmenarejo",
+      "nombre_fuente": "Colmenarejo",
+      "fibra_pct": 89.059,
+      "banda100_pct": 90.1435,
+      "giga_pct": 88.1021,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28046": {
+      "municipio": "Collado Mediano",
+      "nombre_fuente": "Collado Mediano",
+      "fibra_pct": 93.2075,
+      "banda100_pct": 96.8302,
+      "giga_pct": 92.8679,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28048": {
+      "municipio": "Corpa",
+      "nombre_fuente": "Corpa",
+      "fibra_pct": 89.8955,
+      "banda100_pct": 91.2892,
+      "giga_pct": 89.8955,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 74.6701
+    },
+    "28050": {
+      "municipio": "Cubas de la Sagra",
+      "nombre_fuente": "Cubas de la Sagra",
+      "fibra_pct": 98.4676,
+      "banda100_pct": 99.9506,
+      "giga_pct": 98.4676,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28051": {
+      "municipio": "Chapinería",
+      "nombre_fuente": "Chapinería",
+      "fibra_pct": 95.3829,
+      "banda100_pct": 99.5495,
+      "giga_pct": 95.3829,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28052": {
+      "municipio": "Chinchón",
+      "nombre_fuente": "Chinchón",
+      "fibra_pct": 75.0346,
+      "banda100_pct": 86.2021,
+      "giga_pct": 74.4808,
+      "movil4g_pct": 99.2245,
+      "movil5g_pct": 99.7619
+    },
+    "28053": {
+      "municipio": "Daganzo de Arriba",
+      "nombre_fuente": "Daganzo de Arriba",
+      "fibra_pct": 99.623,
+      "banda100_pct": 99.768,
+      "giga_pct": 98.7819,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28054": {
+      "municipio": "El Escorial",
+      "nombre_fuente": "El Escorial",
+      "fibra_pct": 90.1162,
+      "banda100_pct": 93.2675,
+      "giga_pct": 89.9889,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28055": {
+      "municipio": "Estremera",
+      "nombre_fuente": "Estremera",
+      "fibra_pct": 76.8463,
+      "banda100_pct": 100.0,
+      "giga_pct": 30.9381,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 99.986
+    },
+    "28056": {
+      "municipio": "Fresnedillas de la Oliva",
+      "nombre_fuente": "Fresnedillas de la Oliva",
+      "fibra_pct": 90.6149,
+      "banda100_pct": 99.3528,
+      "giga_pct": 90.6149,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28057": {
+      "municipio": "Fresno de Torote",
+      "nombre_fuente": "Fresno de Torote",
+      "fibra_pct": 96.8531,
+      "banda100_pct": 99.3007,
+      "giga_pct": 96.8531,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 99.7586
+    },
+    "28059": {
+      "municipio": "Fuente el Saz de Jarama",
+      "nombre_fuente": "Fuente el Saz de Jarama",
+      "fibra_pct": 91.9643,
+      "banda100_pct": 95.2381,
+      "giga_pct": 91.4966,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28060": {
+      "municipio": "Fuentidueña de Tajo",
+      "nombre_fuente": "Fuentidueña de Tajo",
+      "fibra_pct": 88.3878,
+      "banda100_pct": 99.3236,
+      "giga_pct": 88.3878,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28061": {
+      "municipio": "Galapagar",
+      "nombre_fuente": "Galapagar",
+      "fibra_pct": 95.4606,
+      "banda100_pct": 98.0653,
+      "giga_pct": 93.1826,
+      "movil4g_pct": 99.999,
+      "movil5g_pct": 100.0
+    },
+    "28062": {
+      "municipio": "Garganta de los Montes",
+      "nombre_fuente": "Garganta de los Montes",
+      "fibra_pct": 72.449,
+      "banda100_pct": 88.2653,
+      "giga_pct": 72.449,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28063": {
+      "municipio": "Gargantilla del Lozoya y Pinilla de Buitrago",
+      "nombre_fuente": "Gargantilla del Lozoya y Pinilla de Buitrago",
+      "fibra_pct": 68.8889,
+      "banda100_pct": 69.4444,
+      "giga_pct": 68.8889,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28064": {
+      "municipio": "Gascones",
+      "nombre_fuente": "Gascones",
+      "fibra_pct": 80.0,
+      "banda100_pct": 80.0,
+      "giga_pct": 80.0,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28066": {
+      "municipio": "Griñón",
+      "nombre_fuente": "Griñón",
+      "fibra_pct": 98.4755,
+      "banda100_pct": 99.9414,
+      "giga_pct": 97.4201,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28067": {
+      "municipio": "Guadalix de la Sierra",
+      "nombre_fuente": "Guadalix de la Sierra",
+      "fibra_pct": 97.2632,
+      "banda100_pct": 98.7789,
+      "giga_pct": 97.0526,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28068": {
+      "municipio": "Guadarrama",
+      "nombre_fuente": "Guadarrama",
+      "fibra_pct": 95.8888,
+      "banda100_pct": 96.9874,
+      "giga_pct": 95.8888,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28069": {
+      "municipio": "La Hiruela",
+      "nombre_fuente": "La Hiruela",
+      "fibra_pct": 93.3333,
+      "banda100_pct": 100.0,
+      "giga_pct": 93.3333,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28070": {
+      "municipio": "Horcajo de la Sierra-Aoslos",
+      "nombre_fuente": "Horcajo de la Sierra-Aoslos",
+      "fibra_pct": 78.9474,
+      "banda100_pct": 78.9474,
+      "giga_pct": 78.9474,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28071": {
+      "municipio": "Horcajuelo de la Sierra",
+      "nombre_fuente": "Horcajuelo de la Sierra",
+      "fibra_pct": 86.2745,
+      "banda100_pct": 86.2745,
+      "giga_pct": 86.2745,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28072": {
+      "municipio": "Hoyo de Manzanares",
+      "nombre_fuente": "Hoyo de Manzanares",
+      "fibra_pct": 81.1494,
+      "banda100_pct": 95.6322,
+      "giga_pct": 81.1494,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28073": {
+      "municipio": "Humanes de Madrid",
+      "nombre_fuente": "Humanes de Madrid",
+      "fibra_pct": 99.3919,
+      "banda100_pct": 100.0,
+      "giga_pct": 98.9054,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28075": {
+      "municipio": "Loeches",
+      "nombre_fuente": "Loeches",
+      "fibra_pct": 98.3772,
+      "banda100_pct": 98.507,
+      "giga_pct": 97.8903,
+      "movil4g_pct": 99.9999,
+      "movil5g_pct": 99.9983
+    },
+    "28076": {
+      "municipio": "Lozoya",
+      "nombre_fuente": "Lozoya",
+      "fibra_pct": 95.0178,
+      "banda100_pct": 95.0178,
+      "giga_pct": 95.0178,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 99.9657
+    },
+    "28078": {
+      "municipio": "Madarcos",
+      "nombre_fuente": "Madarcos",
+      "fibra_pct": 68.75,
+      "banda100_pct": 68.75,
+      "giga_pct": 68.75,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28082": {
+      "municipio": "Manzanares el Real",
+      "nombre_fuente": "Manzanares el Real",
+      "fibra_pct": 93.5214,
+      "banda100_pct": 97.0958,
+      "giga_pct": 93.5214,
+      "movil4g_pct": 98.7236,
+      "movil5g_pct": 97.8612
+    },
+    "28083": {
+      "municipio": "Meco",
+      "nombre_fuente": "Meco",
+      "fibra_pct": 98.4566,
+      "banda100_pct": 99.3987,
+      "giga_pct": 96.4923,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28084": {
+      "municipio": "Mejorada del Campo",
+      "nombre_fuente": "Mejorada del Campo",
+      "fibra_pct": 92.5371,
+      "banda100_pct": 98.1282,
+      "giga_pct": 90.6292,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28085": {
+      "municipio": "Miraflores de la Sierra",
+      "nombre_fuente": "Miraflores de la Sierra",
+      "fibra_pct": 91.5065,
+      "banda100_pct": 99.6157,
+      "giga_pct": 86.0876,
+      "movil4g_pct": 99.9984,
+      "movil5g_pct": 99.9695
+    },
+    "28086": {
+      "municipio": "El Molar",
+      "nombre_fuente": "El Molar",
+      "fibra_pct": 90.118,
+      "banda100_pct": 97.7581,
+      "giga_pct": 89.764,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28087": {
+      "municipio": "Los Molinos",
+      "nombre_fuente": "Los Molinos",
+      "fibra_pct": 94.6418,
+      "banda100_pct": 98.6022,
+      "giga_pct": 93.8264,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28088": {
+      "municipio": "Montejo de la Sierra",
+      "nombre_fuente": "Montejo de la Sierra",
+      "fibra_pct": 91.4894,
+      "banda100_pct": 91.4894,
+      "giga_pct": 91.4894,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28089": {
+      "municipio": "Moraleja de Enmedio",
+      "nombre_fuente": "Moraleja de Enmedio",
+      "fibra_pct": 97.5848,
+      "banda100_pct": 99.3099,
+      "giga_pct": 97.4698,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 99.9874
+    },
+    "28090": {
+      "municipio": "Moralzarzal",
+      "nombre_fuente": "Moralzarzal",
+      "fibra_pct": 95.8397,
+      "banda100_pct": 99.4583,
+      "giga_pct": 95.0163,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28091": {
+      "municipio": "Morata de Tajuña",
+      "nombre_fuente": "Morata de Tajuña",
+      "fibra_pct": 94.3586,
+      "banda100_pct": 98.9939,
+      "giga_pct": 88.9687,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28093": {
+      "municipio": "Navacerrada",
+      "nombre_fuente": "Navacerrada",
+      "fibra_pct": 81.2018,
+      "banda100_pct": 82.5116,
+      "giga_pct": 81.2018,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28094": {
+      "municipio": "Navalafuente",
+      "nombre_fuente": "Navalafuente",
+      "fibra_pct": 90.0307,
+      "banda100_pct": 96.1656,
+      "giga_pct": 73.6196,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28095": {
+      "municipio": "Navalagamella",
+      "nombre_fuente": "Navalagamella",
+      "fibra_pct": 95.4268,
+      "banda100_pct": 98.5772,
+      "giga_pct": 95.4268,
+      "movil4g_pct": 99.8771,
+      "movil5g_pct": 99.9152
+    },
+    "28096": {
+      "municipio": "Navalcarnero",
+      "nombre_fuente": "Navalcarnero",
+      "fibra_pct": 98.0657,
+      "banda100_pct": 99.5723,
+      "giga_pct": 96.8215,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28097": {
+      "municipio": "Navarredonda y San Mamés",
+      "nombre_fuente": "Navarredonda y San Mamés",
+      "fibra_pct": 68.5393,
+      "banda100_pct": 68.5393,
+      "giga_pct": 68.5393,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28099": {
+      "municipio": "Navas del Rey",
+      "nombre_fuente": "Navas del Rey",
+      "fibra_pct": 84.6359,
+      "banda100_pct": 84.6359,
+      "giga_pct": 84.6359,
+      "movil4g_pct": 99.9579,
+      "movil5g_pct": 99.9579
+    },
+    "28100": {
+      "municipio": "Nuevo Baztán",
+      "nombre_fuente": "Nuevo Baztán",
+      "fibra_pct": 98.6366,
+      "banda100_pct": 99.8722,
+      "giga_pct": 98.6366,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 99.9462
+    },
+    "28101": {
+      "municipio": "Olmeda de las Fuentes",
+      "nombre_fuente": "Olmeda de las Fuentes",
+      "fibra_pct": 89.1892,
+      "banda100_pct": 97.2973,
+      "giga_pct": 89.1892,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28102": {
+      "municipio": "Orusco de Tajuña",
+      "nombre_fuente": "Orusco de Tajuña",
+      "fibra_pct": 90.7514,
+      "banda100_pct": 90.7514,
+      "giga_pct": 90.7514,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 81.1715
+    },
+    "28104": {
+      "municipio": "Paracuellos de Jarama",
+      "nombre_fuente": "Paracuellos de Jarama",
+      "fibra_pct": 98.7621,
+      "banda100_pct": 99.1158,
+      "giga_pct": 98.5145,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28107": {
+      "municipio": "Patones",
+      "nombre_fuente": "Patones",
+      "fibra_pct": 93.0693,
+      "banda100_pct": 93.0693,
+      "giga_pct": 93.0693,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 98.2592
+    },
+    "28108": {
+      "municipio": "Pedrezuela",
+      "nombre_fuente": "Pedrezuela",
+      "fibra_pct": 97.5,
+      "banda100_pct": 99.3103,
+      "giga_pct": 97.5,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28109": {
+      "municipio": "Pelayos de la Presa",
+      "nombre_fuente": "Pelayos de la Presa",
+      "fibra_pct": 89.148,
+      "banda100_pct": 89.148,
+      "giga_pct": 89.148,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28110": {
+      "municipio": "Perales de Tajuña",
+      "nombre_fuente": "Perales de Tajuña",
+      "fibra_pct": 95.8988,
+      "banda100_pct": 96.5096,
+      "giga_pct": 92.0593,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28111": {
+      "municipio": "Pezuela de las Torres",
+      "nombre_fuente": "Pezuela de las Torres",
+      "fibra_pct": 92.7419,
+      "banda100_pct": 98.1183,
+      "giga_pct": 92.7419,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 88.571
+    },
+    "28112": {
+      "municipio": "Pinilla del Valle",
+      "nombre_fuente": "Pinilla del Valle",
+      "fibra_pct": 85.567,
+      "banda100_pct": 85.567,
+      "giga_pct": 85.567,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28114": {
+      "municipio": "Piñuécar-Gandullas",
+      "nombre_fuente": "Piñuécar-Gandullas",
+      "fibra_pct": 72.619,
+      "banda100_pct": 79.7619,
+      "giga_pct": 72.619,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28116": {
+      "municipio": "Pozuelo del Rey",
+      "nombre_fuente": "Pozuelo del Rey",
+      "fibra_pct": 93.5897,
+      "banda100_pct": 93.5897,
+      "giga_pct": 93.5897,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 20.0508
+    },
+    "28117": {
+      "municipio": "Prádena del Rincón",
+      "nombre_fuente": "Prádena del Rincón",
+      "fibra_pct": 86.7647,
+      "banda100_pct": 86.7647,
+      "giga_pct": 86.7647,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28118": {
+      "municipio": "Puebla de la Sierra",
+      "nombre_fuente": "Puebla de la Sierra",
+      "fibra_pct": 87.234,
+      "banda100_pct": 87.234,
+      "giga_pct": 87.234,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28119": {
+      "municipio": "Quijorna",
+      "nombre_fuente": "Quijorna",
+      "fibra_pct": 97.411,
+      "banda100_pct": 98.7055,
+      "giga_pct": 97.0065,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28120": {
+      "municipio": "Rascafría",
+      "nombre_fuente": "Rascafría",
+      "fibra_pct": 95.0993,
+      "banda100_pct": 97.8808,
+      "giga_pct": 94.702,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 99.9537
+    },
+    "28121": {
+      "municipio": "Redueña",
+      "nombre_fuente": "Redueña",
+      "fibra_pct": 78.5124,
+      "banda100_pct": 81.8182,
+      "giga_pct": 78.5124,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28122": {
+      "municipio": "Ribatejada",
+      "nombre_fuente": "Ribatejada",
+      "fibra_pct": 94.9153,
+      "banda100_pct": 97.4576,
+      "giga_pct": 94.9153,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28124": {
+      "municipio": "Robledillo de la Jara",
+      "nombre_fuente": "Robledillo de la Jara",
+      "fibra_pct": 85.1064,
+      "banda100_pct": 85.1064,
+      "giga_pct": 85.1064,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28125": {
+      "municipio": "Robledo de Chavela",
+      "nombre_fuente": "Robledo de Chavela",
+      "fibra_pct": 90.8786,
+      "banda100_pct": 90.8786,
+      "giga_pct": 89.5355,
+      "movil4g_pct": 99.811,
+      "movil5g_pct": 100.0
+    },
+    "28126": {
+      "municipio": "Robregordo",
+      "nombre_fuente": "Robregordo",
+      "fibra_pct": 75.0,
+      "banda100_pct": 75.0,
+      "giga_pct": 75.0,
+      "movil4g_pct": 96.5754,
+      "movil5g_pct": 97.0441
+    },
+    "28128": {
+      "municipio": "Rozas de Puerto Real",
+      "nombre_fuente": "Rozas de Puerto Real",
+      "fibra_pct": 86.4865,
+      "banda100_pct": 88.8031,
+      "giga_pct": 86.4865,
+      "movil4g_pct": 99.8934,
+      "movil5g_pct": 99.9336
+    },
+    "28129": {
+      "municipio": "San Agustín del Guadalix",
+      "nombre_fuente": "San Agustín del Guadalix",
+      "fibra_pct": 95.6776,
+      "banda100_pct": 99.7073,
+      "giga_pct": 94.9572,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28130": {
+      "municipio": "San Fernando de Henares",
+      "nombre_fuente": "San Fernando de Henares",
+      "fibra_pct": 97.4459,
+      "banda100_pct": 99.9722,
+      "giga_pct": 98.0026,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28131": {
+      "municipio": "San Lorenzo de El Escorial",
+      "nombre_fuente": "San Lorenzo de El Escorial",
+      "fibra_pct": 97.9116,
+      "banda100_pct": 98.9203,
+      "giga_pct": 97.7838,
+      "movil4g_pct": 99.9826,
+      "movil5g_pct": 99.9958
+    },
+    "28132": {
+      "municipio": "San Martín de la Vega",
+      "nombre_fuente": "San Martín de la Vega",
+      "fibra_pct": 97.9888,
+      "banda100_pct": 98.5332,
+      "giga_pct": 96.7035,
+      "movil4g_pct": 99.488,
+      "movil5g_pct": 99.9021
+    },
+    "28133": {
+      "municipio": "San Martín de Valdeiglesias",
+      "nombre_fuente": "San Martín de Valdeiglesias",
+      "fibra_pct": 90.5536,
+      "banda100_pct": 94.3697,
+      "giga_pct": 88.7394,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28135": {
+      "municipio": "Santa María de la Alameda",
+      "nombre_fuente": "Santa María de la Alameda",
+      "fibra_pct": 81.877,
+      "banda100_pct": 81.877,
+      "giga_pct": 81.877,
+      "movil4g_pct": 99.1736,
+      "movil5g_pct": 67.9755
+    },
+    "28136": {
+      "municipio": "Santorcaz",
+      "nombre_fuente": "Santorcaz",
+      "fibra_pct": 92.1196,
+      "banda100_pct": 97.8261,
+      "giga_pct": 92.1196,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28137": {
+      "municipio": "Los Santos de la Humosa",
+      "nombre_fuente": "Los Santos de la Humosa",
+      "fibra_pct": 94.693,
+      "banda100_pct": 100.0,
+      "giga_pct": 94.693,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 99.9919
+    },
+    "28138": {
+      "municipio": "La Serna del Monte",
+      "nombre_fuente": "La Serna del Monte",
+      "fibra_pct": 85.3659,
+      "banda100_pct": 85.3659,
+      "giga_pct": 85.3659,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28140": {
+      "municipio": "Serranillos del Valle",
+      "nombre_fuente": "Serranillos del Valle",
+      "fibra_pct": 98.2735,
+      "banda100_pct": 100.0,
+      "giga_pct": 97.4448,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28141": {
+      "municipio": "Sevilla la Nueva",
+      "nombre_fuente": "Sevilla la Nueva",
+      "fibra_pct": 97.1517,
+      "banda100_pct": 99.8142,
+      "giga_pct": 96.5325,
+      "movil4g_pct": 99.9416,
+      "movil5g_pct": 100.0
+    },
+    "28143": {
+      "municipio": "Somosierra",
+      "nombre_fuente": "Somosierra",
+      "fibra_pct": 87.8049,
+      "banda100_pct": 87.8049,
+      "giga_pct": 87.8049,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 41.7381
+    },
+    "28144": {
+      "municipio": "Soto del Real",
+      "nombre_fuente": "Soto del Real",
+      "fibra_pct": 97.1627,
+      "banda100_pct": 97.1627,
+      "giga_pct": 96.4691,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28145": {
+      "municipio": "Talamanca de Jarama",
+      "nombre_fuente": "Talamanca de Jarama",
+      "fibra_pct": 90.6746,
+      "banda100_pct": 96.8915,
+      "giga_pct": 89.418,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28146": {
+      "municipio": "Tielmes",
+      "nombre_fuente": "Tielmes",
+      "fibra_pct": 99.1354,
+      "banda100_pct": 99.1354,
+      "giga_pct": 98.367,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 69.5476
+    },
+    "28147": {
+      "municipio": "Titulcia",
+      "nombre_fuente": "Titulcia",
+      "fibra_pct": 89.901,
+      "banda100_pct": 90.6931,
+      "giga_pct": 89.901,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 92.8167
+    },
+    "28149": {
+      "municipio": "Torrejón de la Calzada",
+      "nombre_fuente": "Torrejón de la Calzada",
+      "fibra_pct": 99.7126,
+      "banda100_pct": 100.0,
+      "giga_pct": 99.0102,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28150": {
+      "municipio": "Torrejón de Velasco",
+      "nombre_fuente": "Torrejón de Velasco",
+      "fibra_pct": 97.9605,
+      "banda100_pct": 100.0,
+      "giga_pct": 97.9605,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28151": {
+      "municipio": "Torrelaguna",
+      "nombre_fuente": "Torrelaguna",
+      "fibra_pct": 95.5742,
+      "banda100_pct": 97.0868,
+      "giga_pct": 95.3501,
+      "movil4g_pct": 99.9928,
+      "movil5g_pct": 100.0
+    },
+    "28152": {
+      "municipio": "Torrelodones",
+      "nombre_fuente": "Torrelodones",
+      "fibra_pct": 95.4299,
+      "banda100_pct": 98.8873,
+      "giga_pct": 94.9132,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28153": {
+      "municipio": "Torremocha de Jarama",
+      "nombre_fuente": "Torremocha de Jarama",
+      "fibra_pct": 94.0104,
+      "banda100_pct": 95.0521,
+      "giga_pct": 94.0104,
+      "movil4g_pct": 97.4033,
+      "movil5g_pct": 99.5831
+    },
+    "28154": {
+      "municipio": "Torres de la Alameda",
+      "nombre_fuente": "Torres de la Alameda",
+      "fibra_pct": 98.1337,
+      "banda100_pct": 98.4059,
+      "giga_pct": 97.395,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28155": {
+      "municipio": "Valdaracete",
+      "nombre_fuente": "Valdaracete",
+      "fibra_pct": 82.1862,
+      "banda100_pct": 83.4008,
+      "giga_pct": 82.1862,
+      "movil4g_pct": 99.7385,
+      "movil5g_pct": 96.3192
+    },
+    "28156": {
+      "municipio": "Valdeavero",
+      "nombre_fuente": "Valdeavero",
+      "fibra_pct": 87.4797,
+      "banda100_pct": 99.8374,
+      "giga_pct": 87.4797,
+      "movil4g_pct": 98.6256,
+      "movil5g_pct": 98.1714
+    },
+    "28157": {
+      "municipio": "Valdelaguna",
+      "nombre_fuente": "Valdelaguna",
+      "fibra_pct": 67.7033,
+      "banda100_pct": 67.7033,
+      "giga_pct": 20.5742,
+      "movil4g_pct": 99.8575,
+      "movil5g_pct": 99.8907
+    },
+    "28158": {
+      "municipio": "Valdemanco",
+      "nombre_fuente": "Valdemanco",
+      "fibra_pct": 89.7059,
+      "banda100_pct": 94.6078,
+      "giga_pct": 89.7059,
+      "movil4g_pct": 99.9305,
+      "movil5g_pct": 70.0164
+    },
+    "28159": {
+      "municipio": "Valdemaqueda",
+      "nombre_fuente": "Valdemaqueda",
+      "fibra_pct": 91.2023,
+      "banda100_pct": 99.4135,
+      "giga_pct": 91.2023,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 99.8614
+    },
+    "28160": {
+      "municipio": "Valdemorillo",
+      "nombre_fuente": "Valdemorillo",
+      "fibra_pct": 96.7695,
+      "banda100_pct": 97.6393,
+      "giga_pct": 96.521,
+      "movil4g_pct": 99.9342,
+      "movil5g_pct": 99.9934
+    },
+    "28162": {
+      "municipio": "Valdeolmos-Alalpardo",
+      "nombre_fuente": "Valdeolmos-Alalpardo",
+      "fibra_pct": 96.397,
+      "banda100_pct": 98.7084,
+      "giga_pct": 96.397,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28163": {
+      "municipio": "Valdepiélagos",
+      "nombre_fuente": "Valdepiélagos",
+      "fibra_pct": 83.1169,
+      "banda100_pct": 87.8788,
+      "giga_pct": 83.1169,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28164": {
+      "municipio": "Valdetorres de Jarama",
+      "nombre_fuente": "Valdetorres de Jarama",
+      "fibra_pct": 92.1838,
+      "banda100_pct": 99.642,
+      "giga_pct": 88.7232,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28165": {
+      "municipio": "Valdilecha",
+      "nombre_fuente": "Valdilecha",
+      "fibra_pct": 94.2016,
+      "banda100_pct": 94.4692,
+      "giga_pct": 94.2016,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28166": {
+      "municipio": "Valverde de Alcalá",
+      "nombre_fuente": "Valverde de Alcalá",
+      "fibra_pct": 91.9811,
+      "banda100_pct": 91.9811,
+      "giga_pct": 91.9811,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 87.5763
+    },
+    "28167": {
+      "municipio": "Velilla de San Antonio",
+      "nombre_fuente": "Velilla de San Antonio",
+      "fibra_pct": 99.8595,
+      "banda100_pct": 99.9063,
+      "giga_pct": 99.4147,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28168": {
+      "municipio": "El Vellón",
+      "nombre_fuente": "El Vellón",
+      "fibra_pct": 81.0489,
+      "banda100_pct": 94.994,
+      "giga_pct": 81.0489,
+      "movil4g_pct": 99.9948,
+      "movil5g_pct": 100.0
+    },
+    "28169": {
+      "municipio": "Venturada",
+      "nombre_fuente": "Venturada",
+      "fibra_pct": 97.2129,
+      "banda100_pct": 97.4359,
+      "giga_pct": 97.2129,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28170": {
+      "municipio": "Villaconejos",
+      "nombre_fuente": "Villaconejos",
+      "fibra_pct": 89.2998,
+      "banda100_pct": 95.5153,
+      "giga_pct": 88.749,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28171": {
+      "municipio": "Villa del Prado",
+      "nombre_fuente": "Villa del Prado",
+      "fibra_pct": 94.1917,
+      "banda100_pct": 99.9188,
+      "giga_pct": 82.6564,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28172": {
+      "municipio": "Villalbilla",
+      "nombre_fuente": "Villalbilla",
+      "fibra_pct": 99.0381,
+      "banda100_pct": 99.2148,
+      "giga_pct": 97.8799,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28173": {
+      "municipio": "Villamanrique de Tajo",
+      "nombre_fuente": "Villamanrique de Tajo",
+      "fibra_pct": 89.939,
+      "banda100_pct": 94.5122,
+      "giga_pct": 89.939,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 52.2105
+    },
+    "28174": {
+      "municipio": "Villamanta",
+      "nombre_fuente": "Villamanta",
+      "fibra_pct": 88.5246,
+      "banda100_pct": 97.1585,
+      "giga_pct": 88.5246,
+      "movil4g_pct": 99.9576,
+      "movil5g_pct": 100.0
+    },
+    "28175": {
+      "municipio": "Villamantilla",
+      "nombre_fuente": "Villamantilla",
+      "fibra_pct": 96.9697,
+      "banda100_pct": 99.6435,
+      "giga_pct": 96.9697,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28176": {
+      "municipio": "Villanueva de la Cañada",
+      "nombre_fuente": "Villanueva de la Cañada",
+      "fibra_pct": 98.0241,
+      "banda100_pct": 99.5787,
+      "giga_pct": 97.0798,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28177": {
+      "municipio": "Villanueva del Pardillo",
+      "nombre_fuente": "Villanueva del Pardillo",
+      "fibra_pct": 99.208,
+      "banda100_pct": 99.429,
+      "giga_pct": 98.4896,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28178": {
+      "municipio": "Villanueva de Perales",
+      "nombre_fuente": "Villanueva de Perales",
+      "fibra_pct": 96.6667,
+      "banda100_pct": 98.7719,
+      "giga_pct": 96.6667,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28179": {
+      "municipio": "Villar del Olmo",
+      "nombre_fuente": "Villar del Olmo",
+      "fibra_pct": 96.1634,
+      "banda100_pct": 98.6386,
+      "giga_pct": 96.1634,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28180": {
+      "municipio": "Villarejo de Salvanés",
+      "nombre_fuente": "Villarejo de Salvanés",
+      "fibra_pct": 95.9169,
+      "banda100_pct": 96.6825,
+      "giga_pct": 94.969,
+      "movil4g_pct": 99.693,
+      "movil5g_pct": 99.9641
+    },
+    "28181": {
+      "municipio": "Villaviciosa de Odón",
+      "nombre_fuente": "Villaviciosa de Odón",
+      "fibra_pct": 98.1967,
+      "banda100_pct": 99.8056,
+      "giga_pct": 97.7108,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28182": {
+      "municipio": "Villavieja del Lozoya",
+      "nombre_fuente": "Villavieja del Lozoya",
+      "fibra_pct": 86.7647,
+      "banda100_pct": 86.7647,
+      "giga_pct": 86.7647,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28183": {
+      "municipio": "Zarzalejo",
+      "nombre_fuente": "Zarzalejo",
+      "fibra_pct": 84.7605,
+      "banda100_pct": 95.2104,
+      "giga_pct": 84.7605,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28901": {
+      "municipio": "Lozoyuela-Navas-Sieteiglesias",
+      "nombre_fuente": "Lozoyuela-Navas-Sieteiglesias",
+      "fibra_pct": 66.7257,
+      "banda100_pct": 73.4513,
+      "giga_pct": 57.3451,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 100.0
+    },
+    "28902": {
+      "municipio": "Puentes Viejas",
+      "nombre_fuente": "Puentes Viejas",
+      "fibra_pct": 77.0393,
+      "banda100_pct": 77.0393,
+      "giga_pct": 77.0393,
+      "movil4g_pct": 100.0,
+      "movil5g_pct": 99.0514
+    }
+  }
+}

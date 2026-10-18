@@ -1,0 +1,56 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>__LEAFLET_CSS__
+html,body{margin:0;height:100%;font-family:Inter,system-ui,sans-serif;color:#173d35}*{box-sizing:border-box}
+#map{height:420px;width:100%;background:#edf2e8;border:1px solid #dce3d9;border-radius:12px}
+.marker{width:28px;height:28px;border:3px solid white;border-radius:50%;box-shadow:0 2px 6px #0005;display:flex;align-items:center;justify-content:center;font-weight:bold;font-size:13px}
+.origin{background:#173d35;color:white}.destination{background:#ccf15b;color:#173d35}
+.leaflet-tooltip{max-width:180px;white-space:normal;font-family:inherit;color:#173d35;font-size:11px;border:1px solid #dce3d9;border-radius:7px}
+.map-tools{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:8px 0 0;font-size:11px}
+button{background:white;border:1px solid #bccbc0;border-radius:7px;padding:7px 10px;color:#173d35;cursor:pointer;font:inherit}
+button:focus-visible{outline:3px solid #617e38}#tile-note{color:#61716b;font-size:11px;margin-top:5px}
+.leaflet-control-attribution{font-size:9px!important}.map-tools span{flex:1}
+@media(max-width:480px){#map{height:390px}.leaflet-tooltip{max-width:120px;font-size:10px}}
+</style></head><body>
+<div id="map" role="region" aria-label="Mapa del centro urbano y del servicio seleccionado"></div>
+<div class="map-tools"><button id="fit" type="button">Ver origen y destino</button><span id="legend"></span></div>
+<div id="tile-note" role="status"></div>
+<script>__LEAFLET_JS__</script>
+<script id="service-map-data" type="application/json">__MAP_DATA__</script>
+<script>
+const data=JSON.parse(document.getElementById('service-map-data').textContent);
+const map=L.map('map',{scrollWheelZoom:true,zoomControl:true,zoomSnap:.25,minZoom:5,maxZoom:19});
+const ll=p=>[p[1],p[0]];
+const textNode=s=>{const el=document.createElement('span');el.textContent=s;return el;};
+const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const tiles=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,
+ attribution:'&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> · <a href="https://www.openstreetmap.org/fixthemap" target="_blank" rel="noopener">Corregir mapa</a>'}).addTo(map);
+tiles.on('tileerror',()=>{document.getElementById('tile-note').textContent='El fondo de calles no está disponible. Los puntos y el recorrido siguen visibles.';});
+tiles.on('tileload',()=>{document.getElementById('tile-note').textContent='';});
+const origin=L.marker(ll(data.origin.position),{title:'Origen: '+data.origin.name,icon:L.divIcon({className:'',html:'<div class="marker origin">A</div>',iconSize:[28,28],iconAnchor:[14,14]})}).addTo(map);
+origin.bindTooltip(textNode(data.origin.name+' · centro urbano'),{permanent:true,direction:'top',offset:[0,-15]});
+origin.bindPopup(textNode('A · '+data.origin.name+' — punto de referencia urbano del IGN'));
+const destination=L.marker(ll(data.destination.position),{title:'Destino: '+data.destination.name,icon:L.divIcon({className:'',html:'<div class="marker destination">B</div>',iconSize:[28,28],iconAnchor:[14,14]})}).addTo(map);
+destination.bindTooltip(textNode(data.destination.name),{permanent:false,direction:'bottom',offset:[0,15]});
+destination.bindPopup(textNode('B · '+data.destination.name+' · '+data.destination.category));
+let fitPoints=[ll(data.origin.position),ll(data.destination.position)];
+if(data.route.status==='ok'){
+ const routePoints=data.route.geometry.coordinates.map(ll);
+ L.polyline(routePoints,{color:'#173d35',weight:5,opacity:.85}).addTo(map);
+ fitPoints.push(...routePoints);
+ // Dotted access segments are explicitly not counted as a computed driving route.
+ L.polyline([ll(data.origin.position),routePoints[0]],{color:'#61716b',weight:2,dashArray:'3 6'}).addTo(map);
+ L.polyline([routePoints[routePoints.length-1],ll(data.destination.position)],{color:'#61716b',weight:2,dashArray:'3 6'}).addTo(map);
+ document.getElementById('legend').textContent='A · Centro urbano   B · Servicio   Línea verde · Ruta en coche';
+}else{
+ L.polyline(fitPoints,{color:'#879483',weight:2,dashArray:'5 7'}).addTo(map);
+ document.getElementById('legend').textContent='A · Centro urbano   B · Servicio   Línea discontinua · Distancia en línea recta';
+}
+function fit(animate=false){if(document.getElementById('map').clientWidth<20)return;map.invalidateSize({pan:false});map.fitBounds(L.latLngBounds(fitPoints),{paddingTopLeft:[38,62],paddingBottomRight:[38,38],maxZoom:16,animate:animate&&!reduced,duration:.45});}
+document.getElementById('fit').addEventListener('click',()=>fit(true));
+// Fit once; returning to the panel or resizing must preserve manual navigation.
+let fitted=false;
+function refreshSize(){map.invalidateSize({pan:false});if(!fitted&&document.getElementById('map').clientWidth>=20){fit();fitted=true;}}
+let resizeFrame;new ResizeObserver(()=>{cancelAnimationFrame(resizeFrame);resizeFrame=requestAnimationFrame(refreshSize);}).observe(document.getElementById('map'));
+new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting))refreshSize();}).observe(document.getElementById('map'));
+refreshSize();L.control.scale({imperial:false,position:'bottomleft'}).addTo(map);
+</script></body></html>

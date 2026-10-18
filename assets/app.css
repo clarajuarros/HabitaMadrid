@@ -1,0 +1,329 @@
+:root { --forest:#173d35; --lime:#ccf15b; --muted:#61716b; --line:#dce3d9; }
+html { scroll-behavior:smooth; }
+body, [data-testid="stApp"] { font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+.stApp { background:#f5f7f2; }
+[data-testid="stMainBlockContainer"] { max-width:1232px; padding:1.4rem 2.4rem 3.5rem; }
+[data-testid="stHeader"] { background:transparent; height:0; }
+#MainMenu, footer, [data-testid="stToolbar"] { visibility:hidden; }
+h1,h2,h3 { color:var(--forest); letter-spacing:-.035em; }
+h2 { font-size:1.65rem !important; }
+h3 { font-size:1.1rem !important; letter-spacing:-.02em; }
+p,li { line-height:1.55; }
+a { text-underline-offset:3px; }
+button:focus-visible, a:focus-visible { outline:3px solid #6b893b !important; outline-offset:3px; }
+.topbar { display:flex; justify-content:space-between; align-items:center; gap:1rem; padding:.3rem 0 1.15rem; border-bottom:1px solid var(--line); }
+.brand { display:flex; align-items:center; gap:10px; font-size:22px; letter-spacing:-.7px; font-weight:750; }
+.brand-mark { width:32px;height:32px;display:block;color:var(--forest); }
+.brand span span { font-weight:450; }
+.edition { display:flex; align-items:center; gap:8px; color:var(--muted);font-size:12px; }
+.edition-dot { width:7px;height:7px;background:#5c8f51;border-radius:50%; }
+.hero { display:grid;grid-template-columns:1fr auto; gap:2rem; align-items:end; padding:1.4rem 0 .8rem; }
+.eyebrow { color:#657760; text-transform:uppercase;font-weight:700;font-size:10px;letter-spacing:1.8px;margin:0 0 12px; }
+.hero h1 { font-size:clamp(30px,3.1vw,39px);font-weight:550;line-height:1.1;letter-spacing:-1.4px;padding:0;margin:0 0 13px; }
+.hero h1 em { font-family:Georgia,"Times New Roman",serif;font-weight:400; }
+.hero p { max-width:570px;color:var(--muted);font-size:14px;margin:0; }
+.hero-facts { display:flex;gap:1.7rem;padding-bottom:3px; }
+.hero-fact strong { font-size:26px;font-weight:550;letter-spacing:-1px;display:block; }
+.hero-fact span { font-size:11px;color:var(--muted);display:block;line-height:1.45; }
+.st-key-search_panel { background:white;border:1px solid var(--line);border-radius:16px;padding:1.15rem 1.25rem;margin-bottom:.8rem;box-shadow:0 5px 20px #173d3504; }
+.st-key-search_panel label { font-size:12px;font-weight:650; }
+[data-baseweb="select"] > div { border-color:var(--line);border-radius:9px;background:#fbfcf9; }
+.st-key-quick_choices { padding-bottom:.7rem; }
+.st-key-quick_choices button { background:transparent;border:1px solid #d7dfd1;border-radius:100px;font-size:12px;padding:.2rem .85rem;min-height:31px; }
+.st-key-quick_choices button:hover { background:#e9eee3;border-color:#a6b8a1;color:var(--forest); }
+.municipal-heading { display:flex;justify-content:space-between;align-items:center;gap:1rem;margin:.2rem 0 .75rem; }
+.municipal-heading h2 { margin:0;padding:0;font-size:32px !important;font-weight:550;letter-spacing:-1px; }
+.municipal-heading p { margin:6px 0 0;color:var(--muted);font-size:12px; }
+.municipal-heading > div:first-child > .profile-pill { margin-top:10px; }
+.heading-scores { display:flex;gap:10px;flex-shrink:0; }
+.heading-score { min-width:145px;padding:12px 16px;border:1px solid var(--line);border-radius:12px;background:white; }
+.heading-score span,.heading-score small { display:block;font-size:10px;color:var(--muted);line-height:1.5; }
+.heading-score strong { display:block;font-size:27px;line-height:1.25;letter-spacing:-1px;font-weight:550;color:var(--forest); }
+.heading-score.personal { background:var(--forest);border-color:var(--forest); }
+.heading-score.personal strong { color:var(--lime); }
+.heading-score.personal span,.heading-score.personal small { color:#d3dfd1; }
+.profile-pill { display:inline-flex;border:1px solid #cbd7c3;border-radius:100px;padding:7px 12px;font-size:11px;white-space:nowrap;align-items:center;gap:7px;background:#eaf0e3; }
+.profile-pill:before { content:"";height:6px;width:6px;border-radius:50%;background:#69864d; }
+.metric-grid { display:grid; grid-template-columns:1.15fr 1fr 1fr 1fr; gap:12px;margin-bottom:1.05rem; }
+.metric-card { border:1px solid var(--line); border-radius:14px;padding:18px 19px 17px;background:#fff;min-height:132px; }
+.metric-card .metric-label { font-size:11px;font-weight:550;color:var(--muted);margin:0 0 9px; }
+.metric-value { color:var(--forest);font-size:31px;line-height:1.1;letter-spacing:-1.3px;font-weight:550;white-space:nowrap; }
+.metric-value small { font-size:13px;letter-spacing:-.2px;font-weight:450;margin-left:4px; }
+.metric-card .metric-detail { font-size:10px;color:var(--muted);margin-top:9px;line-height:1.4; }
+.metric-card.accent { border-color:var(--forest);background:var(--forest); }
+.metric-card.accent .metric-value { color:var(--lime); }
+.metric-card.accent .metric-label,.metric-card.accent .metric-detail { color:#d3dfd1; }
+.missing-strip { background:#f1eee3;border:1px solid #e1dcc7;border-radius:10px;padding:12px 15px;font-size:12px;color:#66592d;margin-bottom:1rem; }
+.quiet-strip { border-left:3px solid #b8ca9d;padding:4px 0 4px 12px;color:var(--muted);font-size:11px;line-height:1.55;margin:.6rem 0 1rem; }
+.explorer-status { display:flex;align-items:baseline;justify-content:space-between;gap:10px 24px;flex-wrap:wrap;padding:10px 0 13px;border-bottom:1px solid var(--line);font-size:12px; }
+.explorer-status strong { color:var(--forest);font-size:16px;font-weight:600; }
+.explorer-status span { color:var(--muted); }
+.personal-summary { display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;background:#eaf0e3;border:1px solid #cbd7c3;border-radius:12px;padding:16px 18px;margin-bottom:1rem; }
+.personal-summary strong { font-size:20px;letter-spacing:-.5px; }
+.personal-summary span { font-size:12px;color:var(--muted); }
+[data-baseweb="tab-list"] { gap:1.4rem;border-bottom:1px solid var(--line);padding-bottom:0; }
+[data-baseweb="tab"] { font-size:12px;padding:13px 1px;color:var(--muted);background:transparent; }
+[data-baseweb="tab"][aria-selected="true"] { color:var(--forest);font-weight:650; }
+[data-baseweb="tab-highlight"] { background-color:var(--forest);height:2px; }
+[data-baseweb="tab-panel"] { padding-top:1.35rem; }
+[data-testid="stVerticalBlockBorderWrapper"] > div { border-color:var(--line) !important; }
+.section-heading { display:flex;align-items:center;justify-content:space-between;gap:8px;margin:.1rem 0 .85rem; }
+.section-heading h3 { margin:0;padding:0;font-size:17px !important;font-weight:600; }
+.section-tag { font-size:10px;color:var(--muted); }
+.note-text { color:var(--muted);font-size:12px;line-height:1.6; }
+.raw-grid { display:grid;grid-template-columns:1fr 1fr;gap:10px; }
+.raw-item { background:#f8faf5;border:1px solid #e3e9dd;border-radius:10px;padding:13px; }
+.raw-label { font-size:10px;color:var(--muted);margin-bottom:6px; }
+.raw-value { font-size:19px;letter-spacing:-.6px;font-weight:550; }
+.raw-caption { font-size:9px;color:var(--muted);margin-top:6px;line-height:1.5; }
+.sensitivity-stat { background:#edf2e7;border-radius:12px;padding:16px;margin:.5rem 0; }
+.sensitivity-stat strong { display:block;font-size:29px;font-weight:550;letter-spacing:-1px; }
+.sensitivity-stat span { color:var(--muted);font-size:11px; }
+.service-row { padding:13px 0;border-bottom:1px solid #e7ece2; }
+.service-row:last-child { border-bottom:0; }
+.service-top { display:flex;justify-content:space-between;gap:16px;align-items:baseline; }
+.service-name { font-size:13px;font-weight:620;line-height:1.4; }
+.service-distance { font-size:11px;font-weight:650;white-space:nowrap;color:#456542; }
+.service-meta { font-size:11px;color:var(--muted);margin-top:5px;line-height:1.5; }
+.service-link { font-size:10px;font-weight:550;display:inline-block;margin-top:6px; }
+.service-small { color:var(--muted);font-size:10px; }
+.service-count { display:inline-block;background:#edf2e6;padding:2px 7px;margin-left:5px;border-radius:100px;font-size:10px;font-weight:600; }
+.empty-state { padding:1.1rem;border-radius:10px;background:#f5f6ef;font-size:12px;color:var(--muted);line-height:1.6; }
+.source-card { border-bottom:1px solid var(--line);padding:14px 0; }
+.source-card strong { font-size:13px; }
+.source-card p { margin:5px 0;color:var(--muted);font-size:11px; }
+.source-card a { font-size:11px; }
+.st-key-map_panel { padding:.4rem .4rem .6rem; background:#f5f7ef;border-color:#d7e0d1; }
+.map-legend { padding:0 10px 7px; }
+.map-scale { height:8px;border-radius:10px;border:1px solid #b6c5ad; }
+.map-scale-labels { display:flex;justify-content:space-between;margin-top:6px;font-size:10px;color:var(--muted); }
+.map-categories { display:flex;gap:8px 13px;flex-wrap:wrap;margin-top:13px;font-size:9px;color:var(--muted); }
+.map-categories span { display:flex;align-items:center;gap:5px; }
+.map-categories i { width:10px;height:10px;border-radius:2px;display:inline-block; }
+.map-categories .map-selected-swatch { background:transparent;border:2px solid #6d9223; }
+.footer-line { margin-top:2.1rem;border-top:1px solid var(--line);padding-top:1rem;display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:10px;line-height:1.7; }
+[data-testid="stCaptionContainer"] { color:var(--muted);font-size:11px; }
+[data-testid="stExpander"] { background:#ffffff85;border-color:var(--line);border-radius:10px; }
+[data-testid="stExpander"] summary { font-size:12px; }
+[data-testid="stDownloadButton"] button { border-color:#cbd7c3;border-radius:9px;font-size:12px; }
+@media (max-width:760px) {
+ [data-testid="stMainBlockContainer"] { padding:1rem 1rem 2rem; }
+ .hero { grid-template-columns:1fr;gap:1.3rem;padding-top:1.7rem; }
+ .hero h1 { font-size:37px; }
+ .hero-facts { gap:2rem; }
+ .hero-fact strong { font-size:22px; }
+ .edition { max-width:140px;text-align:right;line-height:1.45;font-size:10px; }
+ .brand { font-size:19px;gap:7px; }
+ .metric-grid { grid-template-columns:1fr 1fr;gap:9px; }
+ .metric-card { padding:15px 13px;min-height:125px; }
+ .metric-value { font-size:27px; }
+ .municipal-heading { align-items:flex-start;flex-direction:column;gap:10px; }
+ .municipal-heading h2 { font-size:29px !important; }
+ .heading-scores { width:100%;flex-wrap:wrap; }
+ .heading-score { flex:1;min-width:135px;padding:12px; }
+ [data-testid="stHorizontalBlock"] { flex-wrap:wrap; }
+ [data-testid="stColumn"] { flex:1 1 100% !important;min-width:100% !important;width:100% !important; }
+ [data-baseweb="tab-list"] { gap:1rem;overflow-x:auto; }
+ .st-key-comparar_dimensiones text.bartext { display:none; }
+ .footer-line { flex-direction:column;gap:5px; }
+}
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+
+/* Map-first home */
+[data-testid="stMainBlockContainer"] {max-width:1440px;padding:1.2rem 2rem 2.5rem;}
+[data-testid="stVerticalBlock"] {gap:.65rem;}
+.home-header {display:flex;justify-content:space-between;align-items:center;gap:16px;padding:6px 0 15px;}
+.home-header .brand {font-size:30px;letter-spacing:-1.2px;gap:0;}
+.home-header p {margin:4px 0 0;color:var(--muted);font-size:14px;}
+.home-badge {font-size:11px;color:var(--forest);background:#e8eee4;border:1px solid var(--line);padding:8px 12px;border-radius:30px;white-space:nowrap;}
+.st-key-search_panel {padding:12px 16px;margin:0;border-radius:12px;}
+.sheet-link {display:flex;align-items:center;justify-content:center;min-height:40px;background:var(--forest);color:white!important;border-radius:8px;text-decoration:none;font-size:13px;font-weight:600;transition:background .2s;}
+.sheet-link:hover {background:#285e50;}
+.map-topline {display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 12px 4px;}
+.map-topline strong {font-size:14px;display:block;}
+.map-topline span {font-size:11px;color:var(--muted);display:block;margin-top:3px;}
+.map-topline a {font-size:12px;color:var(--forest);font-weight:600;}
+.st-key-map_panel {background:#f1f4ef;border:1px solid var(--line);border-radius:16px;padding:4px 8px 8px;overflow:hidden;}
+.map-legend {max-width:680px;margin:auto;padding:0 12px 12px;}
+.map-scale {height:9px;border:0;}
+.map-categories {justify-content:center;font-size:10px;}
+#ficha-municipal, #resultados-personalizados {scroll-margin-top:20px;}
+.heading-score strong {font-size:25px;white-space:normal;}
+@media(max-width:760px) {
+ [data-testid="stMainBlockContainer"] {padding:.7rem .75rem 2rem;}
+ .home-header {align-items:flex-start;padding-bottom:8px;}
+ .home-header .brand {font-size:25px;}
+ .home-header p {font-size:12px;max-width:260px;}
+ .home-badge {display:none;}
+ .st-key-search_panel {padding:10px 12px;}
+ .map-topline {align-items:flex-start;flex-direction:column;gap:7px;}
+ .map-topline strong {font-size:13px;}
+ .map-scale-labels {font-size:9px;}
+}
+
+.metric-card.is-missing .metric-value {font-size:17px;line-height:1.4;letter-spacing:0;white-space:normal;}
+
+/* Reserve the selection headline even when long names wrap on a phone. */
+.map-topline a {height:2.8em;line-height:1.4;max-width:100%;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;align-content:center;}
+@media (prefers-reduced-motion: reduce) {
+  .sheet-link {transition:none;}
+  html {scroll-behavior:auto;}
+}
+
+/* Keep the native map toolbar inside the canvas instead of over its title. */
+.st-key-map_panel [data-testid="stDeckGlJsonChart"] [data-testid="stElementToolbar"] {top:8px;right:8px;}
+
+/* Independent identity and local, attributed municipal photography. */
+.home-header{border-bottom:1px solid var(--line);margin-bottom:16px;padding:6px 0 18px}
+.brand-lockup{display:flex;gap:13px;align-items:center}.brand-symbol{width:58px;height:52px;flex-shrink:0}
+.brand-lockup .brand{font-size:32px;line-height:1.15;letter-spacing:-1.3px}.brand-lockup p{margin:5px 0 0!important;font-size:13px!important}
+.municipal-cover{display:grid;grid-template-columns:minmax(220px,340px) minmax(0,1fr);gap:26px;align-items:center;margin:18px 0 24px}
+.municipal-cover .municipal-heading{display:flex;flex-wrap:wrap;gap:16px;margin:0;align-items:center}.municipal-cover h2{line-height:1.1}
+.municipal-photo{margin:0;min-width:0}.municipal-photo img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:14px;display:block;background:#e8eee4}
+.municipal-photo figcaption{font-size:9px;line-height:1.4;color:#61716b;margin-top:5px;overflow-wrap:anywhere}.municipal-photo figcaption a{color:inherit;text-decoration:none}.municipal-photo figcaption a:hover{text-decoration:underline}.municipal-photo figcaption span{display:block}
+.photo-fallback{aspect-ratio:16/9;border-radius:14px;background:linear-gradient(135deg,#e4edd9,#f1f5e9);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#173d35;padding:14px;text-align:center}.photo-fallback>span{font-size:30px;color:#6b853f}.photo-fallback small{font-size:11px;color:#61716b}.photo-pending{margin-top:10px;font-size:9px!important}
+@media(max-width:760px){.brand-symbol{width:45px;height:43px}.brand-lockup{gap:10px}.brand-lockup .brand{font-size:27px}.home-header{margin-bottom:12px;padding-bottom:13px}.municipal-cover{grid-template-columns:1fr;gap:15px}.municipal-photo img,.photo-fallback{max-height:220px}.municipal-cover .municipal-heading{align-items:flex-start}.municipal-cover h2{font-size:28px}.heading-scores{width:100%}}
+
+.brand-symbol{display:flex;flex-direction:column;align-items:center;justify-content:center;background:#c9434e;color:white;border-radius:14px;height:48px;gap:0}.brand-symbol{overflow:hidden}.brand-symbol > img{display:block;width:100%;height:100%;object-fit:contain;flex-shrink:0}
+@media(max-width:760px){.brand-symbol{height:43px;border-radius:12px}}
+
+/* Guided discovery and evidence use the existing independent identity. */
+.st-key-discovery_entry{margin:0 0 12px;padding:0}.discovery-invitation{display:flex;flex-direction:column;gap:3px}.discovery-invitation strong{font-size:14px}.discovery-invitation span{color:#61716b;font-size:12px}
+.st-key-open_assistant button{border:1px solid #173d35;background:#173d35;color:#ccf15b;border-radius:10px;min-height:43px}.st-key-open_assistant button:hover{background:#244f44;color:#e0ff82}
+.candidate-photo .municipal-photo img{aspect-ratio:16/9;max-height:180px}.candidate-summary h3{font-size:20px!important;margin:10px 0 5px!important}.candidate-summary>strong{font-size:28px;color:#173d35}.candidate-summary small{font-size:12px;color:#61716b}.candidate-summary p{font-size:11px;color:#61716b}.candidate-reasons{font-size:12px;line-height:1.6}.candidate-reasons ul{padding-left:18px}.candidate-reasons li{margin-bottom:8px}.candidate-anchor{font-size:12px;color:#173d35}
+.data-evidence{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:11px;color:#61716b;margin:0 0 9px}.data-evidence span:first-child{color:#173d35;background:#e8eee4;border-radius:30px;padding:4px 10px}.data-evidence span+span{padding-top:4px}
+.fit-card{height:100%;padding:16px 19px;border:1px solid #dce3d9;background:#edf3e6;border-radius:14px}.fit-card h4{font-size:14px;margin:0 0 9px}.fit-card ul{padding-left:18px;margin:0;font-size:12px;line-height:1.65}.fit-card li+li{margin-top:8px}.fit-consider{background:#f6f2e8}
+.connectivity-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.connectivity-grid>div{padding:15px;border:1px solid #dce3d9;border-radius:14px;background:white;display:flex;flex-direction:column;gap:6px}.connectivity-grid span{font-size:12px;color:#61716b}.connectivity-grid strong{font-size:25px;line-height:1.3}.connectivity-grid strong small{font-size:13px}.connectivity-grid>div>small{font-size:10px;color:#61716b}
+@media(max-width:760px){.st-key-discovery_entry [data-testid="stHorizontalBlock"]{gap:8px}.discovery-invitation span{font-size:11px}.connectivity-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.connectivity-grid>div{padding:12px}.connectivity-grid strong{font-size:23px}.fit-card{padding:14px}.data-evidence{gap:4px}.candidate-photo .municipal-photo img{max-height:220px}}
+
+.candidate-reasons li{font-size:13px!important;line-height:1.5!important}
+
+/* Citizen-facing home and municipal introductions. */
+#habita-inicio,#descubre-tu-municipio{scroll-margin-top:20px}
+.home-section-title{display:flex;align-items:center;gap:10px;position:relative;margin:10px 0 5px}.home-section-title h2,.discovery-heading h2{font-size:23px!important;margin:0;padding:0;line-height:1.3}
+.ranking-help summary{cursor:pointer;color:#173d35;font-size:23px;list-style:none;padding:8px}.ranking-help summary:focus-visible{outline:3px solid #6b893b;outline-offset:2px;border-radius:6px}.ranking-help[open] p{position:absolute;z-index:5;right:0;top:48px;width:min(440px,90vw);background:white;border:1px solid #b9c9b4;border-radius:12px;padding:16px;box-shadow:0 6px 20px #173d351a;font-size:14px}
+.st-key-home_top5{padding-top:12px;padding-bottom:22px;border-bottom:1px solid #dce3d9;margin-bottom:14px}.st-key-home_top5 [data-testid="stVerticalBlockBorderWrapper"]{height:100%}.top-photo .municipal-photo img{max-height:115px;aspect-ratio:16/9}.top-photo figcaption{font-size:10px;line-height:1.3}.top-summary h3{font-size:18px!important;line-height:1.25;min-height:2.5em;margin:8px 0!important}.top-summary>strong{font-size:27px;letter-spacing:-.6px;color:#173d35}.top-summary strong small{font-size:13px}.top-position{display:inline-block;font-size:12px;font-weight:650;background:#e8eee1;color:#294b2d;padding:3px 8px;border-radius:20px;margin-top:8px}.top-summary p{font-size:13px;line-height:1.5;min-height:4.5em;margin:8px 0}.mobile-carousel-hint{display:none}
+.discovery-heading{margin:16px 0 0}.discovery-heading p{font-size:15px;color:#50635b;margin:7px 0}.st-key-municipal_description{background:white;border:1px solid #dce3d9;border-radius:14px;padding:18px 20px;margin-bottom:12px}.st-key-municipal_description p{font-size:15px;line-height:1.65}
+.transport-lines{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:12px}.transport-line{padding:14px 16px;background:white;border:1px solid #dce3d9;border-radius:12px;display:flex;flex-direction:column;justify-content:space-between;gap:10px}.transport-line strong{font-size:15px;color:#173d35;display:block}.transport-line span{display:block;font-size:14px;line-height:1.5;margin-top:4px}.transport-line a{font-size:14px;color:#245d48;min-height:32px;display:flex;align-items:center}
+/* Readable body/controls, clear keyboard focus, and a non-colour map table. */
+[data-testid="stCaptionContainer"] p,.note-text,.quiet-strip,.data-evidence{font-size:13px!important;line-height:1.5!important;color:#4e6259}.metric-card .metric-label{font-size:13px}.metric-card .metric-detail{font-size:12px}.raw-item .raw-label{font-size:13px}.section-tag{font-size:12px}.heading-score span,.heading-score small{font-size:12px}.municipal-heading p{font-size:14px}.st-key-reset_application button,.st-key-close_municipal_sheet button{min-height:44px}.st-key-reset_application button{font-size:13px}.map-topline span,.map-topline a{font-size:13px}.map-scale-labels,.map-categories{font-size:12px}.map-categories i{flex-shrink:0}.map-categories{flex-wrap:wrap}.map-topline>span{font-size:13px;color:#50635b}
+@media(max-width:760px){.home-section-title h2,.discovery-heading h2{font-size:21px!important}.st-key-home_top5 [data-testid="stHorizontalBlock"]{flex-wrap:nowrap!important;overflow-x:auto;scroll-snap-type:x proximity;padding:2px 3px 10px;gap:12px!important}.st-key-home_top5 [data-testid="stColumn"]{flex:0 0 83vw!important;min-width:0!important;max-width:350px;scroll-snap-align:start}.top-photo .municipal-photo img{max-height:145px}.top-summary h3{min-height:0}.top-summary p{min-height:0}.mobile-carousel-hint{display:block;font-size:13px;color:#4e6259;margin:0 0 8px}.transport-lines{grid-template-columns:1fr}.home-header{margin-bottom:0}.home-badge{display:none}.brand-lockup .brand{font-size:25px}.brand-lockup p{font-size:12px!important}.municipal-cover .heading-scores{flex-wrap:wrap}.heading-score{min-width:140px;flex:1}.st-key-municipal_description{padding:14px}.transport-line a{min-height:44px}}
+@media(prefers-reduced-motion:reduce){.st-key-home_top5 [data-testid="stHorizontalBlock"]{scroll-behavior:auto}}
+.top-photo summary{font-size:11px;min-height:24px;padding:4px 0;cursor:pointer;color:#50635b}.top-photo details[open]>div{padding-top:4px}.top-photo summary:focus-visible{outline:3px solid #6b893b;border-radius:4px}
+
+/* Refined home and native, persistent navigation. All st-key selectors
+   refer to explicit application container keys, not generated CSS classes. */
+:root {--habita-nav-height:76px;}
+[data-testid="stMainBlockContainer"] {padding-top:calc(var(--habita-nav-height) + 18px);}
+.st-key-site_navigation {position:fixed;top:0;left:0;right:0;width:100%;z-index:999;
+ min-height:var(--habita-nav-height);padding:12px max(24px,calc((100vw - 1376px)/2));
+ box-sizing:border-box;background:#f5f7f2;border-bottom:1px solid var(--line);
+ box-shadow:0 3px 15px #173d3508;flex-wrap:nowrap!important;gap:14px!important;}
+.st-key-site_navigation button {font-size:13px;min-height:44px;border-radius:9px;}
+.st-key-desktop_navigation {justify-content:center;flex-wrap:nowrap!important;gap:2px!important;}
+.st-key-desktop_navigation button {padding:9px 10px;}
+.st-key-desktop_navigation button p {white-space:nowrap;}
+.st-key-mobile_navigation {display:none!important;}
+.nav-lockup {display:flex;align-items:center;gap:9px;color:var(--forest);white-space:nowrap;}
+.nav-lockup > span:last-child {font-size:23px;font-weight:700;letter-spacing:-.9px;}
+.nav-lockup strong {font-weight:450;}
+.nav-lockup .brand-symbol {width:40px;height:36px;flex:0 0 40px;border-radius:9px;}
+.view-start,#habita-inicio,#ficha-municipal,#descubre-tu-municipio,#resultados-personalizados {scroll-margin-top:calc(var(--habita-nav-height) + 20px);}
+.view-heading {padding:8px 0 18px;}
+.view-heading .eyebrow {margin-bottom:8px;}
+.view-heading h1 {font-size:clamp(27px,4vw,36px);font-weight:550;margin:0;padding:0;}
+.welcome-hero {display:grid;grid-template-columns:minmax(0,1fr) 250px;align-items:center;gap:64px;padding:32px 0 18px;}
+.welcome-hero h1 {font-size:clamp(34px,4.2vw,53px);line-height:1.09;letter-spacing:-1.8px;font-weight:550;max-width:760px;margin:0 0 18px;padding:0;}
+.welcome-hero h1 em {font-family:Georgia,'Times New Roman',serif;font-weight:400;}
+.welcome-intro {max-width:680px;color:#52675d;font-size:17px;line-height:1.65;margin:0;}
+.welcome-note {border-left:1px solid #cdd8c6;padding:6px 0 6px 30px;}
+.welcome-note > span {font-size:12px;color:var(--muted);}
+.welcome-note strong {display:block;font-size:66px;line-height:1.2;font-weight:450;letter-spacing:-3px;color:var(--forest);margin:8px 0;}
+.welcome-note p {font-size:14px;color:#52675d;margin:0;}
+.st-key-welcome_actions {gap:12px!important;padding-bottom:5px;}
+.st-key-welcome_actions button {min-height:46px;padding:10px 20px;border-radius:10px;}
+.welcome-trust {display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);margin:8px 0 36px;}
+.st-key-home_features {margin:8px 0 30px;}
+.home-feature {border-top:1px solid #cbd8c2;padding-top:16px;}
+.home-feature > span {font-size:11px;letter-spacing:.12em;color:#6a7c63;}
+.home-feature h3 {font-size:19px!important;font-weight:600;margin:10px 0 8px;}
+.home-feature p {font-size:14px;color:#52675d;line-height:1.65;min-height:70px;max-width:270px;margin:0;}
+.st-key-home_features button {min-height:44px;padding-left:0;font-size:13px;font-weight:600;}
+.st-key-home_ivp {border:1px solid var(--line);border-radius:16px;background:#edf2e7;padding:24px 28px;margin:0 0 28px;}
+.ivp-intro {display:grid;grid-template-columns:1fr 2.15fr;gap:36px;}
+.ivp-intro h2 {font-size:26px!important;font-weight:550;padding:0;margin:0;}
+.ivp-intro p {font-size:15px;line-height:1.65;margin:0 0 10px;}
+.ivp-intro .eyebrow {font-size:10px;margin-bottom:10px;}
+.ivp-intro p.ivp-secondary {font-size:13px;color:#52675d;margin-bottom:0;}
+.st-key-home_ivp button {min-height:44px;font-size:13px;padding-left:0;}
+.st-key-home_top5 {margin:0 0 25px;}
+.st-key-home_top5 .top-summary p {display:none;}
+.st-key-home_top5 .top-summary h3 {font-size:18px!important;line-height:1.25;min-height:45px;}
+.st-key-home_top5 .top-photo .municipal-photo img {height:124px;object-fit:cover;}
+.st-key-home_top5 .top-position {font-size:11px;}
+.st-key-home_top5 .top-summary strong {font-size:28px;}
+.st-key-home_top5 button {min-height:44px;}
+.st-key-home_sources {border-top:1px solid var(--line);padding-top:21px;margin-bottom:5px;}
+.home-source-note {display:flex;justify-content:space-between;align-items:start;gap:30px;}
+.home-source-note h3 {font-size:19px!important;margin:0 0 8px;}
+.home-source-note p {font-size:14px;color:#52675d;margin:0;max-width:690px;}
+.home-source-note > span {font-size:12px;line-height:1.6;color:var(--muted);text-align:right;min-width:180px;}
+.st-key-home_sources button {min-height:44px;font-size:13px;padding-left:0;}
+.sheet-empty {margin:30px auto;padding:32px 0;max-width:680px;text-align:center;}
+.sheet-empty h2 {font-size:28px!important;font-weight:550;}
+.sheet-empty p {color:var(--muted);}
+@media(max-width:1200px) {
+ .st-key-desktop_navigation {display:none!important;}
+ .st-key-mobile_navigation {display:block!important;flex:0 0 auto!important;}
+ .st-key-site_navigation {justify-content:space-between;}
+ .st-key-nav_identity {flex:1 1 auto!important;}
+}
+@media(max-width:760px) {
+ :root {--habita-nav-height:68px;}
+ [data-testid="stMainBlockContainer"] {padding:calc(var(--habita-nav-height) + 10px) 16px 30px;}
+ .st-key-site_navigation {padding:10px 12px;gap:7px!important;align-items:center!important;}
+ .st-key-site_navigation > * {min-width:0!important;}
+ .st-key-nav_identity {width:auto!important;max-width:none!important;}
+ .nav-lockup {gap:6px;}
+ .nav-lockup > span:last-child {font-size:20px;}
+ .nav-lockup .brand-symbol {width:36px;height:34px;flex-basis:36px;border-radius:8px;}
+ .st-key-site_navigation button {padding:8px;font-size:12px;}
+ .welcome-hero {grid-template-columns:1fr;gap:0;padding:22px 0 14px;}
+ .welcome-hero h1 {font-size:36px;letter-spacing:-1.1px;margin-bottom:14px;}
+ .welcome-intro {font-size:15px;line-height:1.6;}
+ .welcome-note {display:none;}
+ .st-key-welcome_actions {flex-direction:column;align-items:stretch;gap:8px!important;}
+ .st-key-welcome_actions > *,.st-key-welcome_actions button {width:100%!important;}
+ .welcome-trust {font-size:11px;line-height:1.6;margin:8px 0 24px;}
+ .st-key-home_features {margin:4px 0 20px;}
+ .st-key-home_features [data-testid="stHorizontalBlock"] {display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 16px!important;}
+ .st-key-home_features [data-testid="stColumn"] {width:100%!important;min-width:0!important;max-width:none!important;}
+ .home-feature {padding-top:12px;}
+ .home-feature h3 {font-size:17px!important;min-height:42px;margin:8px 0 4px;}
+ .home-feature p {font-size:13px;min-height:100px;}
+ .st-key-home_features button {font-size:12px;text-align:left;}
+ .st-key-home_ivp {padding:19px 18px;margin-bottom:20px;}
+ .ivp-intro {grid-template-columns:1fr;gap:14px;}
+ .ivp-intro h2 {font-size:24px!important;}
+ .ivp-intro p {font-size:14px;}
+ .st-key-home_top5 [data-testid="stHorizontalBlock"] {display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible!important;gap:12px!important;padding:0;}
+ .st-key-home_top5 [data-testid="stColumn"] {width:100%!important;min-width:0!important;max-width:none!important;flex:initial!important;}
+ .st-key-home_top5 .top-photo .municipal-photo img {height:104px;max-height:none;}
+ .st-key-home_top5 .top-summary h3 {font-size:16px!important;min-height:40px;overflow-wrap:anywhere;}
+ .st-key-home_top5 .top-summary strong {font-size:25px;}
+ .st-key-home_top5 .top-summary {padding:0;}
+ .home-source-note {display:block;}
+ .home-source-note > span {display:block;text-align:left;margin-top:12px;font-size:11px;}
+ .home-source-note p {font-size:13px;}
+ .view-heading {padding-bottom:8px;}
+}
+
+/* Collapse native layout wrappers as well as their keyed content on mobile. */
+@media(min-width:1201px) {
+ .st-key-site_navigation > :has(.st-key-mobile_navigation) {display:none!important;}
+}
+@media(max-width:1200px) {
+ .st-key-site_navigation > :has(.st-key-desktop_navigation) {display:none!important;}
+ .st-key-site_navigation > :has(.st-key-mobile_navigation) {display:flex!important;flex:0 0 auto!important;width:auto!important;}
+ .st-key-site_navigation > :has(.st-key-nav_identity) {flex:1 1 auto!important;width:auto!important;min-width:0!important;}
+}

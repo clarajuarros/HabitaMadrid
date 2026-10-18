@@ -1,0 +1,40 @@
+{
+  "estado_revision": "completada",
+  "decision": "conservar_ivp_principal",
+  "interpretacion": "La descomposición distingue cambios aritméticos; no mide efectos causales.",
+  "criterio": "No se ha acreditado que la propuesta mida mejor las condiciones residenciales. Los diagnósticos numéricos no son umbrales de aceptación automática.",
+  "motivos": [
+    "El cociente agregado no representa esfuerzo individual de los inquilinos.",
+    "La nueva variable comparte información de alquiler con el indicador de coste.",
+    "La coincidencia temporal exige usar 2023 frente al alquiler vigente de 2024.",
+    "La cobertura y la clasificación cambian; eso por sí solo no acredita una mejora."
+  ],
+  "resumen": {
+    "VC": {
+      "muestra_descomposicion": 110,
+      "muestra_mismo_anio": 111,
+      "cambio_max_puesto_solo_indicador": 22,
+      "muestra_pesos_moderados": 111,
+      "rango_max_puesto_pesos_moderados": 44,
+      "rango_mediano_puesto_pesos_moderados": 5.0,
+      "top5_comunes_tres_pesos": 3,
+      "observaciones_2023_fuera_anclas_2024": 0,
+      "media_abs_efecto_anio": 1.0090811381476197,
+      "media_abs_efecto_referencias": 0.48592434842153837,
+      "media_abs_efecto_indicador": 1.1453366437291952
+    },
+    "VU": {
+      "muestra_descomposicion": 139,
+      "muestra_mismo_anio": 139,
+      "cambio_max_puesto_solo_indicador": 19,
+      "muestra_pesos_moderados": 139,
+      "rango_max_puesto_pesos_moderados": 34,
+      "rango_mediano_puesto_pesos_moderados": 5.0,
+      "top5_comunes_tres_pesos": 4,
+      "observaciones_2023_fuera_anclas_2024": 1,
+      "media_abs_efecto_anio": 1.2769210675395555,
+      "media_abs_efecto_referencias": 1.7025009968255567,
+      "media_abs_efecto_indicador": 0.7772991379144217
+    }
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "license_title": "Creative Commons Attribution",
+  "maintainer": null,
+  "relationships_as_object": [],
+  "private": false,
+  "maintainer_email": null,
+  "num_tags": 9,
+  "id": "86ed5966-29e2-4943-a749-dfad2f6879cb",
+  "metadata_created": "2026-06-19T16:38:40.988226",
+  "metadata_modified": "2026-10-15T16:42:05.965541",
+  "author": null,
+  "author_email": null,
+  "state": "active",
+  "version": null,
+  "creator_user_id": "1b0067e9-eb08-424a-819a-709640541b70",
+  "type": "dataset",
+  "resources": [
+    {
+      "mimetype": "text/csv",
+      "cache_url": null,
+      "name": "Valor tasado de la vivienda, por municipio (mayores de 25.000 habitantes) y antigüedad. Comunidad de Madrid.csv",
+      "hash": "",
+      "description": "Valor tasado de la vivienda, por municipio (mayores de 25.000 habitantes) y antigüedad. Comunidad de Madrid.csv",
+      "metadata_modified": "2026-10-15T16:42:05.117872",
+      "cache_last_updated": null,
+      "url": "https://datos.comunidad.madrid/dataset/86ed5966-29e2-4943-a749-dfad2f6879cb/resource/b45a10a0-a8d3-44a3-939d-b020a752a1c5/download/extraccionesvalor-tasado-de-la-vivienda-por-municipio-mayores-de-25.000-habitantes-y-antiguedad..csv",
+      "datastore_active": true,
+      "format": "CSV",
+      "package_id": "86ed5966-29e2-4943-a749-dfad2f6879cb",
+      "created": "2026-06-19T16:38:44.069149",
+      "state": "active",
+      "mimetype_inner": null,
+      "last_modified": "2026-10-15T16:42:05.102887",
+      "position": 0,
+      "url_type": "upload",
+      "id": "b45a10a0-a8d3-44a3-939d-b020a752a1c5",
+      "resource_type": null,
+      "size": 1135717
+    },
+    {
+      "mimetype": "application/json",
+      "cache_url": null,
+      "name": "Valor tasado de la vivienda, por municipio (mayores de 25.000 habitantes) y antigüedad. Comunidad de Madrid.json",
+      "hash": "",
+      "description": "Valor tasado de la vivienda, por municipio (mayores de 25.000 habitantes) y antigüedad. Comunidad de Madrid.json",
+      "metadata_modified": "2026-10-15T16:42:05.971095",
+      "cache_last_updated": null,
+      "url": "https://datos.comunidad.madrid/dataset/86ed5966-29e2-4943-a749-dfad2f6879cb/resource/269f4c05-9645-4c17-91a9-5f6a955cb4d8/download/extraccionesvalor-tasado-de-la-vivienda-por-municipio-mayores-de-25.000-habitantes-y-antiguedad.json",
+      "datastore_active": false,
+      "format": "JSON",
+      "package_id": "86ed5966-29e2-4943-a749-dfad2f6879cb",
+      "created": "2026-06-19T16:38:44.608874",
+      "state": "active",
+      "mimetype_inner": null,
+      "last_modified": "2026-10-15T16:42:05.957583",
+      "position": 1,
+      "url_type": "upload",
+      "id": "269f4c05-9645-4c17-91a9-5f6a955cb4d8",
+      "resource_type": null,
+      "size": 2832303
+    }
+  ],
+  "num_resources": 2,
+  "tags": [
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Comunidad de Madrid",
+      "id": "2796f362-1294-4160-a4f9-b49fc4974568",
+      "name": "Comunidad de Madrid"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Construcción y Vivienda",
+      "id": "5ecde111-75b9-4f89-a23c-a4f10e059f6c",
+      "name": "Construcción y Vivienda"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Hasta 5 años de antigüedad",
+      "id": "5dd6f18d-31f9-4747-8215-e060bffc5854",
+      "name": "Hasta 5 años de antigüedad"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Más de 5 años de antigüedad",
+      "id": "31ccbb70-88fd-4e18-87ec-fa52669a2acc",
+      "name": "Más de 5 años de antigüedad"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "PRODUCCIÓN DEMANDA Y ACTIVIDAD",
+      "id": "402dfca0-d1f5-41c5-8aaf-9ef0101c1eae",
+      "name": "PRODUCCIÓN DEMANDA Y ACTIVIDAD"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Precios",
+      "id": "b6696213-ce84-42e9-8959-627100593681",
+      "name": "Precios"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Tasaciones de vivienda y valor tasado",
+      "id": "f43c25e7-af03-456e-9fca-1dc3ebe10436",
+      "name": "Tasaciones de vivienda y valor tasado"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Total",
+      "id": "4d9a32e2-536a-4edd-a02d-9956cbfa2794",
+      "name": "Total"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Valor tasado vivienda libre municipios mayores de 25.000 habitantes",
+      "id": "dc1c99e8-dcb9-434a-aa38-fd43b8ab802f",
+      "name": "Valor tasado vivienda libre municipios mayores de 25.000 habitantes"
+    }
+  ],
+  "groups": [
+    {
+      "display_name": "Economía",
+      "description": "Incluye: Deuda, Moneda y Banca y finanzas.",
+      "image_display_url": "https://datos.comunidad.madrid/recursos/grupos/6.png",
+      "title": "Economía",
+      "id": "economia",
+      "name": "economia"
+    }
+  ],
+  "license_id": "cc-by",
+  "relationships_as_subject": [],
+  "organization": {
+    "description": "Instituto de Estadística de la Comunidad de Madrid",
+    "title": "Instituto de Estadística",
+    "created": "2025-06-02T09:53:23.552735",
+    "approval_status": "approved",
+    "is_organization": true,
+    "state": "active",
+    "image_url": "",
+    "type": "organization",
+    "id": "estadistica",
+    "name": "estadistica"
+  },
+  "name": "valor_tasado_vivienda_municipio_antiguedad",
+  "isopen": true,
+  "url": null,
+  "notes": "Si no hay dato hasta el último trimestre actualizado o hay un guion, el dato no es significativo o no existen observaciones.",
+  "owner_org": "estadistica",
+  "extras": [
+    {
+      "key": "Fecha Actualización",
+      "value": "06-10-2026"
+    },
+    {
+      "key": "Fuente",
+      "value": "Estadística de Valor Tasado de la Vivienda. Ministerio de Transportes, Movilidad y Agenda Urbana. Estadística del Valor Tasado de la Vivienda. Ministerio de Transportes, Movilidad y Agenda Urbana"
+    },
+    {
+      "key": "Origen",
+      "value": "Baco"
+    },
+    {
+      "key": "Unidad",
+      "value": "Euros/m2, Sin unidad"
+    },
+    {
+      "key": "Ámbito",
+      "value": "Municipio"
+    }
+  ],
+  "license_url": "https://creativecommons.org/licenses/by/4.0/legalcode.es",
+  "title": "Valor tasado de la vivienda, por municipio (mayores de 25.000 habitantes) y antigüedad. Comunidad de Madrid"
+}

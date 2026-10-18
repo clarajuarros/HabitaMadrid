@@ -1,0 +1,65 @@
+# HabitaMadrid
+
+Encuentra el municipio de la Comunidad de Madrid que mejor encaja contigo.
+HabitaMadrid es una plataforma independiente en Python y Streamlit para explorar y comparar los **155 municipios de hasta 50.000 habitantes**. El mapa conserva los 179 términos municipales como contexto.
+
+## Qué puedes hacer
+
+- Explorar el mapa, buscar municipios y abrir sus fichas con fotografías reales.
+- Consultar servicios educativos, sanitarios, transporte, población y vivienda.
+- Adaptar las prioridades del IVP, completar el cuestionario y comparar hasta tres municipios.
+- Localizar servicios y consultar rutas orientativas, horarios publicados y enlaces a las fuentes.
+- Descargar resultados e informes y compartir una selección.
+
+## Metodología
+
+El Índice de Vida Ponderado (IVP) combina sanidad, educación, transporte y vivienda. El índice general asigna la misma importancia a las cuatro dimensiones. La edición activa es **1.0.0**; las ausencias de datos se conservan y no se sustituyen por ceros. Es una herramienta orientativa, no una medida absoluta de calidad de vida.
+
+La ampliación de vivienda incluye contexto y una propuesta separada de revisión. Permanece marcada como `propuesta_no_activada` y no sustituye al IVP general. Las fuentes, unidades, periodos y limitaciones se muestran en «Cómo se calcula y fuentes» y en la pestaña Vivienda.
+
+## Ejecutar
+
+Requiere Python **3.14**. Desde la raíz del repositorio:
+
+```bash
+python3.14 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python -m streamlit run app.py
+```
+
+En Windows, activa el entorno con `.venv\Scripts\activate`. No se necesitan claves API para la consulta normal. Los mapas y rutas requieren acceso a Internet para sus servicios externos.
+
+```bash
+python -m unittest discover -s tests
+```
+
+## Estructura y datos elaborados
+
+- `app.py`: entrada de la aplicación.
+- `src/`: navegación, interfaz, lectores y cálculos.
+- `assets/`: estilos, identidad de siete estrellas y Leaflet con su licencia.
+- `data/processed/`: tablas municipales, IVP, geometrías y vivienda elaboradas.
+- `data/reference/`: fotografías con atribución, descripciones, centros urbanos y horarios.
+- `data/runtime_snapshot.json`: tamaños y SHA-256 de los datos desplegados.
+- `data/runtime_provenance.json`: referencias y huellas de la cadena de preparación verificada al exportar.
+- `docs/`: despliegue, inventario de fuentes y condiciones de reutilización.
+- `tests/`: comprobaciones de la edición distribuida.
+
+La copia de ejecución contiene los datos consumidos por la web. Los archivos brutos, páginas descargadas, entornos virtuales y archivos intermedios de investigación permanecen en el proyecto de preparación. No se ejecutan procesos de recopilación al arrancar el servidor. Las tablas de cálculo se conservan byte por byte. En el catálogo de fuentes se reemplazan únicamente los prefijos de rutas personales por rutas relativas.
+
+Las huellas detectan alteraciones o archivos ausentes; no constituyen una firma digital ni una prueba independiente de autenticidad. Las fuentes conservan sus fechas: el servicio no es información en tiempo real.
+
+## Fuentes y condiciones
+
+Comunidad de Madrid, INE, CRTM, IGN y MIVAU/SERPAVI, además de las fotografías atribuidas individualmente en `data/reference/municipality_photos/catalog.json`. Consulta `docs/FUENTES_Y_LICENCIAS.md` antes de redistribuir.
+
+**[Powered by CRTM](https://www.crtm.es/)**. Información de transporte elaborada a partir de datos del CRTM. Los centros urbanos incluyen obra derivada del IGN, Nomenclátor Geográfico Básico de España. HabitaMadrid no es una herramienta oficial ni implica patrocinio de estos organismos.
+
+Los datos y recursos de terceros conservan sus propias condiciones. Esta preparación no concede automáticamente una licencia abierta al código original de HabitaMadrid.
+
+## Despliegue y actualizaciones
+
+Preparado para Streamlit Community Cloud: rama `main`, archivo `app.py`, Python 3.14. Consulta `docs/DESPLIEGUE.md`. Los nuevos commits en la rama desplegada se aplican mediante el mecanismo de actualización del proveedor.
+
+**Web pública:** pendiente de publicación y verificación. No existe todavía una URL pública confirmada ni un código QR definitivo.

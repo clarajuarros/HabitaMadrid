@@ -1,0 +1,159 @@
+{
+  "license_title": "Creative Commons Attribution",
+  "maintainer": null,
+  "relationships_as_object": [],
+  "private": false,
+  "maintainer_email": null,
+  "num_tags": 7,
+  "id": "4c5a6c8b-fdf7-4e20-a92d-92c119571fc6",
+  "metadata_created": "2026-06-04T16:31:33.822359",
+  "metadata_modified": "2026-08-06T16:42:06.256842",
+  "author": null,
+  "author_email": null,
+  "state": "active",
+  "version": null,
+  "creator_user_id": "1b0067e9-eb08-424a-819a-709640541b70",
+  "type": "dataset",
+  "resources": [
+    {
+      "mimetype": "text/csv",
+      "cache_url": null,
+      "name": "Índice de precios de la vivienda en alquiler por municipios mayores de 10.000 habitantes (Base 2015). Municipios.csv",
+      "hash": "",
+      "description": "Índice de precios de la vivienda en alquiler por municipios mayores de 10.000 habitantes (Base 2015). Municipios.csv",
+      "metadata_modified": "2026-06-04T16:31:34.565477",
+      "cache_last_updated": null,
+      "url": "https://datos.comunidad.madrid/dataset/4c5a6c8b-fdf7-4e20-a92d-92c119571fc6/resource/71a7d332-7298-4347-ab43-7471c1d7f9c3/download/indice-de-precios-de-la-vivienda-en-alquiler-por-municipios-mayores-de-10.000-habitantes-base-20.csv",
+      "datastore_active": true,
+      "format": "CSV",
+      "package_id": "4c5a6c8b-fdf7-4e20-a92d-92c119571fc6",
+      "created": "2026-06-04T16:31:34.101179",
+      "state": "active",
+      "mimetype_inner": null,
+      "last_modified": "2026-06-04T16:31:34.065657",
+      "position": 0,
+      "url_type": "upload",
+      "id": "71a7d332-7298-4347-ab43-7471c1d7f9c3",
+      "resource_type": null,
+      "size": 124546
+    },
+    {
+      "mimetype": "application/json",
+      "cache_url": null,
+      "name": "Índice de precios de la vivienda en alquiler por municipios mayores de 10.000 habitantes (Base 2015). Municipios.json",
+      "hash": "",
+      "description": "Índice de precios de la vivienda en alquiler por municipios mayores de 10.000 habitantes (Base 2015). Municipios.json",
+      "metadata_modified": "2026-08-06T16:42:06.262283",
+      "cache_last_updated": null,
+      "url": "https://datos.comunidad.madrid/dataset/4c5a6c8b-fdf7-4e20-a92d-92c119571fc6/resource/f51466a3-a59a-4192-87e8-117ce08265da/download/indice-de-precios-de-la-vivienda-en-alquiler-por-municipios-mayores-de-10.000-habitantes-base-2.json",
+      "datastore_active": false,
+      "format": "JSON",
+      "package_id": "4c5a6c8b-fdf7-4e20-a92d-92c119571fc6",
+      "created": "2026-06-04T16:31:34.587476",
+      "state": "active",
+      "mimetype_inner": null,
+      "last_modified": "2026-06-04T16:31:34.548215",
+      "position": 1,
+      "url_type": "upload",
+      "id": "f51466a3-a59a-4192-87e8-117ce08265da",
+      "resource_type": null,
+      "size": 432453
+    }
+  ],
+  "num_resources": 2,
+  "tags": [
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "IPVA Índice de Precios Vivienda en Alquiler",
+      "id": "5c25fd18-7c10-4090-9ce0-fd747c421a42",
+      "name": "IPVA Índice de Precios Vivienda en Alquiler"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Precios",
+      "id": "b6696213-ce84-42e9-8959-627100593681",
+      "name": "Precios"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Urbanismo vivienda y construcción",
+      "id": "45efe5ac-3719-417f-8336-d6801e162936",
+      "name": "Urbanismo vivienda y construcción"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Valor tasado de la vivienda",
+      "id": "d481fb84-25ba-4598-80eb-1cb2586536cf",
+      "name": "Valor tasado de la vivienda"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Vivienda",
+      "id": "01c23458-1407-4ac4-9ef9-298f1e0ec8d8",
+      "name": "Vivienda"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Índice de precios",
+      "id": "aa3c639b-1742-4c73-b438-cb1a09bc7814",
+      "name": "Índice de precios"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Índice de precios de la vivienda en alquiler por municipios mayores de 10.000 habitantes Base 2015",
+      "id": "ba1b1ab6-829a-4b54-bf46-336f8828ede7",
+      "name": "Índice de precios de la vivienda en alquiler por municipios mayores de 10.000 habitantes Base 2015"
+    }
+  ],
+  "groups": [],
+  "license_id": "cc-by",
+  "relationships_as_subject": [],
+  "organization": {
+    "description": "Instituto de Estadística de la Comunidad de Madrid",
+    "created": "2025-06-02T09:53:23.552735",
+    "title": "Instituto de Estadística",
+    "name": "estadistica",
+    "is_organization": true,
+    "state": "active",
+    "image_url": "",
+    "type": "organization",
+    "id": "estadistica",
+    "approval_status": "approved"
+  },
+  "name": "1934445",
+  "isopen": true,
+  "url": null,
+  "notes": "Los municicios con menos de 10.000 habitantes de cada provincia están agrupados en una única categoría sin municipio asignado.",
+  "owner_org": "estadistica",
+  "extras": [
+    {
+      "key": "Fecha Actualización",
+      "value": "02-06-2026"
+    },
+    {
+      "key": "Fuente",
+      "value": "Estadística experimental. Índice de Precios de la Vivienda en Alquiler (IPVA). INE."
+    },
+    {
+      "key": "Origen",
+      "value": "Almudena"
+    },
+    {
+      "key": "Unidad",
+      "value": "Índice"
+    },
+    {
+      "key": "Ámbito",
+      "value": "Municipal y zonas estadísticas / Comunidad de Madrid"
+    }
+  ],
+  "license_url": "https://creativecommons.org/licenses/by/4.0/legalcode.es",
+  "title": "Índice de precios de la vivienda en alquiler por municipios mayores de 10.000 habitantes (Base 2015). Municipios"
+}

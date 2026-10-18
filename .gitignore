@@ -1,0 +1,30 @@
+# Python environments and generated files
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.uv-cache/
+.tools/
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+.streamlit/public_url.txt
+*.pem
+*.key
+# Local caches and packages
+data/cache/
+entrega/
+dist/
+build/
+*.egg-info/
+# Editors and macOS
+.vscode/
+.idea/
+.DS_Store
+.AppleDouble
+*~

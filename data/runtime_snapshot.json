@@ -1,0 +1,1032 @@
+{
+  "schema": 1,
+  "ivp_version": "1.0.0",
+  "phases": {
+    "2": {
+      "fase": 2,
+      "generado_utc": "2026-10-15T09:45:10.131730+00:00",
+      "archivos": {
+        "maestro_municipios.csv": {
+          "sha256": "ce0388c6be823b4b904b9eb3e69df6d066053c60a16473583da0067bbbcef287",
+          "bytes": 21854
+        }
+      }
+    },
+    "3": {
+      "fase": 3,
+      "generado_utc": "2026-10-15T10:15:56.952646+00:00",
+      "archivos": {
+        "evolucion_poblacion.csv": {
+          "sha256": "7944b59777d9d5fe59d5831f4793464b9ea60378f54291654f6c4e78ec946c6b",
+          "bytes": 783800
+        },
+        "transporte_rutas.csv": {
+          "sha256": "86841c7a8822bf84b1a3a94378ca6f2d4c30be9f9c92a7d0f9b0e96042133f51",
+          "bytes": 94215
+        },
+        "transporte_rutas_paradas.csv": {
+          "sha256": "0e3254d19b59edfd90fadcbc0a22c8a5cafe0bcb44f9c8fdaa003abddae41e5e",
+          "bytes": 4032223
+        },
+        "vivienda_historico.csv": {
+          "sha256": "de03b3030a4f7f4d424f091143b88fdd0ff5d42df8e37c992e830b86bd45c9ff",
+          "bytes": 3317806
+        }
+      }
+    },
+    "4": {
+      "fase": 4,
+      "generado_utc": "2026-10-15T14:02:33.748167+00:00",
+      "archivos": {
+        "catalogo_servicios_geograficos.csv": {
+          "sha256": "d9127ad3e0c55b0ee3679b07476e0b30486e7be9343b1196e7a55afb6739953e",
+          "bytes": 3652506
+        },
+        "centros_educativos_geografia.csv": {
+          "sha256": "a7abb359e28718f05fc58298b531cc44e443e800d960210bf90c8b2bdaaf3c06",
+          "bytes": 2538158
+        },
+        "jurisdicciones_compartidas.geojson": {
+          "sha256": "4482117b62df4b9809bc6fc6ab250ef60767f2ae5db6e808c571f6a00b4dabaa",
+          "bytes": 4603
+        },
+        "limites_municipales.geojson": {
+          "sha256": "3375173a0025217b2ff4baac564cebb7b092a91347f66854a34a2c71ae42a17b",
+          "bytes": 4291876
+        },
+        "origenes_municipales.csv": {
+          "sha256": "46fea95ca6f269276f9d9176b1ab6ad145c044d3b7b71f1c6c994fb932314073",
+          "bytes": 34674
+        },
+        "origenes_municipales.geojson": {
+          "sha256": "7b2d7021537c1976ab708ef52edf96e80a950ce3f2c95783c8b2ca6171faab77",
+          "bytes": 90832
+        },
+        "paradas_geolocalizadas.csv": {
+          "sha256": "e2653ac951ced58e4af48aa699c14493e314a8dbee27b26b66c77184b78d0449",
+          "bytes": 5352905
+        }
+      }
+    },
+    "5": {
+      "fase": 5,
+      "generado_utc": "2026-10-15T14:18:16.206319+00:00",
+      "archivos": {
+        "catalogo_indicadores.csv": {
+          "sha256": "be3af8d2d6b88f0afea2460d5f6cd1408a3cd8348b45b70daab752e18c46b97e",
+          "bytes": 24067
+        },
+        "demografia_componentes.csv": {
+          "sha256": "fba76e50ea85cfa0bfd2d49a90cf9fa3ea5a6d6e8b5b7b3a9749f6e48b3ef3b7",
+          "bytes": 425658
+        },
+        "fuentes_indicadores.csv": {
+          "sha256": "b8e24a0f8cbe024e93016d5ae661941ee388eff7e04b9c6edaae24cdf67c72ae",
+          "bytes": 7009
+        },
+        "indicadores_municipales.csv": {
+          "sha256": "ffc75c4ce120908c7b36df786076886d48536d80a11cc11b0f09e9885103a380",
+          "bytes": 7247850
+        }
+      }
+    },
+    "6": {
+      "fase": 6,
+      "generado_utc": "2026-10-15T14:38:02.103596+00:00",
+      "sanidad": {
+        "usable": true,
+        "indicador_id": "distancia_atencion_primaria_directorio_m",
+        "fuente": "cm_directorio_atencion_primaria",
+        "periodo": "consulta_2026-10-15",
+        "registros_directorio": 431,
+        "categorias": {
+          "centro_salud": 268,
+          "consultorio": 163
+        },
+        "destinos_validos": 425,
+        "municipios_destinos_validos": 179,
+        "municipios_elegibles_con_punto": 155,
+        "destinos_fuera_ambito": 6,
+        "destinos_regionales_sin_resolver": 0,
+        "bloqueos": [],
+        "regla_global": "Cualquier instalación regional con ubicación inválida o contradictoria impide usar todas las distancias en IVP.",
+        "crs_evidencia": "Las fichas oficiales declaran schema.org/GeoCoordinates, latitude/longitude WGS84; se exige igualdad con el mapa Leaflet.",
+        "crs_fuente_documentacion": "https://schema.org/GeoCoordinates",
+        "crs_calculo": "EPSG:25830",
+        "municipios_con_estadistica_mayor": 0,
+        "limitaciones": "Directorio de centros de salud y consultorios; no prueba apertura, atención asignada, horarios, capacidad o calidad. Se excluyen puntos exteriores a los 179 municipios.",
+        "reparaciones_geograficas": 2,
+        "reparaciones": [
+          {
+            "servicio_id": "cm_directorio:5223",
+            "metodo": "idem_url_ficha_exacta",
+            "url_ficha": "https://www.comunidad.madrid/centros/centro-salud-soto-real",
+            "fuente_url": "https://idem.comunidad.madrid/ags/rest/services/Hosted/Centros_de_Salud/FeatureServer/0/query?where=fid%3D248&outFields=%2A&returnGeometry=true&outSR=4326&f=geojson",
+            "sha256_archivo": "c5fa31a04f4a44e8b5f991e6c3e9018805bd5ee4351b589e683605f6b94caea2",
+            "latitud_original": 40.4165972,
+            "longitud_original": -3.5810825999999,
+            "latitud_calculo": 40.751110588000074,
+            "longitud_calculo": -3.787751397999955,
+            "direccion_fuente": "Calle Cristal 2, Soto del Real",
+            "alertas_json": "[\"Mapa de Libre Elección2288 coincide con el error de la ficha y no se utiliza.\"]"
+          },
+          {
+            "servicio_id": "cm_directorio:5348",
+            "metodo": "libre_eleccion_enlace_ficha_exacto",
+            "url_ficha": "https://www.comunidad.madrid/centros/consultorio-cenicientos",
+            "fuente_url": "https://www.libreeleccion.sanidadmadrid.org/Seleccione/CentroAtencionPrimaria.aspx/2409",
+            "sha256_archivo": "91587e843c08bf7f40ca0acd20f90d231a46ab7336bb79b586a474a0d0f787a4",
+            "latitud_original": 40.3968729,
+            "longitud_original": -3.7720748,
+            "latitud_calculo": 40.2656346,
+            "longitud_calculo": -4.468762,
+            "direccion_fuente": "CALLE DE LA PLAZA DE LOS CAÑOS,15; CENICIENTOS;28650",
+            "alertas_json": "[\"Dirección de Libre Elección distinta a Avda. Claudio Sánchez Albornoz1 en ficha general CM. Se conserva discrepancia; no se asume que sean el mismo inmueble.\", \"BOCM20210922-11, CS9731, corroboró en2021 autorización de consultorio de Cenicientos en Plaza Caños15; no prueba que ubicación o apertura no hayan cambiado.\"]"
+          }
+        ],
+        "apto_para_proxy_ivp": true,
+        "decision_publicacion": "Se utiliza la proximidad al directorio oficial revisado de centros de salud y consultorios. No mide hospital, asignación, calidad, horarios o tiempo de acceso."
+      },
+      "archivos": {
+        "configuracion_ivp.json": {
+          "sha256": "5db391dc99257fddba722e16907e57e60fbeeed2dce710b5be1175a140e3d2a6",
+          "bytes": 1454
+        },
+        "dimensiones_ivp.csv": {
+          "sha256": "6f6255e0cf386cefde53c62fa9e6e946c3f2716a94330df8b2830da6501204fc",
+          "bytes": 80225
+        },
+        "ivp_general.csv": {
+          "sha256": "cd50500917fe5fe0901d8c6a066ea2094dbd32d48c5453286734d6903f4b12f9",
+          "bytes": 107045
+        },
+        "normalizacion.json": {
+          "sha256": "83e36f2b1c258349136c29d18f899c7fe060ab536f3d08301d7e0df4bc7e528e",
+          "bytes": 29273
+        },
+        "observaciones_seleccionadas.csv": {
+          "sha256": "e0c04688d6b68a9901f87d1db7400539c39180cf10159e640663b379d87f1394",
+          "bytes": 1606447
+        },
+        "sanidad_catalogo_revisado.csv": {
+          "sha256": "decf49a0ee0f87325931ea6dfc0908c91cafa4ca9164525b34d917238c904b9b",
+          "bytes": 228436
+        },
+        "seleccion_indicadores.csv": {
+          "sha256": "4042bc96bc262985bb202398a8b56b8e075252b79ec5a63faebd67856d7d6fed",
+          "bytes": 3130
+        },
+        "sensibilidad_escenarios.csv": {
+          "sha256": "f1e87213c7314a92abe078347833e1a33576b35d250b66c6d5fa8c421f55a368",
+          "bytes": 1006092
+        },
+        "sensibilidad_municipios.csv": {
+          "sha256": "78c93cfcd2874d49cc1060a5660ca30e040f76eeff5ad18b9b6b30710327d3b2",
+          "bytes": 10939
+        }
+      }
+    }
+  },
+  "files": {
+    "data/processed/geografia/catalogo_servicios_geograficos.csv": {
+      "sha256": "d9127ad3e0c55b0ee3679b07476e0b30486e7be9343b1196e7a55afb6739953e",
+      "bytes": 3652506
+    },
+    "data/processed/geografia/centros_educativos_geografia.csv": {
+      "sha256": "a7abb359e28718f05fc58298b531cc44e443e800d960210bf90c8b2bdaaf3c06",
+      "bytes": 2538158
+    },
+    "data/processed/geografia/jurisdicciones_compartidas.geojson": {
+      "sha256": "4482117b62df4b9809bc6fc6ab250ef60767f2ae5db6e808c571f6a00b4dabaa",
+      "bytes": 4603
+    },
+    "data/processed/geografia/limites_municipales.geojson": {
+      "sha256": "3375173a0025217b2ff4baac564cebb7b092a91347f66854a34a2c71ae42a17b",
+      "bytes": 4291876
+    },
+    "data/processed/geografia/origenes_municipales.csv": {
+      "sha256": "46fea95ca6f269276f9d9176b1ab6ad145c044d3b7b71f1c6c994fb932314073",
+      "bytes": 34674
+    },
+    "data/processed/geografia/origenes_municipales.geojson": {
+      "sha256": "7b2d7021537c1976ab708ef52edf96e80a950ce3f2c95783c8b2ca6171faab77",
+      "bytes": 90832
+    },
+    "data/processed/geografia/paradas_geolocalizadas.csv": {
+      "sha256": "e2653ac951ced58e4af48aa699c14493e314a8dbee27b26b66c77184b78d0449",
+      "bytes": 5352905
+    },
+    "data/processed/housing_expansion/comparacion_ivp.csv": {
+      "sha256": "ee4d0c327349a3f4b8d552f61f96d7296ac1a9ff676128febc6c2db7970997e9",
+      "bytes": 102716
+    },
+    "data/processed/housing_expansion/consumo_agregados_excluidos.csv": {
+      "sha256": "f19426bebd8bdc8ddda16e155bcbdb34c20e3e73e828c2fbfafc75c811dc1090",
+      "bytes": 1645
+    },
+    "data/processed/housing_expansion/contexto_municipal.csv": {
+      "sha256": "0b5110bafc9dcefca4c05635d4e62884f5c6eea969db85ef03e6bd09a1f3ffe4",
+      "bytes": 18006
+    },
+    "data/processed/housing_expansion/descomposicion_controlada.csv": {
+      "sha256": "b2a47e1742790786fc19d9fdff11de58ec62743b71f3424d3c26e88b9fd6ffd3",
+      "bytes": 43163
+    },
+    "data/processed/housing_expansion/indicadores_propuesta.csv": {
+      "sha256": "a2935f6ba155067be7e35276544ae184495ff7e8467623614074722060434abe",
+      "bytes": 22254
+    },
+    "data/processed/housing_expansion/ipva_agregados_excluidos.csv": {
+      "sha256": "3b33148ce30f53b9c731642c420bc3f586f460cd2ff6348e2b5babcaef76c7bd",
+      "bytes": 1010
+    },
+    "data/processed/housing_expansion/manifest.json": {
+      "sha256": "a865976454feb2e1457cd63f33315d909af4a6f847b86679c657f249ce806207",
+      "bytes": 2434
+    },
+    "data/processed/housing_expansion/metodologia.json": {
+      "sha256": "8faaa84c3fd92d7dd2c96ad8c43b439ea60ae405de8a1d8ed49eec83ba317ffc",
+      "bytes": 12198
+    },
+    "data/processed/housing_expansion/revision_metodologica.json": {
+      "sha256": "c93134b55449de1ec638425d929b082571796c650a4b2d5a7aec02e36ebcd72f",
+      "bytes": 1765
+    },
+    "data/processed/housing_expansion/seleccion_indicadores.csv": {
+      "sha256": "ca57b3e72361aedc4d3862c48c3dcd801a247964e0d0e4850770e5d1f62d6dd9",
+      "bytes": 1161
+    },
+    "data/processed/housing_expansion/sensibilidad_escenarios.csv": {
+      "sha256": "050c87a9f9846a173260214096f45a63010c8b0562533e12bdc577d5dba7dcaa",
+      "bytes": 226020
+    },
+    "data/processed/housing_expansion/sensibilidad_municipios.csv": {
+      "sha256": "008d7e1e389fd5df9fe3fd2ce362a275361b9d33cb1b58a876ae40e975f6029d",
+      "bytes": 6365
+    },
+    "data/processed/housing_expansion/sensibilidad_pesos_controlada.csv": {
+      "sha256": "464279fcecdd5f58cc813eb6c0091a7c6f0ffd80c287ee3b371bea06d632ae16",
+      "bytes": 34933
+    },
+    "data/processed/indicadores/catalogo_indicadores.csv": {
+      "sha256": "be3af8d2d6b88f0afea2460d5f6cd1408a3cd8348b45b70daab752e18c46b97e",
+      "bytes": 24067
+    },
+    "data/processed/indicadores/demografia_componentes.csv": {
+      "sha256": "fba76e50ea85cfa0bfd2d49a90cf9fa3ea5a6d6e8b5b7b3a9749f6e48b3ef3b7",
+      "bytes": 425658
+    },
+    "data/processed/indicadores/fuentes_indicadores.csv": {
+      "sha256": "b8e24a0f8cbe024e93016d5ae661941ee388eff7e04b9c6edaae24cdf67c72ae",
+      "bytes": 7009
+    },
+    "data/processed/indicadores/indicadores_municipales.csv": {
+      "sha256": "ffc75c4ce120908c7b36df786076886d48536d80a11cc11b0f09e9885103a380",
+      "bytes": 7247850
+    },
+    "data/processed/integracion/evolucion_poblacion.csv": {
+      "sha256": "7944b59777d9d5fe59d5831f4793464b9ea60378f54291654f6c4e78ec946c6b",
+      "bytes": 783800
+    },
+    "data/processed/integracion/transporte_rutas.csv": {
+      "sha256": "86841c7a8822bf84b1a3a94378ca6f2d4c30be9f9c92a7d0f9b0e96042133f51",
+      "bytes": 94215
+    },
+    "data/processed/integracion/transporte_rutas_paradas.csv": {
+      "sha256": "0e3254d19b59edfd90fadcbc0a22c8a5cafe0bcb44f9c8fdaa003abddae41e5e",
+      "bytes": 4032223
+    },
+    "data/processed/integracion/vivienda_historico.csv": {
+      "sha256": "de03b3030a4f7f4d424f091143b88fdd0ff5d42df8e37c992e830b86bd45c9ff",
+      "bytes": 3317806
+    },
+    "data/processed/ivp/configuracion_ivp.json": {
+      "sha256": "5db391dc99257fddba722e16907e57e60fbeeed2dce710b5be1175a140e3d2a6",
+      "bytes": 1454
+    },
+    "data/processed/ivp/dimensiones_ivp.csv": {
+      "sha256": "6f6255e0cf386cefde53c62fa9e6e946c3f2716a94330df8b2830da6501204fc",
+      "bytes": 80225
+    },
+    "data/processed/ivp/ivp_general.csv": {
+      "sha256": "cd50500917fe5fe0901d8c6a066ea2094dbd32d48c5453286734d6903f4b12f9",
+      "bytes": 107045
+    },
+    "data/processed/ivp/normalizacion.json": {
+      "sha256": "83e36f2b1c258349136c29d18f899c7fe060ab536f3d08301d7e0df4bc7e528e",
+      "bytes": 29273
+    },
+    "data/processed/ivp/observaciones_seleccionadas.csv": {
+      "sha256": "e0c04688d6b68a9901f87d1db7400539c39180cf10159e640663b379d87f1394",
+      "bytes": 1606447
+    },
+    "data/processed/ivp/sanidad_catalogo_revisado.csv": {
+      "sha256": "decf49a0ee0f87325931ea6dfc0908c91cafa4ca9164525b34d917238c904b9b",
+      "bytes": 228436
+    },
+    "data/processed/ivp/seleccion_indicadores.csv": {
+      "sha256": "4042bc96bc262985bb202398a8b56b8e075252b79ec5a63faebd67856d7d6fed",
+      "bytes": 3130
+    },
+    "data/processed/ivp/sensibilidad_escenarios.csv": {
+      "sha256": "f1e87213c7314a92abe078347833e1a33576b35d250b66c6d5fa8c421f55a368",
+      "bytes": 1006092
+    },
+    "data/processed/ivp/sensibilidad_municipios.csv": {
+      "sha256": "78c93cfcd2874d49cc1060a5660ca30e040f76eeff5ad18b9b6b30710327d3b2",
+      "bytes": 10939
+    },
+    "data/processed/municipios/maestro_municipios.csv": {
+      "sha256": "ce0388c6be823b4b904b9eb3e69df6d066053c60a16473583da0067bbbcef287",
+      "bytes": 21854
+    },
+    "data/reference/housing_expansion/atlas_metadata.json": {
+      "sha256": "eedcd6996053e3f9a3d16134412c74bdb8585895920dff918fc1bb98a68a00d1",
+      "bytes": 129
+    },
+    "data/reference/housing_expansion/census_age_metadata.json": {
+      "sha256": "62831df47d66e1e53b617b25724412957c08c06fe7b21b13ef3e184e418ef9fa",
+      "bytes": 8442
+    },
+    "data/reference/housing_expansion/census_type_metadata.json": {
+      "sha256": "540d86c7f25599e4ecb7a228461d3c2b5f8b1ecf1c0d02b01f0fa64abf3141a7",
+      "bytes": 6225
+    },
+    "data/reference/housing_expansion/census_usage_metadata.json": {
+      "sha256": "b477205ad84f94289db4d1c0fdfc2c1eeca78abe81d7681787acd5bd550d5ebe",
+      "bytes": 10502
+    },
+    "data/reference/housing_expansion/ipva_metadata.json": {
+      "sha256": "a6344c5723a4e3ff54b909ac5fd47ceebdc64fc985ec6929022e59ab3cde19cd",
+      "bytes": 5762
+    },
+    "data/reference/housing_expansion/purchase_metadata.json": {
+      "sha256": "8caafd6c4753158b881ff3764a535432591f38263483358127114775d8c07704",
+      "bytes": 6470
+    },
+    "data/reference/housing_expansion/sources.json": {
+      "sha256": "4713568bb5e07f9cd3015f061cb820095b41fde3ddc6e9660c469c1a2c21f073",
+      "bytes": 5496
+    },
+    "data/reference/living/connectivity.json": {
+      "sha256": "95acf7d10d9fae4b446176f5694fd335fb749964eae25e8f7e7a18e5991e48d4",
+      "bytes": 38165
+    },
+    "data/reference/living/timetable.sqlite": {
+      "sha256": "bb7ae80adac79a8222c8ce018c3dc7aeb36974d3937b6488ca0c15209d26151e",
+      "bytes": 54702080
+    },
+    "data/reference/living/transport.json": {
+      "sha256": "e1252aa6bea6dc444088189dcf2461550a187d5303e2866b6070700524f7518b",
+      "bytes": 1384117
+    },
+    "data/reference/municipal_context/descriptions.json": {
+      "sha256": "cf290e5de36d032ea190441ae64289d58e5d3e247f4ce28f102ea64b5e7dbec5",
+      "bytes": 441246
+    },
+    "data/reference/municipal_context/transport_lines.json": {
+      "sha256": "520fb8c647e7bdfb36e40be4ab3357c95e2aaee733a5ebce6f86a79b7821affc",
+      "bytes": 1041061
+    },
+    "data/reference/municipality_photos/28001.webp": {
+      "sha256": "968c597795b4d5d3abbbaab031d33a5f722628334e939150bf9853c8f8bf2208",
+      "bytes": 146722
+    },
+    "data/reference/municipality_photos/28002.webp": {
+      "sha256": "90c9ccdc66cc0b7e15e2e81bcad45de35ea298fff3a1a48be5212b41540848c5",
+      "bytes": 90470
+    },
+    "data/reference/municipality_photos/28003.webp": {
+      "sha256": "5bf0cd140507438f7049f81821425e8e6e1a2eb1a269e470549d6c3ce930278a",
+      "bytes": 92222
+    },
+    "data/reference/municipality_photos/28004.webp": {
+      "sha256": "cdf9084ee72fb97a611fb8993e3a9d4e2ba623d5f33774d7fa01813e631499cb",
+      "bytes": 206532
+    },
+    "data/reference/municipality_photos/28008.webp": {
+      "sha256": "70951e33a29fb352d4f727cdaa5aced9667c7579956780b772ad4795b4306c06",
+      "bytes": 131444
+    },
+    "data/reference/municipality_photos/28009.webp": {
+      "sha256": "651d21f57c894629125a01373f65307160fcdf8eafa898b0bd4d2c1a2fd70112",
+      "bytes": 135390
+    },
+    "data/reference/municipality_photos/28010.webp": {
+      "sha256": "fb491d0d2012525b4d642e61d4b0fefffa2de845f23334ed30a8b26fc84cb46e",
+      "bytes": 19438
+    },
+    "data/reference/municipality_photos/28011.webp": {
+      "sha256": "a7f8aebe61a3e61b970183e5482e0c63f2ca5bd0f9f4b504486165af56a0f651",
+      "bytes": 116872
+    },
+    "data/reference/municipality_photos/28012.webp": {
+      "sha256": "b483a20f7c7faba6031cc758b32b4890244445c98add9b3c4894f5915e564358",
+      "bytes": 169978
+    },
+    "data/reference/municipality_photos/28015.webp": {
+      "sha256": "69fd4bf7529ba92df18746426b77335cb059822cb1a5117de610c744d3cf23bc",
+      "bytes": 58892
+    },
+    "data/reference/municipality_photos/28016.webp": {
+      "sha256": "dd343a86fbf65aa0221bdd3da37d8a2371aa240537d4e9331a9b5db3825a61d0",
+      "bytes": 199468
+    },
+    "data/reference/municipality_photos/28017.webp": {
+      "sha256": "093a6f5dc2983eaa25f25c39932a505be93213509760d80bfcb4d79dd2569339",
+      "bytes": 171018
+    },
+    "data/reference/municipality_photos/28018.webp": {
+      "sha256": "34993c9b13c9ddc577af3448efb8ccb9ced112b41d3f0ddf80802378ff35c316",
+      "bytes": 100738
+    },
+    "data/reference/municipality_photos/28019.webp": {
+      "sha256": "c3829fd3b003d40e85196133b5e2737bc9c180633d2c56feee0f8d6a11087a8e",
+      "bytes": 140506
+    },
+    "data/reference/municipality_photos/28020.webp": {
+      "sha256": "a7cc4fd72ef1b9fd8575f028d60f4cd507a5e565e78c5adf092c47872e6ad4cf",
+      "bytes": 172746
+    },
+    "data/reference/municipality_photos/28021.webp": {
+      "sha256": "c5a0c670c2376512268ac57bf5ecd4d269d0823c132ab91fd7b98b27beb6de42",
+      "bytes": 106086
+    },
+    "data/reference/municipality_photos/28023.webp": {
+      "sha256": "962e0a35a77a8a32f833056cd16098ef769468f290020344a0b3a2945c192c09",
+      "bytes": 122532
+    },
+    "data/reference/municipality_photos/28024.webp": {
+      "sha256": "270b89115e319e0401cb9599c90a02ce767ac0f221b6633ee30e3d8503390b9a",
+      "bytes": 129612
+    },
+    "data/reference/municipality_photos/28025.webp": {
+      "sha256": "02d915e20ea58bcaa35613f51eddfd6d695bc8c8c89016962104df6557c43c48",
+      "bytes": 71022
+    },
+    "data/reference/municipality_photos/28026.webp": {
+      "sha256": "f661d0bf2acc1ef36e0eb60927d9d9c1ff1a9129ea9ff445c8efbb907fcc9d5b",
+      "bytes": 243930
+    },
+    "data/reference/municipality_photos/28027.webp": {
+      "sha256": "463e5c8c0b3ff2b696a491aa0dff1cd4d3645c65925b2f91149f4b264a4c846d",
+      "bytes": 154260
+    },
+    "data/reference/municipality_photos/28028.webp": {
+      "sha256": "cc4111eb434542dafd4a34f60ea7eb29d42cd6855c56841a54fd8cdd035ac059",
+      "bytes": 145428
+    },
+    "data/reference/municipality_photos/28029.webp": {
+      "sha256": "c82e4e5cfd5ae81411e29b1631c2bdab0365cf8e4785ede4d80a4bd73d5c65ca",
+      "bytes": 146770
+    },
+    "data/reference/municipality_photos/28030.webp": {
+      "sha256": "374e89ac1535e50a272f762834865984d753ffc9ac50469000c0a3bccdfaca3b",
+      "bytes": 161230
+    },
+    "data/reference/municipality_photos/28031.webp": {
+      "sha256": "92cf5734f9bd66c3a513ecd8e3d21323ab41fe1a92e6d4b1180e910534dcc26c",
+      "bytes": 140206
+    },
+    "data/reference/municipality_photos/28032.webp": {
+      "sha256": "1d391a4c3601c3bcaca8ed85768b6846a4da10f565bddc6b72109ee73442086e",
+      "bytes": 149876
+    },
+    "data/reference/municipality_photos/28033.webp": {
+      "sha256": "92de6a9bd7ca571fffd83c8fcd65d7ede643e7b26abdb988149d2a09ea9ac396",
+      "bytes": 256094
+    },
+    "data/reference/municipality_photos/28034.webp": {
+      "sha256": "6ed6e5e6a518078a1b8c6d2bae6575383e7df88e037faa3755672bdb8200a8ac",
+      "bytes": 134820
+    },
+    "data/reference/municipality_photos/28035.webp": {
+      "sha256": "6e69177a27efb377a0c8f340817c4ee8c4591a5713c14eda26519bb94a9e6437",
+      "bytes": 115860
+    },
+    "data/reference/municipality_photos/28036.webp": {
+      "sha256": "2dcde6094145d6d3aa36665cd8254c7a67f8a3b38b43fae9bacd0f2d79469bd6",
+      "bytes": 141776
+    },
+    "data/reference/municipality_photos/28037.webp": {
+      "sha256": "f9f9d5ee4684124d2db3c09a5c0bcc06ecc960aa41c8e37ed4ee1e8395bc48c1",
+      "bytes": 212520
+    },
+    "data/reference/municipality_photos/28038.webp": {
+      "sha256": "216644596746c19f05092872f74d7bdcf996c3799477c08937ad720cb3981ddb",
+      "bytes": 201588
+    },
+    "data/reference/municipality_photos/28039.webp": {
+      "sha256": "1070ad8cdf7a55cc1058728d0e53df844ba50aabd05fa8de59e2f6358656db6d",
+      "bytes": 105862
+    },
+    "data/reference/municipality_photos/28040.webp": {
+      "sha256": "86e76b9ae2b8d24bacf967953855bd73602438eaf5e388a85f463cdd0281b77b",
+      "bytes": 97952
+    },
+    "data/reference/municipality_photos/28041.webp": {
+      "sha256": "b1e37c2edc66f60fb66ad5c4b898dc3529aa69dd7e7e0e8e653002934908fe42",
+      "bytes": 165678
+    },
+    "data/reference/municipality_photos/28042.webp": {
+      "sha256": "025177f4e6dcd5a0921fc1b145029f9c9662510063c835fc119e675c4325ade6",
+      "bytes": 53294
+    },
+    "data/reference/municipality_photos/28043.webp": {
+      "sha256": "aab07a948889a80ceba835a681dbb630bfac36d070cd7fb7fa3b92f43fe92bbe",
+      "bytes": 123692
+    },
+    "data/reference/municipality_photos/28044.webp": {
+      "sha256": "3c2e8f7fcee192ee38588c1bdf630ad009c94ea06de11b8be9b060f88ea2cbc9",
+      "bytes": 166762
+    },
+    "data/reference/municipality_photos/28046.webp": {
+      "sha256": "444a7cdefb0f6f831b01074552ed1bfef778145c332f2167292893924f127409",
+      "bytes": 248170
+    },
+    "data/reference/municipality_photos/28048.webp": {
+      "sha256": "8268ac9ecc47e38e942d092a639926fa8a5ec65d513d86ff9f860519c346b282",
+      "bytes": 79762
+    },
+    "data/reference/municipality_photos/28050.webp": {
+      "sha256": "b489a607fd205755710fc211632246412a00386f4cdcafb5b66f02768b56a107",
+      "bytes": 130948
+    },
+    "data/reference/municipality_photos/28051.webp": {
+      "sha256": "3df0e6eff7c47d94e67af9f8057c06201df5382a9c7c2781c3ff86bf8910e46a",
+      "bytes": 38754
+    },
+    "data/reference/municipality_photos/28052.webp": {
+      "sha256": "fb7ce8bdae07f8c9cdecba8a35564c7947d1dc271187d8d1b9581445442fc90e",
+      "bytes": 186872
+    },
+    "data/reference/municipality_photos/28053.webp": {
+      "sha256": "0094124b4e872c10b7427d1379cd93354855917c70b85de877827fc4343f06e4",
+      "bytes": 106432
+    },
+    "data/reference/municipality_photos/28054.webp": {
+      "sha256": "76b1e29f472638104584f1876890f04d5e4e39b44a63293a038cddfbb2e0fc9a",
+      "bytes": 99036
+    },
+    "data/reference/municipality_photos/28055.webp": {
+      "sha256": "525fc3fb0a1b16a4b33175bbf25bc1ff931fd4943a970aea040ce9e798bb712f",
+      "bytes": 231324
+    },
+    "data/reference/municipality_photos/28056.webp": {
+      "sha256": "996ea99c9aed17dc79e3a66e96572a6fe8be5596d52046c5e4b1497320828065",
+      "bytes": 101784
+    },
+    "data/reference/municipality_photos/28057.webp": {
+      "sha256": "f55ea1f0c581d7925a5072e8a45b5bb6817d792e14d19450bf93be40c34c693a",
+      "bytes": 69624
+    },
+    "data/reference/municipality_photos/28059.webp": {
+      "sha256": "7baa7bc1aeac542094bc28b13fac92774dee5f4ccc38d0be34f0ff6ac1644d40",
+      "bytes": 133990
+    },
+    "data/reference/municipality_photos/28060.webp": {
+      "sha256": "5f44c528f15b8cc96df48ef31bfb0eab9c11ff8491ea15c8ddbe2169e5a7e3e3",
+      "bytes": 249470
+    },
+    "data/reference/municipality_photos/28061.webp": {
+      "sha256": "4cac9914f6eb572095e4f9f24107fd5b9be6254efeff4d8bd7798774794668c6",
+      "bytes": 132466
+    },
+    "data/reference/municipality_photos/28062.webp": {
+      "sha256": "62f17d849127be081af8c422b2bba7e5a5119198e5f386d5afd0e400018f2180",
+      "bytes": 108882
+    },
+    "data/reference/municipality_photos/28063.webp": {
+      "sha256": "63e4a38b7cf1afe2658ebb6ac0ff9695cdd92aa7c6de2d1cb0cc08feb544c6c7",
+      "bytes": 125190
+    },
+    "data/reference/municipality_photos/28064.webp": {
+      "sha256": "85439b45ecd5fc5a88adb318ab2637b41861eed55cfea13ae521055af426c06d",
+      "bytes": 113348
+    },
+    "data/reference/municipality_photos/28066.webp": {
+      "sha256": "b460e5496ea0b91dcddb73e4a066a15364e3488980379da97be5d11613c25f4a",
+      "bytes": 99848
+    },
+    "data/reference/municipality_photos/28067.webp": {
+      "sha256": "193bc60db8d8d2d99f03c0fff33ccaa1005ab729be53faad670b11ab30915bca",
+      "bytes": 113470
+    },
+    "data/reference/municipality_photos/28068.webp": {
+      "sha256": "3712172580f54c0ee28d7d29fb9767ec7ae71aac8a9d34da3218e43dbaf08706",
+      "bytes": 117416
+    },
+    "data/reference/municipality_photos/28069.webp": {
+      "sha256": "08601fdafd4644af1ed3b7c49521b7fb6cf0329ac5e14ed88d86db59a44108a1",
+      "bytes": 174702
+    },
+    "data/reference/municipality_photos/28070.webp": {
+      "sha256": "d37aad07965e698d382b0744eb85114e3b3efa5be5ebd281e6d056698b0d1c7f",
+      "bytes": 225022
+    },
+    "data/reference/municipality_photos/28071.webp": {
+      "sha256": "cde0ecdd56628b9b36feea29dd046d718a1b049e403fdf87d862dc4a9baa1150",
+      "bytes": 231538
+    },
+    "data/reference/municipality_photos/28072.webp": {
+      "sha256": "5d9838b4d348de23504ea6ed1fb1e9238cdb379667119b09dfe26bd9738ef4e4",
+      "bytes": 103174
+    },
+    "data/reference/municipality_photos/28073.webp": {
+      "sha256": "61cc66409061fed5b0a99d061955dd60c593415b1223352d519b20d2fd7565ec",
+      "bytes": 93906
+    },
+    "data/reference/municipality_photos/28075.webp": {
+      "sha256": "8357f9edc99ccec69e3c1e212ebabf7df0588bd600a277a3f311c49b15328103",
+      "bytes": 41830
+    },
+    "data/reference/municipality_photos/28076.webp": {
+      "sha256": "d1f18fca96fcce3f8686643074a168359f5609f6142b09280feeb5e9166f16df",
+      "bytes": 67772
+    },
+    "data/reference/municipality_photos/28078.webp": {
+      "sha256": "d0123c0d81e52b6915e246e4831cad2e9cfd5912bb0c93b2d1132fef765ee351",
+      "bytes": 138704
+    },
+    "data/reference/municipality_photos/28082.webp": {
+      "sha256": "f7b63d25a5b22ae5539b30c92b46f2e6094c7fd9428615669dc49129539afd51",
+      "bytes": 124026
+    },
+    "data/reference/municipality_photos/28083.webp": {
+      "sha256": "4c08ee3f67926595125ec27a2ac8775fb606751bbf1eb91668c3ede8e4369f00",
+      "bytes": 107142
+    },
+    "data/reference/municipality_photos/28084.webp": {
+      "sha256": "ca8ee1f0149d37000d0afd75ac3234ffb1ec48fefdfe00e24a30d0706a73fae5",
+      "bytes": 246324
+    },
+    "data/reference/municipality_photos/28085.webp": {
+      "sha256": "aa8d293e0efb398e19cdbcc1383060bb94526ba5c47b50e52e4f226127a9a3b3",
+      "bytes": 80360
+    },
+    "data/reference/municipality_photos/28086.webp": {
+      "sha256": "d7072237b9c43538f5767b697ffbef59c4f6f3c6de29d21d79e2360bc2f4fffa",
+      "bytes": 92264
+    },
+    "data/reference/municipality_photos/28087.webp": {
+      "sha256": "6b6e0ecdfb057717e03b9e7abefe353aca9db069d3d1aac9b32edb4d8ec6caa1",
+      "bytes": 108826
+    },
+    "data/reference/municipality_photos/28088.webp": {
+      "sha256": "fa24d82272261fa2de3824010269303ac782e58eefcb3501976f170c3bc49324",
+      "bytes": 162990
+    },
+    "data/reference/municipality_photos/28089.webp": {
+      "sha256": "cfc1e9b801c9c872ca6c2aa7c07359821b95b9a93096546976aaf4b095d6a7c7",
+      "bytes": 116034
+    },
+    "data/reference/municipality_photos/28090.webp": {
+      "sha256": "09474630ee42691b18d8be40a64c78dbc14b379e238af8a151fe496fc7625110",
+      "bytes": 218740
+    },
+    "data/reference/municipality_photos/28091.webp": {
+      "sha256": "1e83830719ae1c4b24dd45a3219095dab861540850a8f47386e63b3c3cf93ba7",
+      "bytes": 137538
+    },
+    "data/reference/municipality_photos/28093.webp": {
+      "sha256": "497894e4df8c01ca47e84aa58eca63dbc0f4dca0eab8942991b05e700bbaa060",
+      "bytes": 130938
+    },
+    "data/reference/municipality_photos/28094.webp": {
+      "sha256": "c7628b626215e9d236f64f37d012854eb4d72e66143768533b52648e131731e5",
+      "bytes": 32488
+    },
+    "data/reference/municipality_photos/28095.webp": {
+      "sha256": "99925605f324ea2c6d386c67ba471742b973a30a103037bc2606640fca4c1646",
+      "bytes": 61950
+    },
+    "data/reference/municipality_photos/28096.webp": {
+      "sha256": "d541ae2883d52a314cdb19d18bd614d7031f42baaad0aa7375f9e74a300e0ece",
+      "bytes": 128244
+    },
+    "data/reference/municipality_photos/28097.webp": {
+      "sha256": "a00e2d5278350b245c10ba323e2346642777390855c4324e12d994bd1e1c1502",
+      "bytes": 87690
+    },
+    "data/reference/municipality_photos/28099.webp": {
+      "sha256": "61d85507f4a91cfeb277780bff772b8c795f6b0c66fc568a37acfee7c8afae2a",
+      "bytes": 99750
+    },
+    "data/reference/municipality_photos/28100.webp": {
+      "sha256": "692e3d019d9f07749287ad79b616f8da6eca0b74e188212a96131638c7e927fb",
+      "bytes": 100322
+    },
+    "data/reference/municipality_photos/28101.webp": {
+      "sha256": "9f612ff0dd37a013cc40ca3160ccdb6b525e8ea12b50ffead0f8f94d40bffa7a",
+      "bytes": 88158
+    },
+    "data/reference/municipality_photos/28102.webp": {
+      "sha256": "7e9d76c77fc24bf7fc05bf3093eda078a0abeec2a0390be0df53f4d7d4763cce",
+      "bytes": 135836
+    },
+    "data/reference/municipality_photos/28104.webp": {
+      "sha256": "c2441a4558e3c7e27189c503bd7af3276a83849c8913e0086b707652d2ab9e38",
+      "bytes": 157686
+    },
+    "data/reference/municipality_photos/28107.webp": {
+      "sha256": "b5e07f4c85e2568626ed17c77756e097434dc917afe07cda7a0379cbbdc7b104",
+      "bytes": 82616
+    },
+    "data/reference/municipality_photos/28108.webp": {
+      "sha256": "9bc75e8ecafd82a9687fee4a7343bf0b11852f1d2a026b1c7d1411861dd1f816",
+      "bytes": 125856
+    },
+    "data/reference/municipality_photos/28109.webp": {
+      "sha256": "e59f12de862e9d9465de4ee671bc024b53c51a32803bfa46cc87b14a26493432",
+      "bytes": 137434
+    },
+    "data/reference/municipality_photos/28110.webp": {
+      "sha256": "cac973889645e4ce19e181f9aabecc8ac2692993feaffb5952cce6270eb4971b",
+      "bytes": 139438
+    },
+    "data/reference/municipality_photos/28111.webp": {
+      "sha256": "8fa3f92eaa0e094628b40bc927cccfc52574be8ce60b53624131a1d338b712e0",
+      "bytes": 60932
+    },
+    "data/reference/municipality_photos/28112.webp": {
+      "sha256": "438b6c6be5fc6bbddbe26a682ddea80183bcb2dfb6c694b25ff17f80b19ee279",
+      "bytes": 166694
+    },
+    "data/reference/municipality_photos/28114.webp": {
+      "sha256": "b30d94ccdff10c5121b2b516e13d1cd0bacc664758fc067e397de167a6297b77",
+      "bytes": 87898
+    },
+    "data/reference/municipality_photos/28116.webp": {
+      "sha256": "8f08a0a45a876328860233f83214d0c91701de91785f6fad6229b741fc9c4fd0",
+      "bytes": 90234
+    },
+    "data/reference/municipality_photos/28117.webp": {
+      "sha256": "278004e4b4da9bd466d6b64da2222160026f86d41a5c134222604dc34893ad5a",
+      "bytes": 151090
+    },
+    "data/reference/municipality_photos/28118.webp": {
+      "sha256": "367724b40d836027978f4c94737b714cd0e89f85603aa33815d67b8029472786",
+      "bytes": 243314
+    },
+    "data/reference/municipality_photos/28119.webp": {
+      "sha256": "0d3d7366f75dd7abbb369a6d009d23c574cac3443d05e577c050db9c28b8f3a9",
+      "bytes": 184352
+    },
+    "data/reference/municipality_photos/28120.webp": {
+      "sha256": "226c714475a938ada08d73d07668e17076d1382d90f982ec44598b35c9dfc9be",
+      "bytes": 201550
+    },
+    "data/reference/municipality_photos/28121.webp": {
+      "sha256": "473a520f92f1cf0d81bb0df2e89705f8e025fc9b00cae781c863b5d50c9fe664",
+      "bytes": 138462
+    },
+    "data/reference/municipality_photos/28122.webp": {
+      "sha256": "de3eefc864bc8dee82181305761d76acb9809bae81b51ac76b4dc131f4d38d06",
+      "bytes": 95840
+    },
+    "data/reference/municipality_photos/28124.webp": {
+      "sha256": "1a4bdca8876edf8504a9420cada9226a0057670c23e54f2f6d48d30719a04d1c",
+      "bytes": 169962
+    },
+    "data/reference/municipality_photos/28125.webp": {
+      "sha256": "a34dc64467bdef25cba062dc31bdd45ed267e163d5e2be69190aa0380ad24e56",
+      "bytes": 147278
+    },
+    "data/reference/municipality_photos/28126.webp": {
+      "sha256": "2bd50e0424a5f096a94098c9e29b9987fd2b6500b04239e80e977742d5da31c8",
+      "bytes": 102422
+    },
+    "data/reference/municipality_photos/28128.webp": {
+      "sha256": "eca03451cff0f70ebbd31081b95509a6fc46bd7e3678e2056b066bc87a7174a7",
+      "bytes": 77986
+    },
+    "data/reference/municipality_photos/28129.webp": {
+      "sha256": "ce35f9155d4b59deca56353f94a31aef06328d0551bc8cc6f786b70c0e433e02",
+      "bytes": 152604
+    },
+    "data/reference/municipality_photos/28130.webp": {
+      "sha256": "1b50712fab37951d7613e492fef53ad1d6dff53a7044e1b161c59a82179c9f07",
+      "bytes": 113854
+    },
+    "data/reference/municipality_photos/28131.webp": {
+      "sha256": "71df89daf4fa8c4aef6d3640b1af8ca08e309eab8d2bb6f5670946c10ba69565",
+      "bytes": 246478
+    },
+    "data/reference/municipality_photos/28132.webp": {
+      "sha256": "ccbdb2603db064dec18842827d26da88a4c4ef902803af2a923fa545cb401332",
+      "bytes": 97568
+    },
+    "data/reference/municipality_photos/28133.webp": {
+      "sha256": "696e2fabc6a9a5ef1b49b80c2c14c5f081d9e68341db801f3c938b9a8254634f",
+      "bytes": 81672
+    },
+    "data/reference/municipality_photos/28135.webp": {
+      "sha256": "78b4f4feb55612d865ee140b6c71b626fb199f17b76939de8aad28bb3bbd659f",
+      "bytes": 116222
+    },
+    "data/reference/municipality_photos/28136.webp": {
+      "sha256": "78b705cd80d0baa6f0ce4274a29b549615bd6013bc5d81f7ada81827c756a77f",
+      "bytes": 67272
+    },
+    "data/reference/municipality_photos/28137.webp": {
+      "sha256": "8646a804cdbfe083619ceacbbb3b7122fb5cc9fd590b6724d766ea9ee636fed5",
+      "bytes": 145582
+    },
+    "data/reference/municipality_photos/28138.webp": {
+      "sha256": "e37d82145d6db5b0aa87ee2e075919aee9fe594046f0248e7cb4feb25b6cd8cd",
+      "bytes": 97954
+    },
+    "data/reference/municipality_photos/28140.webp": {
+      "sha256": "4bf250b4016f051936d7d93f8d032c2983bafa0094bda8cc3359826743fd443c",
+      "bytes": 78492
+    },
+    "data/reference/municipality_photos/28141.webp": {
+      "sha256": "31b1a4f93b9308ab5c36ab204fbd6423ae4150888cde5bafefc848b8dcfe78b3",
+      "bytes": 88182
+    },
+    "data/reference/municipality_photos/28143.webp": {
+      "sha256": "978c528a39990a27d83a48b36790c7421780fef698d64b2e949abd5138e5f735",
+      "bytes": 104732
+    },
+    "data/reference/municipality_photos/28144.webp": {
+      "sha256": "fa2e4ada3ca502c5e84f998ed9a5e4a454534c0ad8354e79847b6e4a21cbcdfe",
+      "bytes": 94634
+    },
+    "data/reference/municipality_photos/28145.webp": {
+      "sha256": "e4670f386088db40ae3de2284f403cae788ea15832bee7e775de74fbf99dc5f6",
+      "bytes": 210494
+    },
+    "data/reference/municipality_photos/28146.webp": {
+      "sha256": "c7ce75bb2cd94d4b95c48a69d2d945f63eaacdd2d3b180cbce001579a52d3ec6",
+      "bytes": 139372
+    },
+    "data/reference/municipality_photos/28147.webp": {
+      "sha256": "75358caa52bf7644843b85ea6a4d8a17915944c9311ec03f10d1f79e956c6d8d",
+      "bytes": 115488
+    },
+    "data/reference/municipality_photos/28149.webp": {
+      "sha256": "9b1f197e972b21eca1749162f74c200d01859e2e261bef997ee103ed66212e66",
+      "bytes": 141214
+    },
+    "data/reference/municipality_photos/28150.webp": {
+      "sha256": "40ba52fb0a6bef6a8f2586e12867924a74625d720fd7d253fdfd24dd4f813e3d",
+      "bytes": 78482
+    },
+    "data/reference/municipality_photos/28151.webp": {
+      "sha256": "413db391a85dba3e81ccfda8a0c5fb120abf99d4c443ce85d230cde26a9c236d",
+      "bytes": 202506
+    },
+    "data/reference/municipality_photos/28152.webp": {
+      "sha256": "e2c727ba36b8555d49a67a9e848a034c4532b1b01b9c48c80746befc5192f439",
+      "bytes": 153484
+    },
+    "data/reference/municipality_photos/28153.webp": {
+      "sha256": "e34ea8cc29b8b94d70f367b051816b8dccaedf1cc5b098edb707bdf51d839404",
+      "bytes": 110600
+    },
+    "data/reference/municipality_photos/28154.webp": {
+      "sha256": "4351fce9e51bf0718963ca9a1cccf1518c091e51b468a4c9477781080e01d173",
+      "bytes": 118116
+    },
+    "data/reference/municipality_photos/28155.webp": {
+      "sha256": "5ff10d651439973a1fc6907917aa34fae966f25647c761b316d8e6bc5a6182fc",
+      "bytes": 133224
+    },
+    "data/reference/municipality_photos/28156.webp": {
+      "sha256": "850d74b13a163b39c860a0b44a16c96adc27cef11e4eea6fd2857d32b2513798",
+      "bytes": 211004
+    },
+    "data/reference/municipality_photos/28157.webp": {
+      "sha256": "fa08fe93ae9e3f31a59a70902155ab2832f9e2366fd9abd94c6b70c5195f6c10",
+      "bytes": 78846
+    },
+    "data/reference/municipality_photos/28158.webp": {
+      "sha256": "51678447231c43d8167ef8b18f6673342431f7ba640332e841d31978a7199f0d",
+      "bytes": 201608
+    },
+    "data/reference/municipality_photos/28159.webp": {
+      "sha256": "bb3e1936428ea678d296a91f1c8f5d047dd2c11bb8587bfc06482dfd161cdd9a",
+      "bytes": 179130
+    },
+    "data/reference/municipality_photos/28160.webp": {
+      "sha256": "c59cc293e37064f2e0b0ef181664c05bdbd478fbbaeda125086a64fcd4b22dc7",
+      "bytes": 194706
+    },
+    "data/reference/municipality_photos/28162.webp": {
+      "sha256": "9b387291d28436cd30bc0d3f327a2bc625392e661ce13aafa9eb8088a71e509f",
+      "bytes": 90106
+    },
+    "data/reference/municipality_photos/28163.webp": {
+      "sha256": "46eb493122b107d1821568896ce26430ac36d29912d2622bfe8e3282fbf73b00",
+      "bytes": 145068
+    },
+    "data/reference/municipality_photos/28164.webp": {
+      "sha256": "b26fca4ef25144b12686a50b242d49264efff9bd79b309f8785ad5fd3506cef0",
+      "bytes": 152532
+    },
+    "data/reference/municipality_photos/28165.webp": {
+      "sha256": "1db297ff8dca9fd88bedc632aca5b6982fe285fd441513214dc529a9abfdd854",
+      "bytes": 112038
+    },
+    "data/reference/municipality_photos/28166.webp": {
+      "sha256": "a04f70068288f39bd87c74cb0fd9063325d0148bcdb662a7770ea0e19899c5b4",
+      "bytes": 175018
+    },
+    "data/reference/municipality_photos/28167.webp": {
+      "sha256": "69e76a93b1b02912738ee7638e367e78b623cfeb91e2073ce6917cc9eb076197",
+      "bytes": 110974
+    },
+    "data/reference/municipality_photos/28168.webp": {
+      "sha256": "8f4a15eaf1c1d96efaccfb409e5a04efb50acf743b0836010a94df49edade6d7",
+      "bytes": 81726
+    },
+    "data/reference/municipality_photos/28169.webp": {
+      "sha256": "f656198d0e7376b8a154d1fa689fc4a558cb56349eeb8a067d32615e29ed7976",
+      "bytes": 120218
+    },
+    "data/reference/municipality_photos/28170.webp": {
+      "sha256": "9f1464f0073425e24385f63f2504070a99e81e8803cd5904feee4ddc8dd61f8e",
+      "bytes": 131518
+    },
+    "data/reference/municipality_photos/28171.webp": {
+      "sha256": "3514d03e62097629503fecb2eaf396ceb240f89b85aece421b110ef0c619cced",
+      "bytes": 154408
+    },
+    "data/reference/municipality_photos/28172.webp": {
+      "sha256": "d07187d1048532508395c4dedc813fb27b27cc8aeaa6a59b8621343891c14ee9",
+      "bytes": 72332
+    },
+    "data/reference/municipality_photos/28173.webp": {
+      "sha256": "c3b9dc4c9cb6fb5e0b2b182a6ebcbd64feec7d44cdfc7e586cd0672fa8e0cb72",
+      "bytes": 59890
+    },
+    "data/reference/municipality_photos/28174.webp": {
+      "sha256": "ba5a5f578afeb093ab98d21cbbb9d2da880c96c176e4ed23a2ebeac222200356",
+      "bytes": 150266
+    },
+    "data/reference/municipality_photos/28175.webp": {
+      "sha256": "87b023a404d9a2c3f0356527df9fd31ec73a638f2bf603bd325c85714b406adf",
+      "bytes": 101242
+    },
+    "data/reference/municipality_photos/28176.webp": {
+      "sha256": "4fed69f747b9ebc52356968d3fada6b8f8318e9d5344ef52897b79f6da640b49",
+      "bytes": 125226
+    },
+    "data/reference/municipality_photos/28177.webp": {
+      "sha256": "888e1dc2efa4ed9741508908ec78d7f06e65194cd58a5945cc2645557449a0d0",
+      "bytes": 150902
+    },
+    "data/reference/municipality_photos/28178.webp": {
+      "sha256": "757372aea55848f47891c9edc194931b549c818674f4ac6a774467ed5eeba4cc",
+      "bytes": 123726
+    },
+    "data/reference/municipality_photos/28179.webp": {
+      "sha256": "ae0b0b65ecba8dc61e73928621f18e9eee54ff962b825c0a64ba8ee6949e169a",
+      "bytes": 85556
+    },
+    "data/reference/municipality_photos/28180.webp": {
+      "sha256": "1be5e4f40f8efda11343ba54db0c9ab862f86b631962884e68ccb6ff8ff9701a",
+      "bytes": 143666
+    },
+    "data/reference/municipality_photos/28181.webp": {
+      "sha256": "f9e25794e6c7b6d8aa124623b676d82169eb315ca63e99fdc478632f64a32426",
+      "bytes": 109252
+    },
+    "data/reference/municipality_photos/28182.webp": {
+      "sha256": "ab7f27167c628fa7db77da472512ac2781ef91279e0f9b6418486eca8f0f2c0a",
+      "bytes": 122872
+    },
+    "data/reference/municipality_photos/28183.webp": {
+      "sha256": "602a5e0e1bf8fe70225b272b1218d56cda2a1221be89a3c0725844ce68602ca0",
+      "bytes": 167072
+    },
+    "data/reference/municipality_photos/28901.webp": {
+      "sha256": "e98f083638bfd44df6ce26a7ee1321c2bc6334975949768d341200a7f5522352",
+      "bytes": 272826
+    },
+    "data/reference/municipality_photos/28902.webp": {
+      "sha256": "c469c7eb2546af800c885f1e971125793c9df50513d6694817ada28b64eeb3c7",
+      "bytes": 187624
+    },
+    "data/reference/municipality_photos/catalog.json": {
+      "sha256": "975defc82f9c68a3db7d8a2c39f0305fff998c07c59629ca2282d88cb632401b",
+      "bytes": 159525
+    },
+    "data/reference/urban_centres/centros_urbanos.csv": {
+      "sha256": "ad1c135c19aa335b65c6c95197d5b36aafff017e72b49001f525aca2f4bc63a4",
+      "bytes": 44030
+    },
+    "data/reference/urban_centres/ign_capitales_seleccionadas.geojson": {
+      "sha256": "e5ff91cc0fcd9810512673ae49278d0f08b784a46b8acfb3110a2772d51f437f",
+      "bytes": 284962
+    },
+    "data/reference/urban_centres/manifest.json": {
+      "sha256": "dedd863a9b710bfdb25378760a474b6a69c512f65a2c2cfe6ca1a152f971c3da",
+      "bytes": 19776
+    },
+    "data/runtime_provenance.json": {
+      "sha256": "32c63073a96dd09acef1cc3b4215b6eb01ab52ab28361633bc92d3184ca2b4fe",
+      "bytes": 96639
+    }
+  }
+}

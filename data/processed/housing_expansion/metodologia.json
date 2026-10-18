@@ -1,0 +1,267 @@
+{
+  "original_engine_sha256": "248fea5452d4c878812b85abe8fa972b9269509604a0d37d2e8839aea7e7fbb2",
+  "version": "ivp-vivienda-2.0-propuesta",
+  "estado": "propuesta_no_activada",
+  "version_principal": "ivp-1.0.0",
+  "anio_vivienda_propuesta": 2023,
+  "anio_alquiler_original": 2024,
+  "peso_coste": 0.75,
+  "peso_relacion_alquiler_ingresos": 0.25,
+  "formula_relacion": "100 * 12 * mediana_alquiler_mensual_SERPAVI / renta_neta_media_anual_hogar_INE",
+  "interpretacion_relacion": "Cociente de estadísticas agregadas del mismo año y municipio; no esfuerzo observado de los inquilinos ni porcentaje de hogares sobrecargados.",
+  "ausencias": "Sin vivienda compuesta si falta cualquier indicador con peso interno positivo. Sin redistribución municipal.",
+  "global": {
+    "sanidad": 0.25,
+    "educacion": 0.25,
+    "transporte": 0.25,
+    "vivienda": 0.25
+  },
+  "original_sha256": {
+    "ivp_general.csv": "cd50500917fe5fe0901d8c6a066ea2094dbd32d48c5453286734d6903f4b12f9",
+    "dimensiones_ivp.csv": "6f6255e0cf386cefde53c62fa9e6e946c3f2716a94330df8b2830da6501204fc",
+    "normalizacion.json": "83e36f2b1c258349136c29d18f899c7fe060ab536f3d08301d7e0df4bc7e528e",
+    "configuracion_ivp.json": "5db391dc99257fddba722e16907e57e60fbeeed2dce710b5be1175a140e3d2a6",
+    "observaciones_seleccionadas.csv": "e0c04688d6b68a9901f87d1db7400539c39180cf10159e640663b379d87f1394"
+  },
+  "sources": {
+    "atlas": {
+      "titulo": "INE · Atlas de distribución de renta de los hogares, Madrid",
+      "url": "https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/31097.csv",
+      "pagina": "https://www.ine.es/jaxiT3/Tabla.htm?t=31097",
+      "archivo": "atlas.csv.gz",
+      "bytes_originales": 33355238,
+      "sha256_original": "09d2262baebd541cffa89f3613ffc3dbcf044054ff87a676a5c72e0ba5c0ac60",
+      "sha256_archivo": "d2a5de76eb4f732656755513b5c5d6e8cafd272a983ea8fcf6ad833716240015",
+      "metadatos": "atlas_metadata.json",
+      "sha256_metadatos": "eedcd6996053e3f9a3d16134412c74bdb8585895920dff918fc1bb98a68a00d1",
+      "descarga_utc": "2026-10-18T09:59:13.859305+00:00",
+      "licencia": "https://www.ine.es/aviso_legal"
+    },
+    "ipva": {
+      "titulo": "INE/Comunidad de Madrid · IPVA, base 2015",
+      "url": "https://datos.comunidad.madrid/dataset/4c5a6c8b-fdf7-4e20-a92d-92c119571fc6/resource/71a7d332-7298-4347-ab43-7471c1d7f9c3/download/indice-de-precios-de-la-vivienda-en-alquiler-por-municipios-mayores-de-10.000-habitantes-base-20.csv",
+      "pagina": "https://datos.comunidad.madrid/dataset/4c5a6c8b-fdf7-4e20-a92d-92c119571fc6",
+      "archivo": "ipva.csv.gz",
+      "bytes_originales": 124546,
+      "sha256_original": "fdd1e626a3e5f43f26485eddcd643ef35b71fca98af855045194cb4c65aa3cae",
+      "sha256_archivo": "3e3d97318c0b2e2125ebadd7de70e6beb91652071ac68bd1353fbf4520e17aae",
+      "metadatos": "ipva_metadata.json",
+      "sha256_metadatos": "a6344c5723a4e3ff54b909ac5fd47ceebdc64fc985ec6929022e59ab3cde19cd",
+      "descarga_utc": "2026-10-18T09:59:14.049561+00:00",
+      "licencia": "https://creativecommons.org/licenses/by/4.0/legalcode.es"
+    },
+    "census_type": {
+      "titulo": "INE/Comunidad de Madrid · Censo 2021, vivienda principal/no principal",
+      "url": "https://datos.comunidad.madrid/dataset/74a52c41-11c4-4768-bf95-ed3271655843/resource/634e2a23-937d-4d5f-a3ee-0a36b3c51290/download/censo-de-vivienda-y-locales-2021.-porcentaje-de-viviendas-familiares-convencionales-por-tipo-de-.csv",
+      "pagina": "https://datos.comunidad.madrid/dataset/74a52c41-11c4-4768-bf95-ed3271655843",
+      "archivo": "census_type.csv.gz",
+      "bytes_originales": 26565,
+      "sha256_original": "a64214be55f73285ff6220dbcd70cbb995626b65eebbf34e3afa45b2424ab103",
+      "sha256_archivo": "989fe7a241d3187a1e1127a797d0418bc30040fbfccf970eecc47873e819975e",
+      "metadatos": "census_type_metadata.json",
+      "sha256_metadatos": "540d86c7f25599e4ecb7a228461d3c2b5f8b1ecf1c0d02b01f0fa64abf3141a7",
+      "descarga_utc": "2026-10-18T09:59:14.189290+00:00",
+      "licencia": "https://creativecommons.org/licenses/by/4.0/legalcode.es"
+    },
+    "census_age": {
+      "titulo": "INE/Comunidad de Madrid · Censo 2021, año de construcción",
+      "url": "https://datos.comunidad.madrid/dataset/8a594474-a275-4c74-8d2f-8f864e6d3d45/resource/2a557691-7e54-42b0-ae31-1b88b1f753c0/download/censo-de-vivienda-y-locales-2021.-viviendas-familiares-por-ano-de-construccion.-municipios.csv",
+      "pagina": "https://datos.comunidad.madrid/dataset/8a594474-a275-4c74-8d2f-8f864e6d3d45",
+      "archivo": "census_age.csv.gz",
+      "bytes_originales": 170587,
+      "sha256_original": "38120d896f520bd6c4c5be9f5ed1cc81c31d361ba2941f33e3e2b7c05e8d4fdd",
+      "sha256_archivo": "417d05970114e7e26d4c122be60f39ef81c63571a4e670c5422aff81b63e0d3f",
+      "metadatos": "census_age_metadata.json",
+      "sha256_metadatos": "62831df47d66e1e53b617b25724412957c08c06fe7b21b13ef3e184e418ef9fa",
+      "descarga_utc": "2026-10-18T09:59:14.474509+00:00",
+      "licencia": "https://creativecommons.org/licenses/by/4.0/legalcode.es"
+    },
+    "purchase": {
+      "titulo": "MIVAU/Comunidad de Madrid · Valor tasado por municipio y antigüedad",
+      "url": "https://datos.comunidad.madrid/dataset/86ed5966-29e2-4943-a749-dfad2f6879cb/resource/b45a10a0-a8d3-44a3-939d-b020a752a1c5/download/extraccionesvalor-tasado-de-la-vivienda-por-municipio-mayores-de-25.000-habitantes-y-antiguedad..csv",
+      "pagina": "https://datos.comunidad.madrid/dataset/86ed5966-29e2-4943-a749-dfad2f6879cb",
+      "archivo": "purchase.csv.gz",
+      "bytes_originales": 1135717,
+      "sha256_original": "7d1d4c14ef705ea7e268a8bd4097541e6d2d9ec3453af746e50993cf6bca05a5",
+      "sha256_archivo": "ea641cd4085020e5709838f71bc345eae4f2ff51b8f2d57e4aa71b0af5749f33",
+      "metadatos": "purchase_metadata.json",
+      "sha256_metadatos": "8caafd6c4753158b881ff3764a535432591f38263483358127114775d8c07704",
+      "descarga_utc": "2026-10-18T09:59:14.715982+00:00",
+      "licencia": "https://creativecommons.org/licenses/by/4.0/legalcode.es"
+    },
+    "census_usage": {
+      "titulo": "INE/Comunidad de Madrid · Censo 2021, viviendas vacías por consumo eléctrico",
+      "url": "https://datos.comunidad.madrid/dataset/70f8104c-efae-4fd4-b611-c19b7373aebc/resource/eed1a980-f1b7-4d7b-9ce2-df4ae00c5f12/download/censo-de-vivienda-y-locales-2021.-viviendas-por-intensidad-de-uso-consumo-electrico.-municipios.csv",
+      "pagina": "https://datos.comunidad.madrid/dataset/70f8104c-efae-4fd4-b611-c19b7373aebc",
+      "archivo": "census_usage.csv.gz",
+      "bytes_originales": 241436,
+      "sha256_original": "3a79e8ca8d380db6930eb2d1f6523d6e8ab5d912aa8e1ddfd23012a596f16de3",
+      "sha256_archivo": "0ef29c5f7c25c51b1f217be2d118217c24abbc115652cd8f6d3ff2e31090d752",
+      "metadatos": "census_usage_metadata.json",
+      "sha256_metadatos": "b477205ad84f94289db4d1c0fdfc2c1eeca78abe81d7681787acd5bd550d5ebe",
+      "descarga_utc": "2026-10-18T10:06:21.770382+00:00",
+      "licencia": "https://creativecommons.org/licenses/by/4.0/legalcode.es"
+    }
+  },
+  "referencias": {
+    "VC": {
+      "coste": {
+        "version": 1,
+        "method": "minmax",
+        "direction": "menor_mejor",
+        "estado": "ajustada",
+        "n_observaciones": 111,
+        "minimo_observado": 3.658536585365854,
+        "maximo_observado": 12.43859649122807,
+        "limite_inferior": 3.658536585365854,
+        "limite_superior": 12.43859649122807,
+        "valores_ordenados": [],
+        "cuantiles": []
+      },
+      "relacion": {
+        "version": 1,
+        "method": "minmax",
+        "direction": "menor_mejor",
+        "estado": "ajustada",
+        "n_observaciones": 111,
+        "minimo_observado": 10.753076288014885,
+        "maximo_observado": 19.72903481012658,
+        "limite_inferior": 10.753076288014885,
+        "limite_superior": 19.72903481012658,
+        "valores_ordenados": [],
+        "cuantiles": []
+      }
+    },
+    "VU": {
+      "coste": {
+        "version": 1,
+        "method": "minmax",
+        "direction": "menor_mejor",
+        "estado": "ajustada",
+        "n_observaciones": 139,
+        "minimo_observado": 3.0,
+        "maximo_observado": 9.002952437912965,
+        "limite_inferior": 3.0,
+        "limite_superior": 9.002952437912965,
+        "valores_ordenados": [],
+        "cuantiles": []
+      },
+      "relacion": {
+        "version": 1,
+        "method": "minmax",
+        "direction": "menor_mejor",
+        "estado": "ajustada",
+        "n_observaciones": 139,
+        "minimo_observado": 11.846242168584478,
+        "maximo_observado": 27.47324629111175,
+        "limite_inferior": 11.846242168584478,
+        "limite_superior": 27.47324629111175,
+        "valores_ordenados": [],
+        "cuantiles": []
+      }
+    }
+  },
+  "resumen": {
+    "VC": {
+      "municipios": 155,
+      "vivienda_original": 113,
+      "vivienda_propuesta": 111,
+      "ivp_original": 113,
+      "ivp_propuesto": 111,
+      "comparables": 110,
+      "correlacion_indicadores_spearman": 0.3137586985651595,
+      "correlacion_ivp_spearman_comun": 0.9749791492910759,
+      "cambio_max_puesto_comun": 22,
+      "max_cambio_puntuacion": 4.714909018585075,
+      "top5_original": [
+        "28055",
+        "28183",
+        "28060",
+        "28120",
+        "28170"
+      ],
+      "top5_propuesto": [
+        "28055",
+        "28120",
+        "28183",
+        "28060",
+        "28099"
+      ]
+    },
+    "VU": {
+      "municipios": 155,
+      "vivienda_original": 139,
+      "vivienda_propuesta": 139,
+      "ivp_original": 139,
+      "ivp_propuesto": 139,
+      "comparables": 139,
+      "correlacion_indicadores_spearman": 0.7472200438377017,
+      "correlacion_ivp_spearman_comun": 0.9783010858394029,
+      "cambio_max_puesto_comun": 37,
+      "max_cambio_puntuacion": 4.761368804322046,
+      "top5_original": [
+        "28128",
+        "28055",
+        "28120",
+        "28180",
+        "28060"
+      ],
+      "top5_propuesto": [
+        "28120",
+        "28128",
+        "28055",
+        "28180",
+        "28110"
+      ]
+    }
+  },
+  "cobertura_contexto": {
+    "renta_neta_hogar_eur_anio": 155,
+    "viviendas_principales_pct": 155,
+    "viviendas_no_principales_pct": 155,
+    "viviendas_anteriores_1981_pct": 127,
+    "viviendas_vacias_consumo_num": 111,
+    "ipva_variacion_anual_pct": 27,
+    "valor_tasado_eur_m2": 4
+  },
+  "revision": {
+    "estado_revision": "completada",
+    "decision": "conservar_ivp_principal",
+    "interpretacion": "La descomposición distingue cambios aritméticos; no mide efectos causales.",
+    "criterio": "No se ha acreditado que la propuesta mida mejor las condiciones residenciales. Los diagnósticos numéricos no son umbrales de aceptación automática.",
+    "motivos": [
+      "El cociente agregado no representa esfuerzo individual de los inquilinos.",
+      "La nueva variable comparte información de alquiler con el indicador de coste.",
+      "La coincidencia temporal exige usar 2023 frente al alquiler vigente de 2024.",
+      "La cobertura y la clasificación cambian; eso por sí solo no acredita una mejora."
+    ],
+    "resumen": {
+      "VC": {
+        "muestra_descomposicion": 110,
+        "muestra_mismo_anio": 111,
+        "cambio_max_puesto_solo_indicador": 22,
+        "muestra_pesos_moderados": 111,
+        "rango_max_puesto_pesos_moderados": 44,
+        "rango_mediano_puesto_pesos_moderados": 5.0,
+        "top5_comunes_tres_pesos": 3,
+        "observaciones_2023_fuera_anclas_2024": 0,
+        "media_abs_efecto_anio": 1.0090811381476197,
+        "media_abs_efecto_referencias": 0.48592434842153837,
+        "media_abs_efecto_indicador": 1.1453366437291952
+      },
+      "VU": {
+        "muestra_descomposicion": 139,
+        "muestra_mismo_anio": 139,
+        "cambio_max_puesto_solo_indicador": 19,
+        "muestra_pesos_moderados": 139,
+        "rango_max_puesto_pesos_moderados": 34,
+        "rango_mediano_puesto_pesos_moderados": 5.0,
+        "top5_comunes_tres_pesos": 4,
+        "observaciones_2023_fuera_anclas_2024": 1,
+        "media_abs_efecto_anio": 1.2769210675395555,
+        "media_abs_efecto_referencias": 1.7025009968255567,
+        "media_abs_efecto_indicador": 0.7772991379144217
+      }
+    }
+  }
+}

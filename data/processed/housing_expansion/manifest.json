@@ -1,0 +1,61 @@
+{
+  "version": "ivp-vivienda-2.0-propuesta",
+  "archivos": {
+    "comparacion_ivp.csv": {
+      "sha256": "ee4d0c327349a3f4b8d552f61f96d7296ac1a9ff676128febc6c2db7970997e9",
+      "bytes": 102716
+    },
+    "ipva_agregados_excluidos.csv": {
+      "sha256": "3b33148ce30f53b9c731642c420bc3f586f460cd2ff6348e2b5babcaef76c7bd",
+      "bytes": 1010
+    },
+    "seleccion_indicadores.csv": {
+      "sha256": "ca57b3e72361aedc4d3862c48c3dcd801a247964e0d0e4850770e5d1f62d6dd9",
+      "bytes": 1161
+    },
+    "sensibilidad_pesos_controlada.csv": {
+      "sha256": "464279fcecdd5f58cc813eb6c0091a7c6f0ffd80c287ee3b371bea06d632ae16",
+      "bytes": 34933
+    },
+    "consumo_agregados_excluidos.csv": {
+      "sha256": "f19426bebd8bdc8ddda16e155bcbdb34c20e3e73e828c2fbfafc75c811dc1090",
+      "bytes": 1645
+    },
+    "sensibilidad_escenarios.csv": {
+      "sha256": "050c87a9f9846a173260214096f45a63010c8b0562533e12bdc577d5dba7dcaa",
+      "bytes": 226020
+    },
+    "contexto_municipal.csv": {
+      "sha256": "0b5110bafc9dcefca4c05635d4e62884f5c6eea969db85ef03e6bd09a1f3ffe4",
+      "bytes": 18006
+    },
+    "sensibilidad_municipios.csv": {
+      "sha256": "008d7e1e389fd5df9fe3fd2ce362a275361b9d33cb1b58a876ae40e975f6029d",
+      "bytes": 6365
+    },
+    "indicadores_propuesta.csv": {
+      "sha256": "a2935f6ba155067be7e35276544ae184495ff7e8467623614074722060434abe",
+      "bytes": 22254
+    },
+    "descomposicion_controlada.csv": {
+      "sha256": "b2a47e1742790786fc19d9fdff11de58ec62743b71f3424d3c26e88b9fd6ffd3",
+      "bytes": 43163
+    },
+    "revision_metodologica.json": {
+      "sha256": "c93134b55449de1ec638425d929b082571796c650a4b2d5a7aec02e36ebcd72f",
+      "bytes": 1765
+    },
+    "metodologia.json": {
+      "sha256": "8faaa84c3fd92d7dd2c96ad8c43b439ea60ae405de8a1d8ed49eec83ba317ffc",
+      "bytes": 12198
+    }
+  },
+  "fuentes_sha256": "4713568bb5e07f9cd3015f061cb820095b41fde3ddc6e9660c469c1a2c21f073",
+  "original_sha256": {
+    "ivp_general.csv": "cd50500917fe5fe0901d8c6a066ea2094dbd32d48c5453286734d6903f4b12f9",
+    "dimensiones_ivp.csv": "6f6255e0cf386cefde53c62fa9e6e946c3f2716a94330df8b2830da6501204fc",
+    "normalizacion.json": "83e36f2b1c258349136c29d18f899c7fe060ab536f3d08301d7e0df4bc7e528e",
+    "configuracion_ivp.json": "5db391dc99257fddba722e16907e57e60fbeeed2dce710b5be1175a140e3d2a6",
+    "observaciones_seleccionadas.csv": "e0c04688d6b68a9901f87d1db7400539c39180cf10159e640663b379d87f1394"
+  }
+}

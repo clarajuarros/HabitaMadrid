@@ -1,0 +1,250 @@
+{
+  "license_title": "Creative Commons Attribution",
+  "maintainer": null,
+  "relationships_as_object": [],
+  "private": false,
+  "maintainer_email": null,
+  "num_tags": 20,
+  "id": "70f8104c-efae-4fd4-b611-c19b7373aebc",
+  "metadata_created": "2025-06-02T10:01:27.187452",
+  "metadata_modified": "2026-08-06T16:28:24.999253",
+  "author": null,
+  "author_email": null,
+  "state": "active",
+  "version": null,
+  "creator_user_id": "1b0067e9-eb08-424a-819a-709640541b70",
+  "type": "dataset",
+  "resources": [
+    {
+      "mimetype": "text/csv",
+      "cache_url": null,
+      "name": "Censo de vivienda y locales 2021. Viviendas por intensidad de uso consumo eléctrico.csv",
+      "hash": "",
+      "description": "Censo de vivienda y locales 2021. Viviendas por intensidad de uso consumo eléctrico. Municipios.csv",
+      "metadata_modified": "2025-10-28T06:56:01.182327",
+      "cache_last_updated": null,
+      "url": "https://datos.comunidad.madrid/dataset/70f8104c-efae-4fd4-b611-c19b7373aebc/resource/eed1a980-f1b7-4d7b-9ce2-df4ae00c5f12/download/censo-de-vivienda-y-locales-2021.-viviendas-por-intensidad-de-uso-consumo-electrico.-municipios.csv",
+      "datastore_active": true,
+      "format": "CSV",
+      "package_id": "70f8104c-efae-4fd4-b611-c19b7373aebc",
+      "created": "2025-06-02T10:01:31.396982",
+      "state": "active",
+      "mimetype_inner": null,
+      "last_modified": "2025-10-28T06:56:01.168723",
+      "position": 0,
+      "url_type": "upload",
+      "id": "eed1a980-f1b7-4d7b-9ce2-df4ae00c5f12",
+      "resource_type": null,
+      "size": 241436
+    },
+    {
+      "mimetype": "application/json",
+      "cache_url": null,
+      "name": "Censo de vivienda y locales 2021. Viviendas por intensidad de uso consumo eléctrico. Municipios.json",
+      "hash": "",
+      "description": "Censo de vivienda y locales 2021. Viviendas por intensidad de uso consumo eléctrico. Municipios.json",
+      "metadata_modified": "2025-10-28T06:55:58.100380",
+      "cache_last_updated": null,
+      "url": "https://datos.comunidad.madrid/dataset/70f8104c-efae-4fd4-b611-c19b7373aebc/resource/f62c7fa9-2ff3-469d-9b2c-d1e82098598e/download/censo-de-vivienda-y-locales-2021.-viviendas-por-intensidad-de-uso-consumo-electrico.-municipios.json",
+      "datastore_active": false,
+      "format": "JSON",
+      "package_id": "70f8104c-efae-4fd4-b611-c19b7373aebc",
+      "created": "2025-06-02T10:01:31.813223",
+      "state": "active",
+      "mimetype_inner": null,
+      "last_modified": "2025-10-28T06:55:58.087326",
+      "position": 1,
+      "url_type": "upload",
+      "id": "f62c7fa9-2ff3-469d-9b2c-d1e82098598e",
+      "resource_type": null,
+      "size": 630610
+    }
+  ],
+  "num_resources": 2,
+  "tags": [
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Censo 2021",
+      "id": "b1738b88-d3e4-47cd-81a9-a326ae70f1ed",
+      "name": "Censo 2021"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Censo de vivienda y locales",
+      "id": "6d03e15a-a092-430d-bb85-e33d0f6a4ce5",
+      "name": "Censo de vivienda y locales"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Por intensidad de uso consumo eléctrico",
+      "id": "118b8d86-a535-498e-b58f-11e6785591d6",
+      "name": "Por intensidad de uso consumo eléctrico"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Urbanismo vivienda y construcción",
+      "id": "45efe5ac-3719-417f-8336-d6801e162936",
+      "name": "Urbanismo vivienda y construcción"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Viviendas por intensidad de uso a partir del consumo eléctrico. Viviendas con bajo consumo",
+      "id": "e5b09a30-efce-4193-915e-76256a94dccc",
+      "name": "Viviendas por intensidad de uso a partir del consumo eléctrico. Viviendas con bajo consumo"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Viviendas por intensidad de uso a partir del consumo eléctrico. Viviendas con consumo entre 1.001 y",
+      "id": "2fb52a52-19d2-4180-8652-96ea1262ea40",
+      "name": "Viviendas por intensidad de uso a partir del consumo eléctrico. Viviendas con consumo entre 1.001 y"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Viviendas por intensidad de uso a partir del consumo eléctrico. Viviendas con consumo entre 2.001 y",
+      "id": "6550e2d7-dc9e-441c-88af-2e962f68333f",
+      "name": "Viviendas por intensidad de uso a partir del consumo eléctrico. Viviendas con consumo entre 2.001 y"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Viviendas por intensidad de uso a partir del consumo eléctrico. Viviendas con consumo entre 3.001 y",
+      "id": "ff64991c-a6f7-4a74-b095-86dc3ac515a7",
+      "name": "Viviendas por intensidad de uso a partir del consumo eléctrico. Viviendas con consumo entre 3.001 y"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Viviendas por intensidad de uso a partir del consumo eléctrico. Viviendas con consumo entre 4.001 y",
+      "id": "32542411-5927-4dee-af8c-3c71de5d15e8",
+      "name": "Viviendas por intensidad de uso a partir del consumo eléctrico. Viviendas con consumo entre 4.001 y"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Viviendas por intensidad de uso a partir del consumo eléctrico. Viviendas con consumo entre 5.001 y",
+      "id": "df28185f-51d9-459b-adfd-85c268155806",
+      "name": "Viviendas por intensidad de uso a partir del consumo eléctrico. Viviendas con consumo entre 5.001 y"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Viviendas por intensidad de uso a partir del consumo eléctrico. Viviendas con consumo entre 6.001 y",
+      "id": "fab57c05-822e-4520-963f-1aa581a14a7f",
+      "name": "Viviendas por intensidad de uso a partir del consumo eléctrico. Viviendas con consumo entre 6.001 y"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Viviendas por intensidad de uso a partir del consumo eléctrico. Viviendas con consumo entre 7.001 y",
+      "id": "175cbf60-4638-42fa-91e1-b2a3115c176a",
+      "name": "Viviendas por intensidad de uso a partir del consumo eléctrico. Viviendas con consumo entre 7.001 y"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Viviendas por intensidad de uso a partir del consumo eléctrico. Viviendas con consumo entre 751y 1.",
+      "id": "93d34e93-35e4-4f2d-8239-0d21670431d2",
+      "name": "Viviendas por intensidad de uso a partir del consumo eléctrico. Viviendas con consumo entre 751y 1."
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Viviendas por intensidad de uso a partir del consumo eléctrico. Viviendas con consumo entre 8.001 y",
+      "id": "f530eba6-a7d4-411c-841d-894dfcccb67b",
+      "name": "Viviendas por intensidad de uso a partir del consumo eléctrico. Viviendas con consumo entre 8.001 y"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Viviendas por intensidad de uso a partir del consumo eléctrico. Viviendas con consumo entre 9.001 y",
+      "id": "1329f583-a884-4663-8882-9f19c7fc665d",
+      "name": "Viviendas por intensidad de uso a partir del consumo eléctrico. Viviendas con consumo entre 9.001 y"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Viviendas por intensidad de uso a partir del consumo eléctrico. Viviendas con consumo mayor de 10.0",
+      "id": "0a514488-caf2-43e8-8cd5-b1adb152a872",
+      "name": "Viviendas por intensidad de uso a partir del consumo eléctrico. Viviendas con consumo mayor de 10.0"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Viviendas por intensidad de uso a partir del consumo eléctrico. Viviendas de uso esporádico",
+      "id": "38f02ff0-c2ab-485b-9fc4-714bc8a12308",
+      "name": "Viviendas por intensidad de uso a partir del consumo eléctrico. Viviendas de uso esporádico"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Viviendas por intensidad de uso a partir del consumo eléctrico. Viviendas de uso esporádico entre 2",
+      "id": "049e00f6-d587-48f4-bdf0-165dde297389",
+      "name": "Viviendas por intensidad de uso a partir del consumo eléctrico. Viviendas de uso esporádico entre 2"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Viviendas por intensidad de uso a partir del consumo eléctrico. Viviendas de uso esporádico entre 5",
+      "id": "ef606f21-259b-404f-a45f-7b998a9b1bf2",
+      "name": "Viviendas por intensidad de uso a partir del consumo eléctrico. Viviendas de uso esporádico entre 5"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Viviendas por intensidad de uso a partir del consumo eléctrico. Viviendas vacías",
+      "id": "4115df11-2809-4463-afdd-b362ae169afd",
+      "name": "Viviendas por intensidad de uso a partir del consumo eléctrico. Viviendas vacías"
+    }
+  ],
+  "groups": [],
+  "license_id": "cc-by",
+  "relationships_as_subject": [],
+  "organization": {
+    "description": "Instituto de Estadística de la Comunidad de Madrid",
+    "created": "2025-06-02T09:53:23.552735",
+    "title": "Instituto de Estadística",
+    "name": "estadistica",
+    "is_organization": true,
+    "state": "active",
+    "image_url": "",
+    "type": "organization",
+    "id": "estadistica",
+    "approval_status": "approved"
+  },
+  "name": "censo_2021_viviendas_por_consumo_electrico",
+  "isopen": true,
+  "url": null,
+  "notes": "Sin información adicional",
+  "owner_org": "estadistica",
+  "extras": [
+    {
+      "key": "Fecha Actualización",
+      "value": "12-02-2026"
+    },
+    {
+      "key": "Fuente",
+      "value": "Censo de Población y Vivienda. INE."
+    },
+    {
+      "key": "Origen",
+      "value": "Almudena"
+    },
+    {
+      "key": "Unidad",
+      "value": "Número"
+    },
+    {
+      "key": "Ámbito",
+      "value": "Toda la Comunidad"
+    }
+  ],
+  "license_url": "https://creativecommons.org/licenses/by/4.0/legalcode.es",
+  "title": "Censo de vivienda y locales 2021. Viviendas por intensidad de uso consumo eléctrico. Municipios"
+}

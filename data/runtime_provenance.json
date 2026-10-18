@@ -1,0 +1,2227 @@
+{
+  "schema": 1,
+  "research_verification": {
+    "archivos_verificados": 551,
+    "bytes_verificados": 262043375,
+    "fase": 6,
+    "generado_utc": "2026-10-15T14:38:02.103596+00:00"
+  },
+  "original_phase6_manifest": {
+    "sha256": "d601b41fe7f92ee093a94cb5544f3b80277b550a31432cb80431124812847ce1",
+    "bytes": 152764
+  },
+  "ancestry": {
+    "data/processed/geografia/RESUMEN.md": {
+      "sha256": "1bcb2bea3a5336176b7e18a7ea4e90614e9330e8ff63f15f5b56a1845f94418d",
+      "bytes": 2678
+    },
+    "data/processed/geografia/catalogo_servicios_geograficos.csv": {
+      "sha256": "d9127ad3e0c55b0ee3679b07476e0b30486e7be9343b1196e7a55afb6739953e",
+      "bytes": 3652506
+    },
+    "data/processed/geografia/centros_educativos_geografia.csv": {
+      "sha256": "a7abb359e28718f05fc58298b531cc44e443e800d960210bf90c8b2bdaaf3c06",
+      "bytes": 2538158
+    },
+    "data/processed/geografia/centros_sanitarios_geografia.csv": {
+      "sha256": "7aec7e7624f0b30ebb9dbd8c3691a4d83a4cdb4afd582442afbc051e6ed6e59a",
+      "bytes": 11870614
+    },
+    "data/processed/geografia/cobertura_proximidad.csv": {
+      "sha256": "316eeb84ae6a66414447ba9f7f614d7408d263809d6dbb59b2b0b933d22a48fc",
+      "bytes": 130118
+    },
+    "data/processed/geografia/control_geometrias.csv": {
+      "sha256": "2097d2230350b3d011548aa8f4637e0eeab64a4113f6a3a953edbb759a515149",
+      "bytes": 90957
+    },
+    "data/processed/geografia/esquema.json": {
+      "sha256": "31726ecf6fa10f58374a1215a91c32185d6518018803a60129ec8f5437093d36",
+      "bytes": 30000
+    },
+    "data/processed/geografia/fuentes_geograficas.csv": {
+      "sha256": "1eda73e6208d830e882e4ec96162da3991cd7f8407720b52f90706b8ac5a9337",
+      "bytes": 3353
+    },
+    "data/processed/geografia/incidencias_geograficas.csv": {
+      "sha256": "eb3e4771b0d081f51e1835ac43f0ffb1dbd58d96d64f580bd438f14b3713e616",
+      "bytes": 4429213
+    },
+    "data/processed/geografia/jurisdicciones_compartidas.geojson": {
+      "sha256": "4482117b62df4b9809bc6fc6ab250ef60767f2ae5db6e808c571f6a00b4dabaa",
+      "bytes": 4603
+    },
+    "data/processed/geografia/limites_municipales.geojson": {
+      "sha256": "3375173a0025217b2ff4baac564cebb7b092a91347f66854a34a2c71ae42a17b",
+      "bytes": 4291876
+    },
+    "data/processed/geografia/nucleos_eiel.csv": {
+      "sha256": "9b2262742a33a064a2c995f68ef05883b79ab58bb0e5cfa2863f065ed2e7f24d",
+      "bytes": 45995
+    },
+    "data/processed/geografia/nucleos_eiel.geojson": {
+      "sha256": "ab49dfe48446b0933d43d2e99d5fc85168e58b3cda5b7656930ac0339f986404",
+      "bytes": 3680534
+    },
+    "data/processed/geografia/origenes_municipales.csv": {
+      "sha256": "46fea95ca6f269276f9d9176b1ab6ad145c044d3b7b71f1c6c994fb932314073",
+      "bytes": 34674
+    },
+    "data/processed/geografia/origenes_municipales.geojson": {
+      "sha256": "7b2d7021537c1976ab708ef52edf96e80a950ce3f2c95783c8b2ca6171faab77",
+      "bytes": 90832
+    },
+    "data/processed/geografia/paradas_geograficas.geojson": {
+      "sha256": "31e405b02b54391a10d18ad8c1d2bce84da060fed7fa57113504d4312080caa6",
+      "bytes": 11958043
+    },
+    "data/processed/geografia/paradas_geolocalizadas.csv": {
+      "sha256": "e2653ac951ced58e4af48aa699c14493e314a8dbee27b26b66c77184b78d0449",
+      "bytes": 5352905
+    },
+    "data/processed/geografia/partes_limites.csv": {
+      "sha256": "b50bca51de520b438f1ee5b353cabc59d5237bc3fe2b9c15d6312fb3bb82407a",
+      "bytes": 13475
+    },
+    "data/processed/geografia/proximidad_servicios.csv": {
+      "sha256": "bd425d05e59f8dc29b89ddf93dc0b0a06330495e46dda909287c94ce1cb77664",
+      "bytes": 764461
+    },
+    "data/processed/geografia/proximidad_servicios_otros_municipios.csv": {
+      "sha256": "8d64c51094657a054b7dfba78b637841e7144dc7cd284f47056d6313e6dae907",
+      "bytes": 765869
+    },
+    "data/processed/geografia/sanidad_oficial_geografica.csv": {
+      "sha256": "c25f333d2c001d9a722c007b52393f6268c050184a2b4fcb8e64e55e2ec58a10",
+      "bytes": 347583
+    },
+    "data/processed/geografia/servicios_geograficos.geojson": {
+      "sha256": "d0b93122762f768162b9d6d74c65fe70ef077942f0f274aeb5e2d23dfbf9e4df",
+      "bytes": 15785740
+    },
+    "data/processed/geografia/solapes_limites.csv": {
+      "sha256": "694e9a66efac04a4690dd890ea441c7266b01a65b884629cf9dd5bcbfa82dc88",
+      "bytes": 821
+    },
+    "data/processed/geografia/validacion_geografia.json": {
+      "sha256": "f68d251f276b8a11ebe5b94aa1310c07f01df87606da17b6b56f9aa7f6d5dd71",
+      "bytes": 71568
+    },
+    "data/processed/indicadores/RESUMEN.md": {
+      "sha256": "c2118f99724c83219a1ac10e9f04d1fb6572b6d11db6ba06e84bb915d4f6e0db",
+      "bytes": 3817
+    },
+    "data/processed/indicadores/alertas_cobertura_cruzada.csv": {
+      "sha256": "a9e4151d626515b26f28a965142445aa0ad7a1ce0da3d020aa4e6604da9dd072",
+      "bytes": 34773
+    },
+    "data/processed/indicadores/catalogo_indicadores.csv": {
+      "sha256": "be3af8d2d6b88f0afea2460d5f6cd1408a3cd8348b45b70daab752e18c46b97e",
+      "bytes": 24067
+    },
+    "data/processed/indicadores/cobertura_dimensiones.csv": {
+      "sha256": "95c38d909f9747c37444a9df713adca398ce30ead91058d82d2abbe8a7360f6c",
+      "bytes": 123364
+    },
+    "data/processed/indicadores/cobertura_indicadores.csv": {
+      "sha256": "abaaafba09741b76a472199d11ab60f287441551834d6c08931a298920ea05d7",
+      "bytes": 7934
+    },
+    "data/processed/indicadores/correlaciones_candidatos.csv": {
+      "sha256": "fcc428ba3f470a57e8012db44ecbc08bb779a9f80919cadcde12ccf5f0ba89df",
+      "bytes": 5346
+    },
+    "data/processed/indicadores/demografia_componentes.csv": {
+      "sha256": "fba76e50ea85cfa0bfd2d49a90cf9fa3ea5a6d6e8b5b7b3a9749f6e48b3ef3b7",
+      "bytes": 425658
+    },
+    "data/processed/indicadores/detalle_distancias_indicadores.csv": {
+      "sha256": "b8020882cab4b2c7a3a60d36cc4a145590e1c3505e9573ecc6d1d23bba7dcea3",
+      "bytes": 150974
+    },
+    "data/processed/indicadores/esquema.json": {
+      "sha256": "cd619c67a4589aa02008c39a08bac9a747623cf3b08195e264f55e0666ee318a",
+      "bytes": 18077
+    },
+    "data/processed/indicadores/estados_indicadores.csv": {
+      "sha256": "1f05d9d93b388b695d60294f495ae298e177f9641e9815f600be9e79e5de3ec9",
+      "bytes": 2484
+    },
+    "data/processed/indicadores/fuentes_indicadores.csv": {
+      "sha256": "d01a782f7eb367a971dadacd951e1bf500c9a1e7814c032ca05880f79c65a3a1",
+      "bytes": 7416
+    },
+    "data/processed/indicadores/incidencias_indicadores.csv": {
+      "sha256": "00c7a8e0215a8e4c23ff9dd8ca0ed25e626aa9c7ebce71f4dc34dcaf76111352",
+      "bytes": 68986
+    },
+    "data/processed/indicadores/indicadores_municipales.csv": {
+      "sha256": "ffc75c4ce120908c7b36df786076886d48536d80a11cc11b0f09e9885103a380",
+      "bytes": 7247850
+    },
+    "data/processed/indicadores/municipios_indicadores.csv": {
+      "sha256": "df4dc126a58260600514757f2857e8f5c496b1dce1a629b9a870fe57f3c2c2e2",
+      "bytes": 62812
+    },
+    "data/processed/indicadores/recuentos_servicios_indicadores.csv": {
+      "sha256": "3473fa86c4e5ed73ed1b3de4a91df23ce846479e0c8d39c5be4a08c7e26e6de9",
+      "bytes": 219998
+    },
+    "data/processed/indicadores/validacion_indicadores.json": {
+      "sha256": "c9af2c5be230eedcd41f57f53fa122900f861eb19442e79e9951b00ef61a0b1b",
+      "bytes": 52977
+    },
+    "data/processed/indicadores/vivienda_trazabilidad.csv": {
+      "sha256": "254214540a4d507002a73064fa4af8785567b063a29405d798ea0bba016d6b58",
+      "bytes": 805085
+    },
+    "data/processed/integracion/RESUMEN.md": {
+      "sha256": "c5dd71e627a10a5b15572cf7389c3d3606aa6d5055294e80f75934e4264a9ca2",
+      "bytes": 1770
+    },
+    "data/processed/integracion/centros_educativos.csv": {
+      "sha256": "30583c046a23f1fd90c672bf9e75a5f59adf63adf1b8c89e987a787a5d38b841",
+      "bytes": 2528432
+    },
+    "data/processed/integracion/centros_educativos_alta.csv": {
+      "sha256": "ec3faf096699403942342f161eb1d82dca3bf45114415f16359140f1ae8d1e96",
+      "bytes": 1336036
+    },
+    "data/processed/integracion/centros_sanitarios.csv": {
+      "sha256": "248d44900b69b79ccb20a6e178d19bf1e43197979c5ca08e6a8681447621acf3",
+      "bytes": 7406548
+    },
+    "data/processed/integracion/cobertura_estadisticas.csv": {
+      "sha256": "4a14610e4c705ed0832a4de80ed6b12aeaff74ea072c668d5cc3760351e84b4f",
+      "bytes": 15279
+    },
+    "data/processed/integracion/esquema.json": {
+      "sha256": "33d923ccae2028437deaaea559c61de98723c03174e42150966bd55982bd5b9d",
+      "bytes": 39751
+    },
+    "data/processed/integracion/estadisticas_historico.csv": {
+      "sha256": "ebf9ab71944e6a265856a757ae42dec106b3ae3b986f38ba2f6c527f0c38792b",
+      "bytes": 127683660
+    },
+    "data/processed/integracion/estadisticas_ultimo_anio.csv": {
+      "sha256": "e2fee8056b67c2b10b5e40198af33f5227adc4c423e0c37eda8a49d6195fa96f",
+      "bytes": 7924349
+    },
+    "data/processed/integracion/evolucion_poblacion.csv": {
+      "sha256": "7944b59777d9d5fe59d5831f4793464b9ea60378f54291654f6c4e78ec946c6b",
+      "bytes": 783800
+    },
+    "data/processed/integracion/fuentes.csv": {
+      "sha256": "bd0c2497bde3cc7186d28ff7b36adbe7b857bc19c5add890b7ac00a443af10fc",
+      "bytes": 10146
+    },
+    "data/processed/integracion/incidencias.csv": {
+      "sha256": "f2380b464134aa67729bae1b4da73bb6cd1cf61a307cd503ca2fa8ef881d9ecc",
+      "bytes": 483821
+    },
+    "data/processed/integracion/municipios.csv": {
+      "sha256": "ce0388c6be823b4b904b9eb3e69df6d066053c60a16473583da0067bbbcef287",
+      "bytes": 21854
+    },
+    "data/processed/integracion/ofertas_sanitarias.csv": {
+      "sha256": "605fa87c9cbadb397f121e879d2056886af91b67c289698a687607af3e0457ce",
+      "bytes": 5530472
+    },
+    "data/processed/integracion/transporte_paradas.csv": {
+      "sha256": "6d280f11bd26a526b70a3cb4870875967dde1ef5a417968e03387bb54040b32e",
+      "bytes": 4288390
+    },
+    "data/processed/integracion/transporte_rutas.csv": {
+      "sha256": "86841c7a8822bf84b1a3a94378ca6f2d4c30be9f9c92a7d0f9b0e96042133f51",
+      "bytes": 94215
+    },
+    "data/processed/integracion/transporte_rutas_paradas.csv": {
+      "sha256": "0e3254d19b59edfd90fadcbc0a22c8a5cafe0bcb44f9c8fdaa003abddae41e5e",
+      "bytes": 4032223
+    },
+    "data/processed/integracion/validacion_integracion.json": {
+      "sha256": "62d54a65c0cbe2da1d341bf324050ee154a1e2eb5aa20af72a8f9cf156255269",
+      "bytes": 35197
+    },
+    "data/processed/integracion/vivienda_2024.csv": {
+      "sha256": "e7b7bbe0e97fba15b292853939e6aff4611d6a20e729ae89c6e01fa81225a48a",
+      "bytes": 239931
+    },
+    "data/processed/integracion/vivienda_2024_elegibles.csv": {
+      "sha256": "f590749dedece7747eb4545d696e1b3f6d0f68eb102801eb95c0bb894e4f2566",
+      "bytes": 207402
+    },
+    "data/processed/integracion/vivienda_cobertura_anual.csv": {
+      "sha256": "ae30c9644f353eedd4bbc567d44983bc6b908f68b57c1bfbf9d375283083fa28",
+      "bytes": 414
+    },
+    "data/processed/integracion/vivienda_historico.csv": {
+      "sha256": "de03b3030a4f7f4d424f091143b88fdd0ff5d42df8e37c992e830b86bd45c9ff",
+      "bytes": 3317806
+    },
+    "data/processed/integracion/vivienda_sin_alquiler_2024.csv": {
+      "sha256": "2335d63007a6e922ff9e5f2cac1cff7b8e5dd39d7d16f0c1871011aa331b6cac",
+      "bytes": 3670
+    },
+    "data/processed/ivp/configuracion_ivp.json": {
+      "sha256": "5db391dc99257fddba722e16907e57e60fbeeed2dce710b5be1175a140e3d2a6",
+      "bytes": 1454
+    },
+    "data/processed/ivp/dimensiones_ivp.csv": {
+      "sha256": "6f6255e0cf386cefde53c62fa9e6e946c3f2716a94330df8b2830da6501204fc",
+      "bytes": 80225
+    },
+    "data/processed/ivp/ivp_general.csv": {
+      "sha256": "cd50500917fe5fe0901d8c6a066ea2094dbd32d48c5453286734d6903f4b12f9",
+      "bytes": 107045
+    },
+    "data/processed/ivp/normalizacion.json": {
+      "sha256": "83e36f2b1c258349136c29d18f899c7fe060ab536f3d08301d7e0df4bc7e528e",
+      "bytes": 29273
+    },
+    "data/processed/ivp/observaciones_seleccionadas.csv": {
+      "sha256": "e0c04688d6b68a9901f87d1db7400539c39180cf10159e640663b379d87f1394",
+      "bytes": 1606447
+    },
+    "data/processed/ivp/seleccion_indicadores.csv": {
+      "sha256": "4042bc96bc262985bb202398a8b56b8e075252b79ec5a63faebd67856d7d6fed",
+      "bytes": 3130
+    },
+    "data/processed/ivp/sensibilidad_escenarios.csv": {
+      "sha256": "f1e87213c7314a92abe078347833e1a33576b35d250b66c6d5fa8c421f55a368",
+      "bytes": 1006092
+    },
+    "data/processed/ivp/sensibilidad_municipios.csv": {
+      "sha256": "78c93cfcd2874d49cc1060a5660ca30e040f76eeff5ad18b9b6b30710327d3b2",
+      "bytes": 10939
+    },
+    "data/processed/municipios/maestro_municipios.csv": {
+      "sha256": "ce0388c6be823b4b904b9eb3e69df6d066053c60a16473583da0067bbbcef287",
+      "bytes": 21854
+    },
+    "data/processed/municipios/validacion.json": {
+      "sha256": "1b205db21f42160992dd56680f94a16c691663f0b76f9f51c63db3b9f0b655f8",
+      "bytes": 3029
+    },
+    "data/raw/recopilacion_2026-10-15/divisiones_administrativas.geojson": {
+      "sha256": "50501f7575b0dce5d5130c723e2402626b5ba59a509b0c3b2fb3935b0a655fc2",
+      "bytes": 2840870
+    },
+    "data/raw/recopilacion_2026-10-15/nucleos_poblacion_eiel_2023.geojson": {
+      "sha256": "6b1533c89fbf71c95d3efd2b4ba8eeedf29497d72f8f303e929ff4028b3b6d9c",
+      "bytes": 3319885
+    },
+    "data/raw/vivienda_2026-10-15/serpavi_descarga.json": {
+      "sha256": "30bd02b60c89a39bf59a4f2f1c3f81cc4b9d4adea0556cc59db84e8c907e857d"
+    },
+    "research/catalog/downloads.json": {
+      "sha256": "618c62a2cf59b8550d09ffdbdc1746ea552f57937b7bcad5ca5fb35efad6ce14"
+    },
+    "research/catalog/geography_transport_status.json": {
+      "sha256": "f412599cea7ea19fc76955dd835c8517dd7a336157599d6d11156c1ae9784af7",
+      "bytes": 11184
+    },
+    "research/catalog/sanidad_metadata.json": {
+      "sha256": "5deef7ec44c903d7990c5e33e79c0a562151443747353b4b81129a7546f85ad0",
+      "bytes": 5518
+    },
+    "research/catalog/selected_metadata.json": {
+      "sha256": "4a5c33f3ee91242dabefac93ea1fb3873ef669807602d3917349ae850304b034"
+    },
+    "research/geografia_2026-10-15/evidencia_crs.json": {
+      "sha256": "77246e17d078d9b85d5cf49139c218bf7ff053580dd4e3f349b201740e902c0a",
+      "bytes": 10278
+    },
+    "research/geografia_2026-10-15/visor_default_app.js": {
+      "sha256": "1f55daf7970622ac31f6916e0dbb7db2457e94db373e1c98bb53b514d43335f4",
+      "bytes": 6563
+    },
+    "research/geografia_2026-10-15/visor_init.js": {
+      "sha256": "9f235a175f7471a6d5b2c52346c0a0e668e90bc21b7455b696f384d144254b99",
+      "bytes": 14633
+    },
+    "research/geografia_2026-10-15/visor_localizacion_app.js": {
+      "sha256": "cc288e60fccda06f2c4487d4d1a0ef6d9b170948ddd0104dbf1b27ff184d13d4",
+      "bytes": 627
+    },
+    "research/geografia_2026-10-15/visor_localizacion_educacion.html": {
+      "sha256": "c034ae322fbbb392d7e7bd26225db62493e6ee58fd87c0cf507fd3b997b32887",
+      "bytes": 2811
+    },
+    "research/geografia_2026-10-15/visor_localizacion_identify.json": {
+      "sha256": "00acb5aaf3fd95dfb180a6f3af3ce3c34e162e3fe7bf7a219db55d177464758c",
+      "bytes": 311
+    },
+    "research/geografia_2026-10-15/visor_localizacion_map.json": {
+      "sha256": "a894edb0c33f132945a6d4aeeb1b55e3b85f94b8dfa3cd5de81dc547c14a3ed9",
+      "bytes": 495
+    },
+    "research/geografia_2026-10-15/visor_localizacion_panel.json": {
+      "sha256": "89f7cab6f76c1bcd97bc7c96abb756d56bb2e9e55401dad574d1bfb44167f359",
+      "bytes": 137
+    },
+    "research/geografia_2026-10-15/visor_localizacion_thematic.json": {
+      "sha256": "019a2e87b065f577ab29488f215703d5600d6f30dde4dca351fac5f5cd137532",
+      "bytes": 21019
+    },
+    "research/geografia_2026-10-15/visor_main.js": {
+      "sha256": "46925f52345ba9d6cec66940b77ceb6d408b331db9abe5abfe01132fcd9e5d54",
+      "bytes": 1028518
+    },
+    "research/geografia_2026-10-15/visor_sanidad_thematic.json": {
+      "sha256": "25f881c3c71d326fd737fc9e76c6ce2f03de67a957d97a2cef3282ec2d0cc80f",
+      "bytes": 4
+    },
+    "research/geografia_2026-10-15/visor_thematic_manager.json": {
+      "sha256": "38fb934055c91da7c54a7590f243fcb4c46ddad790b9b6f8f3483fa5f45178bf",
+      "bytes": 301
+    },
+    "research/geografia_2026-10-15/visor_thematic_service.json": {
+      "sha256": "e74dbe3e4ce255a047ecd72a9bff228d163987e8e1c031a5de43cc6531f49c59",
+      "bytes": 109
+    },
+    "research/sanidad_fase6_2026-10-15/centros_salud.html": {
+      "sha256": "9b5781cb2c16b5460835bd981766c23b4f9da0fa95fcdcaf3935c6c6ecc37e34",
+      "bytes": 529101
+    },
+    "research/sanidad_fase6_2026-10-15/consultorios.html": {
+      "sha256": "6d68393b7bf3774ee4cd6c73e00fb6bcdd02184662fc1e8c1119dc8ced743629",
+      "bytes": 446911
+    },
+    "research/sanidad_fase6_2026-10-15/descargas.json": {
+      "sha256": "fc3c20f2bfbce4ddd02e545e1f5465f4a29c82dafa2b1d96dd59dd70c83f9674",
+      "bytes": 2444
+    },
+    "research/sanidad_fase6_2026-10-15/directorio_completo.html": {
+      "sha256": "0ac78080f75f7eae256bc55beaa3548898232e50c7ce91c5b8a6b0151871b1bc",
+      "bytes": 981695
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/108486.html.gz": {
+      "sha256": "3de38b5ad52aad3a3e11b3e5addaa70f838535ca3e59dd1049fd7249400676fc",
+      "bytes": 18298
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/119175.html.gz": {
+      "sha256": "c0088f1aa2f026b4405386debcaa94ef973e9c1b9fc650431b57aeaa57f2abf8",
+      "bytes": 18178
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/120740.html.gz": {
+      "sha256": "370ef6217e0c440ac6de4a429c5ff65513a962ca57a30d97aff0d154390adebb",
+      "bytes": 18133
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/3630.html.gz": {
+      "sha256": "01fd849c2e80257d065efac1404b12e1e8c049ede0eef6cf644e39140f92029f",
+      "bytes": 18305
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/3631.html.gz": {
+      "sha256": "ecec5b2d3d14825370722bd249165c05efe076b4ea3c0f26b0c25fe350693ec3",
+      "bytes": 18274
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/3632.html.gz": {
+      "sha256": "7863428cee68720778497a12a2d8055e0fb75befe3c145564a47bf00b01a8242",
+      "bytes": 18286
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/3633.html.gz": {
+      "sha256": "4d674bd5520a9191a70cb484e4420a9f0004312b26054cfc75be6796335acd6b",
+      "bytes": 18246
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/3634.html.gz": {
+      "sha256": "f1db5fd07337976449af6187d84dc9accc8f7cfa2cf4f2ed07ffb03c57c49d9a",
+      "bytes": 18296
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/4575.html.gz": {
+      "sha256": "44cd65c3b9ddc1c6fffc97fbb87cc45cb38e07bd40e95219a28b35f8c24c28d4",
+      "bytes": 18526
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/4775.html.gz": {
+      "sha256": "8bfb7aa9a803246cb78523c29e8853111f9eaa33f043b0bcc4ea75f1b8757646",
+      "bytes": 18619
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/4987.html.gz": {
+      "sha256": "e507155b02d2f0c4a0b769a17be16688c97284f3e8d4b37ec99efdd2d1f66048",
+      "bytes": 18269
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/4996.html.gz": {
+      "sha256": "4ac27aa15c21ba0c378877c8da51b05d0d43868728a9002d5aeec6d785b5e650",
+      "bytes": 18443
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5027.html.gz": {
+      "sha256": "aefef0583385b3bf93a19cfecd46d9d8d6c311cdf5388097d7cc165ea9b6185a",
+      "bytes": 18538
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5028.html.gz": {
+      "sha256": "351e84976cb59e6e35a1684d921ffb1d283fb533d0717f460d6925a0d1b6481a",
+      "bytes": 18579
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5061.html.gz": {
+      "sha256": "ecda0685800d75b3bee4667ae3fd6626f97fb57efd350caa31e9b11445d835b5",
+      "bytes": 18284
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5121.html.gz": {
+      "sha256": "f37751c957b66d14ffc6510d52b8c6d0479b4214251d26e30634890334a6dfd4",
+      "bytes": 18300
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5214.html.gz": {
+      "sha256": "24382499d2a889aa7b8d87041279e38e21d443173d64d9bca10928cbbc356307",
+      "bytes": 18581
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5215.html.gz": {
+      "sha256": "9a20785291f403a0fefdbb31aedef4cf8718742cc398562869fb4159f6653d49",
+      "bytes": 18256
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5216.html.gz": {
+      "sha256": "b5f41a705d60646aeec5de369cdfb76f0894f2d66517198f02b8beb24a4de671",
+      "bytes": 18262
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5217.html.gz": {
+      "sha256": "80252c7fc477df744e0f5524af576ba921cf36028f5f816d44ca0145487f9cd9",
+      "bytes": 18647
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5218.html.gz": {
+      "sha256": "5c9ed0b52cf8090b052f0e4c10ed9e76f25b8e26c1fcccc9458eb0cb5b8df28e",
+      "bytes": 18601
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5219.html.gz": {
+      "sha256": "8640f04cd2fcd726d180345d0a27ed3b2c64d247fb040cd0c095df51118bbed1",
+      "bytes": 18550
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5220.html.gz": {
+      "sha256": "80188bf1286a9c5278b98df7f1db34178b62aaef63b963927eea89e6c1372205",
+      "bytes": 18583
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5221.html.gz": {
+      "sha256": "2ceb31d862b5ccdc4f4c223044160b96adb6d43999858fecd47194bd70a13ecc",
+      "bytes": 18693
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5222.html.gz": {
+      "sha256": "fa716f11848e0f70139b75a4cf10d29b085a454cf1f80180b95b29e1cf06c84a",
+      "bytes": 18615
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5223.html.gz": {
+      "sha256": "6474bc8e69967935c5d75bdec590434df39d739ab7cfcccb831b7420b9fdcb73",
+      "bytes": 18578
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5224.html.gz": {
+      "sha256": "da40b4efa34f49585c90a728d7e2eb397f4c0345560d75714c46ae7277bcf6a8",
+      "bytes": 18576
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5225.html.gz": {
+      "sha256": "e472b2e05b8eeda98a8e5b22ab59dcfe78fd839fe3d957315dc4283fc30262e3",
+      "bytes": 18545
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5226.html.gz": {
+      "sha256": "1086d76cf6411e8034f60ae0e8a86006e0ec06b66baf3d1656f3fede8b0703ef",
+      "bytes": 18637
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5227.html.gz": {
+      "sha256": "077287e9bf3b1ccb4e537ee6baa09d4b685d0b7ccf642f6bc8ee8530e9a0838c",
+      "bytes": 18628
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5228.html.gz": {
+      "sha256": "725182604aa39d31a0b5287b77606823fe93cf9be9cb4db38a18afc40d5b3d5c",
+      "bytes": 18633
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5229.html.gz": {
+      "sha256": "67f5cd0755d827dd47e97cebac15d1a70aff75ad5384f1bc2fac1c8c9918c6cc",
+      "bytes": 18585
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5230.html.gz": {
+      "sha256": "af36c2a8f8e7404bb2cf537c7b6ac9c902d08f2284a12b1e6969525116a9f3a4",
+      "bytes": 18590
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5231.html.gz": {
+      "sha256": "f97c31a42b9228db43d5a1ce72f5b20dde4d184a2d8f8a81bdc522256e6968a1",
+      "bytes": 18555
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5232.html.gz": {
+      "sha256": "768c99c4e6f41a3cd0d036b571e89538faecca82f4e6d232252bcf46d15f7dbc",
+      "bytes": 18499
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5233.html.gz": {
+      "sha256": "518505369031a7e3039655f777538d5406b254cfb19b28a9186c8dbed79fdd69",
+      "bytes": 18593
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5234.html.gz": {
+      "sha256": "032d90a70d52f79c6a88d72869e49b5464dcf8fb2302e826ad076a7fe5cbb15d",
+      "bytes": 18630
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5235.html.gz": {
+      "sha256": "980e4fe5e6870f1bbfdfd9f3d9a27ef6656f80ebd70da27b5157ecfa906c0ef0",
+      "bytes": 18695
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5236.html.gz": {
+      "sha256": "2475347e61d1950b518703c4b3c5275f48781d94a7013f52b51cdc943332cbde",
+      "bytes": 18593
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5237.html.gz": {
+      "sha256": "6fc34bf32e0ed1e1167a39f73e530d72f166dba16a4ef97756b9972680e0d095",
+      "bytes": 18554
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5238.html.gz": {
+      "sha256": "cbb2c075a99b1760023f4e0e11ffea6009d648556b2a1dc15ec0847d0d605a90",
+      "bytes": 18694
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5239.html.gz": {
+      "sha256": "819b85aefa1edefaefa85350fb146e76d9450b568026c2945bd20821fa1a0c67",
+      "bytes": 18621
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5240.html.gz": {
+      "sha256": "5e2400c444f3a5b6c95c19f8f8836db78eb5db7c5d8ae790d89ae0a3f8b1fa34",
+      "bytes": 18506
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5241.html.gz": {
+      "sha256": "4ed89f0bfaf3440efda64a4939ffaba55a99515dfa6333d7c1580492e6a384d3",
+      "bytes": 18580
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5242.html.gz": {
+      "sha256": "a5ed47bf9079427b7afc88cf70fac0c6cca899dbb4e8d161e56517bb0681988a",
+      "bytes": 18539
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5243.html.gz": {
+      "sha256": "7afb08b5c8194fb48ff381604dcbf6b2632f3e4abd8a688069bdf036b0bae4bd",
+      "bytes": 18594
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5244.html.gz": {
+      "sha256": "dd817a1e0f7f4ec7f0642ed43c1e5da189d4197a080b1df5c9d3187a4ba03937",
+      "bytes": 18624
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5245.html.gz": {
+      "sha256": "af0bd041105c757bb5010f9ff7c931fd4f328079598111a4e3b3c6288f511fcf",
+      "bytes": 18555
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5246.html.gz": {
+      "sha256": "8033339f0ba1602b9130457004bec6cea5ed45c9dd8e5bc75524db6a72f4298a",
+      "bytes": 18491
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5247.html.gz": {
+      "sha256": "069d3485260f7f48d3234fd930790587de29cc14f39c689718fba62a70572354",
+      "bytes": 18561
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5248.html.gz": {
+      "sha256": "64ddaa2d1eceff70786cf3e77266e0a1380ae558b7fb16208a51c0a8c84692bb",
+      "bytes": 18584
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5249.html.gz": {
+      "sha256": "c836eeba12a73e27e39e096e7ea597df656dbc307175f95e12800f88d46db525",
+      "bytes": 18713
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5250.html.gz": {
+      "sha256": "5d0e41017d0454cc76faf192c26df7f9d3f26a1ff4f1c1bf5e7d448a48530cf2",
+      "bytes": 18539
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5251.html.gz": {
+      "sha256": "4262d81150d5d21143215d7220572520e36403347537d8cf7e4d24955ec17ecf",
+      "bytes": 18620
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5252.html.gz": {
+      "sha256": "e683730cd4ad09c17a3c6199c7d40e80857bc12b2d43a7713171e6942403197c",
+      "bytes": 18636
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5253.html.gz": {
+      "sha256": "c396d6c4cc5eaba908bab34e9849880644a070b51abc3c7bca4fdb0437bd470c",
+      "bytes": 18622
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5254.html.gz": {
+      "sha256": "a263fc02505ac0cedffc32b9a6149bd2db0b44f4fc10819c4782d5dcb4dd986b",
+      "bytes": 18597
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5255.html.gz": {
+      "sha256": "96e9fc7e28f71bf920a81becf9a4475809078d9d6c4175dfd463bfccc2bbf975",
+      "bytes": 18622
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5256.html.gz": {
+      "sha256": "825e4b49832b17867e8e7c9e33944caafbba0bf725d8e7b75c92423aa4e89081",
+      "bytes": 18569
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5257.html.gz": {
+      "sha256": "895b721fcf7cc8804236f8d88c7043ebafe67f51024ec40e05ddac10357e7326",
+      "bytes": 18633
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5258.html.gz": {
+      "sha256": "15a9652ae449e2992ded7830dd4306bb8ce3837c55b50072037c954c27f5ff65",
+      "bytes": 18631
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5259.html.gz": {
+      "sha256": "b9c36f497b1f24ccce5eeffe19ff7e89ffe9d803020e16817c18bedea04698ca",
+      "bytes": 18622
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5260.html.gz": {
+      "sha256": "83045fad2c2f535dce0749e3219ed033bc17db3f729e63f00fa82055ec18dcea",
+      "bytes": 18613
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5261.html.gz": {
+      "sha256": "15d99fab247e797743b4dfef232c74e2a574fb4c4e86689d8193accd53d54c98",
+      "bytes": 18600
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5262.html.gz": {
+      "sha256": "74ed27567f07aff0afe850f0f9ae00400a78a0d065d1a843c27654f775b24fab",
+      "bytes": 18608
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5263.html.gz": {
+      "sha256": "65a8c6c6d77e75ab80de54be440863abae009a5729278f671ae2d13426e3492d",
+      "bytes": 18697
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5265.html.gz": {
+      "sha256": "974b0c2e1a5bfdeda499215714271df35afd7bcaa3213f3058fc37b24a36e428",
+      "bytes": 18196
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5268.html.gz": {
+      "sha256": "590a916b8e94986999c6119d6daea459f5a2c07b3951f895aaa996fc88018dc8",
+      "bytes": 18273
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5269.html.gz": {
+      "sha256": "aa844f66afc1e821d5f1c89ffa832008b626730550230a04d90bc61c7c060542",
+      "bytes": 18230
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5270.html.gz": {
+      "sha256": "9d66b0e08368e372cff0eac05ff6df8296999a4872b50092b3c89bc2756bab66",
+      "bytes": 18324
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5271.html.gz": {
+      "sha256": "5aa0f6b5d9f05d1aec067462f46a1337433531107b9ceb151549a819f4ea5e37",
+      "bytes": 18270
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5272.html.gz": {
+      "sha256": "d041148f1a6e24ee1f927119b5512030797313cb4c338baf8a796d5125f52e86",
+      "bytes": 18278
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5273.html.gz": {
+      "sha256": "2e95ddc80d2b926d241f4bd4d58cc3b57cce34175dd67ef62d579e4d9a2e89e0",
+      "bytes": 18228
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5274.html.gz": {
+      "sha256": "b4dde27811a78548fce007afb217f4a7bf3380f018516c0054771fa496d4e95e",
+      "bytes": 18238
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5275.html.gz": {
+      "sha256": "1e91ce6345c3f3e4c0ff4f75119d0d9d73be867fa596488c234457a902394922",
+      "bytes": 18228
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5277.html.gz": {
+      "sha256": "a005353812fb4adf581cce34a88f3048683732bfc14ef36eba12e925bc4cd64b",
+      "bytes": 18308
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5278.html.gz": {
+      "sha256": "1842a3083a1202bbf8769932572a51c2e5b740f29159f5195cf43bf392788953",
+      "bytes": 18301
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5279.html.gz": {
+      "sha256": "d1c3b61d05f7086565baa29977d2b4ea13999a2c2bedea98d3098ebf1cec1d70",
+      "bytes": 18236
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5280.html.gz": {
+      "sha256": "a6939a5b36407c04dfcf860f04936ea2af7013214ca9a708a9bbce3ddf7d4608",
+      "bytes": 18223
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5281.html.gz": {
+      "sha256": "fdf4daccfbead581cd581d077b0bbc1f48afc51831a1f949cb6170bc0bc9b3c7",
+      "bytes": 18190
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5282.html.gz": {
+      "sha256": "90bee211ed6ba1ef012818bf40705594da1453b3405b7ccda9fef3ecfe51d12e",
+      "bytes": 18250
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5283.html.gz": {
+      "sha256": "008e54c9292a680f6aa43f38eb29b1ba06814718100ee0a786a80454ef188796",
+      "bytes": 18341
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5284.html.gz": {
+      "sha256": "cce17fa399118ca7a9d897fe64c344f4211c10a9f11483f8481520bac52d046c",
+      "bytes": 18239
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5285.html.gz": {
+      "sha256": "03260989ebfa0322df5cf0c0e2882fc71b43f57c621931ff828a1264e59f76ce",
+      "bytes": 18275
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5286.html.gz": {
+      "sha256": "ebb735c29da9156e76b6cb03671b37ceebee374918e077f081aa2b62df57faf5",
+      "bytes": 18653
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5287.html.gz": {
+      "sha256": "2572d7dbda2e8a9cce2df50a4b7bb4659d41514cf1fec8349594ae64d084a2a5",
+      "bytes": 18296
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5291.html.gz": {
+      "sha256": "55ca4fa2505eb3864a3afd3d7d7494a5fc28c42394144dc6c9a9e8351dba6852",
+      "bytes": 18221
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5292.html.gz": {
+      "sha256": "9066be1d4c31966e46dbc07608938806575ea5e4c0b8280e0aefa94b437eeae4",
+      "bytes": 18259
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5293.html.gz": {
+      "sha256": "77e7328fb59dd764a6851b70d2f15d103761063a3bb46052c96985395b97ced5",
+      "bytes": 18234
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5294.html.gz": {
+      "sha256": "2a1e4baad27b7d2d98f752294353ff9b70d1dd89524e8fbf72cb5f8e267aa3d6",
+      "bytes": 18280
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5295.html.gz": {
+      "sha256": "4849dd661177671f8c67057534bb8e656d07c5cbfa9bf7656ba30845003819c0",
+      "bytes": 18259
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5296.html.gz": {
+      "sha256": "9d89da41b1a8375503ead9d6a98ca8203b221e7214e7ddf2a8e4effa252d2c40",
+      "bytes": 18246
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5297.html.gz": {
+      "sha256": "d871c402dc102587fb01529c26d88d666147800a078d62fcfb49e329fc8075b2",
+      "bytes": 18278
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5298.html.gz": {
+      "sha256": "af2ce1e5b91178a6441d214e1f453424e1e91dfe005d65f268f088adbd902bc2",
+      "bytes": 18245
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5299.html.gz": {
+      "sha256": "f2cd2ca9c86c419b1b20841c804abbc5edd2d925d1a48bb286f690dc4a4a018f",
+      "bytes": 18226
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5301.html.gz": {
+      "sha256": "496e07c6ba3090edd96db3ead9217af1d30d73b9708d310a3b3aeb76e112c3ec",
+      "bytes": 18217
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5302.html.gz": {
+      "sha256": "6495e6a7c3e812428ca3d9a1b7e0ad579ce8c43ee6eea4a08aba5aff81ba8ad5",
+      "bytes": 18317
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5305.html.gz": {
+      "sha256": "433b25b8aa775371c5c1eb83b9e632eb5988010c237aa30f48fc381c2cdc57a0",
+      "bytes": 18266
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5306.html.gz": {
+      "sha256": "59d56862489d0a181aa4acb6557e837b4767a3e0c2b02531ff9c489efd03a2f4",
+      "bytes": 18631
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5307.html.gz": {
+      "sha256": "1dca52092443565f9a23494ffd752ba5783a3438dde9b207e493fab5e1aac5a9",
+      "bytes": 18332
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5308.html.gz": {
+      "sha256": "7256b1e4287ff1c023e4984a3849932d432b103d024321eea6d0917c42d479d1",
+      "bytes": 18283
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5309.html.gz": {
+      "sha256": "8ff584521928e1bd4c9385b389a859365ff0b23567976ec01f057160ceab2319",
+      "bytes": 18365
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5310.html.gz": {
+      "sha256": "32fc4311e5241efcd01b2f810af847ed482402ee3cd16753f21be442fe00ca38",
+      "bytes": 18251
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5311.html.gz": {
+      "sha256": "87fa3243dadcc1585d4b7c14c09e3a7b3f8c5cf12e1ba718373cdb32586394ab",
+      "bytes": 18313
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5312.html.gz": {
+      "sha256": "a3cf3c5947cc6c8b62a52612e78218d2d306fb434f734e0406e7c2b6603b03eb",
+      "bytes": 18242
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5314.html.gz": {
+      "sha256": "7de7035866b1150f3a44f04f2fde8e821b52cad5b87d8714ff14b2ab40ee85cd",
+      "bytes": 18264
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5315.html.gz": {
+      "sha256": "7b3a36762bbd1912f8d3a3c796676064c3adc48b848f029fa0f83956842b089a",
+      "bytes": 18279
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5316.html.gz": {
+      "sha256": "2c5b21a5260004b27593328063e826f5fe8def525233a78a997e21bcccb89525",
+      "bytes": 18252
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5317.html.gz": {
+      "sha256": "76b227e0e08cd5a3875c00517a0144ba0b474e429563500a9ad535d1b95d167c",
+      "bytes": 18291
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5318.html.gz": {
+      "sha256": "0be94869e03f01de2c935fb2a68bc208a3085a9383d5e536da80f586cbaaaed6",
+      "bytes": 18319
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5319.html.gz": {
+      "sha256": "3d2cdb8ee53887b29ebb684ad879846027335f4eee8b35d29e99b8686c39aa2b",
+      "bytes": 18314
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5320.html.gz": {
+      "sha256": "46a00268b9261c1e370f26170a13654cdf4bab2b290045e69fa72a00b2613062",
+      "bytes": 18396
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5321.html.gz": {
+      "sha256": "05b993a016043e7775c13ce22cbc89378bbb978bfd2280f15588d1fa785625ea",
+      "bytes": 18212
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5322.html.gz": {
+      "sha256": "f13b05bfdaf9b806a44c9b821195c876103b20b0392cf843828d61cd40026250",
+      "bytes": 18267
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5323.html.gz": {
+      "sha256": "7262e962d702521c149ddd26307fbbdabedc5cdd062968bb265b95a146b9d887",
+      "bytes": 18261
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5324.html.gz": {
+      "sha256": "4b1be0df9d709c7d0a8f61d627372b49d66e9fefb5bcefbd40a125a80090af00",
+      "bytes": 18182
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5325.html.gz": {
+      "sha256": "743cca0ce34e43fb70baa6a59436d29de3c13ca600c0e694f8d370064e3a516e",
+      "bytes": 18581
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5326.html.gz": {
+      "sha256": "c46ec607bb67d36b08ee0782f9b72a3807dbf00e944147a64067f21d1868a2e5",
+      "bytes": 18289
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5327.html.gz": {
+      "sha256": "1addcaf784b73280187fd8c2a7af087eb7ab0fa6e767da33f7a4c0406629a9e7",
+      "bytes": 18209
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5328.html.gz": {
+      "sha256": "6f7870d4934bb9fa70c35a5579a69784738a28e20a44cee91493080c3a761fa2",
+      "bytes": 18306
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5329.html.gz": {
+      "sha256": "c85324b4cfb77a3d1a781a7f7f8c63ac5c56f945176609774ef2ffcac5bead3f",
+      "bytes": 18292
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5330.html.gz": {
+      "sha256": "05fa48d0ac104a341c6e519d92911842b3f926e36146a86f2beecea1d47d4551",
+      "bytes": 18280
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5331.html.gz": {
+      "sha256": "45e9b34318962fa45c3bd28d1c2f97cd9d63ccf900ac54fd2fb05805aa637bba",
+      "bytes": 18297
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5332.html.gz": {
+      "sha256": "c4c45a836bf6ce3e91a4e3f019fa16da34fe8786e549f0b116a289177398c174",
+      "bytes": 18173
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5333.html.gz": {
+      "sha256": "d7858f434f68f26a12ba78a15be7b49b18aa8767f43fecaa06bfe6e5804658ff",
+      "bytes": 18245
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5334.html.gz": {
+      "sha256": "680ef63f6ac37a672f13f92043483ad5e6095bae7e4acc5b85884b73097a99a2",
+      "bytes": 18166
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5335.html.gz": {
+      "sha256": "8e65967d839f9f1e04e4ad7b6f492e73d18f7da4c1113510985b7630d6d03113",
+      "bytes": 18298
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5336.html.gz": {
+      "sha256": "163ab263226531ccf37486cd290fb85131bc1756cd876c3d393210ddd01f7666",
+      "bytes": 18285
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5337.html.gz": {
+      "sha256": "fc33a7974eddda3a5f5f4cf4291c2a0e04d6e9f35d272580b72647a1bc94f501",
+      "bytes": 18192
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5338.html.gz": {
+      "sha256": "d6293a555938441cb5046c02032ea1e6d2eb8176508ea4f57b07d451bd5dfe40",
+      "bytes": 18245
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5339.html.gz": {
+      "sha256": "96787a41abd9972507ebf52929103dcdbfd3f99ce0cbe570a3a70f696af44825",
+      "bytes": 18234
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5340.html.gz": {
+      "sha256": "2362f230c556f0be741cca7ed3751abe2cbd19e672e642d78a798862e1926530",
+      "bytes": 18249
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5341.html.gz": {
+      "sha256": "76d9417b0cc98a9488e3af90f15ab9211039fcbfba16c6a4f1a7b04ad38e762b",
+      "bytes": 18309
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5342.html.gz": {
+      "sha256": "c35cc411a78bf6bf42047f83208f15f5ead2eb90174282a0b193a14f28814c0c",
+      "bytes": 18270
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5343.html.gz": {
+      "sha256": "811db1dd1ea6ce5e125b183562c85fbcd43b0bb69366db586aa9394481c5bb81",
+      "bytes": 18355
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5344.html.gz": {
+      "sha256": "57a13e983facc3e67443ea865a24c778ef8c1d6f54abd2e5b9fdb4bc211b4ff7",
+      "bytes": 18243
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5345.html.gz": {
+      "sha256": "e895f04b5b8875b39a763fe64160ff9257b2c01a66eeccba10af072707b89992",
+      "bytes": 18234
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5346.html.gz": {
+      "sha256": "6f007804fb111e5da7fc17395d8cc14e8e82ff6bdbff0d52594b5992ef02366a",
+      "bytes": 18229
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5347.html.gz": {
+      "sha256": "8d20404e5a5a4306241a712f08970029f0c42e4f29353137577d612023a4128f",
+      "bytes": 18228
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5348.html.gz": {
+      "sha256": "ce44e0e713a348c70e44a8cabfc13f0c4812690337e0e570627f1a0a3c5b92bd",
+      "bytes": 18231
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5349.html.gz": {
+      "sha256": "7b8043ba0d524837a44d34814146d7381c58ca5fd861a01a86d17b1f2a43f79b",
+      "bytes": 18295
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5350.html.gz": {
+      "sha256": "5c6e7f4ad4dfaec28fd459694698924a594177468991ca5872591b50eb07001b",
+      "bytes": 18583
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5351.html.gz": {
+      "sha256": "eeace6319f0689dcb3bbdb56f43938a7bb09fce94c30b4cc78140fc0dec7f95e",
+      "bytes": 18247
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5352.html.gz": {
+      "sha256": "1b10703639cb7348b568276111c17cd665be4393d14131fba9eafc10d7ee3332",
+      "bytes": 18202
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5353.html.gz": {
+      "sha256": "7050bc670401b8612d0595d9f7c04d0558821ffe43d7c7b0f302099708c3261b",
+      "bytes": 18230
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5354.html.gz": {
+      "sha256": "73d3e2b57e9f3b17aaa44367febeeac85782731009e3c3aaad191711f30a06b9",
+      "bytes": 18297
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5355.html.gz": {
+      "sha256": "2baf97e91246cb82a1a426369e2e6b55f1c08577907bacc10e3b64ec39a9ac56",
+      "bytes": 18209
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5356.html.gz": {
+      "sha256": "905657d0d60b34710b11de30b7773003c76f8f3f93755d308b8bdb5eab50f656",
+      "bytes": 18272
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5357.html.gz": {
+      "sha256": "4c825c44b741f65e2ae02c5ae147dd7d556474b529c927d5fbab0ca8b5fb786d",
+      "bytes": 18265
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5358.html.gz": {
+      "sha256": "001e9d80f2c4310cfad343baefb5715fc04fcf5e7b625c2d3bf496bd5e6b0bc5",
+      "bytes": 18137
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5359.html.gz": {
+      "sha256": "9f19967303c9beab2d87260bdfb94a55753cb08a62c84160f44c9689aa74b9e8",
+      "bytes": 18250
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5360.html.gz": {
+      "sha256": "bb53e8c8cef22345cab08484e46bb37d1a4cdf46023970e09a8fc2bc492cd213",
+      "bytes": 18577
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5361.html.gz": {
+      "sha256": "e5067a9143412dcd95abc7918c73deab1f38b8940e9f40aaf7e080783ccaa745",
+      "bytes": 18232
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5362.html.gz": {
+      "sha256": "550d03f99fdf0afe773ee1379c03cf1ab53639e048fc65775139b70f308974e3",
+      "bytes": 18279
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5363.html.gz": {
+      "sha256": "f5121587e6029a7639993e875d5344e9683d213361d5fd140f8ed2d906036efe",
+      "bytes": 18262
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5364.html.gz": {
+      "sha256": "1efe0c0b00c6256fe38c07817c6f8e3ff8dd24070dee4958c8c7015702ab6cb0",
+      "bytes": 18249
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5365.html.gz": {
+      "sha256": "41bf4265ada80bd6623db1cda48242a4ec744a659000f137d8032b949978d700",
+      "bytes": 18258
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5366.html.gz": {
+      "sha256": "8b88f52668180d2c656f27f807b7c69b4af6d25dfaa060135b9eb9a373026d91",
+      "bytes": 18304
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5367.html.gz": {
+      "sha256": "70188e47ef9aba030c50db505f7ad4852d9ea2fc2d5b28efdfbd0ac50485aba3",
+      "bytes": 18329
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5368.html.gz": {
+      "sha256": "d08ecd256da95e670ab745c0c07cbb9642e646b8d816782415392aed0fd1aff7",
+      "bytes": 18349
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5369.html.gz": {
+      "sha256": "e1e4e50ec47749af3994a389ac4ef9c4eac55b1541869ec4c193e1d1d5a40a4f",
+      "bytes": 18570
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5370.html.gz": {
+      "sha256": "23159d2f0c81d1634804add1fd5b87819c4ad8989647d6f339d987aaa40296b5",
+      "bytes": 18312
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5371.html.gz": {
+      "sha256": "96a4d4f9da8d11ffdec9f8d3e9ca6e0f833b6b66dedf59cedf883111194b2fe0",
+      "bytes": 18214
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5372.html.gz": {
+      "sha256": "7741c10ed5ab6b1759b171bf23ba8fe75bf86f28ade2a512f07799bcd0e88dc2",
+      "bytes": 18280
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5373.html.gz": {
+      "sha256": "f32f13c558993839c100fa5c022e2063b9fbbf2c3137154a8aec06bae2874af4",
+      "bytes": 18254
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5374.html.gz": {
+      "sha256": "5358491ec5557cce9fe8a4d2aa844b6577a25ec57952c5d5dcd5ed4bf0fc7f28",
+      "bytes": 18262
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5375.html.gz": {
+      "sha256": "0f391e274ec6a8d6f4445bb41966471a169eb412fb5977a71e0381a0e417a2ab",
+      "bytes": 18286
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5378.html.gz": {
+      "sha256": "73b154011bb8738131b72188aecaa11aa34f9aa50e4c2e4d1a76f35d8bb1319b",
+      "bytes": 18282
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5379.html.gz": {
+      "sha256": "675297de88719ff157e3fc4edea78926a62d0d4b5226f8a823aa71e2dd85d527",
+      "bytes": 18205
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5380.html.gz": {
+      "sha256": "35146f84fee1d4159fcc25a45df090667b51185de495d9dbb536528232a97dc8",
+      "bytes": 18177
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5381.html.gz": {
+      "sha256": "1a0e7e2214932de20fae8205fb6a0b709538f3e29446b03557ba16c4f77fd9c0",
+      "bytes": 18353
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5382.html.gz": {
+      "sha256": "9a5643b5b814cb22fd82a8c73bd6cdaa32a07691913165980ebdf6a091e612b1",
+      "bytes": 18241
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5383.html.gz": {
+      "sha256": "d6e52ff39b45d2d8f60c94dafb1b6917bde5454eac434968d1e16e28a7a4d447",
+      "bytes": 18530
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5384.html.gz": {
+      "sha256": "3c1027345de77dfb7c163676cf8c006037fd277d5cda0f9bb27947ae3f81d874",
+      "bytes": 18281
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5385.html.gz": {
+      "sha256": "96656fda53f8472d806913ec4651b55b99ec9da109bebbdb9e63650e7263f1cc",
+      "bytes": 18343
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5386.html.gz": {
+      "sha256": "78595dd8939d563cbfc031eba03d797fe28a7d8b703608b8b5a523ed79854193",
+      "bytes": 18204
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5387.html.gz": {
+      "sha256": "bfe12df3ded85dc1d3d1532d6a31c9fe66f6c14fb7f13a6a15c2729144098741",
+      "bytes": 18284
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5388.html.gz": {
+      "sha256": "de195b2856eb2afc5abee957edb9aa02d265b00eefdd1aeb88cdca7d0c42e0d2",
+      "bytes": 18395
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5389.html.gz": {
+      "sha256": "868389c906cedccec088746d9c9e4c301c4fbb94061ea60f1eb4dbfc23572f89",
+      "bytes": 18358
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5390.html.gz": {
+      "sha256": "e3f600c59c2fb0b2426bfacd33e41636cbde1207cf14d4e936d056bd21c9d247",
+      "bytes": 18309
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5391.html.gz": {
+      "sha256": "5789b968df0c70b816547538adf248dea4b0efd666fca8e264d9708955b43577",
+      "bytes": 18296
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5392.html.gz": {
+      "sha256": "2110d192afb475cbe721418f95274539fbd9eae124e5b47e63b42789e8fa6c58",
+      "bytes": 18721
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5393.html.gz": {
+      "sha256": "78d06110f06804e3071511227f7a46ffa0223b11dd5a935d504ed84baf3eb4b7",
+      "bytes": 18259
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5394.html.gz": {
+      "sha256": "937b6c6c041abcc4a2aa29fb32a69c429969492b2da0b66d144b3c463c6bd102",
+      "bytes": 18240
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5395.html.gz": {
+      "sha256": "79db7c59a0d5f2a743ad228102b0215b164b5a75e044703b0e47d098930d0ce2",
+      "bytes": 18179
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5396.html.gz": {
+      "sha256": "cb7378aef1a7bfe18435a2a266e7696c2e9f4c50a2ee06a586b44376368dc1ab",
+      "bytes": 18253
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5397.html.gz": {
+      "sha256": "420507ebfff1f10c15a4f07a629e5d9d901e04a1cda0e1fa2b07db027cc65073",
+      "bytes": 18215
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5398.html.gz": {
+      "sha256": "3bcff004fe1b7072e881c389aab771888ff9c89cb49a9e918f24cf1f0a6a8b12",
+      "bytes": 18181
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5399.html.gz": {
+      "sha256": "fd707f7ce94dc781d422d3ddd3276e9fc1cc5220d7ebb2de3d482cf5d0e9a97f",
+      "bytes": 18260
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5400.html.gz": {
+      "sha256": "60b75460e624722c4e25c760890a49510d42a8218c518fe3a039b501a0b9960a",
+      "bytes": 18280
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5401.html.gz": {
+      "sha256": "b5ba8e215384092c2f23d69d4b5d2e617a52d379f8f911f9612592f6f4e3ec83",
+      "bytes": 18240
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5402.html.gz": {
+      "sha256": "3abea2254488f0c3aea460bcc6cadb182dda9f0303bc6479bfa35c015634204e",
+      "bytes": 18298
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5403.html.gz": {
+      "sha256": "64e8efee7be1944486b2958640366d6c4d9140be2ec4982a2d2b866f83e1e6da",
+      "bytes": 18240
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5405.html.gz": {
+      "sha256": "382cdde342227dec07afbba31f8cbfab51604a8ef8e27f9b29b482462ab71cb5",
+      "bytes": 18301
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5406.html.gz": {
+      "sha256": "476abd93df304bb1c8a48f6e1354bc5d70fbc961805e4c0c58d2f8c55ee68014",
+      "bytes": 18284
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5407.html.gz": {
+      "sha256": "555c6c1823f1e4e99c9b2b5633666f4fa0a07ee50ed206ee6d4fe77bbcfac0cb",
+      "bytes": 18261
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5408.html.gz": {
+      "sha256": "f80669418cbd29af977496afb8faaf0655d0779915f0dfe19c9d0814ffc6aca6",
+      "bytes": 18321
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5410.html.gz": {
+      "sha256": "e3b5af41e8970dd4b9e2578b4e75f988fc07b88423675b6472cd672204e7629d",
+      "bytes": 18359
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5411.html.gz": {
+      "sha256": "c8a716123e95f53d11de9d2d7ba4e570b7812ba4bebba9620b5b954600136940",
+      "bytes": 18329
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5412.html.gz": {
+      "sha256": "318db97b25794852dab13b4c43f0ad4ac32195bc0eab36f95c78fce8b89a94e7",
+      "bytes": 18436
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5413.html.gz": {
+      "sha256": "fc9e3b853052852dd2b24f7f9ee6b062dc5e3ad35278b8746699edf8f433315b",
+      "bytes": 18278
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5414.html.gz": {
+      "sha256": "83ece1722c0fa6abe573b38e87b8a8fd543411403ba48d69739cb18525b6b099",
+      "bytes": 18388
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5415.html.gz": {
+      "sha256": "02dfcfbbe504621e65ccdbb811e0c2f00fc458b367247e648d0b2883167beede",
+      "bytes": 18250
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5416.html.gz": {
+      "sha256": "dc8ad702315ce6e18779e23dc375d1267a2ffd977b269fcc7bdeb65b454c2de5",
+      "bytes": 18514
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5417.html.gz": {
+      "sha256": "925f7d6c42298f9cbf2b7700e4db4bac74c91098d7be43ff00551d02e9ef52bc",
+      "bytes": 18948
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5418.html.gz": {
+      "sha256": "9b868c43d3f2f00a64484c1a933fe0a61e896082214795b62e0d420dcb6a0f2b",
+      "bytes": 18573
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5419.html.gz": {
+      "sha256": "1b99388089b2d1837557bdabe77625edf4e84c02f27219b22ec8efb7dea82895",
+      "bytes": 18462
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5420.html.gz": {
+      "sha256": "1170d1daaf3f0f91d788460a6b2176d5493ec3128a2c639142b241d5fd3e4f2a",
+      "bytes": 18507
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5421.html.gz": {
+      "sha256": "2d4975bf0f129df580561a6506db6ce765cfb024087c1bddfa503fe448c052e3",
+      "bytes": 18559
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5422.html.gz": {
+      "sha256": "14983a2077da5365e0e73b1dd1f7380f9243a022501d3bae49f0e190fa3fe51d",
+      "bytes": 18365
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5423.html.gz": {
+      "sha256": "7663c1ebdba047e1dc609d28f94a7f4f51222fe38517e4efc4bd89ca6fb8c329",
+      "bytes": 18218
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5424.html.gz": {
+      "sha256": "bae662f70dfbd17573feaab6cead6e5f2e1c36908469bece53aa357dd19eab2e",
+      "bytes": 18335
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5425.html.gz": {
+      "sha256": "ca0a44e518005b87bbadb043a10604654f8283b8d4b38cd989f953cf0e57eb8a",
+      "bytes": 18335
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5426.html.gz": {
+      "sha256": "8c1974403fd721e04ff7dbceb6b0d9b4c2efb3b450b1807e35737f939279a987",
+      "bytes": 18304
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5427.html.gz": {
+      "sha256": "e1dd1f62d3d2d7e961945181b50c92efdbec65e29e7e4fc9204847ce9f99ea9d",
+      "bytes": 18288
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5428.html.gz": {
+      "sha256": "ce3285e5c712dc20c2a3f3f8a09fa55cbf1053f8ac4f13e558b1c360819d10a7",
+      "bytes": 18340
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5429.html.gz": {
+      "sha256": "18653a9491f0b49b94c5d72b7ae86638d18e3224ecd8d8a8a382f8db99e64ec8",
+      "bytes": 18317
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5430.html.gz": {
+      "sha256": "851100e03912dd1222b2a826fd4ec193324447c78613a52f163db9d2d036feb1",
+      "bytes": 18237
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5431.html.gz": {
+      "sha256": "151b44ada81c4e2f650938d7c9cd4685547bb46a04818a499d7dbe62d96e906a",
+      "bytes": 18341
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5432.html.gz": {
+      "sha256": "8a3faf6e8944ad814f4dbc6ef15db118ef7514707175512b31f36ad91eb70e1e",
+      "bytes": 18339
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5433.html.gz": {
+      "sha256": "192e04dbe0efb523bb5d85bb03728735a85cd85644d307ccba0647500b471cfc",
+      "bytes": 18474
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5434.html.gz": {
+      "sha256": "dcd00ad93a9fd0b1cd80a63cd19afb256644382214371d2bdaf0aaeb3ca8e860",
+      "bytes": 18483
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5435.html.gz": {
+      "sha256": "cabbfa574272980d05999e8abc464781d3802991248cb6ee1c0d99e77c53b16f",
+      "bytes": 18301
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5436.html.gz": {
+      "sha256": "c70cd7240a5b2068ad22ece988254b7471f028d73fa84daa32a5d950aff5a86b",
+      "bytes": 18284
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5437.html.gz": {
+      "sha256": "3411f1b74f8b983b0527f0e17fe6a7cc7f8a9e65c347d8fb55ddf5c4fc1d3cb9",
+      "bytes": 18352
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5438.html.gz": {
+      "sha256": "ff27ccf3ae77ed7a89a007645b15840565d19dc0f4abf42f9bf81a4a5b37a46b",
+      "bytes": 18303
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5439.html.gz": {
+      "sha256": "186ba73ff01ea6fd69eb4e0dc335122a05ecaff4e10625e9b20e2e8987f3d8c6",
+      "bytes": 18278
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5440.html.gz": {
+      "sha256": "1a065b8869377c6364666d0eba5220ceff802dbe690ef625a5fe736f55128c68",
+      "bytes": 18358
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5441.html.gz": {
+      "sha256": "abfb3b09bb7616645dc09dfad891fb61689b900588a3da91317e54edd43bd1e6",
+      "bytes": 18312
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5442.html.gz": {
+      "sha256": "ba39b4040cc91bee9eea0a87df0cf316e0bcfa062cbb303827f8c04e61a2d130",
+      "bytes": 18259
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5443.html.gz": {
+      "sha256": "2b30f5238dfbd57f081b911d9439f570cac6deafa283704cacf1b3c4d8703f15",
+      "bytes": 18246
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5444.html.gz": {
+      "sha256": "39c5813378522812546101f738a6f4388f038502c5dd1240b201c9b6e7e1cffe",
+      "bytes": 18236
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5445.html.gz": {
+      "sha256": "dbea725fa3973251ce5aece9d0624c05bb3c5130943ab04aeec06d4ed93c4ed6",
+      "bytes": 18281
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5446.html.gz": {
+      "sha256": "9d357b1e2491ca66cff114e881510e626b708de10bb0786b6fc7f3f4237089eb",
+      "bytes": 18259
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5447.html.gz": {
+      "sha256": "f684ff5540343073a1fed507ae0257447a0415cce949336e56e95693b494ba1a",
+      "bytes": 18241
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5448.html.gz": {
+      "sha256": "e06bef83cd690ff1faa92d4fa90f8b5eb2b43d51feeff77939e64fe5f4d90094",
+      "bytes": 18301
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5449.html.gz": {
+      "sha256": "d519552401c8345b77f621af94a5c270aa2ac917b042471968ddda7156072abb",
+      "bytes": 18552
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5450.html.gz": {
+      "sha256": "dff4bcc0a49734398d69b19465ee472abdf1fb708f6f5c442ec7bc3a7a436126",
+      "bytes": 18326
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5451.html.gz": {
+      "sha256": "5b4f539b45e440790df30536174e61d683f480f27633eeddcde3e31d270455b3",
+      "bytes": 18245
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5452.html.gz": {
+      "sha256": "9e801a5722178904539431516c9c1f7d7ad97ba99a8d2f3a31b2c26fb8bebcbf",
+      "bytes": 18325
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5453.html.gz": {
+      "sha256": "2cea9b4381629d06065da4c7caa18031d8b073f4a490e62980300621792becb8",
+      "bytes": 18275
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5454.html.gz": {
+      "sha256": "bdf49fd9d6918a177a67bc986f89c3ad3a6d1cbe4f4c473e977ddd58ad5e71b8",
+      "bytes": 18275
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5455.html.gz": {
+      "sha256": "9f210cd174bcbfa7cce712eb3a0edc13fce2530d4d6d14cc5b63a8d43323f630",
+      "bytes": 18216
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5456.html.gz": {
+      "sha256": "c7154e1be84f0085a77e1fefc2eded0c09ee70b15f8b73b37ad98b74f378c439",
+      "bytes": 18341
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5457.html.gz": {
+      "sha256": "852e93fb733dcde916f5fc35f6d894b87d122747ec640f455b0e9c4d3899ea73",
+      "bytes": 18324
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5458.html.gz": {
+      "sha256": "d966b34e21ff9607d2281023607aa75f3761f732f148885751b2484915d96731",
+      "bytes": 18283
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5459.html.gz": {
+      "sha256": "4e7a2d763ad629b93fb58cf8074419478ce1b31e24b2d5fa4a3ba1d0be663720",
+      "bytes": 18300
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5460.html.gz": {
+      "sha256": "2fa9995f79969feabd476329950cfe32792352d8a13d9ee49adf59e226bae50a",
+      "bytes": 18263
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5461.html.gz": {
+      "sha256": "39ec70e06171429604aaea358cfe1e94f38f88ed671b8682126e3ba27b56ffbb",
+      "bytes": 18249
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5462.html.gz": {
+      "sha256": "c994eac2f51c5b2dfa01bec0fee4c73c4bc901b529e125c5fd9958ca26ab5a43",
+      "bytes": 18554
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5463.html.gz": {
+      "sha256": "a5c74fc2798c52fa0c06df6993f7273e168ccfdc48a5e6e430a72ded42c8767e",
+      "bytes": 18175
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5464.html.gz": {
+      "sha256": "112e306515ebe0c711ad0b58bd0b66b320ded1a6f3987d5686a0c808b78db4fb",
+      "bytes": 18261
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5465.html.gz": {
+      "sha256": "dceeba0c802e9f2253e39ac0a76bdf5d0900cfc00ed642d82cd0157ff8fd0b57",
+      "bytes": 18326
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5466.html.gz": {
+      "sha256": "bedc5958d9b4082181d206e796852ce224f2ef88dc6afa04fddc08b1f8d6d376",
+      "bytes": 18249
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5467.html.gz": {
+      "sha256": "b0adc26db6785f2a7a178c93a9ea1f262ea9efecc88f676299873afc50821fb7",
+      "bytes": 18268
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5468.html.gz": {
+      "sha256": "85e2bbfd5eaa3e0dfe97b99736c2a0a2fb762b884240c9351ea0609f719a5e85",
+      "bytes": 18202
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5469.html.gz": {
+      "sha256": "fec7d37cbad1faea22f4fb763a90ab08d665b585ae4a089098aeafe9b4320a57",
+      "bytes": 18567
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5470.html.gz": {
+      "sha256": "8c24333909351433feb17c8e7c1cbb7f44b9401f113a91fea5fb4bd69b75e6f9",
+      "bytes": 18182
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5471.html.gz": {
+      "sha256": "a48772bb21a036f135bd49d96c39c1e0b15f4bc5943122b8ab79bbb5fdda5aea",
+      "bytes": 18308
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5472.html.gz": {
+      "sha256": "440006fc712c1ac21e5652f5e29c5c7c3aaeef5e58129db7b3080065fe858743",
+      "bytes": 18202
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5473.html.gz": {
+      "sha256": "f54c1f119be94a288c371a62f7940f190e1b2f8fb7fc73afd785c4062254245d",
+      "bytes": 18257
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5474.html.gz": {
+      "sha256": "71945ecbba6d0acd405ad4659aa0005d67c38df2d5ffca36e6a1399b6ad4e477",
+      "bytes": 18254
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5475.html.gz": {
+      "sha256": "b6e72dcdb259949246f310823f0c13076c7e1e22079d9348d5bbd657993daf69",
+      "bytes": 18211
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5476.html.gz": {
+      "sha256": "711153300c54da7937fa80d52c2c1a0c2328ced7edd6d0dcf1ca2bded97d7352",
+      "bytes": 18140
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5477.html.gz": {
+      "sha256": "272deebe3eee1482edfab84e6d4a971ff30ba628c92662bf1e8dd06f0f901451",
+      "bytes": 18178
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5478.html.gz": {
+      "sha256": "1b1af92450d5f22b79f8481e0005a0a2a42d616f3d071d60d9c2e23bd82f6625",
+      "bytes": 18150
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5479.html.gz": {
+      "sha256": "03a9852a2c5aa43c553916078d80cccd8102f1c1945af10d24494d22715c8fbf",
+      "bytes": 18333
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5480.html.gz": {
+      "sha256": "d93118aa9a66346aac8b1e5e7972f665e417cb3f8fb983f4436d922e863d1c2e",
+      "bytes": 18168
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5481.html.gz": {
+      "sha256": "bd6993d6897a1a312e9b52e6b78dc6f82e13d0d0bb72d1c81cd404be7bc1264f",
+      "bytes": 18339
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5482.html.gz": {
+      "sha256": "edfb2c35ee1f92500da083ceac7550849984df8731c153e3e71f79777633a840",
+      "bytes": 18272
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5483.html.gz": {
+      "sha256": "073d20de2e5d4505d4f7181308f80deedc0bc0d72b1a42ad11287169fc3ed19b",
+      "bytes": 18201
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5484.html.gz": {
+      "sha256": "a26e82e5a3cd4672d816c42d85fb6b72f5d91de9e970e212112f38a4eef257c2",
+      "bytes": 18311
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5485.html.gz": {
+      "sha256": "d3106204b511d49ef29b539849261a3bbd4b32c1e25773fd49aa2bd06ec5a79a",
+      "bytes": 18269
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5486.html.gz": {
+      "sha256": "34a9f3a13f24d3f6402e1cd4ce0bdc07c1e49ce561e7f91387734287a4ae4b11",
+      "bytes": 18168
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5487.html.gz": {
+      "sha256": "24a7ed509f895cfa4d39e0ba9052ecd94ea442682d9be7933fb62253efad37fc",
+      "bytes": 18209
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5488.html.gz": {
+      "sha256": "163975305df6a4a55cacd3bf2d9a272e2fb5031fb99bc2917f273196f80176c9",
+      "bytes": 18290
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5489.html.gz": {
+      "sha256": "a2db3947d25a2430798f17ade4e157e8261464a06d2e70ce320ccb0baeeb37eb",
+      "bytes": 18297
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5490.html.gz": {
+      "sha256": "7ed0242becda1560986ecd7664940aac5b3028c3994887776c7655ade5798744",
+      "bytes": 18151
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5491.html.gz": {
+      "sha256": "e86f86b3d66f52c2680a063c6d4a2fc90fe263428c36cce5911bc746b3fe5a3a",
+      "bytes": 18311
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5492.html.gz": {
+      "sha256": "daa6b3f0ba628794bc98ce470e9b18b6cf00830783ef1a67ead96a35b0ef8c21",
+      "bytes": 18681
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5493.html.gz": {
+      "sha256": "bde840d74845274bf749df20fa3cc333b60d021e1de90c4b086f7d42d0a0776c",
+      "bytes": 18220
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5494.html.gz": {
+      "sha256": "7cf4931ad598285e47ca82df84a045a134e99af4e75ddfe3475ac4c8f56cef91",
+      "bytes": 18331
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5495.html.gz": {
+      "sha256": "dd483400be3b3d6695cf390c90f2c8263cd155fa4ebca2f3cad7c7e24aff550b",
+      "bytes": 18199
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5496.html.gz": {
+      "sha256": "930da1dc9ce458e612dd2b6905128db9babfbba641a8f009de31d3be5086d947",
+      "bytes": 18263
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5497.html.gz": {
+      "sha256": "fe0e77938b620afc9969b29fb34421a8348af54938f28f3fa885a2d19e8610ae",
+      "bytes": 18263
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5498.html.gz": {
+      "sha256": "37699412229f8e08652a1854c1b9884a0f9e9f13c90789871aa7b5ecf56eb85e",
+      "bytes": 18192
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5499.html.gz": {
+      "sha256": "e6fa62170337f091ae32c89b8234591d9719b0d5a308e4b3568317554befc017",
+      "bytes": 18285
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5500.html.gz": {
+      "sha256": "2a565b6d16f07d8070beee75830b3ff894db67e2ca7beef06125182ee22162d9",
+      "bytes": 18218
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5501.html.gz": {
+      "sha256": "9ae495206fdd7587c7aeefc767f0456ed3c6ff66ce602a9c0f20ad8d1cd71d86",
+      "bytes": 18280
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5502.html.gz": {
+      "sha256": "647b7094f3d7a490afba4077e30547dfbd3161846eb7636f09c937bcf1af8775",
+      "bytes": 18331
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5503.html.gz": {
+      "sha256": "a591cc3f779324ff889086a6e60e80ca320b1165986d08f18401976f571459f6",
+      "bytes": 18315
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5504.html.gz": {
+      "sha256": "3af71db5e788549cb1c8f905cc34bbdebbe1c8ad1e7eb19316ae4adfe182e17b",
+      "bytes": 18184
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5505.html.gz": {
+      "sha256": "2d1876e1b869097c14e6db699eae74ca3a067b7518577ad88c9916c9f41f1ace",
+      "bytes": 18255
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5506.html.gz": {
+      "sha256": "df9752cc259f0143f348853f837a58ed1998849a1ba206e914c8b336ac4d4984",
+      "bytes": 18318
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5507.html.gz": {
+      "sha256": "8b5208e19e137e29fe026a8eeceab705e62c35de4167b2e62d432e2e74913806",
+      "bytes": 18294
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5508.html.gz": {
+      "sha256": "8ae7c7d79633e9d4af6100ef5cfdda8f86aad01611466a712a94b5d64157231b",
+      "bytes": 18270
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5509.html.gz": {
+      "sha256": "83b6be2e459efa85baa5aec85322be33e70d320ccd4232589b63a65549f697b5",
+      "bytes": 18742
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5510.html.gz": {
+      "sha256": "ad42e7f3e91403815c478351d517fefb13464a75f693a9a2aada33f5446653b4",
+      "bytes": 18228
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5511.html.gz": {
+      "sha256": "6bdc085d0e9866666f6fc3d265a67d2e43c40ea8a23c09b4906de51bfdd32923",
+      "bytes": 18357
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5512.html.gz": {
+      "sha256": "b4f4f7d8f8065dd70457ea44e7a123d8a68bfe0325e0292589bdec8a89ca949c",
+      "bytes": 18274
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5513.html.gz": {
+      "sha256": "eb166a36115f2cea3ade5ddbcaadb8c05c1721e90f7f72143cafc442bf3bdd57",
+      "bytes": 18254
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5514.html.gz": {
+      "sha256": "84b9a7819289305d8e62c5c51d70c2df6ef4259b3fb9f69b648417e023fb38b4",
+      "bytes": 18198
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5515.html.gz": {
+      "sha256": "b9dba7ec440aed4c82158fb27029202a652348be34586618d24007f7c12a0e43",
+      "bytes": 18270
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5516.html.gz": {
+      "sha256": "9c88ad783a3629f3485f65941cd3a6dffc62c7324b869c01badd0f85ab6bb92b",
+      "bytes": 18282
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5517.html.gz": {
+      "sha256": "561773f3773bd29e914d90b657af87515776880dc270ebb9da5c11972d602704",
+      "bytes": 18316
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5518.html.gz": {
+      "sha256": "cba18403fe9816560734bb7b944b6b399b610ab0805952bb826d01549972057a",
+      "bytes": 18305
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5519.html.gz": {
+      "sha256": "87ba4830584cb1c378aa27143f12c1038251aec12705c83c06815213cd2e7d88",
+      "bytes": 18312
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5520.html.gz": {
+      "sha256": "ec37d16f9f7eb3d0a6b49c5faa03c657c90a0fb4236461c08398e79ae2e7dd00",
+      "bytes": 18338
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5521.html.gz": {
+      "sha256": "af4029d6dca82ad74a94f05c7143e3f2f594a4042288baeaa7926a8ac50518a5",
+      "bytes": 18287
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5522.html.gz": {
+      "sha256": "b960abf69a715643bfc246bff60436ce9f922ff247091c002f35408f05651fa1",
+      "bytes": 18376
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5523.html.gz": {
+      "sha256": "f918eee51a427db80df42ebb90685cfb0e92c0d3c8ef00fbf3f20ec76ed3ccf5",
+      "bytes": 18303
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5524.html.gz": {
+      "sha256": "1c719570953550d8d4bc3d0324d086c6cbaf427fb71a5dac271c58a2159ff7f3",
+      "bytes": 18203
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5525.html.gz": {
+      "sha256": "4ea8abd802e8e77c3c3d2bd437a117efeb1436d50901d1bcdcc01ee8168bd80d",
+      "bytes": 18333
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5526.html.gz": {
+      "sha256": "1ac3a295a993c4ecc79c6163c0de733c79601ab397ee4967ec5f0a93c7ec15d8",
+      "bytes": 18458
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5527.html.gz": {
+      "sha256": "ae383aec203c6b20b96d250889eac4ba5b676888a7d63bff561891005194e7e2",
+      "bytes": 18270
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5528.html.gz": {
+      "sha256": "4cbc8e0ded2cf3fe97d2b1a2f34e96ce4d3d1e0950dee9cf0c6ee5a3d403540a",
+      "bytes": 18319
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5529.html.gz": {
+      "sha256": "20d1a44fc3eebea6515250a8c0a2d425aaa2ae8c6b5cfa76567bee22a2cc000d",
+      "bytes": 18295
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5530.html.gz": {
+      "sha256": "4bdbfda4ede2e4e1ec0dd9cbecf460e84dcbf247d38b69228422f780a2eca463",
+      "bytes": 18197
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5531.html.gz": {
+      "sha256": "e9672de8c36b309d68a335c4314200b1d3cda030a1cd5bcfd5cbb97f49243a9e",
+      "bytes": 18344
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5532.html.gz": {
+      "sha256": "edcea1a41c0e124542a554865f90a08bf7e6573c27d3660f605f9be305626aa7",
+      "bytes": 18339
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5533.html.gz": {
+      "sha256": "7b5a57382dc7c8c61d0f16b5e11e0f0a606fd59b7b2c95e54f337c8247f70748",
+      "bytes": 18324
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5534.html.gz": {
+      "sha256": "b6ee5874e28c73d460922bd3d8ebe224e55fd0ddd57958c51ffdb863b6a4e560",
+      "bytes": 18563
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5535.html.gz": {
+      "sha256": "ed40e36ef28e7563b7fad0f40b9f34e1d7e937aab96c19b373f2dab286564809",
+      "bytes": 18212
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5536.html.gz": {
+      "sha256": "92e1c7759cca1b5e27039167893051b78b6ea36e75453b270de989f3c430e20b",
+      "bytes": 18278
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5537.html.gz": {
+      "sha256": "d3320c97989e16b8cbcb8a2b59ea376e36e1e5c3c0545fd9adbb551158d3b95f",
+      "bytes": 18199
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5538.html.gz": {
+      "sha256": "948e4cf03ccbd53a2d3f38bf980e0ed47a04d535f9abadb30055ec3b7fb34468",
+      "bytes": 18216
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5539.html.gz": {
+      "sha256": "f32fffb167cdbab10bfd5e1e08aa99b914dd05c42960094a19f8a0b81a7e1eda",
+      "bytes": 18290
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5558.html.gz": {
+      "sha256": "c12a6242c53402e77ed750ad10e10ca5af40bac514e22cfb5bca3bb2d04a51fa",
+      "bytes": 18215
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5559.html.gz": {
+      "sha256": "ac7b5c1ab5321692ace9a6fcb19eadc656b5ac67473e45410420aa25455621c3",
+      "bytes": 18289
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5560.html.gz": {
+      "sha256": "77a6afbd90b7966a2f74bf418094a39305e921c2caa200acc62233bd1146bf4f",
+      "bytes": 18258
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5561.html.gz": {
+      "sha256": "973ca588106b0df98b33ba3bd5e5e27237856ef28dda4b42be488084eb33ac70",
+      "bytes": 18216
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5562.html.gz": {
+      "sha256": "11130ae353d7e20b5fe296e7b329c6ef995b6f5acb001c0812804e4fa0862401",
+      "bytes": 18245
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5563.html.gz": {
+      "sha256": "7abac1d28d3266c774f241412d627bb6afd792a8efbc0f30cd7a41cd73673209",
+      "bytes": 18208
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5564.html.gz": {
+      "sha256": "9034202140be421b6ea8d81e87a79dda3de5a9ebb56de3541f64a5140a3ed493",
+      "bytes": 18271
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5565.html.gz": {
+      "sha256": "1085a867937dd5d2c516046229e985b70702dbb80bdc4bc74a560a67fa3b1d60",
+      "bytes": 18320
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5566.html.gz": {
+      "sha256": "3a2f9ac430e49de1710f9ffcabd789543ed35f1c1abd71cf04c5952ad7c88067",
+      "bytes": 18257
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5567.html.gz": {
+      "sha256": "36f9c6e789352009989bce5cc6ae4f7109a00ace101d7a09934f060769c1deba",
+      "bytes": 18304
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5568.html.gz": {
+      "sha256": "63ffc86fc193e28da768b61d362bbd2fee1e066ec1cc2f080e0ab2b3390bfeda",
+      "bytes": 18310
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5569.html.gz": {
+      "sha256": "e9f5cdc043b628ad32d6cf595faf3f9728c34de49c0ea6f247a7237db2b1b572",
+      "bytes": 18250
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5570.html.gz": {
+      "sha256": "d05b54e1c897352e01154632f0f0231cf84cb873d96ffe3cce4321d9cfdc7497",
+      "bytes": 18201
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5571.html.gz": {
+      "sha256": "f9ef788628663ec21158b0da76d4de16eefde025285a004a32cc69f9dad9a4f5",
+      "bytes": 18335
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5572.html.gz": {
+      "sha256": "a0be6b992e20380071b06f82eea43e4b3a289a9419eee2d99ee6f5e48990b3f6",
+      "bytes": 18210
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5573.html.gz": {
+      "sha256": "8d9b365c18412eb377e23aae538feaec0a451ca7c012f0c9965de0b224b30156",
+      "bytes": 18202
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5574.html.gz": {
+      "sha256": "a1bc1dc241920a363e51b43762bbe1a49385934fe5ba5796a97ead8624c13137",
+      "bytes": 18585
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5575.html.gz": {
+      "sha256": "e1ccbb846b31cb7ab285ea9bf42afe41848837810e333e831aba7a30818f9940",
+      "bytes": 18228
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5576.html.gz": {
+      "sha256": "c45df11ce2cd5e4a53e1eae7ca64ff169d53551a9d9a79e9783a97136dd055b0",
+      "bytes": 18227
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5577.html.gz": {
+      "sha256": "59dd8713231ff4e7909de105cf96d9b0f5b622a86aa160332f6ed97d8e350a7f",
+      "bytes": 18348
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5578.html.gz": {
+      "sha256": "bf73c9f02787a9ecc593d5608bf6144305b17068f04450580e648cc66dc45300",
+      "bytes": 18287
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5579.html.gz": {
+      "sha256": "3a3163fcca5bfdf18e89352797e0809c5418c6c54858cfeafc592aa9921c750a",
+      "bytes": 18191
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5580.html.gz": {
+      "sha256": "2129d0e83e18944aa30d19fe560c4f2e859c6342d317a47ab3bf4157553d52b3",
+      "bytes": 18277
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5581.html.gz": {
+      "sha256": "ba35aa97c2145dbfc5203a5556d7267e8946c120c3b4ef9d1789a6d50720f1a8",
+      "bytes": 18301
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5582.html.gz": {
+      "sha256": "db55e289521d8de96086112fe732f89f93f225e2450d008c33e47964723bd097",
+      "bytes": 18313
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5583.html.gz": {
+      "sha256": "36fee56022513a457e13e7754a85ae1acd1dec5a77eff43aa559d42b2e997697",
+      "bytes": 18269
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5584.html.gz": {
+      "sha256": "7f70763ade2b9d1d1888373aef3ffee5d38e98b1ed07f8f455254fb24b4f8e6e",
+      "bytes": 18263
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5585.html.gz": {
+      "sha256": "f26f4d31f62a4d192046171dfecb6bc27af3b470dabdc7fddcaad6e16b930c3d",
+      "bytes": 18282
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5586.html.gz": {
+      "sha256": "8f8c2a9b1488711f56062a9e57bdb4483d09ecc672d5bdc0985ef34e58d8c907",
+      "bytes": 18258
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5587.html.gz": {
+      "sha256": "cab296c3fb14ee6fdd9a81b040312a0955bcbd5035a9da60de0d257c0f848c4b",
+      "bytes": 18294
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5588.html.gz": {
+      "sha256": "76406d1b7782315fab3686bc9fc5e3a6d4c4cf9bde891b5932f72e3667540938",
+      "bytes": 18218
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5589.html.gz": {
+      "sha256": "573d92797b1439015d3edb4e148d171f6ac49d892f7e5645fd66572cabf274be",
+      "bytes": 18291
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5590.html.gz": {
+      "sha256": "5e97af70e80676310f2ec54036c4d4f5ca13a2bb31769de304daa657381f6416",
+      "bytes": 18261
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5591.html.gz": {
+      "sha256": "71da4359e3a29227677a81875db9482704611d9cf48d235b6fd7cbbb8d58276e",
+      "bytes": 18369
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5592.html.gz": {
+      "sha256": "d87366259e5ee561b64ce54fc5922e39359fba5647713f17ba76253095040746",
+      "bytes": 18391
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5593.html.gz": {
+      "sha256": "2cf586b847d0e4c2dc7608d73c2780c4bb6158f5b899f631fa10384452767170",
+      "bytes": 18244
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5594.html.gz": {
+      "sha256": "8cce71b52017dad49f2995f70dfa7abf989b4d5d9425b0732c739be5ce789590",
+      "bytes": 18570
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5595.html.gz": {
+      "sha256": "3c0f808cc382217288c90fb64f3818ca168344449655a0e6575d3724be893fb2",
+      "bytes": 18295
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5596.html.gz": {
+      "sha256": "f5521f3ccecedc99667459f2b2711979b17293440b4fb164c61219594e7845e8",
+      "bytes": 18367
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5597.html.gz": {
+      "sha256": "06c74ad07931336707a4b94a802b24f87c0b05bc5940e4123bb554c425569e06",
+      "bytes": 18261
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5598.html.gz": {
+      "sha256": "ac4b005384a6d5079b8aa79649c62433b33bb2eb4ff3a97af6a3f27b766cc7b4",
+      "bytes": 18212
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5599.html.gz": {
+      "sha256": "71b644712c7887f29644f6bd909531fb1de0fe35ebdae7942e40592281df076c",
+      "bytes": 18248
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5600.html.gz": {
+      "sha256": "3e68d1cf13cd80e14e914bba6614ca620719652ba19ca0e23f68c3b3ea27ef4d",
+      "bytes": 18214
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5601.html.gz": {
+      "sha256": "a4f9e9a76b05648d94bc746601d07481e8ad62a3429512bf7299b61c19d98dee",
+      "bytes": 18610
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5602.html.gz": {
+      "sha256": "2f243e9cba5ff45c3d46c9f348a122b04d397ae1ddae4c495f04c38d3f05ff0b",
+      "bytes": 18243
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5603.html.gz": {
+      "sha256": "87a31bfd81811b522a05367a1816780d8a66f59f20f5905ca9d3e47f48de6410",
+      "bytes": 18240
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5604.html.gz": {
+      "sha256": "4b76e93edbaff9f9d082ad99a2e783acda8a40a556641ab4a99195bd3339b7d4",
+      "bytes": 18222
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5605.html.gz": {
+      "sha256": "5663e698f010ca3720a01ce56cf8a80e7753de67e2ca584a2a37b67edd51dc7a",
+      "bytes": 18241
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5606.html.gz": {
+      "sha256": "1fb896ddce769a42e789bacb61c228eb399f765ee57b746bb9629150eeee9faa",
+      "bytes": 18219
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5607.html.gz": {
+      "sha256": "f3a74bf35de5f37f992ed8d4f95953cf06a6c0fbb5791a5be83b2b212c2b403c",
+      "bytes": 18251
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5608.html.gz": {
+      "sha256": "6cb59c565a0de8357e1e47a95b085309d0c0e0a9c9b793f40a0346e16a01a363",
+      "bytes": 18338
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5609.html.gz": {
+      "sha256": "1df5ca93f35eaf2695e81c0ea077200f5a802a4cdb076f74952f9dd9283f34ee",
+      "bytes": 18191
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5610.html.gz": {
+      "sha256": "355e70a03b3b6ad7ec04a4220915b2031d811a8c0b37f8a62f837b63fb685fec",
+      "bytes": 18234
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5611.html.gz": {
+      "sha256": "7ced7fc6dbacf472b9eef48dac181cff34c45215d19cb6cc3b5b8ac24ccb4f0e",
+      "bytes": 18274
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5612.html.gz": {
+      "sha256": "f4a17264493a8dd4f3538f9f036963e99f08a8c380351815546e34a6a2a38510",
+      "bytes": 18249
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5613.html.gz": {
+      "sha256": "ab75ded1c44ac4269e507108fc648418e7a3a8b30ae675e1dfcf768b37fe3a77",
+      "bytes": 18321
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5614.html.gz": {
+      "sha256": "6f6c06a633f8b66a0f3e9ee3321b0b1d821cc2df3bd9396bdf9e7d6a630fa98e",
+      "bytes": 18214
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5615.html.gz": {
+      "sha256": "e2d4f07228893c41d0b023b1828d53710b841cd93ebef40624b030fe941a7933",
+      "bytes": 18568
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5616.html.gz": {
+      "sha256": "d8482267bf810207c2e67223bb6176e527f94dd489ecd972a9843c154ac19ac9",
+      "bytes": 18232
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5617.html.gz": {
+      "sha256": "5811993be3b66083d30524214fa91e968912cb76eca9d9c7a1a0d420b245bc5b",
+      "bytes": 18167
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5618.html.gz": {
+      "sha256": "0097b397c3cd381033463ba8602f956d46d9802f91b873c57dcac1962c802480",
+      "bytes": 18229
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5619.html.gz": {
+      "sha256": "b039e5e6370108fd381f1f297ca5d2c5ad40928a6a8fd8faa4036c17499b25bf",
+      "bytes": 18223
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5620.html.gz": {
+      "sha256": "9d244f88991034cf1abdba4f159fc6ec12ae0e7d66ca84eef4fbdcbe66824b3d",
+      "bytes": 18301
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5621.html.gz": {
+      "sha256": "db9b05c6fab1cd03549ef0cff423a8ad886acced38830026ed79f8a38b3b7994",
+      "bytes": 18294
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5636.html.gz": {
+      "sha256": "6e596b40a7a4845a7dc86e1254c58329b85c1685f281bac9dc40c0bc748201ff",
+      "bytes": 18139
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5663.html.gz": {
+      "sha256": "03546348b9f644acece9d470d676b9db5957f5e82c1ada8c15100ccd265aca71",
+      "bytes": 18326
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5668.html.gz": {
+      "sha256": "d3cc0fb70fdde222e2ea130c468abe75cf4b61bc827cdd61250b881434c27ae5",
+      "bytes": 18399
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5669.html.gz": {
+      "sha256": "6c1ea7d1d793f7ff480ebfa526ed439a5d89228d39b3e0bacd15718807dca720",
+      "bytes": 18243
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5672.html.gz": {
+      "sha256": "26f73d00e6449107330a26d073e9b3d1f5e6581cc42e3cf3236ffdb4d9093702",
+      "bytes": 18222
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5673.html.gz": {
+      "sha256": "1098e6b99eda982b47f8255c62e27c0fee8bf10a50196ea084e0698fb3345252",
+      "bytes": 18287
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5691.html.gz": {
+      "sha256": "92bca73109802162eddde0ddb2a5fc3f60e49c62130414a564cdc50d418cc0c6",
+      "bytes": 18293
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5692.html.gz": {
+      "sha256": "1073c588e889ab00a3f23962ea7a4fe60b32fe2125bc8f4ab96cabc45699e43e",
+      "bytes": 18241
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5699.html.gz": {
+      "sha256": "f2486476ced739abcbe03026cee919300724ecacc5278047961bb6f89be14d07",
+      "bytes": 18566
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5700.html.gz": {
+      "sha256": "6e2253ef2e854410ca8fea2337718a1d36cda3bf9ca8f22e88beb0256ca8c20f",
+      "bytes": 18314
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5701.html.gz": {
+      "sha256": "f4e7c05979348784035d1ef8e64693b9a1a4be4f7d0e93e9ce556b7ba2fdc6e0",
+      "bytes": 18357
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5702.html.gz": {
+      "sha256": "288d2c4b299b23f5883f70ea022cbefcbd31b921cadce997a15421e59532ba9f",
+      "bytes": 18283
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5703.html.gz": {
+      "sha256": "fceb97f42c7ca4b0dc58b5ad4b0a895b14f8650b03109cf2c439be014b4b4857",
+      "bytes": 18249
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5704.html.gz": {
+      "sha256": "ea1c7431d1338d30ccaef77b54334927bec7f75a67f28af4ce74c0c59984c585",
+      "bytes": 18242
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5705.html.gz": {
+      "sha256": "dcfeff2180012d9cca003242d785d4e122245e87485abc781e9608dc6c89b7b2",
+      "bytes": 18224
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5706.html.gz": {
+      "sha256": "32acce05b8b3731eb1f3f35ecc6d3691d24c93136e59e52345f0654d5982c364",
+      "bytes": 18290
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5707.html.gz": {
+      "sha256": "671945129118765e512c59f4cbd8d89ab5adf8c02e78fec12e51d2a463a1a77d",
+      "bytes": 18427
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5708.html.gz": {
+      "sha256": "392e4b5dfaf737132af8b5252f606bda76a095f0bdbeeb20c431d28f07a8dfae",
+      "bytes": 18216
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5709.html.gz": {
+      "sha256": "aef334ef115ff860b0e91eb4134bffa627901da350884b1e590633377b6f9a46",
+      "bytes": 18226
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5710.html.gz": {
+      "sha256": "3e8a94a97ca84eebfbf152a4a765076ff2d4abdca9118fb665c5b8a9172bb673",
+      "bytes": 18347
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5711.html.gz": {
+      "sha256": "3ddabbe33821eefdfff668ca6ba86e5a2fd5c9294bedf0568f743144a82f9292",
+      "bytes": 18353
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5712.html.gz": {
+      "sha256": "04d0f05e9d50bf818358135bd6e744e7967c69ed94407595570a611ceaef2901",
+      "bytes": 18229
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5713.html.gz": {
+      "sha256": "251715e35452034477eed7c3e45b0d069792615e1278799c2000f5617b2cdadd",
+      "bytes": 18290
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5714.html.gz": {
+      "sha256": "d0311058e3cdda82e7b581cf3a739594cb69d6e1ca136a128fbe8a306640bfbe",
+      "bytes": 18237
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5720.html.gz": {
+      "sha256": "0d7d84005073f42d6cebe4192cf71b7dd373b5e73f87c12929627c01c8a527a1",
+      "bytes": 18222
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5721.html.gz": {
+      "sha256": "412541b716c4bf6cbf96f730e2860e727d62b494bb854d373c053f720653a008",
+      "bytes": 18226
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5722.html.gz": {
+      "sha256": "6be505bec136da7ff44257bb7729fb1cd38506550b0072d29cb62a3476af302d",
+      "bytes": 18261
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5723.html.gz": {
+      "sha256": "834db4f4d8c4879275db6f21295b79645e954621edea5016d733ce3a21b3d353",
+      "bytes": 18258
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5724.html.gz": {
+      "sha256": "fd13a59f41601afad0e4ff5bb9ad25161784f149e4bb30860c17e3095467ea37",
+      "bytes": 18224
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5725.html.gz": {
+      "sha256": "15aae7b9056f08e12942f09cfd646b9f120380c1baa848c7c066946a055b2960",
+      "bytes": 18233
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5726.html.gz": {
+      "sha256": "8a5c8869006a0342f25730835d8a76005ca1569bf28f2167feafe7a9abbf0e8d",
+      "bytes": 18247
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5727.html.gz": {
+      "sha256": "a8033545142916524e91e9236a513d0de94fd86461ac4291d8a71a8fa96c97bd",
+      "bytes": 18235
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5728.html.gz": {
+      "sha256": "8a4c708d8f9b7f1b44ebc6bc243d68a6dea1e3e3ee2dfeac56919d837ccc9c32",
+      "bytes": 18252
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5729.html.gz": {
+      "sha256": "b5961dfdd36f3f74e4d7c5523a39aa3453305ee8b37058a101bdffbecf7393f4",
+      "bytes": 18253
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5730.html.gz": {
+      "sha256": "cdfd283ccc745ab71f9b5657e8f79a3d9039b14dff0b8bae99119977f9b450f8",
+      "bytes": 18249
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/5732.html.gz": {
+      "sha256": "8a631d1d4a5d87dbb885ef5ab561acb0759f706a873758fa996caf20ba55317b",
+      "bytes": 18263
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/6339.html.gz": {
+      "sha256": "d020da01c78cac21ccfcd8078458a11f5eb4f4d0b8f4aa642f1461851c3e1704",
+      "bytes": 18571
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/6476.html.gz": {
+      "sha256": "b401a57224c95c72e8a3560704b7123494934dd8f60043dbd425b47d7b4813ea",
+      "bytes": 18260
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/6477.html.gz": {
+      "sha256": "87989cfa62653ecf32e3902ecd21e7dcf24f5cb82f17d64f9593e05fa92f6fb9",
+      "bytes": 18115
+    },
+    "research/sanidad_fase6_2026-10-15/fichas/6646.html.gz": {
+      "sha256": "d4083f9d3c287e7f133269f1545f27bfdbfc75d51c51d4da9d1cd564caa08d87",
+      "bytes": 18232
+    },
+    "research/sanidad_fase6_2026-10-15/fichas_descargas.json": {
+      "sha256": "15dae797db9cd80ac055fbf05f311bd83039e80ba2659bc8f24e8178b051e9f2",
+      "bytes": 186259
+    },
+    "research/sanidad_fase6_2026-10-15/reparaciones/cenicientos_autorizacion_2021.pdf": {
+      "sha256": "d303664ce90f4a2e7cc1a4e322fa2ae84e51bc641bcb38e0bf8659f5c336b0a0",
+      "bytes": 121026
+    },
+    "research/sanidad_fase6_2026-10-15/reparaciones/cenicientos_libre_eleccion.html": {
+      "sha256": "91587e843c08bf7f40ca0acd20f90d231a46ab7336bb79b586a474a0d0f787a4",
+      "bytes": 38661
+    },
+    "research/sanidad_fase6_2026-10-15/reparaciones/descargas.json": {
+      "sha256": "0a4f2f4f757e32b3ec19d49b2d67892bbbd99dbf6576c56ba7ad5fff9a1ed530",
+      "bytes": 1492
+    },
+    "research/sanidad_fase6_2026-10-15/reparaciones/normalizacion_sugerida.json": {
+      "sha256": "f57988248497aec9bf4b475aee9d43d2a6423288cf278aa71a443fc13c85a8f6",
+      "bytes": 3158
+    },
+    "research/sanidad_fase6_2026-10-15/reparaciones/soto_idem.geojson": {
+      "sha256": "c5fa31a04f4a44e8b5f991e6c3e9018805bd5ee4351b589e683605f6b94caea2",
+      "bytes": 441
+    },
+    "research/sanidad_fase6_2026-10-15/reparaciones/soto_libre_eleccion.html": {
+      "sha256": "863aa1f0232ea2a0394b5e3f9966379c2bfa33b6766a27cd3129b5f05c06adf3",
+      "bytes": 54876
+    },
+    "research/sanidad_geografica_2026-10-15/centros_salud.geojson": {
+      "sha256": "dc15aa3f082f2912e6621d8b75e1be164a62baeaa9769f0959f5fe799f3a696e",
+      "bytes": 104101
+    },
+    "research/sanidad_geografica_2026-10-15/centros_salud_conteo.json": {
+      "sha256": "3b24d142efc8fa2b70dcbc1f5c890952aa112a6adbdeacb76b129eb021d7c1d9",
+      "bytes": 13
+    },
+    "research/sanidad_geografica_2026-10-15/centros_salud_metadatos.json": {
+      "sha256": "c39ec2abecc0a95bc85627f7377692770817d9a5025b1c15fbdc10d1b9c280a1",
+      "bytes": 11213
+    },
+    "research/sanidad_geografica_2026-10-15/descargas.json": {
+      "sha256": "96fa1877ab17d4118e6fc31e00239c6c94962ac2d0c3df5d8455ead27bcb87cf",
+      "bytes": 2566
+    },
+    "research/sanidad_geografica_2026-10-15/hospitales.geojson": {
+      "sha256": "dab7a6a041edfe20794bed495681b6ad418e6dbbbe85f63f07fe12aadc316804",
+      "bytes": 22124
+    },
+    "research/sanidad_geografica_2026-10-15/hospitales_conteo.json": {
+      "sha256": "514aa02b33f0f3bd55a6720137352149f8a3ab2bfe5a74caf52e3b54b9d061cb",
+      "bytes": 12
+    },
+    "research/sanidad_geografica_2026-10-15/hospitales_metadatos.json": {
+      "sha256": "514f69621c79ee687e17a47dbad85f3ce652a15663373073d1711f6c154c5545",
+      "bytes": 11938
+    },
+    "src/geo_common.py": {
+      "sha256": "ef3e359eba845fb5c6e271f92541afadd36d16c0f31ebb355080bf0bf26ba228",
+      "bytes": 3986
+    },
+    "src/indicators.py": {
+      "sha256": "5380382e971275e996282aed1f0d18e47c334f3f2c013b1c294fd324576e2c53",
+      "bytes": 19924
+    },
+    "src/integration.py": {
+      "sha256": "f6fe460c868862b47515b25c30457fd9dcc6fa79b6b6faa36ea374c741f22d15",
+      "bytes": 18068
+    },
+    "src/integration_common.py": {
+      "sha256": "9409fdf346609e10d9dbd9b1f9764e6a8cf377a8817515cb8779a04b4ff39ab2",
+      "bytes": 2663
+    },
+    "src/ivp.py": {
+      "sha256": "a63e091bdc8273a21789a7e51f61827cce62a10dcb5556e858cac7e8bfef3652",
+      "bytes": 26604
+    },
+    "src/ivp_calculation.py": {
+      "sha256": "248fea5452d4c878812b85abe8fa972b9269509604a0d37d2e8839aea7e7fbb2",
+      "bytes": 13341
+    },
+    "src/ivp_health.py": {
+      "sha256": "25ea1af0d1af9c26f4b19ce71800e6cb2d181d6db2ea25afcc7871d7463eba0b",
+      "bytes": 25951
+    },
+    "src/ivp_sensitivity.py": {
+      "sha256": "d9cf57241c21990cfba8aef25bf7a6cae644bf1c302ac3310244a857681deb92",
+      "bytes": 9752
+    },
+    "src/municipalities.py": {
+      "sha256": "8b0db685bb087a736e5e3898a522d51c1a8b62783e285e482183a60620bd191c",
+      "bytes": 15113
+    }
+  },
+  "metadata_transformations": [
+    {
+      "path": "data/processed/indicadores/fuentes_indicadores.csv",
+      "operation": "personal_path_prefix_to_relative",
+      "replacements": 11,
+      "original": {
+        "sha256": "d01a782f7eb367a971dadacd951e1bf500c9a1e7814c032ca05880f79c65a3a1",
+        "bytes": 7416
+      }
+    }
+  ]
+}

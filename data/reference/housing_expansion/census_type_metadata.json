@@ -1,0 +1,152 @@
+{
+  "license_title": "Creative Commons Attribution",
+  "maintainer": null,
+  "relationships_as_object": [],
+  "private": false,
+  "maintainer_email": null,
+  "num_tags": 6,
+  "id": "74a52c41-11c4-4768-bf95-ed3271655843",
+  "metadata_created": "2025-06-02T10:00:25.390807",
+  "metadata_modified": "2026-08-06T16:28:23.470584",
+  "author": null,
+  "author_email": null,
+  "state": "active",
+  "version": null,
+  "creator_user_id": "1b0067e9-eb08-424a-819a-709640541b70",
+  "type": "dataset",
+  "resources": [
+    {
+      "mimetype": "text/csv",
+      "cache_url": null,
+      "name": "Censo de vivienda y locales 2021. Porcentaje de viviendas familiares convencionales por tipo de vivienda.csv",
+      "hash": "",
+      "description": "Censo de vivienda y locales 2021. Porcentaje de viviendas familiares convencionales por tipo de vivienda. Municipios.csv",
+      "metadata_modified": "2025-10-28T06:55:22.367483",
+      "cache_last_updated": null,
+      "url": "https://datos.comunidad.madrid/dataset/74a52c41-11c4-4768-bf95-ed3271655843/resource/634e2a23-937d-4d5f-a3ee-0a36b3c51290/download/censo-de-vivienda-y-locales-2021.-porcentaje-de-viviendas-familiares-convencionales-por-tipo-de-.csv",
+      "datastore_active": true,
+      "format": "CSV",
+      "package_id": "74a52c41-11c4-4768-bf95-ed3271655843",
+      "created": "2025-06-02T10:00:27.162423",
+      "state": "active",
+      "mimetype_inner": null,
+      "last_modified": "2025-10-28T06:55:22.351716",
+      "position": 0,
+      "url_type": "upload",
+      "id": "634e2a23-937d-4d5f-a3ee-0a36b3c51290",
+      "resource_type": null,
+      "size": 26565
+    },
+    {
+      "mimetype": "application/json",
+      "cache_url": null,
+      "name": "Censo de vivienda y locales 2021. Porcentaje de viviendas familiares convencionales por tipo de vivienda. Municipios.json",
+      "hash": "",
+      "description": "Censo de vivienda y locales 2021. Porcentaje de viviendas familiares convencionales por tipo de vivienda. Municipios.json",
+      "metadata_modified": "2025-10-28T06:55:25.350988",
+      "cache_last_updated": null,
+      "url": "https://datos.comunidad.madrid/dataset/74a52c41-11c4-4768-bf95-ed3271655843/resource/191472a4-e808-47f2-bfd7-9623da25a907/download/censo-de-vivienda-y-locales-2021.-porcentaje-de-viviendas-familiares-convencionales-por-tipo-de.json",
+      "datastore_active": false,
+      "format": "JSON",
+      "package_id": "74a52c41-11c4-4768-bf95-ed3271655843",
+      "created": "2025-06-02T10:00:30.233170",
+      "state": "active",
+      "mimetype_inner": null,
+      "last_modified": "2025-10-28T06:55:25.335622",
+      "position": 1,
+      "url_type": "upload",
+      "id": "191472a4-e808-47f2-bfd7-9623da25a907",
+      "resource_type": null,
+      "size": 77021
+    }
+  ],
+  "num_resources": 2,
+  "tags": [
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Censo 2021",
+      "id": "b1738b88-d3e4-47cd-81a9-a326ae70f1ed",
+      "name": "Censo 2021"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Censo de vivienda y locales",
+      "id": "6d03e15a-a092-430d-bb85-e33d0f6a4ce5",
+      "name": "Censo de vivienda y locales"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Por tipo vivienda",
+      "id": "00933274-e499-45cd-9806-d0e91ba9fb00",
+      "name": "Por tipo vivienda"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Porcentaje de viviendas familiares convencionales no principales",
+      "id": "ea88ce17-d709-46a9-8713-dbfe498e8bce",
+      "name": "Porcentaje de viviendas familiares convencionales no principales"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Porcentaje de viviendas familiares convencionales principales",
+      "id": "75b208f6-5ab2-4d09-84ad-28156302d3a5",
+      "name": "Porcentaje de viviendas familiares convencionales principales"
+    },
+    {
+      "vocabulary_id": null,
+      "state": "active",
+      "display_name": "Urbanismo vivienda y construcción",
+      "id": "45efe5ac-3719-417f-8336-d6801e162936",
+      "name": "Urbanismo vivienda y construcción"
+    }
+  ],
+  "groups": [],
+  "license_id": "cc-by",
+  "relationships_as_subject": [],
+  "organization": {
+    "description": "Instituto de Estadística de la Comunidad de Madrid",
+    "created": "2025-06-02T09:53:23.552735",
+    "title": "Instituto de Estadística",
+    "name": "estadistica",
+    "is_organization": true,
+    "state": "active",
+    "image_url": "",
+    "type": "organization",
+    "id": "estadistica",
+    "approval_status": "approved"
+  },
+  "name": "censo_2021_porcentaje_viviendas_familiares_por_tipo",
+  "isopen": true,
+  "url": null,
+  "notes": "Vivienda familiar convencional: Es una vivienda familiar que cumple todos los requisitos para ser habitada y en la fecha censal se encuentra habitada.\n\nLa vivienda convencional puede ser principal cuando es la residencia habitual de sus componentes. Si está destinada a ser ocupada sólo ocasionalmente (por ejemplo durante las vacaciones) o se utiliza de forma continuada pero por grupos diferentes (por ejemplo para alquileres sucesivos de corta duración) se denomina vivienda secundaria.\n\nVivienda familiar no-convencional o alojamiento: Vivienda familiar que presenta la particularidad de ser móvil, semipermanente o improvisada, o bien que no ha sido concebida en un principio con fines residenciales pero sin embargo, constituye la residencia de una o varias personas en el momento de referencia de la Operación Estadística.",
+  "owner_org": "estadistica",
+  "extras": [
+    {
+      "key": "Fecha Actualización",
+      "value": "11-06-2024"
+    },
+    {
+      "key": "Fuente",
+      "value": "Censo de Población y Vivienda. INE."
+    },
+    {
+      "key": "Origen",
+      "value": "Almudena"
+    },
+    {
+      "key": "Unidad",
+      "value": "Porcentaje"
+    },
+    {
+      "key": "Ámbito",
+      "value": "Toda la Comunidad"
+    }
+  ],
+  "license_url": "https://creativecommons.org/licenses/by/4.0/legalcode.es",
+  "title": "Censo de vivienda y locales 2021. Porcentaje de viviendas familiares convencionales por tipo de vivienda. Municipios"
+}

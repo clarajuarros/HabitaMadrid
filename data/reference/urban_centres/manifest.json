@@ -1,0 +1,298 @@
+{
+  "source": "IGN · Nomenclátor Geográfico Básico de España / NGMEP",
+  "downloaded_at": "2026-10-16T10:36:40.017259+00:00",
+  "source_url": "https://www.ign.es/web/rcc-nomenclator-nacional",
+  "count": 155,
+  "selection": "Capital de municipio del IGN contenida en el límite oficial del municipio; control adicional frente a áreas urbanas EIEL.",
+  "sha256": "ad1c135c19aa335b65c6c95197d5b36aafff017e72b49001f525aca2f4bc63a4",
+  "source_records_sha256": "e5ff91cc0fcd9810512673ae49278d0f08b784a46b8acfb3110a2772d51f437f",
+  "queries": [
+    {
+      "file": "ign_ngbe_0.geojson",
+      "sha256": "d9d207e2bc378d6593d1f425cdb6e11875cd5ae6de5bb822e69ea1957b836883",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=39.8%2C-4.6%2C41.2%2C-3.0%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=10000&outputFormat=application%2Fgeo%2Bjson&startIndex=0"
+      }
+    },
+    {
+      "file": "ign_ngbe_10000.geojson",
+      "sha256": "d165a142310e227861e60f9ffd2b14ed2102d8b0cdd3faf5f50b205e4ec4d72a",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=39.8%2C-4.6%2C41.2%2C-3.0%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=10000&outputFormat=application%2Fgeo%2Bjson&startIndex=10000"
+      }
+    },
+    {
+      "file": "ign_ngbe_20000.geojson",
+      "sha256": "e9f49512698cdc743b8c6eb770069e88bdf5299e754f222e7de9e16789cb7f8f",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=39.8%2C-4.6%2C41.2%2C-3.0%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=5000&startIndex=20000&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_25000.geojson",
+      "sha256": "9b8f8903cd6eaad178069436e96eab3ac2527323be0a38190ca7a12f3ad8b6da",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=39.8%2C-4.6%2C41.2%2C-3.0%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=5000&startIndex=25000&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_30000.geojson",
+      "sha256": "d8a219913e2e1e05cadb2bd19e4f3091d728fa0c8125bf399082fec47e940cf3",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=39.8%2C-4.6%2C41.2%2C-3.0%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=5000&startIndex=30000&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_35000.geojson",
+      "sha256": "6782280345a8a13c6697b28bfc2bedad0d2ec176a39a6bdc7fead9db7238e697",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=39.8%2C-4.6%2C41.2%2C-3.0%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=5000&startIndex=35000&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28001_0.025.geojson",
+      "sha256": "5c68731e688065b995f1a0187eca51688e8bf6b6f1aae71f277028419092976b",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=41.0623455303831%2C-3.6513245998975496%2C41.112345530383095%2C-3.60132459989755%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28003_0.025.geojson",
+      "sha256": "2b98716f4ff2674c4d68ad66cd0eab7066ade59fe591c9d3cc3c4d3cb583610f",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=40.89501591755525%2C-3.8705622754771296%2C40.945015917555246%2C-3.82056227547713%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28010_0.025.geojson",
+      "sha256": "471c7e615cbd82835db2faf10d29ce93b7718de178724fe81a5e1c6bcf0df767",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=40.63133178625676%2C-4.058640317762599%2C40.681331786256756%2C-4.008640317762598%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28016_0.025.geojson",
+      "sha256": "bbaa73313b8c0b04ea9e2a6a5f48b711e44583171025e76fe677dbc350a1bb9f",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=40.9094998053379%2C-3.4964500002469125%2C40.9594998053379%2C-3.4464500002469127%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28018_0.025.geojson",
+      "sha256": "820a7b6179ca02fb8d6e4190ff8d7f8c21c562d81563a9edc7a901f0a544fefa",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=40.68648644072976%2C-4.0217882066560025%2C40.736486440729756%2C-3.9717882066560026%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28020_0.025.geojson",
+      "sha256": "b123700d8a68bfcb48fdab3c2b08ec93f86486d3e502dfc835c6a0bf3fee7149",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=40.951651114975185%2C-3.5450540550063017%2C41.00165111497518%2C-3.495054055006302%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28023_0.025.geojson",
+      "sha256": "529ffd85cafe9bc736d544850f4e5f4b15c3db677c760ebe5575eeca2229956d",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=40.67797570390172%2C-3.9600503334305777%2C40.72797570390172%2C-3.910050333430578%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28024_0.025.geojson",
+      "sha256": "52d84a04a9509dc6931fb6d1abec25dfe7b37022ef2ab7481c553ef033b9ab92",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=41.015550017349995%2C-3.667900000560992%2C41.06555001734999%2C-3.6179000005609923%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28027_0.025.geojson",
+      "sha256": "21345900b606dabec3e654aeb0562bfe74fae2056c4ca4e744668d2307bb56ab",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=40.962237991944704%2C-3.6629739779997967%2C41.0122379919447%2C-3.612973977999797%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28029_0.025.geojson",
+      "sha256": "ed9b02bdfec4381a57a4bfb7ac6ec5661260990eabb66deb4bec9fe7ba88b731",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=40.798943760309946%2C-3.652149190034336%2C40.84894376030994%2C-3.602149190034336%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28030_0.025.geojson",
+      "sha256": "73abb8d7a7a939356d63ee2e1bf100af21b041c2aaf0aee150359f46a012c02b",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=40.838800149733096%2C-3.6408557349840702%2C40.88880014973309%2C-3.5908557349840704%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28039_0.025.geojson",
+      "sha256": "5dbf6c30fa7118efa58960688e2f20f580e5532fbfcb4375b56e17cd0ff11d61",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=40.89614992276808%2C-3.553870434913946%2C40.94614992276808%2C-3.5038704349139462%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28062_0.025.geojson",
+      "sha256": "bf0cf6c6c9139fd1ad6a432bcca92598efb89be1b2c5451702477078e4a115ce",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=40.89834048270293%2C-3.710171373543837%2C40.948340482702925%2C-3.6601713735438373%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28064_0.025.geojson",
+      "sha256": "1937a097c57be4f76067e7d7191863b42e10d31d68492810ae3097427a463245",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=40.99254962990087%2C-3.66741967566189%2C41.04254962990087%2C-3.6174196756618904%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28070_0.025.geojson",
+      "sha256": "a5db6016ba4dedddf6324a62e9cc728d327a2866fa3a52e91f75d844c535e614",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=41.04214195082481%2C-3.6101373423983767%2C41.09214195082481%2C-3.560137342398377%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28071_0.025.geojson",
+      "sha256": "ef76bc47d8f31176ffd54b760b73c361edd5f8f4523d49ae34eb0a793bff7678",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=41.035149956170756%2C-3.5705609282915374%2C41.08514995617075%2C-3.5205609282915376%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28072_0.025.geojson",
+      "sha256": "0836e19b43dfd65a1c6565cbd8fbcd1490b4ececabe75554d7ca4f60226c0a64",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=40.59844890347544%2C-3.9307708758993285%2C40.64844890347544%2C-3.8807708758993287%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28076_0.025.geojson",
+      "sha256": "86eb270dc428187e310956777d92add914b16dd2ae44dd9991be4e3c0c3bbbfe",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=40.93089568008843%2C-3.8209573853745358%2C40.98089568008843%2C-3.770957385374536%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28078_0.025.geojson",
+      "sha256": "6ccf80118c03e305e58048112d4d0885f39246300bbd2964e950a31c76ec1b6d",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=41.02204990450541%2C-3.6067709819478924%2C41.072049904505405%2C-3.5567709819478925%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28082_0.025.geojson",
+      "sha256": "99219c5f6921846c44fdf2ac650023f5a248e9c2deb117882a19fac3c66fbacd",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=40.70840618178632%2C-3.885142455305168%2C40.75840618178632%2C-3.835142455305168%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28085_0.025.geojson",
+      "sha256": "7b9bb671aa5ccb83406ff4ab32373a1bfcf5343dcf68f72f8c77de7db07ee1e4",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=40.78580053316056%2C-3.793662871201254%2C40.83580053316056%2C-3.7436628712012543%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28088_0.025.geojson",
+      "sha256": "56e3601eddff68f54127317b3af7f72d6e643dd6724cc84e555b7593fb7ad7ca",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=41.03405043336161%2C-3.5551095726529045%2C41.084050433361604%2C-3.5051095726529047%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28090_0.025.geojson",
+      "sha256": "1c9b2c13d1dd04d7a5cc7dbcd015d389a305fa84f559659c91994183c72236fc",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=40.655128779758336%2C-3.995920685682663%2C40.70512877975833%2C-3.945920685682663%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28107_0.025.geojson",
+      "sha256": "1ad57e120f224cd4efccfe80a9ee4dc62638835b0a8a779999d4f5667cd824b2",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=40.83015107596867%2C-3.508307035355495%2C40.88015107596867%2C-3.458307035355495%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28112_0.025.geojson",
+      "sha256": "bc0378a1122f3a074d4bd0a351713f5c76eb4bc7a173339b274a47edf62c931e",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=40.901570327202144%2C-3.8444948069751077%2C40.95157032720214%2C-3.794494806975108%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28114_0.025.geojson",
+      "sha256": "4309ad115df1fed244c066f231810c62c1662bf8eeda4d756ee10de47b278d7b",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=41.008247141898174%2C-3.6243528657805797%2C41.05824714189817%2C-3.57435286578058%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28117_0.025.geojson",
+      "sha256": "3c377961fb6f6299b95847712beff77513d6f7cacdb6e09f8febc664a54bf117",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=41.019100155050644%2C-3.564624950502586%2C41.06910015505064%2C-3.5146249505025864%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28124_0.025.geojson",
+      "sha256": "2c14ea775043fa20eb6091a3161a4c0a8ed2383d3d393eef347089c681afefa0",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=40.92733948414312%2C-3.550611847174801%2C40.977339484143116%2C-3.500611847174801%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28126_0.025.geojson",
+      "sha256": "67dd72158810aa1615c08125c5d82d9c842e37d8fc094ba57d5e3644a1938815",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=41.07903967489765%2C-3.620800000518974%2C41.12903967489765%2C-3.5708000005189744%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28138_0.025.geojson",
+      "sha256": "390a9a9be93d7e3956d81a0d099202eb042fb6ed20f27c845f1081fc3d14c374",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=41.006399988986544%2C-3.650002999028187%2C41.05639998898654%2C-3.600002999028187%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28143_0.025.geojson",
+      "sha256": "ed8587235bed2df738399f54e0c08a36046324b17d5f30d0226efe6bfe36f43a",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=41.107849784391114%2C-3.6066439424250114%2C41.15784978439111%2C-3.5566439424250116%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28153_0.025.geojson",
+      "sha256": "742f57b502bb9fa34bb5f3b1eb8a440ab4e2b11734a89a01315b39ee1968bc67",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=40.813161692323135%2C-3.5110850604535133%2C40.86316169232313%2C-3.4610850604535135%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28169_0.025.geojson",
+      "sha256": "7a68fc15c562d81e84725513c3d9e60f7002f8435e1e1f1dd0405319d8cfc39e",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=40.77038943400595%2C-3.626482063080578%2C40.820389434005946%2C-3.576482063080578%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28901_0.025.geojson",
+      "sha256": "578e8782319e4f572409e45ae15e0076f378ab092ea3b64e9ed0a749014571c1",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=40.90539995183758%2C-3.6528919781507687%2C40.95539995183758%2C-3.602891978150769%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    },
+    {
+      "file": "ign_ngbe_local_28902_0.025.geojson",
+      "sha256": "b0c5f698b5c2be57c04613956b179f7e1ea84c8fa28c7d6090ae133b4a95655d",
+      "request": {
+        "url": "https://www.ign.es/wfs-inspire/ngbe?service=WFS&version=2.0.0&request=GetFeature&typeNames=gn%3ANamedPlace&bbox=40.93761461782837%2C-3.6065755245682936%2C40.98761461782837%2C-3.5565755245682937%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326&count=2500&outputFormat=application%2Fgeo%2Bjson"
+      }
+    }
+  ]
+}
