@@ -327,6 +327,8 @@ button:focus-visible, a:focus-visible { outline:3px solid #6b893b !important; ou
  .st-key-home_features {margin:4px 0 20px;}
  .st-key-home_features [data-testid="stHorizontalBlock"] {display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 16px!important;}
  .st-key-home_features [data-testid="stColumn"] {width:100%!important;min-width:0!important;max-width:none!important;}
+ /* Keep each row's actions level when descriptions wrap to different heights. */
+ .st-key-home_features [data-testid="stColumn"] > [data-testid="stVerticalBlock"] > [data-testid="stElementContainer"]:last-child {margin-top:auto;}
  .home-feature {padding-top:12px;}
  .home-feature h3 {font-size:17px!important;min-height:42px;margin:8px 0 4px;}
  .home-feature p {font-size:13px;min-height:100px;}
