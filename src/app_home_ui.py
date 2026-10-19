@@ -14,10 +14,12 @@ def top_five(frame):
 
 
 def render_top_five(root, frame, profile, choose, housing_change=None):
+    transport = ('la oferta y conectividad directa programada del transporte' if frame.attrs.get('transporte_oferta_programada')
+                 else 'la proximidad al transporte público')
     with st.container(key='home_top5'):
         st.html('<div class="home-section-title"><h2>Los 5 municipios mejor posicionados</h2>'
                 '<details class="ranking-help"><summary aria-label="Cómo se calcula este ranking">ⓘ</summary>'
-                '<p>Este ranking compara la proximidad a centros sanitarios, centros educativos, transporte público y el coste del alquiler. Cada categoría tiene la misma importancia. Puedes personalizar estas prioridades en Mi municipio ideal.</p></details></div>')
+                '<p>Este ranking compara la proximidad a centros sanitarios y educativos, '+transport+' y el coste del alquiler. Cada categoría tiene la misma importancia. Puedes personalizar estas prioridades en Mi municipio ideal.</p></details></div>')
         if housing_change:
             st.selectbox('Modalidad de vivienda del ranking', ['VU','VC'],
                          format_func=PROFILE_LABELS.get, key='home_housing',
@@ -73,7 +75,7 @@ def render_public_transport(root, code):
                 cards.append('<article class="transport-line"><div><strong>Línea '+esc(line['line'])+'</strong><span>'+esc(line['name'])+'</span></div>'
                              '<a href="'+esc(url)+'" target="_blank" rel="noopener noreferrer">'+label+'</a></article>')
             st.html('<div class="transport-lines">'+''.join(cards)+'</div>')
-    st.caption('Fuente: CRTM, consulta por municipio · '+metadata.get('updated','Fecha no disponible')+'. Las líneas pueden dar servicio a distintos núcleos del término municipal; consulta sus paradas. Los modos que no figuran no se presentan como inexistentes. Comprueba avisos y horarios oficiales antes del viaje. Este listado no modifica el indicador de proximidad del IVP.')
+    st.caption('Fuente: CRTM, consulta por municipio · '+metadata.get('updated','Fecha no disponible')+'. El buscador puede incluir servicios próximos al municipio: consulta las paradas de cada línea. Los modos que no figuran no se presentan como inexistentes. Comprueba avisos y horarios oficiales antes del viaje. Este listado es información complementaria; la puntuación utiliza la edición indicada en Cómo se calcula y fuentes.')
     if official_url(row.get('source_url','')):
         st.link_button('Ver la consulta oficial del municipio',row['source_url'])
 

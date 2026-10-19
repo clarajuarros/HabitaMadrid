@@ -66,7 +66,7 @@ def render_preferences(data, profile):
             st.number_input("Parada de bus interurbano a un máximo de… km", min_value=0.0, max_value=200.0,
                             value=None, step=0.25, key="filtro_transporte_km", placeholder="Sin límite")
             st.checkbox("Solo municipios con índice en el modo elegido", key="filtro_solo_indice")
-        st.caption("Se incluyen los valores iguales al límite. El alquiler es declarado, para la tipología elegida. Las distancias son en línea recta desde el núcleo principal; el bus procede de un catálogo parcial. Un filtro activo exige un dato publicado.")
+        st.caption("Se incluyen los valores iguales al límite. El alquiler es declarado, para la tipología elegida. Las distancias son en línea recta desde el núcleo principal; el bus procede de un catálogo parcial. Un filtro activo exige un dato publicado."+(" La distancia a una parada es un filtro auxiliar; la puntuación de transporte utiliza expediciones y destinos directos programados." if 'transporte_oferta' in data else ""))
         st.button("Quitar filtros", key="quitar_filtros", on_click=_reset_filters)
 
     full, filtered, mode = build_scenario(data, profile)

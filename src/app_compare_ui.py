@@ -26,7 +26,9 @@ def _table(frame, fields):
         detail = " · ".join(value for value in (metadata["unidad"], metadata["periodo"]) if value)
         row = {"Dato y referencia": label + (" · " + detail if detail else "")}
         decimals = 0 if field in {"poblacion", "testigos_vivienda", "centros_salud_locales", "centros_educativos_locales_alta", "paradas_bus_locales", "renta_disponible_per_capita_2023"} else 2
-        row.update({municipality["municipio"]: number(municipality[field], decimals) for municipality in frame.to_dict("records")})
+        text_field = field in {"estado_cobertura", "nota_cobertura", "inicio_semana", "fin_semana"}
+        row.update({municipality["municipio"]: (str(municipality[field]).replace("_", " ") if text_field and pd.notna(municipality[field])
+                                               else number(municipality[field], decimals)) for municipality in frame.to_dict("records")})
         rows.append(row)
     st.dataframe(pd.DataFrame(rows), hide_index=True, width="stretch",
                  height=min(430, 38 + 36 * len(rows)),
@@ -130,9 +132,19 @@ def render_comparison(data, services, explorer_frame, profile, selected_code, mo
     _table(frame, ["centros_salud_locales", "centros_educativos_locales_alta", "paradas_bus_locales"])
     st.caption("Sanidad: centros de salud y consultorios del directorio revisado. Educación: todas las tipologías en ALTA, incluidos centros sin posición operativa. Autobús interurbano: fuente parcial.")
 
-    st.markdown("**Distancias que utiliza el IVP**")
-    _table(frame, [f"distancia_{dimension}_m" for dimension in DIMENSIONS[:3]])
-    st.caption("Son metros en línea recta desde el origen municipal; el destino puede estar fuera del municipio. Educación utiliza las diez tipologías seleccionadas por el modelo. No son tiempos de viaje ni prueban horarios, plazas o capacidad.")
+    scheduled_transport = frame.attrs.get("transporte_oferta_programada", False)
+    if scheduled_transport:
+        st.markdown("**Transporte programado y conexiones directas**")
+        _table(frame, ["expediciones_dia", "destinos_directos_dia", "expediciones_laborable", "expediciones_sabado", "expediciones_domingo"])
+        st.caption("Media diaria de expediciones intermunicipales y destinos municipales accesibles sin cambiar de vehículo. Semana del 19 al 25 de octubre de 2026. Cada viaje se cuenta una sola vez por municipio. Son horarios programados, sin transbordos ni seguimiento en tiempo real.")
+        _table(frame, ["estado_cobertura", "nota_cobertura"])
+        st.caption("Las cifras de las fuentes disponibles pueden ser parciales. Cuando la cobertura no permite comparar con rigor, transporte queda sin puntuación; una ausencia de datos no se convierte en cero servicio.")
+    st.markdown("**Distancias de acceso a servicios**" if scheduled_transport else "**Distancias que utiliza el IVP**")
+    _table(frame, [f"distancia_{dimension}_m" for dimension in (DIMENSIONS[:2] if scheduled_transport else DIMENSIONS[:3])])
+    st.caption("Son metros en línea recta desde el núcleo principal; el destino puede estar fuera del municipio. Educación utiliza las diez tipologías seleccionadas por el modelo. No son tiempos de viaje ni prueban horarios, plazas o capacidad.")
+    if scheduled_transport:
+        _table(frame, ["distancia_transporte_m"])
+        st.caption("La distancia a una parada interurbana se mantiene como contexto auxiliar para el filtro de proximidad. No interviene en la puntuación de transporte.")
 
     st.markdown("**Población y renta de contexto**")
     _table(frame, ["poblacion", "crecimiento_2020_2025_pct", "renta_disponible_per_capita_2023"])

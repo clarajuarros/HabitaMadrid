@@ -8,6 +8,7 @@ from __future__ import annotations
 from copy import deepcopy
 from collections.abc import Mapping
 import hashlib
+import html
 import json
 import math
 from pathlib import Path
@@ -20,13 +21,14 @@ from pydeck.bindings.json_tools import default_serialize
 from shapely.geometry import shape
 
 from src.app_data import AppDataError
+from src.app_explorer import transport_offer_rows, uses_transport_offer
 
 
 MAP_INDICATORS = {
     "ivp": "IVP general",
     "sanidad": "Sanidad · puntuación de proximidad",
     "educacion": "Educación · puntuación de proximidad",
-    "transporte": "Transporte · puntuación de proximidad",
+    "transporte": "Transporte · puntuación",
     "vivienda": "Vivienda · puntuación de alquiler",
     "alquiler_m2": "Alquiler declarado por m²",
     "poblacion": "Población municipal",
@@ -238,6 +240,8 @@ def build_map_frame(map_data: dict, app_data: dict, profile: str, indicator: str
     frame["indicador"] = indicator
     unit, period = "puntos / 100", "Fuentes de distintos períodos · consulta geográfica 2026"
     indicator_label = MAP_INDICATORS[indicator]
+    scheduled_transport = uses_transport_offer(app_data)
+    offers = transport_offer_rows(app_data, eligible) if scheduled_transport else None
     partial = False
     if indicator == "ivp":
         if mode == "personalizado":
@@ -263,8 +267,19 @@ def build_map_frame(map_data: dict, app_data: dict, profile: str, indicator: str
         column, details = indicator, {}
         if indicator == "vivienda":
             period = "SERPAVI · 2024"
+        elif indicator == "transporte" and scheduled_transport:
+            indicator_label = "Transporte · oferta y conectividad programada"
+            period = "Semana " + str(offers["inicio_semana"].iloc[0]) + " a " + str(offers["fin_semana"].iloc[0])
+            details = {}
+            for code, offer in offers.iterrows():
+                trips, destinations = offer["expediciones_dia"], offer["destinos_directos_dia"]
+                figures = (("Sin cifra de expediciones" if pd.isna(trips) else _number(float(trips), 1) + " expediciones/día")
+                           + "; " + ("sin cifra de destinos" if pd.isna(destinations) else _number(float(destinations), 1) + " destinos directos/día"))
+                details[code] = figures + ". Cobertura: " + str(offer["estado_cobertura"]).replace("_", " ") + ". " + str(offer["nota_cobertura"])
         else:
             period = "Catálogo geográfico · consulta 2026-10-15"
+            if indicator == "transporte":
+                indicator_label = "Transporte · puntuación de proximidad"
     elif indicator == "alquiler_m2":
         source = app_data["observaciones"]
         indicator_id = app_data["configuracion"]["perfiles"][profile]["indicador"]
@@ -315,11 +330,14 @@ def build_map_frame(map_data: dict, app_data: dict, profile: str, indicator: str
     frame["tooltiptext"] = tooltips
     frame["tooltipvalue"] = tooltip_values
     frame["tooltiplabel"] = indicator_label
+    frame["tooltipdetail"] = frame["detalle"].map(html.escape) if indicator == "transporte" and scheduled_transport else ""
     interpretation = ("Mayor puntuación = resultado más favorable en este indicador del modelo; no mide por sí sola la calidad de vida."
                       if score else ("Menor alquiler declarado = menor coste observado. No son precios de oferta actuales ni una medida global de calidad de vida."
                                      if indicator == "alquiler_m2" else "Mayor intensidad = más habitantes. La población no indica mayor calidad de vida."))
     if partial:
         interpretation += " Alcance parcial: solo intervienen las dimensiones con peso positivo."
+    if indicator == "transporte" and scheduled_transport:
+        interpretation = "Transporte combina, con la misma importancia, la oferta de expediciones intermunicipales y los destinos municipales directos de media diaria. Semana del 19 al 25 de octubre de 2026. Son horarios programados, sin transbordos ni tiempo real. La cobertura se indica por municipio; una carencia de datos no es cero servicio."
     frame["estado_indicador"] = frame["estado"]
     if visible_codes is None:
         visible = eligible
@@ -341,6 +359,7 @@ def build_map_frame(map_data: dict, app_data: dict, profile: str, indicator: str
                               "interpretacion": interpretation, "metodo": "minmax" if score else "valor_original",
                               "modo": mode, "alcance_parcial": bool(partial),
                               "color_filtrado": COLOR_FILTERED.copy(), "municipios_visibles": len(visible)}
+    frame.attrs["transporte_oferta_programada"] = scheduled_transport
     return frame
 
 
@@ -423,6 +442,7 @@ def build_deck(map_data: dict, frame: pd.DataFrame, selected_code: str | None, *
         feature["id"] = code
         feature["properties"] = {"codigo_ine": code, "tooltiptext": row["tooltiptext"],
                                   "tooltipname": row["municipio"], "tooltiplabel": row["tooltiplabel"], "tooltipvalue": row["tooltipvalue"],
+                                  "tooltipdetail": row.get("tooltipdetail", ""),
                                   "color_rgba": row["color_rgba"],
                                   "line_rgba": COLOR_SELECTED.copy() if code == selected_code else [248, 248, 239, 255],
                                   "line_width": 3 if code == selected_code else 1}
@@ -443,12 +463,14 @@ def build_deck(map_data: dict, frame: pd.DataFrame, selected_code: str | None, *
                       _sub_layer_props={"polygons-fill": {"getFillColor": [172, 184, 168, 235]}})
     view = pdk.View(type="MapView", id="default-view", controller={"dragPan": True, "scrollZoom": True, "doubleClickZoom": False,
                                                "touchZoom": True, "dragRotate": False, "touchRotate": False}, repeat=False)
+    transport_detail = ('<div style="font-size:11px;line-height:1.4;margin-top:7px">{tooltipdetail}</div>'
+                        if frame.attrs.get("transporte_oferta_programada") and frame.attrs.get("leyenda", {}).get("indicador") == "transporte" else "")
     # Preserve PyDeck's explicit default-style sentinel. In Streamlit 1.65 an
     # omitted mapStyle (the result of passing None) activates its CARTO fallback;
     # the sentinel explicitly disables that fallback when no provider is used.
     # This leaves only the local DeckGL geometry, with no Mapbox/CARTO tiles.
     return CompactDeck(layers=[municipalities, shared], views=[view], initial_view_state=camera if camera is not None else _camera(map_data, selected_code, focus),
-                    map_provider=None, map_style="__MAP_STYLE__", tooltip={"html": '<strong style="display:block;font-size:14px;margin-bottom:5px">{tooltipname}</strong><span style="font-size:11px;opacity:.82">{tooltiplabel}</span><div style="font-size:17px;font-weight:650;margin-top:2px">{tooltipvalue}</div>', "style": {"fontFamily": "Inter, system-ui, sans-serif", "backgroundColor": "#173d35", "color": "#ffffff", "padding": "12px 16px", "borderRadius": "12px", "border": "1px solid #ffffff22", "boxShadow": "0 4px 16px #173d3520", "boxSizing": "border-box", "overflowWrap": "anywhere", "pointerEvents": "none", "transform": "none", "left": "auto", "top": "auto", "right": "12px", "bottom": "12px", "width": "max-content", "maxWidth": "min(260px, calc(100% - 24px))"}}, height=580,
+                    map_provider=None, map_style="__MAP_STYLE__", tooltip={"html": '<strong style="display:block;font-size:14px;margin-bottom:5px">{tooltipname}</strong><span style="font-size:11px;opacity:.82">{tooltiplabel}</span><div style="font-size:17px;font-weight:650;margin-top:2px">{tooltipvalue}</div>' + transport_detail, "style": {"fontFamily": "Inter, system-ui, sans-serif", "backgroundColor": "#173d35", "color": "#ffffff", "padding": "12px 16px", "borderRadius": "12px", "border": "1px solid #ffffff22", "boxShadow": "0 4px 16px #173d3520", "boxSizing": "border-box", "overflowWrap": "anywhere", "pointerEvents": "none", "transform": "none", "left": "auto", "top": "auto", "right": "12px", "bottom": "12px", "width": "max-content", "maxWidth": "min(260px, calc(100% - 24px))"}}, height=580,
                     parameters={"clearColor": [0.957, 0.961, 0.937, 1]}, description="HabitaMadrid · términos municipales")
 
 

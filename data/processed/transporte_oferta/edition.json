@@ -1,0 +1,103 @@
+{
+  "version": "ivp-2.0.0-transporte-programado",
+  "indicator": "oferta_conectividad_programada",
+  "baseline_sha256": {
+    "ivp_general.csv": "cd50500917fe5fe0901d8c6a066ea2094dbd32d48c5453286734d6903f4b12f9",
+    "dimensiones_ivp.csv": "6f6255e0cf386cefde53c62fa9e6e946c3f2716a94330df8b2830da6501204fc",
+    "observaciones_seleccionadas.csv": "e0c04688d6b68a9901f87d1db7400539c39180cf10159e640663b379d87f1394",
+    "configuracion_ivp.json": "5db391dc99257fddba722e16907e57e60fbeeed2dce710b5be1175a140e3d2a6"
+  },
+  "input_sha256": {
+    "offer": "dfdb9647548397de269f439c74253e62cecee3374b1bd8ca6fa1cb3272f896d0",
+    "coverage": "0f62fe0963bfaea4f1b1b7e084f525a99cf97a81d9d174d6809570b72c2f49d2"
+  },
+  "files": {
+    "audited_pdf_supplement.json": {
+      "sha256": "37691697e4e351344640fdec2ad452ef687187c40c9579485573329bd3c06ba1",
+      "bytes": 1604730
+    },
+    "configuracion_ivp.json": {
+      "sha256": "2a9737788c8c2525bd90241063435a20676d925c5da8d9e91b242abf79fd099b",
+      "bytes": 1835
+    },
+    "coverage_decisions.json": {
+      "sha256": "0f62fe0963bfaea4f1b1b7e084f525a99cf97a81d9d174d6809570b72c2f49d2",
+      "bytes": 11215
+    },
+    "dimensiones_ivp.csv": {
+      "sha256": "3b8004ddcae46d4c077e7bd8d92c1ef99cc3d11eddefd34e1094a72aa8d28bce",
+      "bytes": 76989
+    },
+    "feed_audit.json": {
+      "sha256": "19856f6dba2a450b28de1bdbc5fe4cc703f1ef47d37c1c030bf5c20136b14954",
+      "bytes": 95390
+    },
+    "ivp_general.csv": {
+      "sha256": "cf9e1c788f1160424bbf6072bba6ec0a93ce243b435be9eb6dc1fc2c12c92071",
+      "bytes": 113242
+    },
+    "normalizacion.json": {
+      "sha256": "57225b21dca4a244ba1e0f7b622623b3a97d53fb3bbe6b823f203690ee0cd0b8",
+      "bytes": 33402
+    },
+    "observaciones_seleccionadas.csv": {
+      "sha256": "7ffe72ffce04ccc87b430be2afa5e3b3c358f33683b68722e2c7e87672d0a347",
+      "bytes": 1462249
+    },
+    "oferta_municipal.csv": {
+      "sha256": "f19eda7339a44c69797619a44450882a9394ddb06344b6279e24392a4594bf2f",
+      "bytes": 52190
+    },
+    "offer_daily.json": {
+      "sha256": "dfdb9647548397de269f439c74253e62cecee3374b1bd8ca6fa1cb3272f896d0",
+      "bytes": 2051216
+    },
+    "seleccion_indicadores.csv": {
+      "sha256": "182b1ba940b9952d1faaf2ec01c8829767255da4fdb3b9cdcda595447df39511",
+      "bytes": 2813
+    },
+    "sensibilidad_escenarios.csv": {
+      "sha256": "7e3e74d2682c3b6facbab0f6270866bb38da4fc7ed4b1aa91c7369901c278d94",
+      "bytes": 981950
+    },
+    "sensibilidad_municipios.csv": {
+      "sha256": "476cd83a1b535444c2f0359904f545873d7864b3d38369cfe0f8619863416c1c",
+      "bytes": 9796
+    }
+  },
+  "sources": [
+    {
+      "fuente": "crtm_oferta_gtfs",
+      "archivo": "data/processed/transporte_oferta/offer_daily.json",
+      "url": "https://datos.crtm.es/",
+      "fecha_descarga_utc": "2026-10-19",
+      "licencia": "https://www.crtm.es/licencia-de-uso",
+      "nota": "Oferta programada CRTM, feeds vigentes de autobús y Metro Ligero. Se excluye Metro caducado."
+    },
+    {
+      "fuente": "renfe_horarios_cercanias",
+      "archivo": "data/processed/transporte_oferta/offer_daily.json",
+      "url": "https://data.renfe.com/dataset/horarios-cercanias",
+      "fecha_descarga_utc": "2026-10-19",
+      "licencia": "https://creativecommons.org/licenses/by/4.0/",
+      "nota": "Renfe, Horarios cercanías, CC BY 4.0. Descarga 19/10/2026; transformación en expediciones y destinos municipales. Viajes declarados sin secuencia afectan al control de cobertura. Sin respaldo oficial de Renfe a HabitaMadrid."
+    },
+    {
+      "fuente": "crtm_horarios_pdf",
+      "archivo": "data/processed/transporte_oferta/offer_daily.json",
+      "url": "https://www.crtm.es/tu-transporte-publico/",
+      "fecha_descarga_utc": "2026-10-19",
+      "licencia": "https://www.crtm.es/licencia-de-uso",
+      "nota": "PDF seleccionados y transcritos. Suplementos ordinarios de diagnóstico; no autorizan puntuación hasta reconciliar calendarios y variantes. No son una extracción de todos los horarios del CRTM."
+    }
+  ],
+  "methodology": {
+    "indicador": "oferta_conectividad_programada",
+    "peso_frecuencia": 0.5,
+    "peso_conectividad": 0.5,
+    "semana_inicio": "2026-10-19",
+    "semana_fin": "2026-10-25",
+    "alcance": "Oferta publicada y destinos municipales directos sin transbordo. Sin tiempos reales ni garantía de exhaustividad."
+  },
+  "publication_status": "active"
+}

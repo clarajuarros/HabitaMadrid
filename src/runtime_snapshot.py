@@ -53,6 +53,22 @@ def read_snapshot(root):
         if value.get('schema') != 1 or value.get('ivp_version') != '1.0.0':
             raise ValueError('Versión no reconocida')
         required = set(SERVICE_FILES + MAP_FILES + REFERENCE_FILES)
+        active = value.get('active_transport_edition')
+        if active is not None:
+            from src.transport_edition import MANIFEST as TRANSPORT_MANIFEST, FILE_MAP, FOLDER
+            from src.transport_offer_model import VERSION
+            if active != {'version': VERSION, 'manifest': TRANSPORT_MANIFEST}:
+                raise ValueError('Revisión activa de transporte desconocida')
+            required.add(TRANSPORT_MANIFEST)
+            revision = json.loads((root / TRANSPORT_MANIFEST).read_text(encoding='utf-8'))
+            if revision.get('version') != VERSION:
+                raise ValueError('Edición activa y manifiesto incompatibles')
+            if not (set(FILE_MAP.values()) | {'configuracion_ivp.json', 'normalizacion.json'}).issubset(revision.get('files', {})):
+                raise ValueError('Revisión de transporte incompleta')
+            for filename in revision['files']:
+                if Path(filename).name != filename:
+                    raise ValueError('Nombre de transporte inválido')
+                required.add(FOLDER + '/' + filename)
         required.update(str(Path(MANIFESTS[phase]).parent / name)
                         for phase, name in (*TABLES.values(), *JSON_FILES.values()))
         if not isinstance(value['files'], dict) or not required.issubset(value['files']):

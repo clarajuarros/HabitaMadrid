@@ -58,6 +58,8 @@ def build_proposal_frame(data, expansion, profile, weights=None):
  """
  from src.app_explorer import build_explorer_frame
  from src.ivp_calculation import DIMENSIONS, calculate_index
+ if data['configuracion']['metodologia_version'] != 'ivp-1.0.0':
+  raise IntegrationError('Esta propuesta histórica de vivienda requiere la edición IVP 1.0. No se mezcla con otra edición de transporte.')
  frame=build_explorer_frame(data,profile,weights).set_index('codigo_ine')
  rows=expansion['comparacion'].loc[expansion['comparacion'].perfil.eq(profile)].set_index('codigo_ine').reindex(frame.index)
  inputs=expansion['indicadores'].loc[expansion['indicadores'].perfil.eq(profile)].set_index('codigo_ine').reindex(frame.index)
