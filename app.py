@@ -9,6 +9,7 @@ import streamlit as st
 from src.app_charts import (dimension_chart, population_chart,
                             rent_history_chart)
 from src.app_data import load_app_data, municipal_view, search_options, snapshot_signature
+from src.app_context import transport_verification, official_url
 from src.app_presenter import (DIMENSION_LABELS, PROFILE_LABELS, distance, esc,
                                finite, metric_card, number, raw_item, safe_link,
                                selected_value, service_card)
@@ -290,6 +291,17 @@ def render_summary(view):
                 st.info('Recuento parcial · este municipio no recibe puntuación de transporte. '+str(offer['nota_cobertura']))
             else:
                 st.caption(offer['nota_cobertura'])
+            audit = transport_verification(ROOT, view['municipio']['codigo_ine'])
+            if audit.get('resoluciones'):
+                with st.expander('Servicios y horarios contrastados · 19/10/2026'):
+                    for note in audit['resoluciones']:
+                        st.write(note)
+                    for source in audit.get('fuentes', []):
+                        if official_url(source['url']):
+                            st.link_button(source['etiqueta'], source['url'])
+                    st.caption('Los horarios son programados. Una parada sin hora publicada conserva esa ausencia; no se deducen tiempos de viaje ni transbordos a partir de la distancia.')
+            elif audit.get('demand_responsive'):
+                st.caption('SD1 es un servicio a demanda confirmado, con reserva previa. Se informa aparte de las expediciones fijas programadas; su demanda desconocida no se considera cero.')
 
 
 def render_service_group(tables, code, kind, title):
@@ -396,7 +408,7 @@ def render_methodology(data, view=None):
         st.code(formula+"\nIVP = 0,25 × sanidad + 0,25 × educación + 0,25 × transporte + 0,25 × vivienda", language="text")
         if scheduled:
             st.write('La frecuencia es la media diaria de expediciones intermunicipales identificadas; la conectividad, la media diaria de municipios madrileños alcanzables sin transbordos. Una expedición no se multiplica por sus paradas. Las referencias se fijan con los municipios puntuables de esta edición antes de filtrar. El reparto 50/50 es una decisión del modelo; no acredita equivalencia entre ambos componentes.')
-            st.write('Semana de referencia: 19–25/10/2026. Autobuses y Metro Ligero del CRTM, Cercanías de Renfe. Se excluyen feeds caducados. Los PDF seleccionados aportan recuentos parciales de diagnóstico, con calendarios o variantes pendientes: esos municipios no puntúan. Los viajes de Renfe sin recorrido también bloquean la puntuación donde afectan. No se miden puntualidad, capacidad, duración ni conexiones con transbordos.')
+            st.write('Semana de referencia: 19–25/10/2026. Autobuses y Metro Ligero del CRTM, Cercanías de Renfe. Los PDF contrastados sustituyen líneas enteras del GTFS, con sus temporadas, días lectivos y servicios nocturnos. Se han resuelto 37 de los 38 casos pendientes: 154 de 155 municipios disponen de puntuación de transporte. San Fernando de Henares conserva el dato ausente porque MetroEste publica rangos variables diurnos laborables, sin todas las expediciones exactas. No se utilizan feeds caducados, ni se miden puntualidad, capacidad o conexiones con transbordos.')
         st.write("Cada tipología utiliza sus referencias de alquiler guardadas; no se recalculan al cambiar de municipio. Si falta una dimensión con peso positivo, no hay índice: no se redistribuyen sus pesos. Los empates comparten puesto y las posiciones se calculan antes de redondear.")
         st.write("VC y VU tienen distintas referencias de alquiler y distinta cobertura. Sus puestos pertenecen a clasificaciones separadas. El IVP no es una medición oficial de calidad de vida y permite compensaciones entre dimensiones.")
     with st.expander("Qué contrasta la sensibilidad"):
