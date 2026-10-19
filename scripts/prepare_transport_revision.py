@@ -80,8 +80,10 @@ def prepare(root, offer_path, coverage_path, activate_local=False, evidence_path
     observations.loc[mask, 'periodo'] = 'consulta_2026-10-19'
     def source_ids(keys):
         result = []
-        if any(k in {'interurbanos', 'urbanos', 'metro_ligero'} for k in keys): result.append('crtm_oferta_gtfs')
+        if any(k in {'interurbanos', 'urbanos', 'metro_ligero', 'crtm_topology_verified'} for k in keys): result.append('crtm_oferta_gtfs')
+        if 'crtm_topology_verified' in keys: result.append('crtm_itinerarios_paradas')
         if 'cercanias_renfe' in keys: result.append('renfe_horarios_cercanias')
+        if 'renfe_verified_prefixes' in keys: result.append('renfe_horarios_regionales')
         if any(k.startswith('crtm_pdf_') for k in keys): result.append('crtm_horarios_pdf')
         return json.dumps(result)
     observation_sources = metrics.set_index('codigo_ine').fuentes_json.map(lambda s: source_ids(json.loads(s)))
@@ -118,10 +120,19 @@ def prepare(root, offer_path, coverage_path, activate_local=False, evidence_path
          'licencia': 'https://www.crtm.es/licencia-de-uso', 'nota': 'Oferta programada CRTM, feeds vigentes de autobús y Metro Ligero. Se excluye Metro caducado.'},
         {'fuente': 'renfe_horarios_cercanias', 'archivo': 'data/processed/transporte_oferta/offer_daily.json',
          'url': 'https://data.renfe.com/dataset/horarios-cercanias', 'fecha_descarga_utc': '2026-10-19',
-         'licencia': 'https://creativecommons.org/licenses/by/4.0/', 'nota': 'Renfe, Horarios cercanías, CC BY 4.0. Descarga 19/10/2026; transformación en expediciones y destinos municipales. Viajes declarados sin secuencia afectan al control de cobertura. Sin respaldo oficial de Renfe a HabitaMadrid.'},
+         'licencia': 'https://creativecommons.org/licenses/by/4.0/', 'nota': 'Renfe, Horarios cercanías, CC BY 4.0. Descarga 19/10/2026; transformación en expediciones y destinos municipales. Los 31 viajes de Madrid sin secuencia se contrastan individualmente con el GTFS Regional, conservando el extremo declarado de la ruta y excluyendo la continuación ya contabilizada. Sin respaldo oficial de Renfe a HabitaMadrid.'},
+        {'fuente': 'renfe_horarios_regionales', 'archivo': 'data/processed/transporte_oferta/renfe_prefix_repairs.json',
+         'url': 'https://data.renfe.com/dataset/horarios-de-alta-velocidad-larga-distancia-y-media-distancia', 'fecha_descarga_utc': '2026-10-19',
+         'licencia': 'https://creativecommons.org/licenses/by/4.0/', 'nota': 'Solo los tramos publicados que faltan en Cercanías, hasta Cercedilla/Fuenlabrada. No se añaden dos veces las continuaciones del mismo servicio.'},
+        {'fuente': 'crtm_itinerarios_paradas', 'archivo': 'data/processed/transporte_oferta/topology_repairs.json',
+         'url': 'https://services5.arcgis.com/UxADft6QPcvFyDU1/arcgis/rest/services/M8_Red/FeatureServer', 'fecha_descarga_utc': '2026-10-19',
+         'licencia': 'https://www.crtm.es/licencia-de-uso', 'nota': 'Secuencias oficiales de paradas por itinerario y municipio. Se conserva la variante exacta; no se inventan horas para las paradas sin horario.'},
         {'fuente': 'crtm_horarios_pdf', 'archivo': 'data/processed/transporte_oferta/offer_daily.json',
          'url': 'https://www.crtm.es/tu-transporte-publico/', 'fecha_descarga_utc': '2026-10-19',
-         'licencia': 'https://www.crtm.es/licencia-de-uso', 'nota': 'PDF seleccionados y transcritos. Suplementos ordinarios de diagnóstico; no autorizan puntuación hasta reconciliar calendarios y variantes. No son una extracción de todos los horarios del CRTM.'},
+         'licencia': 'https://www.crtm.es/licencia-de-uso', 'nota': 'Horarios PDF fechados para la semana 19–25/10/2026, con variantes, lectivos y noches contrastados. Sustituyen líneas enteras del GTFS. La 337 prioriza el horario de viajeros coincidente en CRTM y La Veloz; se conserva la discrepancia del GTFS. No son todos los PDF de la red.'},
+        {'fuente': 'metro_horarios_publicados', 'archivo': 'data/processed/transporte_oferta/municipal_service_audit.json',
+         'url': 'https://www.metromadrid.es/es/linea/linea-7#line-timetable', 'fecha_descarga_utc': '2026-10-19',
+         'licencia': '', 'nota': 'MetroEste: servicio y rangos confirmados en la web y carteles 26.A. Los rangos variables diurnos laborables no se convierten en expediciones exactas ni permiten puntuar San Fernando de Henares.'},
     ]
     baseline = {name: metadata(root / 'data/processed/ivp' / name)['sha256'] for name in
                 ('ivp_general.csv', 'dimensiones_ivp.csv', 'observaciones_seleccionadas.csv', 'configuracion_ivp.json')}
@@ -132,7 +143,7 @@ def prepare(root, offer_path, coverage_path, activate_local=False, evidence_path
             raise ValueError('Duplicate evidence filename')
         shutil.copyfile(evidence_path, folder / evidence_path.name)
         filenames.add(evidence_path.name)
-    manifest = {'version': VERSION, 'indicator': INDICATOR, 'baseline_sha256': baseline,
+    manifest = {'version': VERSION, 'data_revision': '2026-10-19-cobertura-completada', 'indicator': INDICATOR, 'baseline_sha256': baseline,
                 'input_sha256': {'offer': metadata(Path(offer_path))['sha256'], 'coverage': metadata(Path(coverage_path))['sha256']},
                 'files': {name: metadata(folder / name) for name in sorted(filenames)},
                 'sources': sources, 'methodology': config['transporte'], 'publication_status': publication_status}
