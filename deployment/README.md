@@ -8,12 +8,15 @@ sin alterar en `data/processed/ivp/`; no representa los rankings de la edición 
 La revisión combina, con pesos iguales, las puntuaciones de expediciones
 intermunicipales por día y destinos municipales directos por día, con la
 semana fija 19–25/10/2026. Incluye Cercanías de Renfe, autobuses y Metro Ligero
-de los feeds vigentes. Los recuentos PDF son parciales y no autorizan una
-puntuación hasta reconciliar calendarios y variantes. No hay imputación por
+de los feeds vigentes. Las líneas PDF contrastadas sustituyen enteramente las mismas líneas
+del GTFS, con sus calendarios y variantes. No hay imputación por
 distancia a una parada, seguimiento en tiempo real ni estimación de transbordos.
 
-En esta revisión hay 117 municipios con transporte puntuable y 38 sin
-puntuación suficiente; el IVP completo cubre 77 municipios en VC y 101 en VU.
+Tras investigar los 38 casos pendientes, hay **154 municipios con transporte
+puntuable y uno pendiente**: San Fernando de Henares. MetroEste está confirmado,
+pero faltan expediciones exactas de las franjas diurnas laborables. Los rangos
+variables no se convierten en salidas inventadas. El IVP completo cubre 112
+municipios en VC y 138 en VU.
 La propuesta histórica de vivienda sigue archivada con su referencia IVP 1.0;
 se rechaza mezclarla con la nueva edición de transporte.
 [Metodología, cobertura y conservación de la base](docs/TRANSPORTE_2026-10-19.md).
