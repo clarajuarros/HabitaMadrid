@@ -1,5 +1,6 @@
 {
   "version": "ivp-2.0.0-transporte-programado",
+  "data_revision": "2026-10-19-cobertura-completada",
   "indicator": "oferta_conectividad_programada",
   "baseline_sha256": {
     "ivp_general.csv": "cd50500917fe5fe0901d8c6a066ea2094dbd32d48c5453286734d6903f4b12f9",
@@ -8,61 +9,77 @@
     "configuracion_ivp.json": "5db391dc99257fddba722e16907e57e60fbeeed2dce710b5be1175a140e3d2a6"
   },
   "input_sha256": {
-    "offer": "dfdb9647548397de269f439c74253e62cecee3374b1bd8ca6fa1cb3272f896d0",
-    "coverage": "cad149daf47d834c8a9f62b606204552c965d83a6c76218c487e56fabc52d705"
+    "offer": "c6ca1481a735f768e11380991b19e519b4b779bd276c1926f417ecd34a0446d4",
+    "coverage": "20eb2d4ae3f971618c505e4cd22aeaf585d736d400730a3879fe113610989a92"
   },
   "files": {
-    "audited_pdf_supplement.json": {
-      "sha256": "37691697e4e351344640fdec2ad452ef687187c40c9579485573329bd3c06ba1",
-      "bytes": 1604730
-    },
     "configuracion_ivp.json": {
       "sha256": "2a9737788c8c2525bd90241063435a20676d925c5da8d9e91b242abf79fd099b",
       "bytes": 1835
     },
     "coverage_decisions.json": {
-      "sha256": "cad149daf47d834c8a9f62b606204552c965d83a6c76218c487e56fabc52d705",
-      "bytes": 12477
+      "sha256": "20eb2d4ae3f971618c505e4cd22aeaf585d736d400730a3879fe113610989a92",
+      "bytes": 270
+    },
+    "dated_pdf_journeys.json": {
+      "sha256": "1f13e215eee7034eedaf6d23b80ad3e08655eb9b3a29fd03a1687e23f95d5242",
+      "bytes": 5990146
     },
     "dimensiones_ivp.csv": {
-      "sha256": "2cb1f1c3f603a618413dfd7b24994533c72faa45582cfc0e1af6582a13c87e84",
-      "bytes": 76773
+      "sha256": "75e6d130a668275aaf089a2873f62ca19245d85a96b2866f0e9fad99e8a4ec1d",
+      "bytes": 80697
     },
-    "feed_audit.json": {
-      "sha256": "19856f6dba2a450b28de1bdbc5fe4cc703f1ef47d37c1c030bf5c20136b14954",
-      "bytes": 95390
+    "gtfs_component_daily.json": {
+      "sha256": "9915c926e1e47f07cc274c1eca4586e9c2998caedf0c236b51e0c84989f88a66",
+      "bytes": 339962
     },
     "ivp_general.csv": {
-      "sha256": "fef3d51e368473428f0a5042b90d5a0eaa70565916d9067cd9f97a6d2d3d322c",
-      "bytes": 113223
+      "sha256": "887192d6cbe158fd6b92d15763b980490ecba7e27298ca11502c6868602b71c5",
+      "bytes": 114069
+    },
+    "line337_origin_comparison.json": {
+      "sha256": "c885b65e2cd11b87b7390f3aa4ac22dcfff8c1a9447b3734c4311c55941581ba",
+      "bytes": 4024
+    },
+    "municipal_service_audit.json": {
+      "sha256": "d6a9045108000fabda18c0eccb5017057dfdcabad08618d0ac78ba71d239a912",
+      "bytes": 121460
     },
     "normalizacion.json": {
-      "sha256": "b6f72ed73c281e1fa50d812f47de47a55c7e54364781f25efa56bd6aeab15800",
-      "bytes": 33353
+      "sha256": "5ea15192be09cbaa4f8f90e747ff7d3d84308b7881ad8e3ff1d73f9d4e1d2c2b",
+      "bytes": 35330
     },
     "observaciones_seleccionadas.csv": {
-      "sha256": "443acf03e4293cadf7cf3060f096722afe62f87b0d9a0649f8d64346f2fc9a0a",
-      "bytes": 1463335
+      "sha256": "d92f6595f89f38bd7d3e6b72906d154bc20be262e9fe3c0ddc63cc44dfd53224",
+      "bytes": 1457574
     },
     "oferta_municipal.csv": {
-      "sha256": "4ecac75d83dd0af552afff2fce92cf1767eaeb41e103f9a6028c6409472db99b",
-      "bytes": 53220
+      "sha256": "fbcae049b821da78816dbee92f9339e8080a0b2a1c285455393ed4ac8a9c64d7",
+      "bytes": 49657
     },
     "offer_daily.json": {
-      "sha256": "dfdb9647548397de269f439c74253e62cecee3374b1bd8ca6fa1cb3272f896d0",
-      "bytes": 2051216
+      "sha256": "c6ca1481a735f768e11380991b19e519b4b779bd276c1926f417ecd34a0446d4",
+      "bytes": 990721
+    },
+    "renfe_prefix_repairs.json": {
+      "sha256": "f645d06bdd027b7d58542576add5bb9cc0c8fa7d3a6d08fc45ab7fe6a2701915",
+      "bytes": 52575
     },
     "seleccion_indicadores.csv": {
       "sha256": "182b1ba940b9952d1faaf2ec01c8829767255da4fdb3b9cdcda595447df39511",
       "bytes": 2813
     },
     "sensibilidad_escenarios.csv": {
-      "sha256": "b9dffab2a0fc9c53a94e91ea912497c5ec6733f1378dddcd382d70c1b53bd806",
-      "bytes": 981250
+      "sha256": "2a7bb6d19918c30d175a0f136cb7d08ea7be8cd4694505d0bc78d9c8a75590ea",
+      "bytes": 1005951
     },
     "sensibilidad_municipios.csv": {
-      "sha256": "7f9070a2a9cb7974bbb942072605ae47448a99de038f5dd5f5d2173c08cd1070",
-      "bytes": 9762
+      "sha256": "03b03e22676a26ff41bcf10dcb3f111218ebe90739f98e80a302ea34ec8421bd",
+      "bytes": 11027
+    },
+    "topology_repairs.json": {
+      "sha256": "1567d5ebf3aecb51015b19914705507a25f3e2414604614a0c40918ec24b3e55",
+      "bytes": 238625
     }
   },
   "sources": [
@@ -80,7 +97,23 @@
       "url": "https://data.renfe.com/dataset/horarios-cercanias",
       "fecha_descarga_utc": "2026-10-19",
       "licencia": "https://creativecommons.org/licenses/by/4.0/",
-      "nota": "Renfe, Horarios cercanías, CC BY 4.0. Descarga 19/10/2026; transformación en expediciones y destinos municipales. Viajes declarados sin secuencia afectan al control de cobertura. Sin respaldo oficial de Renfe a HabitaMadrid."
+      "nota": "Renfe, Horarios cercanías, CC BY 4.0. Descarga 19/10/2026; transformación en expediciones y destinos municipales. Los 31 viajes de Madrid sin secuencia se contrastan individualmente con el GTFS Regional, conservando el extremo declarado de la ruta y excluyendo la continuación ya contabilizada. Sin respaldo oficial de Renfe a HabitaMadrid."
+    },
+    {
+      "fuente": "renfe_horarios_regionales",
+      "archivo": "data/processed/transporte_oferta/renfe_prefix_repairs.json",
+      "url": "https://data.renfe.com/dataset/horarios-de-alta-velocidad-larga-distancia-y-media-distancia",
+      "fecha_descarga_utc": "2026-10-19",
+      "licencia": "https://creativecommons.org/licenses/by/4.0/",
+      "nota": "Solo los tramos publicados que faltan en Cercanías, hasta Cercedilla/Fuenlabrada. No se añaden dos veces las continuaciones del mismo servicio."
+    },
+    {
+      "fuente": "crtm_itinerarios_paradas",
+      "archivo": "data/processed/transporte_oferta/topology_repairs.json",
+      "url": "https://services5.arcgis.com/UxADft6QPcvFyDU1/arcgis/rest/services/M8_Red/FeatureServer",
+      "fecha_descarga_utc": "2026-10-19",
+      "licencia": "https://www.crtm.es/licencia-de-uso",
+      "nota": "Secuencias oficiales de paradas por itinerario y municipio. Se conserva la variante exacta; no se inventan horas para las paradas sin horario."
     },
     {
       "fuente": "crtm_horarios_pdf",
@@ -88,7 +121,15 @@
       "url": "https://www.crtm.es/tu-transporte-publico/",
       "fecha_descarga_utc": "2026-10-19",
       "licencia": "https://www.crtm.es/licencia-de-uso",
-      "nota": "PDF seleccionados y transcritos. Suplementos ordinarios de diagnóstico; no autorizan puntuación hasta reconciliar calendarios y variantes. No son una extracción de todos los horarios del CRTM."
+      "nota": "Horarios PDF fechados para la semana 19–25/10/2026, con variantes, lectivos y noches contrastados. Sustituyen líneas enteras del GTFS. La 337 prioriza el horario de viajeros coincidente en CRTM y La Veloz; se conserva la discrepancia del GTFS. No son todos los PDF de la red."
+    },
+    {
+      "fuente": "metro_horarios_publicados",
+      "archivo": "data/processed/transporte_oferta/municipal_service_audit.json",
+      "url": "https://www.metromadrid.es/es/linea/linea-7#line-timetable",
+      "fecha_descarga_utc": "2026-10-19",
+      "licencia": "",
+      "nota": "MetroEste: servicio y rangos confirmados en la web y carteles 26.A. Los rangos variables diurnos laborables no se convierten en expediciones exactas ni permiten puntuar San Fernando de Henares."
     }
   ],
   "methodology": {
