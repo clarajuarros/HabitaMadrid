@@ -3,6 +3,8 @@
 
 Never pushes or publishes. Refuses existing destinations. Run with the full
 research environment because the original ancestry must verify before export.
+This exports the sealed IVP 1.0 baseline only. A transport revision must then
+be prepared, validated and explicitly activated with prepare_transport_revision.
 """
 from pathlib import Path
 import argparse
@@ -102,6 +104,9 @@ def export(root, destination):
         (destination / 'docs').mkdir()
         for name in ('DESPLIEGUE.md', 'FUENTES_Y_LICENCIAS.md'):
             shutil.copyfile(root / 'deployment' / name, destination / 'docs' / name)
+        for name in ('scripts/prepare_transport_revision.py', 'docs/TRANSPORTE_2026-10-19.md'):
+            if (root / name).is_file():
+                shutil.copyfile(root / name, destination / name)
         shutil.copyfile(root / 'docs/AUDITORIA_2026-10-18.md', destination / 'docs/AUDITORIA_2026-10-18.md')
         # Runtime tests do not require excluded research archives or pipelines.
         (destination / 'tests').mkdir()
@@ -110,6 +115,8 @@ def export(root, destination):
                      'test_app_explorer.py', 'test_app_comparison.py', 'test_app_service_map.py',
                      'test_app_presenter.py', 'test_service_routes.py', 'test_ivp_calculation.py'):
             shutil.copyfile(root / 'tests' / name, destination / 'tests' / name)
+        for source in (root / 'tests').glob('test_transport_*.py'):
+            shutil.copyfile(source, destination / 'tests' / source.name)
         return {'data_files': len(files), 'data_bytes': sum(x['bytes'] for x in files.values()),
                 'research_files_verified': verification['archivos_verificados']}
     except Exception:
