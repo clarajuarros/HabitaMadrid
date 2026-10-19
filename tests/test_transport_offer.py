@@ -7,7 +7,7 @@ import tempfile
 import unittest
 import zipfile
 
-from src.transport_offer import TransportOfferError, build_transport_offer
+from src.transport_offer import TransportOfferError, build_transport_offer, orphan_line_coverage_gaps
 
 
 A, B, TERMINAL, MISSING, MADRID = "28001", "28002", "28003", "28004", "28079"
@@ -35,6 +35,22 @@ def calendar(service, weekend=False):
 
 
 class TransportOfferTests(unittest.TestCase):
+    def test_orphan_variant_without_observed_stops_blocks_its_public_line_family(self):
+        routes = [{"route_id": "missing_c5", "route_short_name": "C-5"},
+                  {"route_id": "observed_c5", "route_short_name": " C5 "},
+                  {"route_id": "inactive_c8b", "route_short_name": "C-8b"},
+                  {"route_id": "observed_c8a", "route_short_name": "C-8a"}]
+        orphans = [{"route_id": "missing_c5", "active_dates": ["2026-10-19"]},
+                   {"route_id": "inactive_c8b", "active_dates": []}]
+        municipal = [{"feed": "rail", "codigo_ine": A, "route_id": "observed_c5", "line": "C5"},
+                     {"feed": "other", "codigo_ine": B, "route_id": "observed_c5", "line": "C5"},
+                     {"feed": "rail", "codigo_ine": TERMINAL, "route_id": "observed_c8a", "line": "C8a"}]
+        self.assertEqual(orphan_line_coverage_gaps(orphans, routes, municipal, "rail"), {A: ["C5"]})
+        orphans[1]["active_dates"] = ["2026-10-19"]
+        self.assertEqual(orphan_line_coverage_gaps(orphans, routes, municipal, "rail"), {A: ["C5"]})
+        with self.assertRaisesRegex(TransportOfferError, "official line catalogue"):
+            orphan_line_coverage_gaps(orphans, routes[1:], municipal, "rail")
+
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)

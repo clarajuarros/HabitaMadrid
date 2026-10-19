@@ -153,6 +153,33 @@ def _mean(rows):
             "connectivity": sum(row["connectivity"] for row in rows) / count if count else None}
 
 
+def orphan_line_coverage_gaps(orphans, routes, municipal_routes, feed_key):
+    """Conservatively flag observed municipalities of incomplete public lines.
+
+    An orphan route variant can have no observed municipal stop at all. Match
+    its official public line name across route IDs, rather than mistaking other
+    variants of the same line for complete coverage. This does not impute the
+    missing journey's itinerary or departures. Inactive orphans do not block
+    the reference period; feed namespaces and line branches remain distinct.
+    """
+    def family(value):
+        return "".join(value.upper().split()).replace("-", "")
+
+    catalogue = {row["route_id"]: family(row.get("route_short_name", "")) for row in routes}
+    bad_ids = {row["route_id"] for row in orphans if row["active_dates"]}
+    if not bad_ids.issubset(catalogue):
+        raise TransportOfferError("Orphan route missing from official line catalogue")
+    bad_families = {catalogue[identity] for identity in bad_ids if catalogue[identity]}
+    affected = {}
+    for row in municipal_routes:
+        if row["feed"] != feed_key:
+            continue
+        public_line = catalogue.get(row["route_id"], "") or family(row.get("line", ""))
+        if row["route_id"] in bad_ids or public_line in bad_families:
+            affected.setdefault(row["codigo_ine"], set()).add(public_line or row["route_id"])
+    return {code: sorted(lines) for code, lines in sorted(affected.items())}
+
+
 def build_transport_offer(feeds: list[dict], stop_municipalities: dict,
                           dates: list[date], eligible_codes: list[str]) -> dict:
     """Return JSON-serializable daily counts and means over the requested dates.
