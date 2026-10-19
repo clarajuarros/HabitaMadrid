@@ -22,16 +22,30 @@ Las secuencias GTFS se contrastan con la geometría municipal, los calendarios y
 
 Los PDF distinguen trayectos cortos, temporadas, días lectivos y noches. Los recuentos ordinarios parciales se conservan como diagnóstico y no autorizan una puntuación hasta resolver calendarios y variantes. Los intervalos variables permanecen como rangos; no se inventan horas exactas. Aparecer en el buscador municipal del CRTM tampoco prueba que una parada se encuentre dentro del término, porque puede listar servicios próximos.
 
-Renfe declara 31 viajes activos de Madrid sin secuencia de paradas en C5/C8b. No se inventan recorridos ni se consideran completos los municipios afectados.
+Renfe declara 31 viajes activos de Madrid sin secuencia de paradas en C5/C8b. Para determinar qué municipios quedan afectados se aplica una exclusión conservadora por la familia pública de cada línea: un identificador de ruta sin paradas no permite asignar esos viajes al recorrido de otra variante observada. No se inventan recorridos ni se consideran completos los municipios servidos por esas familias, incluido Humanes en C5.
 
 ## Cobertura y ausencias
 
-Hay **118 municipios puntuables en transporte y 37 sin puntuación suficiente**. La ausencia expresa falta de evidencia suficiente para este cálculo, no ausencia real de transporte. Que no se detecte una brecha en los primeros no certifica exhaustividad de toda la red.
+Hay **117 municipios puntuables en transporte y 38 sin puntuación suficiente**. La ausencia expresa falta de evidencia suficiente para este cálculo, no ausencia real de transporte. Que no se detecte una brecha en los primeros no certifica exhaustividad de toda la red.
+
+Las causas de esos 38 municipios se agrupan así. **Los grupos se solapan y sus cifras no deben sumarse.**
+
+| Control pendiente | Municipios afectados |
+| --- | ---: |
+| Correspondencia entre municipio y línea de autobús | 29 |
+| Calendarios, variantes o servicios nocturnos de los PDF parciales | 23 |
+| Diferencias entre recuentos PDF y GTFS de la línea 337 | 6 |
+| Correspondencia de Cercanías o recorridos incompletos | 8 |
+| Metro y horarios por intervalos en San Fernando de Henares | 1 |
+
+De los 23 municipios con PDF parcial, 22 también tienen correspondencias de autobús pendientes. Tres de los seis afectados por la discrepancia de la 337 tienen además PDF parcial; tres de los ocho con problemas de Cercanías también tienen correspondencias de autobús pendientes. El grupo de Cercanías reúne causas distintas: Meco tiene una correspondencia C8 pendiente, mientras que Humanes se bloquea por los viajes C5 sin secuencia de paradas.
+
+Por ejemplo, **Bustarviejo** dispone del PDF de la 725, pero faltan reconciliaciones de calendarios y variantes; **Chinchón** presenta diferencias entre PDF y GTFS de la 337, además de otras correspondencias pendientes; **Humanes** conserva la ausencia porque no se atribuye por suposición el recorrido de otra variante a los viajes C5 sin paradas publicadas. Estos controles evitan confundir una oferta parcial con una medición completa.
 
 | IVP completo | Base histórica 1.0 | Edición activa 2.0 |
 | --- | ---: | ---: |
-| Vivienda colectiva (VC) | 113 | 78 |
-| Vivienda unifamiliar o rural (VU) | 139 | 102 |
+| Vivienda colectiva (VC) | 113 | 77 |
+| Vivienda unifamiliar o rural (VU) | 139 | 101 |
 
 Las 155 fichas siguen disponibles. Si falta una dimensión con peso positivo, no hay IVP completo y no se reparten sus pesos entre las demás dimensiones. La personalización permite dar peso cero a una dimensión; el resultado conserva su identificación como índice de alcance parcial.
 
@@ -49,6 +63,6 @@ El [informe del 18 de octubre](AUDITORIA_2026-10-18.md) conserva su valor histó
 
 ## Verificación
 
-La revisión preparada superó 201 pruebas automatizadas y las seis pruebas de integración se repitieron después de incorporar la evidencia al snapshot. Se comprueban calendarios, duplicados, referencias, ausencias, medias diarias, normalización, índices, puestos, filtros, informes y navegación. La aritmética del IVP se contrasta sin promedios que ignoren dimensiones ausentes.
+La revisión preparada superó 203 pruebas automatizadas, incluidas regresiones para variantes C5 sin recorrido y la ausencia de puntuación de Humanes. Se comprueban calendarios, duplicados, referencias, ausencias, medias diarias, normalización, índices, puestos, filtros, informes y navegación. La aritmética del IVP se contrasta sin promedios que ignoren dimensiones ausentes.
 
 La revisión visual local cubrió escritorio y anchos de móvil, sin desbordamiento horizontal a 360, 390 y 414 px. No equivale a pruebas en dispositivos físicos ni a una prueba de carga. Cada publicación debe actualizar código, tablas y manifiestos juntos, reiniciar Cloud y comprobar la web pública según [Despliegue](DESPLIEGUE.md).
