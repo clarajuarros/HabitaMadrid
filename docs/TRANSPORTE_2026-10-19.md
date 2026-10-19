@@ -1,68 +1,52 @@
-# Transporte programado · Edición IVP 2.0
+# Transporte programado · IVP 2.0 · revisión de cobertura
 
-La edición activa `ivp-2.0.0-transporte-programado` sustituye la distancia a una parada como componente de transporte. Combina **expediciones intermunicipales por día** y **destinos municipales directos por día**, cada uno normalizado con el mismo peso. La semana fija de referencia es el **19–25 de octubre de 2026**. La activación de esta metodología ha sido autorizada por la propietaria; la comprobación de cada despliegue externo se realiza siguiendo [Despliegue](DESPLIEGUE.md).
+Tras investigar individualmente los 38 municipios pendientes, **37 pasan a disponer de puntuación de transporte: 154/155 en total**. San Fernando de Henares conserva la ausencia de puntuación. Sus servicios están confirmados; falta el recuento exacto de MetroEste en las franjas diurnas laborables. Las 155 fichas siguen disponibles.
 
-## Qué mide
+La fórmula `ivp-2.0.0-transporte-programado` no cambia: transporte es la media, con pesos 50/50, de la puntuación normalizada de expediciones intermunicipales por día y destinos municipales directos por día. La semana sigue siendo **19–25/10/2026**. La revisión de datos es `2026-10-19-cobertura-completada`.
 
-Una expedición cuenta una sola vez por municipio y fecha, aunque pase por varias paradas del mismo municipio. Debe permitir subir en él y bajar después en otro municipio de la Comunidad de Madrid. La conectividad cuenta los destinos municipales distintos alcanzables sin transbordos. Incluye como destinos los municipios de más de 50.000 habitantes, aunque estos no formen parte del ranking de los 155 municipios elegibles.
+## Alcance del cálculo
 
-Se calculan medias diarias de la semana y se distinguen laborables, sábado y domingo. Son expediciones programadas, no una estimación de intervalo de espera entre servicios. No se acreditan puntualidad, capacidad, duración del trayecto ni funcionamiento en tiempo real. No se incluyen conexiones con transbordos ni destinos de otras provincias.
+Cada viaje publicado cuenta una vez por municipio y fecha, aunque tenga varias paradas locales. Debe permitir subir y bajar después en otro municipio madrileño. Se respetan las restricciones de subida y bajada, los recorridos cortos y los calendarios. Se calculan medias de los siete días, con laborables, sábado y domingo separados. Las horas superiores a 24 pertenecen al día de servicio de origen.
 
-Cada componente utiliza referencias fijas de normalización sobre los municipios puntuables de esta edición; los filtros posteriores no cambian esas referencias. Una oferta mayor da una puntuación mayor. Transporte es la media de las puntuaciones de frecuencia y conectividad, con pesos 50/50. Es una decisión explícita del modelo, no una equivalencia empírica entre una expedición adicional y un destino adicional.
+Los 179 municipios pueden ser destinos; los 155 de hasta 50.000 habitantes forman el universo elegible. Las referencias de normalización se ajustan sobre los municipios puntuables de esta edición antes de aplicar filtros. Los filtros no recalculan las puntuaciones. Si falta una dimensión con peso positivo, el IVP permanece ausente; no se redistribuyen pesos ni se vuelve a la distancia a una parada.
 
-El IVP general conserva el reparto igual entre sanidad, educación, transporte y vivienda. Solo cambia la dimensión de transporte. La proximidad a una parada se mantiene como contexto y filtro auxiliar, sin contribuir a esa puntuación ni reemplazar los horarios ausentes.
+Se mide **oferta publicada**, no puntualidad, ocupación, funcionamiento observado o tiempos reales. No se incluyen transbordos ni destinos de otras provincias. Una correspondencia de línea contrastada no acredita exhaustividad absoluta de la red. Las paradas sin hora publicada conservan esa ausencia; no se interpolan horas para presentar tiempos de viaje.
 
-## Fuentes y contraste
+## Fuentes y decisiones de integración
 
-- **CRTM:** GTFS vigentes de autobuses interurbanos, urbanos de otros municipios y Metro Ligero. Los feeds de Metro y Cercanías del CRTM localizados estaban caducados y se excluyen. [Portal oficial](https://datos.crtm.es/).
-- **Renfe:** [Horarios de Cercanías](https://data.renfe.com/dataset/horarios-cercanias), descargados el 19/10/2026, con calendario vigente para la semana de referencia. Renfe publica este conjunto bajo [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). HabitaMadrid transforma calendarios y recorridos en agregados municipales, conserva la procedencia y no implica respaldo de Renfe. No se distribuye el ZIP GTFS bruto.
-- **PDF del CRTM:** horarios enlazados desde las fichas oficiales de las líneas. Se descargaron 44 documentos; 36 tienen transcripción estructurada de horarios o reglas y ocho quedan pendientes de transcripción. Es una selección auditada, no todos los PDF de la red. [Transporte público CRTM](https://www.crtm.es/tu-transporte-publico/).
+- [CRTM · datos abiertos](https://datos.crtm.es/): GTFS vigentes de autobuses interurbanos, urbanos y Metro Ligero. Se aplican calendarios, excepciones y permisos de subida/bajada.
+- [CRTM · itinerarios y estaciones oficiales](https://services5.arcgis.com/UxADft6QPcvFyDU1/arcgis/rest/services/M8_Red/FeatureServer): se contrastan 4.118 relaciones de parada/itinerario de las líneas investigadas y 8.686 estaciones oficiales. Las correcciones 640/665/691 conservan la **variante exacta**, con municipio publicado y sin inventar horas intermedias. La parada 18122 pertenece a Zarzalejo; las 18124 y 10222 corresponden a otros municipios y no se trasladan a él. La 691 sí tiene paradas en el término de Cercedilla.
+- [CRTM · horarios de viajeros](https://www.crtm.es/tu-transporte-publico/): se vuelven a descargar 44 PDF y se utilizan 2.893 expediciones fechadas de 14 líneas, con sus dos sentidos, temporadas, lectivos y noches. Cada línea incorporada mediante PDF se **excluye entera del GTFS antes de reemplazarla**, sin sumar ambos horarios. Los documentos conservan URL y SHA-256.
+- **337:** los dos horarios actuales enlazados por [La Veloz](https://laveloz.es/horarios-la-veloz-crtm/) tienen texto idéntico a los PDF vigentes de CRTM. Se prioriza esta publicación de viajeros corroborada frente a variantes solapadas/discrepantes del GTFS. El conflicto no se oculta: `line337_origin_comparison.json` conserva por fecha y sentido los recuentos y horas discrepantes. No se elige el mayor ni se suman las fuentes. La nota de la salida desde Villaconejos, 15 minutos antes de Chinchón a las 9:00, se comprueba visualmente en ambos carteles.
+- [Renfe · Cercanías](https://data.renfe.com/dataset/horarios-cercanias) y [horarios Regionales](https://data.renfe.com/dataset/horarios-de-alta-velocidad-larga-distancia-y-media-distancia): los **31 viajes activos de Madrid sin paradas** se reconcilian individualmente, por número de tren y fecha, con un único horario Regional activo. Se incorpora únicamente el tramo hasta el extremo declarado en Cercanías (Cercedilla/Fuenlabrada), sin volver a contar la continuación ya publicada. El Regional 17707 no para en Humanes. También se contrasta el buscador público de Renfe para siete días en Humanes–Fuenlabrada y Cercedilla–Chamartín, en ambos sentidos. Fuentes Renfe bajo [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), con procedencia y transformación identificadas, sin respaldo oficial a HabitaMadrid.
+- [Calendario laboral de la Comunidad](https://www.comunidad.madrid/empleo/calendario-laboral-comunidad-madrid-municipios), [calendario escolar](https://www.comunidad.madrid/docs/2026-06/calendario_escolar_2026-2027.pdf) y [calendario académico UAM](https://www.uam.es/uam/media/doc/1607016943336/calendario-academico-2026-2027.pdf): se revisa la semana concreta, incluidos los servicios lectivos. El festivo local de La Cabrera del 19/10 se registra y no se utiliza para cancelar arbitrariamente servicios ordinarios con calendario de origen Madrid.
 
-Las secuencias GTFS se contrastan con la geometría municipal, los calendarios y los permisos de subida y bajada. El mismo viaje no se multiplica por sus paradas. Cuando un suplemento PDF sustituye una línea, se excluye antes la misma línea del GTFS para evitar duplicados. Se conservan URLs y huellas de las fuentes, transcripciones y decisiones de cobertura.
+La 721 no duplica los viajes de su tabla penitenciaria, que son un subconjunto. N103 se trata como un único vehículo circular en su rama a Cobeña. FS1 y N908 incorporan sus paradas oficiales de Majadahonda y Villanueva de la Cañada; N908 respeta la prohibición de viajes Madrid–Las Rozas y su ampliación del sábado. Los servicios t de la 635 empiezan/terminan en Torrelodones, no en Madrid.
 
-Los PDF distinguen trayectos cortos, temporadas, días lectivos y noches. Los recuentos ordinarios parciales se conservan como diagnóstico y no autorizan una puntuación hasta resolver calendarios y variantes. Los intervalos variables permanecen como rangos; no se inventan horas exactas. Aparecer en el buscador municipal del CRTM tampoco prueba que una parada se encuentre dentro del término, porque puede listar servicios próximos.
+SD1 está confirmado como servicio a demanda con reserva. No hay un número fijo publicado de viajes ni una ruta garantizada; se describe aparte de las expediciones programadas en **los nueve municipios de su ámbito**. La demanda desconocida no se considera cero. El Álamo no recibe las expediciones de la 528 por aparecer en el buscador: sus paradas están en otros municipios. Las paradas de las líneas 287/289 llamadas Estación de San Fernando y Hospital del Henares están en Coslada.
 
-Renfe declara 31 viajes activos de Madrid sin secuencia de paradas en C5/C8b. Para determinar qué municipios quedan afectados se aplica una exclusión conservadora por la familia pública de cada línea: un identificador de ruta sin paradas no permite asignar esos viajes al recorrido de otra variante observada. No se inventan recorridos ni se consideran completos los municipios servidos por esas familias, incluido Humanes en C5.
+## San Fernando de Henares: servicio confirmado, puntuación pendiente
 
-## Cobertura y ausencias
+La página actual de [Metro · Línea 7](https://www.metromadrid.es/es/linea/linea-7#line-timetable) indica circulación normal y publica ambos carteles **26.A** de MetroEste. Se han descargado y revisado. Publican primeros/últimos trenes y salidas concretas de fines de semana y noche, pero los laborables diurnos se describen mediante intervalos variables —por ejemplo, 4,5–6,5 minutos—. No contienen todas las expediciones exactas necesarias para este cálculo.
 
-Hay **117 municipios puntuables en transporte y 38 sin puntuación suficiente**. La ausencia expresa falta de evidencia suficiente para este cálculo, no ausencia real de transporte. Que no se detecte una brecha en los primeros no certifica exhaustividad de toda la red.
+El GTFS de Metro localizado en ArcGIS caducó el 27/05/2026. El NAP anuncia otro conjunto y requiere cuenta para descargarlo; no se ha creado una cuenta ni se ha reutilizado el fichero caducado. Los rangos no se convierten en salidas ficticias, ni se modifica la fórmula para completar artificialmente 155/155. El recuento observado de autobuses se conserva como parcial y no genera puntuación de transporte ni IVP completo.
 
-Las causas de esos 38 municipios se agrupan así. **Los grupos se solapan y sus cifras no deben sumarse.**
+## Efecto y conservación de la base
 
-| Control pendiente | Municipios afectados |
-| --- | ---: |
-| Correspondencia entre municipio y línea de autobús | 29 |
-| Calendarios, variantes o servicios nocturnos de los PDF parciales | 23 |
-| Diferencias entre recuentos PDF y GTFS de la línea 337 | 6 |
-| Correspondencia de Cercanías o recorridos incompletos | 8 |
-| Metro y horarios por intervalos en San Fernando de Henares | 1 |
-
-De los 23 municipios con PDF parcial, 22 también tienen correspondencias de autobús pendientes. Tres de los seis afectados por la discrepancia de la 337 tienen además PDF parcial; tres de los ocho con problemas de Cercanías también tienen correspondencias de autobús pendientes. El grupo de Cercanías reúne causas distintas: Meco tiene una correspondencia C8 pendiente, mientras que Humanes se bloquea por los viajes C5 sin secuencia de paradas.
-
-Por ejemplo, **Bustarviejo** dispone del PDF de la 725, pero faltan reconciliaciones de calendarios y variantes; **Chinchón** presenta diferencias entre PDF y GTFS de la 337, además de otras correspondencias pendientes; **Humanes** conserva la ausencia porque no se atribuye por suposición el recorrido de otra variante a los viajes C5 sin paradas publicadas. Estos controles evitan confundir una oferta parcial con una medición completa.
-
-| IVP completo | Base histórica 1.0 | Edición activa 2.0 |
+| Cobertura | Publicación anterior | Revisión actual |
 | --- | ---: | ---: |
-| Vivienda colectiva (VC) | 113 | 77 |
-| Vivienda unifamiliar o rural (VU) | 139 | 101 |
+| Transporte | 117/155 | 154/155 |
+| IVP completo · VC | 77 | 112 |
+| IVP completo · VU | 101 | 138 |
 
-Las 155 fichas siguen disponibles. Si falta una dimensión con peso positivo, no hay IVP completo y no se reparten sus pesos entre las demás dimensiones. La personalización permite dar peso cero a una dimensión; el resultado conserva su identificación como índice de alcance parcial.
+Se recalculan las tres normalizaciones, índices generales y escenarios de sensibilidad de **todos** los municipios. Mapa, Top 5, fichas, ranking, cuestionario, comparaciones e informes consumen la misma edición. Un cambio de puntos o puesto no demuestra una mejora real: cambian evidencia y cobertura. Vivienda, sanidad y educación conservan aquí sus fuentes y puntuaciones anteriores.
 
-Los rankings de ambas ediciones tienen referencias y cobertura distintas. Un cambio de puesto no demuestra una mejora o empeoramiento real del municipio.
+La base física IVP 1.0 permanece sin alterar en `data/processed/ivp/`. La revisión activa está en `data/processed/transporte_oferta/`, declarada por `active_transport_edition` en `data/runtime_snapshot.json`. La propuesta histórica de ampliación de vivienda sigue archivada y no se mezcla con esta edición.
 
-## Archivos e integridad
+## Evidencia reproducible
 
-La base IVP 1.0 permanece físicamente sin alterar en `data/processed/ivp/`. Sus valores y huellas sirven como referencia histórica; no son los rankings activos 2.0. La revisión se guarda en `data/processed/transporte_oferta/` y se declara expresamente mediante `active_transport_edition` en `data/runtime_snapshot.json`.
+`edition.json` registra las huellas de la base, entradas, archivos derivados y fuentes. `gtfs_component_daily.json` conserva por separado el recuento GTFS; `dated_pdf_journeys.json`, cada vehículo PDF y su recorrido municipal. La aplicación verifica que la suma de expediciones y la unión de destinos de ambos reproducen exactamente `offer_daily.json`, antes de comprobar medias, normalización, IVP y puestos. Los SHA detectan alteraciones, pero no son una firma ni certifican por sí solos la verdad del dato original.
 
-`edition.json` registra versión, indicador, huellas de la base, entradas de preparación, archivos derivados, fuentes y metodología. `offer_daily.json` conserva evidencia diaria y agregados; `coverage_decisions.json`, las brechas pendientes; `oferta_municipal.csv`, componentes y puntuaciones. Las tablas derivadas incluyen ambos perfiles de vivienda, las tres normalizaciones y los escenarios de sensibilidad. Las huellas detectan alteraciones o ausencias; no constituyen una firma ni certifican por sí solas la exactitud de la fuente.
+`municipal_service_audit.json` documenta individualmente los 38 casos, resoluciones, horarios enlazados y ausencias. `renfe_prefix_repairs.json` conserva las 31 correspondencias fechadas; `topology_repairs.json`, cada variante corregida. Las transcripciones anteriores de diagnóstico permanecen como historial y no autorizan los recuentos activos.
 
-La propuesta histórica de vivienda continúa archivada con su referencia IVP 1.0 y se rechaza mezclarla con esta edición. La base SQLite del localizador de horarios conserva su fecha de descarga del 15/10/2026 y su versión anterior: es un servicio complementario distinto del cálculo de transporte 2.0.
-
-El [informe del 18 de octubre](AUDITORIA_2026-10-18.md) conserva su valor histórico. Sus afirmaciones sobre ausencia de cambios del IVP describen aquel momento y quedan actualizadas, en transporte, por este documento.
-
-## Verificación
-
-La revisión preparada superó 203 pruebas automatizadas, incluidas regresiones para variantes C5 sin recorrido y la ausencia de puntuación de Humanes. Se comprueban calendarios, duplicados, referencias, ausencias, medias diarias, normalización, índices, puestos, filtros, informes y navegación. La aritmética del IVP se contrasta sin promedios que ignoren dimensiones ausentes.
-
-La revisión visual local cubrió escritorio y anchos de móvil, sin desbordamiento horizontal a 360, 390 y 414 px. No equivale a pruebas en dispositivos físicos ni a una prueba de carga. Cada publicación debe actualizar código, tablas y manifiestos juntos, reiniciar Cloud y comprobar la web pública según [Despliegue](DESPLIEGUE.md).
+La base SQLite del localizador complementario de horarios conserva su descarga del 15/10/2026 y versión anterior, rotuladas en la interfaz. No sustituye a la edición del IVP. Los enlaces actuales a horarios contrastados aparecen en las fichas investigadas.
