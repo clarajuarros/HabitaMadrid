@@ -95,9 +95,12 @@ class ViewJourneys(unittest.TestCase):
         self.assertEqual(app.session_state['_active_view'],'fichas')
         self.assertEqual(app.session_state['municipio_codigo'],chosen)
         self.goto(app,'inicio')
-        app.button(key='top5_28055').click().run();self.check(app)
+        featured=[b for b in app.button if b.key and b.key.startswith('top5_')]
+        self.assertEqual(len(featured),5)
+        featured_code=featured[0].key.removeprefix('top5_')
+        app.button(key='top5_'+featured_code).click().run();self.check(app)
         self.assertEqual(app.session_state['_active_view'],'fichas')
-        self.assertEqual(app.session_state['municipio_codigo'],'28055')
+        self.assertEqual(app.session_state['municipio_codigo'],featured_code)
 
     def test_shared_link_opens_sheet_and_home_keeps_selection(self):
         app=AppTest.from_file(str(ROOT/'app.py'),default_timeout=60)
