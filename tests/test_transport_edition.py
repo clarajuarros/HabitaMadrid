@@ -26,7 +26,7 @@ class TransportEditionTests(unittest.TestCase):
     def test_active_revision_reproduces_four_dimension_mean_ranks_and_missingness(self):
         self.assertEqual(self.base['configuracion']['metodologia_version'], 'ivp-1.0.0')
         self.assertEqual(self.data['configuracion']['metodologia_version'], 'ivp-2.0.0-transporte-programado')
-        self.assertEqual(self.data['transporte_oferta'].puntuacion_transporte.notna().sum(), 118)
+        self.assertEqual(self.data['transporte_oferta'].puntuacion_transporte.notna().sum(), 117)
         for profile in ('VC', 'VU'):
             frame = build_explorer_frame(self.data, profile)
             cols = ['puntuacion_' + d for d in ('sanidad', 'educacion', 'transporte', 'vivienda')]
@@ -42,13 +42,22 @@ class TransportEditionTests(unittest.TestCase):
     def test_partial_counts_never_fall_back_to_stop_distance_or_redistribute_weights(self):
         frame = build_explorer_frame(self.data, 'VU')
         missing = frame.puntuacion_transporte.isna()
-        self.assertEqual(missing.sum(), 37)
+        self.assertEqual(missing.sum(), 38)
         self.assertTrue(frame.loc[missing, 'ivp_general'].isna().all())
         self.assertTrue(frame.loc[missing, 'ivp_personalizado'].isna().all())
         self.assertTrue(frame.loc[missing, 'distancia_transporte_m'].notna().all())
         without = build_explorer_frame(self.data, 'VU', {'sanidad':1, 'educacion':1, 'transporte':0, 'vivienda':0})
         self.assertTrue(without.ivp_personalizado.notna().all())
         self.assertTrue(without.alcance_personalizado.str.startswith('parcial').all())
+
+    def test_humanes_c5_remains_unscored_when_another_variant_has_orphan_trips(self):
+        row = self.data['transporte_oferta'].set_index('codigo_ine').loc['28073']
+        self.assertTrue(pd.isna(row.puntuacion_transporte))
+        self.assertIn('C5', row.nota_cobertura)
+        self.assertGreater(row.expediciones_dia, 0)  # Partial evidence is retained.
+        for profile in ('VC', 'VU'):
+            ficha = build_explorer_frame(self.data, profile).set_index('codigo_ine').loc['28073']
+            self.assertTrue(pd.isna(ficha.ivp_general))
 
     def test_filters_leave_normalization_and_scores_unchanged(self):
         full = build_explorer_frame(self.data, 'VC')
