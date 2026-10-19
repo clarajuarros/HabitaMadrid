@@ -1,0 +1,4475 @@
+{
+  "schema": 1,
+  "reference_week": [
+    "2026-10-19",
+    "2026-10-20",
+    "2026-10-21",
+    "2026-10-22",
+    "2026-10-23",
+    "2026-10-24",
+    "2026-10-25"
+  ],
+  "catalogue_updated": "2026-10-18",
+  "catalogue_sha256": "520fb8c647e7bdfb36e40be4ab3357c95e2aaee733a5ebce6f86a79b7821affc",
+  "boundaries_sha256": "3375173a0025217b2ff4baac564cebb7b092a91347f66854a34a2c71ae42a17b",
+  "stop_assignment_method": "Unique polygon intersection using Shapely STRtree in EPSG:4326; ambiguous/no match is null. No nearest-stop imputation.",
+  "line_matching": "Exact CRTM route_id; Renfe Madrid prefix10 and canonical C1 -> C-1, case/whitespace only. C-8A/B are not silently equated with C-8.",
+  "interpretation": "A match means at least one published scheduled call in the municipality during the reference week. Catalogue agreement does not demonstrate complete mode/operator coverage, regular frequency, capacity, realtime service or absence of disruptions.",
+  "feeds": {
+    "interurbanos": {
+      "file": "red_de_autobuses_interurbanos_horarios_topologia.zip",
+      "mode": "Autobús interurbano",
+      "sha256": "c2bf93e697af9c21b11fb59056fbbe389b9fac39bf8c391c61c18f45c18f4b34",
+      "feed_versions": [
+        "20261010",
+        "20261013",
+        "20261014"
+      ],
+      "valid_for_reference_week": true,
+      "routes_all": 354,
+      "routes_selected": 354,
+      "trips_all": 53875,
+      "trips_selected": 53875,
+      "active_trips": 53708,
+      "active_routes": 341,
+      "scheduled_trips_per_day": {
+        "2026-10-19": 34143,
+        "2026-10-20": 34142,
+        "2026-10-21": 34224,
+        "2026-10-22": 34227,
+        "2026-10-23": 34373,
+        "2026-10-24": 27183,
+        "2026-10-25": 25536
+      },
+      "calendar_records": 5816,
+      "exception_records": 5491,
+      "frequency_records": 0,
+      "stops_all": 8406,
+      "stop_assignment": {
+        "assigned": 8127,
+        "outside_or_unmatched": 279,
+        "ambiguous_boundary": 0,
+        "invalid_coordinates": 0
+      },
+      "municipalities_with_scheduled_calls": 175,
+      "stop_times_rows": 1347448,
+      "filter": "all routes"
+    },
+    "urbanos": {
+      "file": "red_de_autobuses_urbanos_resto_municipios_horarios_topologia.zip",
+      "mode": "Autobús urbano",
+      "sha256": "c9609d5af2c5306fd92140f47d193718d0aec6937d0c5addbba7bff2fa399e95",
+      "feed_versions": [
+        "20261010",
+        "20261013",
+        "20261014"
+      ],
+      "valid_for_reference_week": true,
+      "routes_all": 117,
+      "routes_selected": 117,
+      "trips_all": 15490,
+      "trips_selected": 15490,
+      "active_trips": 15490,
+      "active_routes": 112,
+      "scheduled_trips_per_day": {
+        "2026-10-19": 8735,
+        "2026-10-20": 8735,
+        "2026-10-21": 8735,
+        "2026-10-22": 8735,
+        "2026-10-23": 8782,
+        "2026-10-24": 6542,
+        "2026-10-25": 6136
+      },
+      "calendar_records": 1068,
+      "exception_records": 1224,
+      "frequency_records": 0,
+      "stops_all": 8406,
+      "stop_assignment": {
+        "assigned": 8127,
+        "outside_or_unmatched": 279,
+        "ambiguous_boundary": 0,
+        "invalid_coordinates": 0
+      },
+      "municipalities_with_scheduled_calls": 36,
+      "stop_times_rows": 414697,
+      "filter": "all routes"
+    },
+    "metro_ligero": {
+      "file": "red_de_metro_ligero_oferta_planificada_horarios_topologia.zip",
+      "mode": "Metro ligero",
+      "sha256": "44bf654e955c9350599f671f1b30984d894dc5c088a568f5f141805a098f1a36",
+      "feed_versions": [
+        "20261015"
+      ],
+      "valid_for_reference_week": true,
+      "routes_all": 4,
+      "routes_selected": 4,
+      "trips_all": 3001,
+      "trips_selected": 3001,
+      "active_trips": 3001,
+      "active_routes": 4,
+      "scheduled_trips_per_day": {
+        "2026-10-19": 949,
+        "2026-10-20": 949,
+        "2026-10-21": 949,
+        "2026-10-22": 949,
+        "2026-10-23": 974,
+        "2026-10-24": 611,
+        "2026-10-25": 467
+      },
+      "calendar_records": 4,
+      "exception_records": 56,
+      "frequency_records": 0,
+      "stops_all": 96,
+      "stop_assignment": {
+        "assigned": 96,
+        "outside_or_unmatched": 0,
+        "ambiguous_boundary": 0,
+        "invalid_coordinates": 0
+      },
+      "municipalities_with_scheduled_calls": 5,
+      "stop_times_rows": 38983,
+      "filter": "all routes"
+    },
+    "metro": {
+      "file": "red_de_metro_oferta_planificada_horarios_topologia.zip",
+      "mode": "Metro",
+      "sha256": "16e8e53ce16ab6d73efc2896be7aaeeb351a1f48f661ac7faa0a9e5b38204fb7",
+      "feed_versions": [
+        "20250527"
+      ],
+      "valid_for_reference_week": false,
+      "routes_all": 13,
+      "routes_selected": 13,
+      "trips_all": 120,
+      "trips_selected": 120,
+      "active_trips": 0,
+      "active_routes": 0,
+      "scheduled_trips_per_day": {
+        "2026-10-19": 0,
+        "2026-10-20": 0,
+        "2026-10-21": 0,
+        "2026-10-22": 0,
+        "2026-10-23": 0,
+        "2026-10-24": 0,
+        "2026-10-25": 0
+      },
+      "calendar_records": 4,
+      "exception_records": 56,
+      "frequency_records": 790,
+      "stops_all": 1050,
+      "stop_assignment": {
+        "assigned": 1050,
+        "outside_or_unmatched": 0,
+        "ambiguous_boundary": 0,
+        "invalid_coordinates": 0
+      },
+      "municipalities_with_scheduled_calls": 0,
+      "stop_times_rows": 2216,
+      "filter": "all routes"
+    },
+    "cercanias_crtm": {
+      "file": "red_de_cercanias_oferta_planificada_horarios_topologia.zip",
+      "mode": "Cercanías",
+      "sha256": "b8dadd0824d025ce1f7fcf21370daf6739c3a23a51ebd4d713a360ccfc2a42c2",
+      "feed_versions": [
+        "20240717"
+      ],
+      "valid_for_reference_week": false,
+      "routes_all": 10,
+      "routes_selected": 10,
+      "trips_all": 0,
+      "trips_selected": 0,
+      "active_trips": 0,
+      "active_routes": 0,
+      "scheduled_trips_per_day": {
+        "2026-10-19": 0,
+        "2026-10-20": 0,
+        "2026-10-21": 0,
+        "2026-10-22": 0,
+        "2026-10-23": 0,
+        "2026-10-24": 0,
+        "2026-10-25": 0
+      },
+      "calendar_records": 3,
+      "exception_records": 0,
+      "frequency_records": 0,
+      "stops_all": 97,
+      "stop_assignment": {
+        "assigned": 93,
+        "outside_or_unmatched": 4,
+        "ambiguous_boundary": 0,
+        "invalid_coordinates": 0
+      },
+      "municipalities_with_scheduled_calls": 0,
+      "stop_times_rows": 0,
+      "filter": "all routes"
+    },
+    "cercanias_renfe": {
+      "file": "renfe_cercanias.zip",
+      "mode": "Cercanías",
+      "sha256": "c6a53fedcd94804868ee13b39e501e25f4c1f0e57bdff669f74a0822d68e75e8",
+      "feed_versions": [],
+      "valid_for_reference_week": true,
+      "routes_all": 767,
+      "routes_selected": 111,
+      "trips_all": 135815,
+      "trips_selected": 36579,
+      "active_trips": 8731,
+      "active_routes": 37,
+      "scheduled_trips_per_day": {
+        "2026-10-19": 1300,
+        "2026-10-20": 1301,
+        "2026-10-21": 1301,
+        "2026-10-22": 1301,
+        "2026-10-23": 1304,
+        "2026-10-24": 1114,
+        "2026-10-25": 1110
+      },
+      "calendar_records": 450,
+      "exception_records": 0,
+      "frequency_records": 0,
+      "stops_all": 1147,
+      "stop_assignment": {
+        "assigned": 93,
+        "outside_or_unmatched": 1054,
+        "ambiguous_boundary": 0,
+        "invalid_coordinates": 0
+      },
+      "municipalities_with_scheduled_calls": 33,
+      "stop_times_rows": 1866938,
+      "filter": "route_id startswith 10 (Madrid)"
+    }
+  },
+  "expected_lines": 704,
+  "matched_lines": 653,
+  "missing_lines": 51,
+  "municipalities": {
+    "28001": {
+      "codigo_ine": "28001",
+      "municipio": "La Acebeda",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "191B",
+            "196"
+          ],
+          "matched": [
+            "191B",
+            "196"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28002": {
+      "codigo_ine": "28002",
+      "municipio": "Ajalvir",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "215",
+            "251",
+            "252",
+            "254",
+            "256",
+            "N204"
+          ],
+          "matched": [
+            "215",
+            "251",
+            "252",
+            "254",
+            "256",
+            "N204"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 6,
+      "matched": 6,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28003": {
+      "codigo_ine": "28003",
+      "municipio": "Alameda del Valle",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "194",
+            "194A"
+          ],
+          "matched": [
+            "194",
+            "194A"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28004": {
+      "codigo_ine": "28004",
+      "municipio": "El Álamo",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "528",
+            "529",
+            "529A",
+            "539",
+            "N505"
+          ],
+          "matched": [
+            "529",
+            "529A",
+            "539",
+            "N505"
+          ],
+          "missing": [
+            "528"
+          ]
+        }
+      },
+      "expected": 5,
+      "matched": 4,
+      "missing": 1,
+      "status": "carencias_detectadas_frente_catalogo"
+    },
+    "28008": {
+      "codigo_ine": "28008",
+      "municipio": "Aldea del Fresno",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "541",
+            "545",
+            "546",
+            "547",
+            "548"
+          ],
+          "matched": [
+            "541",
+            "545",
+            "546",
+            "547",
+            "548"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 5,
+      "matched": 5,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28009": {
+      "codigo_ine": "28009",
+      "municipio": "Algete",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "171",
+            "180",
+            "181",
+            "182",
+            "183",
+            "184",
+            "185",
+            "197",
+            "254",
+            "263",
+            "N103"
+          ],
+          "matched": [
+            "171",
+            "180",
+            "181",
+            "182",
+            "183",
+            "184",
+            "185",
+            "197",
+            "254",
+            "263",
+            "N103"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 11,
+      "matched": 11,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28010": {
+      "codigo_ine": "28010",
+      "municipio": "Alpedrete",
+      "modes": {
+        "Cercanías": {
+          "expected": [
+            "C-8"
+          ],
+          "matched": [],
+          "missing": [
+            "C-8"
+          ]
+        },
+        "Autobús interurbano": {
+          "expected": [
+            "660",
+            "680",
+            "681",
+            "682",
+            "683",
+            "684",
+            "685",
+            "688",
+            "N602"
+          ],
+          "matched": [
+            "660",
+            "680",
+            "681",
+            "682",
+            "683",
+            "684",
+            "685",
+            "688",
+            "N602"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 10,
+      "matched": 9,
+      "missing": 1,
+      "status": "carencias_detectadas_frente_catalogo"
+    },
+    "28011": {
+      "codigo_ine": "28011",
+      "municipio": "Ambite",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "260",
+            "322",
+            "326"
+          ],
+          "matched": [
+            "260",
+            "322",
+            "326"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 3,
+      "matched": 3,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28012": {
+      "codigo_ine": "28012",
+      "municipio": "Anchuelo",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "275"
+          ],
+          "matched": [
+            "275"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 1,
+      "matched": 1,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28015": {
+      "codigo_ine": "28015",
+      "municipio": "Arroyomolinos",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "495",
+            "496",
+            "498",
+            "499",
+            "534",
+            "N808"
+          ],
+          "matched": [
+            "495",
+            "496",
+            "498",
+            "499",
+            "534",
+            "N808"
+          ],
+          "missing": []
+        },
+        "Autobús urbano": {
+          "expected": [
+            "1A",
+            "1B"
+          ],
+          "matched": [
+            "1A",
+            "1B"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 8,
+      "matched": 8,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28016": {
+      "codigo_ine": "28016",
+      "municipio": "El Atazar",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "913"
+          ],
+          "matched": [
+            "913"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 1,
+      "matched": 1,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28017": {
+      "codigo_ine": "28017",
+      "municipio": "Batres",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "460",
+            "499",
+            "529A"
+          ],
+          "matched": [
+            "460",
+            "499",
+            "529A"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 3,
+      "matched": 3,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28018": {
+      "codigo_ine": "28018",
+      "municipio": "Becerril de la Sierra",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "672",
+            "690",
+            "691",
+            "696",
+            "724"
+          ],
+          "matched": [
+            "672",
+            "690",
+            "691",
+            "696"
+          ],
+          "missing": [
+            "724"
+          ]
+        }
+      },
+      "expected": 5,
+      "matched": 4,
+      "missing": 1,
+      "status": "carencias_detectadas_frente_catalogo"
+    },
+    "28019": {
+      "codigo_ine": "28019",
+      "municipio": "Belmonte de Tajo",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "337",
+            "350C",
+            "430"
+          ],
+          "matched": [
+            "337",
+            "350C",
+            "430"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 3,
+      "matched": 3,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28020": {
+      "codigo_ine": "28020",
+      "municipio": "Berzosa del Lozoya",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "191D",
+            "199A"
+          ],
+          "matched": [
+            "191D",
+            "199A"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28021": {
+      "codigo_ine": "28021",
+      "municipio": "El Berrueco",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "191",
+            "196",
+            "197B"
+          ],
+          "matched": [
+            "191",
+            "196",
+            "197B"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 3,
+      "matched": 3,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28023": {
+      "codigo_ine": "28023",
+      "municipio": "El Boalo",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "672",
+            "672A",
+            "720",
+            "724",
+            "876",
+            "N603"
+          ],
+          "matched": [
+            "672",
+            "672A",
+            "876",
+            "N603"
+          ],
+          "missing": [
+            "720",
+            "724"
+          ]
+        }
+      },
+      "expected": 6,
+      "matched": 4,
+      "missing": 2,
+      "status": "carencias_detectadas_frente_catalogo"
+    },
+    "28024": {
+      "codigo_ine": "28024",
+      "municipio": "Braojos",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "191",
+            "191A",
+            "195"
+          ],
+          "matched": [
+            "191",
+            "191A",
+            "195"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 3,
+      "matched": 3,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28025": {
+      "codigo_ine": "28025",
+      "municipio": "Brea de Tajo",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "350A",
+            "351"
+          ],
+          "matched": [
+            "350A",
+            "351"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28026": {
+      "codigo_ine": "28026",
+      "municipio": "Brunete",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "530",
+            "551",
+            "575",
+            "580",
+            "581",
+            "627",
+            "N907"
+          ],
+          "matched": [
+            "530",
+            "551",
+            "575",
+            "580",
+            "581",
+            "627",
+            "N907"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 7,
+      "matched": 7,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28027": {
+      "codigo_ine": "28027",
+      "municipio": "Buitrago del Lozoya",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "SD1",
+            "191",
+            "191A",
+            "191B",
+            "191C",
+            "191D",
+            "191E",
+            "194A",
+            "195A",
+            "195B",
+            "196",
+            "199A",
+            "911",
+            "912"
+          ],
+          "matched": [
+            "191",
+            "191A",
+            "191B",
+            "191C",
+            "191D",
+            "191E",
+            "194A",
+            "195A",
+            "195B",
+            "196",
+            "199A",
+            "911",
+            "912"
+          ],
+          "missing": [
+            "SD1"
+          ]
+        }
+      },
+      "expected": 14,
+      "matched": 13,
+      "missing": 1,
+      "status": "carencias_detectadas_frente_catalogo"
+    },
+    "28028": {
+      "codigo_ine": "28028",
+      "municipio": "Bustarviejo",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "725"
+          ],
+          "matched": [],
+          "missing": [
+            "725"
+          ]
+        }
+      },
+      "expected": 1,
+      "matched": 0,
+      "missing": 1,
+      "status": "carencias_detectadas_frente_catalogo"
+    },
+    "28029": {
+      "codigo_ine": "28029",
+      "municipio": "Cabanillas de la Sierra",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "191",
+            "193",
+            "194",
+            "195",
+            "196",
+            "197C"
+          ],
+          "matched": [
+            "191",
+            "193",
+            "194",
+            "195",
+            "196",
+            "197C"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 6,
+      "matched": 6,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28030": {
+      "codigo_ine": "28030",
+      "municipio": "La Cabrera",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "191",
+            "193",
+            "194",
+            "195",
+            "196",
+            "197B",
+            "197C",
+            "725"
+          ],
+          "matched": [
+            "191",
+            "193",
+            "194",
+            "195",
+            "196",
+            "197B",
+            "197C"
+          ],
+          "missing": [
+            "725"
+          ]
+        }
+      },
+      "expected": 8,
+      "matched": 7,
+      "missing": 1,
+      "status": "carencias_detectadas_frente_catalogo"
+    },
+    "28031": {
+      "codigo_ine": "28031",
+      "municipio": "Cadalso de los Vidrios",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "545",
+            "546"
+          ],
+          "matched": [
+            "545",
+            "546"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28032": {
+      "codigo_ine": "28032",
+      "municipio": "Camarma de Esteruelas",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "251",
+            "255"
+          ],
+          "matched": [
+            "251",
+            "255"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28033": {
+      "codigo_ine": "28033",
+      "municipio": "Campo Real",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "313",
+            "320",
+            "321"
+          ],
+          "matched": [
+            "313",
+            "320",
+            "321"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 3,
+      "matched": 3,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28034": {
+      "codigo_ine": "28034",
+      "municipio": "Canencia",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "194",
+            "194A",
+            "195",
+            "195A",
+            "195B"
+          ],
+          "matched": [
+            "194",
+            "194A",
+            "195",
+            "195A",
+            "195B"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 5,
+      "matched": 5,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28035": {
+      "codigo_ine": "28035",
+      "municipio": "Carabaña",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "322",
+            "326"
+          ],
+          "matched": [
+            "322",
+            "326"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28036": {
+      "codigo_ine": "28036",
+      "municipio": "Casarrubuelos",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "460",
+            "468"
+          ],
+          "matched": [
+            "460",
+            "468"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28037": {
+      "codigo_ine": "28037",
+      "municipio": "Cenicientos",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "545",
+            "546"
+          ],
+          "matched": [
+            "545",
+            "546"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28038": {
+      "codigo_ine": "28038",
+      "municipio": "Cercedilla",
+      "modes": {
+        "Cercanías": {
+          "expected": [
+            "C-8",
+            "C-9"
+          ],
+          "matched": [
+            "C-9"
+          ],
+          "missing": [
+            "C-8"
+          ]
+        },
+        "Autobús interurbano": {
+          "expected": [
+            "680",
+            "684",
+            "691",
+            "692"
+          ],
+          "matched": [
+            "680",
+            "684",
+            "692"
+          ],
+          "missing": [
+            "691"
+          ]
+        },
+        "Autobús urbano": {
+          "expected": [
+            "1"
+          ],
+          "matched": [
+            "1"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 7,
+      "matched": 5,
+      "missing": 2,
+      "status": "carencias_detectadas_frente_catalogo"
+    },
+    "28039": {
+      "codigo_ine": "28039",
+      "municipio": "Cervera de Buitrago",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "191E",
+            "199A"
+          ],
+          "matched": [
+            "191E",
+            "199A"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28040": {
+      "codigo_ine": "28040",
+      "municipio": "Ciempozuelos",
+      "modes": {
+        "Cercanías": {
+          "expected": [
+            "C-3"
+          ],
+          "matched": [
+            "C-3"
+          ],
+          "missing": []
+        },
+        "Autobús interurbano": {
+          "expected": [
+            "410",
+            "415",
+            "416",
+            "425",
+            "426",
+            "N402"
+          ],
+          "matched": [
+            "410",
+            "425",
+            "426",
+            "N402"
+          ],
+          "missing": [
+            "415",
+            "416"
+          ]
+        },
+        "Autobús urbano": {
+          "expected": [
+            "1"
+          ],
+          "matched": [
+            "1"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 8,
+      "matched": 6,
+      "missing": 2,
+      "status": "carencias_detectadas_frente_catalogo"
+    },
+    "28041": {
+      "codigo_ine": "28041",
+      "municipio": "Cobeña",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "183",
+            "185",
+            "254",
+            "263",
+            "N103"
+          ],
+          "matched": [
+            "183",
+            "185",
+            "254",
+            "263"
+          ],
+          "missing": [
+            "N103"
+          ]
+        }
+      },
+      "expected": 5,
+      "matched": 4,
+      "missing": 1,
+      "status": "carencias_detectadas_frente_catalogo"
+    },
+    "28042": {
+      "codigo_ine": "28042",
+      "municipio": "Colmenar del Arroyo",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "551",
+            "642"
+          ],
+          "matched": [
+            "551",
+            "642"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28043": {
+      "codigo_ine": "28043",
+      "municipio": "Colmenar de Oreja",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "337",
+            "415",
+            "416",
+            "430"
+          ],
+          "matched": [
+            "337",
+            "415",
+            "416",
+            "430"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 4,
+      "matched": 4,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28044": {
+      "codigo_ine": "28044",
+      "municipio": "Colmenarejo",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "630",
+            "631",
+            "633",
+            "634",
+            "N904"
+          ],
+          "matched": [
+            "630",
+            "631",
+            "633",
+            "634",
+            "N904"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 5,
+      "matched": 5,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28046": {
+      "codigo_ine": "28046",
+      "municipio": "Collado Mediano",
+      "modes": {
+        "Cercanías": {
+          "expected": [
+            "C-8"
+          ],
+          "matched": [],
+          "missing": [
+            "C-8"
+          ]
+        },
+        "Autobús interurbano": {
+          "expected": [
+            "683",
+            "690",
+            "691",
+            "696",
+            "N602"
+          ],
+          "matched": [
+            "683",
+            "690",
+            "691",
+            "696",
+            "N602"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 6,
+      "matched": 5,
+      "missing": 1,
+      "status": "carencias_detectadas_frente_catalogo"
+    },
+    "28048": {
+      "codigo_ine": "28048",
+      "municipio": "Corpa",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "271",
+            "272"
+          ],
+          "matched": [
+            "271",
+            "272"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28050": {
+      "codigo_ine": "28050",
+      "municipio": "Cubas de la Sagra",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "460",
+            "468",
+            "N807"
+          ],
+          "matched": [
+            "460",
+            "468",
+            "N807"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 3,
+      "matched": 3,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28051": {
+      "codigo_ine": "28051",
+      "municipio": "Chapinería",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "551"
+          ],
+          "matched": [
+            "551"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 1,
+      "matched": 1,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28052": {
+      "codigo_ine": "28052",
+      "municipio": "Chinchón",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "337",
+            "415",
+            "416",
+            "430"
+          ],
+          "matched": [
+            "337",
+            "430"
+          ],
+          "missing": [
+            "415",
+            "416"
+          ]
+        }
+      },
+      "expected": 4,
+      "matched": 2,
+      "missing": 2,
+      "status": "carencias_detectadas_frente_catalogo"
+    },
+    "28053": {
+      "codigo_ine": "28053",
+      "municipio": "Daganzo de Arriba",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "251",
+            "252",
+            "254",
+            "256",
+            "N204"
+          ],
+          "matched": [
+            "251",
+            "252",
+            "254",
+            "256",
+            "N204"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 5,
+      "matched": 5,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28054": {
+      "codigo_ine": "28054",
+      "municipio": "El Escorial",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "640",
+            "660",
+            "661",
+            "661A",
+            "664",
+            "666",
+            "667",
+            "669",
+            "669A",
+            "N604"
+          ],
+          "matched": [
+            "640",
+            "660",
+            "661",
+            "661A",
+            "664",
+            "666",
+            "667",
+            "669",
+            "669A",
+            "N604"
+          ],
+          "missing": []
+        },
+        "Autobús urbano": {
+          "expected": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "matched": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 14,
+      "matched": 14,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28055": {
+      "codigo_ine": "28055",
+      "municipio": "Estremera",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "350A",
+            "351",
+            "355"
+          ],
+          "matched": [
+            "350A",
+            "351",
+            "355"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 3,
+      "matched": 3,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28056": {
+      "codigo_ine": "28056",
+      "municipio": "Fresnedillas de la Oliva",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "645",
+            "669A",
+            "N604"
+          ],
+          "matched": [
+            "645",
+            "669A",
+            "N604"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 3,
+      "matched": 3,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28057": {
+      "codigo_ine": "28057",
+      "municipio": "Fresno de Torote",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "251",
+            "256"
+          ],
+          "matched": [
+            "251",
+            "256"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28059": {
+      "codigo_ine": "28059",
+      "municipio": "Fuente el Saz de Jarama",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "184",
+            "197",
+            "254"
+          ],
+          "matched": [
+            "184",
+            "197",
+            "254"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 3,
+      "matched": 3,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28060": {
+      "codigo_ine": "28060",
+      "municipio": "Fuentidueña de Tajo",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "350B",
+            "352",
+            "353",
+            "355"
+          ],
+          "matched": [
+            "350B",
+            "352",
+            "353",
+            "355"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 4,
+      "matched": 4,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28061": {
+      "codigo_ine": "28061",
+      "municipio": "Galapagar",
+      "modes": {
+        "Cercanías": {
+          "expected": [
+            "C-10",
+            "C-8"
+          ],
+          "matched": [
+            "C-10"
+          ],
+          "missing": [
+            "C-8"
+          ]
+        },
+        "Autobús interurbano": {
+          "expected": [
+            "630",
+            "631",
+            "632",
+            "633",
+            "634",
+            "635",
+            "661",
+            "661A",
+            "667",
+            "N604",
+            "N904"
+          ],
+          "matched": [
+            "630",
+            "631",
+            "632",
+            "633",
+            "634",
+            "661",
+            "661A",
+            "667",
+            "N604",
+            "N904"
+          ],
+          "missing": [
+            "635"
+          ]
+        }
+      },
+      "expected": 13,
+      "matched": 11,
+      "missing": 2,
+      "status": "carencias_detectadas_frente_catalogo"
+    },
+    "28062": {
+      "codigo_ine": "28062",
+      "municipio": "Garganta de los Montes",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "194",
+            "194A",
+            "195",
+            "195A",
+            "195B"
+          ],
+          "matched": [
+            "194",
+            "194A",
+            "195",
+            "195A",
+            "195B"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 5,
+      "matched": 5,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28063": {
+      "codigo_ine": "28063",
+      "municipio": "Gargantilla del Lozoya y Pinilla de Buitrago",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "194",
+            "194A",
+            "195",
+            "195A",
+            "195B"
+          ],
+          "matched": [
+            "194",
+            "194A",
+            "195",
+            "195A",
+            "195B"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 5,
+      "matched": 5,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28064": {
+      "codigo_ine": "28064",
+      "municipio": "Gascones",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "191A",
+            "195"
+          ],
+          "matched": [
+            "191A",
+            "195"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28066": {
+      "codigo_ine": "28066",
+      "municipio": "Griñón",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "460",
+            "468",
+            "470",
+            "N807"
+          ],
+          "matched": [
+            "460",
+            "468",
+            "470",
+            "N807"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 4,
+      "matched": 4,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28067": {
+      "codigo_ine": "28067",
+      "municipio": "Guadalix de la Sierra",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "197C",
+            "726"
+          ],
+          "matched": [
+            "197C"
+          ],
+          "missing": [
+            "726"
+          ]
+        }
+      },
+      "expected": 2,
+      "matched": 1,
+      "missing": 1,
+      "status": "carencias_detectadas_frente_catalogo"
+    },
+    "28068": {
+      "codigo_ine": "28068",
+      "municipio": "Guadarrama",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "660",
+            "664",
+            "680",
+            "681",
+            "682",
+            "683",
+            "684",
+            "685",
+            "688",
+            "690",
+            "N602"
+          ],
+          "matched": [
+            "660",
+            "664",
+            "680",
+            "681",
+            "682",
+            "683",
+            "684",
+            "685",
+            "688",
+            "690",
+            "N602"
+          ],
+          "missing": []
+        },
+        "Autobús urbano": {
+          "expected": [
+            "4"
+          ],
+          "matched": [
+            "4"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 12,
+      "matched": 12,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28069": {
+      "codigo_ine": "28069",
+      "municipio": "La Hiruela",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "911"
+          ],
+          "matched": [
+            "911"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 1,
+      "matched": 1,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28070": {
+      "codigo_ine": "28070",
+      "municipio": "Horcajo de la Sierra-Aoslos",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "191B",
+            "196"
+          ],
+          "matched": [
+            "191B",
+            "196"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28071": {
+      "codigo_ine": "28071",
+      "municipio": "Horcajuelo de la Sierra",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "191C",
+            "199A"
+          ],
+          "matched": [
+            "191C",
+            "199A"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28072": {
+      "codigo_ine": "28072",
+      "municipio": "Hoyo de Manzanares",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "610",
+            "611",
+            "611A",
+            "612"
+          ],
+          "matched": [
+            "610",
+            "611",
+            "611A",
+            "612"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 4,
+      "matched": 4,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28073": {
+      "codigo_ine": "28073",
+      "municipio": "Humanes de Madrid",
+      "modes": {
+        "Cercanías": {
+          "expected": [
+            "C-5"
+          ],
+          "matched": [
+            "C-5"
+          ],
+          "missing": []
+        },
+        "Autobús interurbano": {
+          "expected": [
+            "468",
+            "471",
+            "496",
+            "497",
+            "498",
+            "N807"
+          ],
+          "matched": [
+            "468",
+            "471",
+            "496",
+            "497",
+            "498",
+            "N807"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 7,
+      "matched": 7,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28075": {
+      "codigo_ine": "28075",
+      "municipio": "Loeches",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "261",
+            "280",
+            "284",
+            "320",
+            "N203"
+          ],
+          "matched": [
+            "261",
+            "280",
+            "284",
+            "320",
+            "N203"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 5,
+      "matched": 5,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28076": {
+      "codigo_ine": "28076",
+      "municipio": "Lozoya",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "194",
+            "194A"
+          ],
+          "matched": [
+            "194",
+            "194A"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28078": {
+      "codigo_ine": "28078",
+      "municipio": "Madarcos",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "191B",
+            "196"
+          ],
+          "matched": [
+            "191B",
+            "196"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28082": {
+      "codigo_ine": "28082",
+      "municipio": "Manzanares el Real",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "720",
+            "724",
+            "728"
+          ],
+          "matched": [],
+          "missing": [
+            "720",
+            "724",
+            "728"
+          ]
+        }
+      },
+      "expected": 3,
+      "matched": 0,
+      "missing": 3,
+      "status": "carencias_detectadas_frente_catalogo"
+    },
+    "28083": {
+      "codigo_ine": "28083",
+      "municipio": "Meco",
+      "modes": {
+        "Cercanías": {
+          "expected": [
+            "C-2",
+            "C-7",
+            "C-8"
+          ],
+          "matched": [
+            "C-2",
+            "C-7"
+          ],
+          "missing": [
+            "C-8"
+          ]
+        },
+        "Autobús interurbano": {
+          "expected": [
+            "222",
+            "250",
+            "N202"
+          ],
+          "matched": [
+            "222",
+            "250",
+            "N202"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 6,
+      "matched": 5,
+      "missing": 1,
+      "status": "carencias_detectadas_frente_catalogo"
+    },
+    "28084": {
+      "codigo_ine": "28084",
+      "municipio": "Mejorada del Campo",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "280",
+            "282",
+            "284",
+            "285",
+            "340",
+            "341",
+            "N203"
+          ],
+          "matched": [
+            "280",
+            "282",
+            "284",
+            "285",
+            "340",
+            "341",
+            "N203"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 7,
+      "matched": 7,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28085": {
+      "codigo_ine": "28085",
+      "municipio": "Miraflores de la Sierra",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "725"
+          ],
+          "matched": [],
+          "missing": [
+            "725"
+          ]
+        }
+      },
+      "expected": 1,
+      "matched": 0,
+      "missing": 1,
+      "status": "carencias_detectadas_frente_catalogo"
+    },
+    "28086": {
+      "codigo_ine": "28086",
+      "municipio": "El Molar",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "191",
+            "193",
+            "193A",
+            "194",
+            "195",
+            "196",
+            "197D",
+            "N104"
+          ],
+          "matched": [
+            "191",
+            "193",
+            "193A",
+            "194",
+            "195",
+            "196",
+            "197D",
+            "N104"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 8,
+      "matched": 8,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28087": {
+      "codigo_ine": "28087",
+      "municipio": "Los Molinos",
+      "modes": {
+        "Cercanías": {
+          "expected": [
+            "C-8"
+          ],
+          "matched": [],
+          "missing": [
+            "C-8"
+          ]
+        },
+        "Autobús interurbano": {
+          "expected": [
+            "680",
+            "684",
+            "688"
+          ],
+          "matched": [
+            "680",
+            "684",
+            "688"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 4,
+      "matched": 3,
+      "missing": 1,
+      "status": "carencias_detectadas_frente_catalogo"
+    },
+    "28088": {
+      "codigo_ine": "28088",
+      "municipio": "Montejo de la Sierra",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "191C",
+            "199A",
+            "911",
+            "912"
+          ],
+          "matched": [
+            "191C",
+            "199A",
+            "911",
+            "912"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 4,
+      "matched": 4,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28089": {
+      "codigo_ine": "28089",
+      "municipio": "Moraleja de Enmedio",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "495",
+            "496",
+            "497",
+            "498",
+            "N808"
+          ],
+          "matched": [
+            "495",
+            "496",
+            "497",
+            "498",
+            "N808"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 5,
+      "matched": 5,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28090": {
+      "codigo_ine": "28090",
+      "municipio": "Moralzarzal",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "670",
+            "671",
+            "672",
+            "672A",
+            "720",
+            "724",
+            "876",
+            "N603"
+          ],
+          "matched": [
+            "670",
+            "671",
+            "672",
+            "672A",
+            "876",
+            "N603"
+          ],
+          "missing": [
+            "720",
+            "724"
+          ]
+        }
+      },
+      "expected": 8,
+      "matched": 6,
+      "missing": 2,
+      "status": "carencias_detectadas_frente_catalogo"
+    },
+    "28091": {
+      "codigo_ine": "28091",
+      "municipio": "Morata de Tajuña",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "330",
+            "336",
+            "337"
+          ],
+          "matched": [
+            "330",
+            "336",
+            "337"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 3,
+      "matched": 3,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28093": {
+      "codigo_ine": "28093",
+      "municipio": "Navacerrada",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "690",
+            "691",
+            "696"
+          ],
+          "matched": [
+            "690",
+            "691",
+            "696"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 3,
+      "matched": 3,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28094": {
+      "codigo_ine": "28094",
+      "municipio": "Navalafuente",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "197C",
+            "726"
+          ],
+          "matched": [
+            "197C"
+          ],
+          "missing": [
+            "726"
+          ]
+        }
+      },
+      "expected": 2,
+      "matched": 1,
+      "missing": 1,
+      "status": "carencias_detectadas_frente_catalogo"
+    },
+    "28095": {
+      "codigo_ine": "28095",
+      "municipio": "Navalagamella",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "642",
+            "645",
+            "669A"
+          ],
+          "matched": [
+            "642",
+            "645",
+            "669A"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 3,
+      "matched": 3,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28096": {
+      "codigo_ine": "28096",
+      "municipio": "Navalcarnero",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "528",
+            "529",
+            "529A",
+            "529H",
+            "530",
+            "531",
+            "531A",
+            "535",
+            "538",
+            "539",
+            "541",
+            "545",
+            "546",
+            "547",
+            "548",
+            "N505"
+          ],
+          "matched": [
+            "528",
+            "529",
+            "529A",
+            "529H",
+            "530",
+            "531",
+            "531A",
+            "538",
+            "539",
+            "541",
+            "545",
+            "546",
+            "547",
+            "548",
+            "N505"
+          ],
+          "missing": [
+            "535"
+          ]
+        },
+        "Autobús urbano": {
+          "expected": [
+            "1"
+          ],
+          "matched": [
+            "1"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 17,
+      "matched": 16,
+      "missing": 1,
+      "status": "carencias_detectadas_frente_catalogo"
+    },
+    "28097": {
+      "codigo_ine": "28097",
+      "municipio": "Navarredonda y San Mamés",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "191",
+            "195",
+            "195A",
+            "195B"
+          ],
+          "matched": [
+            "191",
+            "195",
+            "195A",
+            "195B"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 4,
+      "matched": 4,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28099": {
+      "codigo_ine": "28099",
+      "municipio": "Navas del Rey",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "551"
+          ],
+          "matched": [
+            "551"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 1,
+      "matched": 1,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28100": {
+      "codigo_ine": "28100",
+      "municipio": "Nuevo Baztán",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "260",
+            "261",
+            "321"
+          ],
+          "matched": [
+            "260",
+            "261",
+            "321"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 3,
+      "matched": 3,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28101": {
+      "codigo_ine": "28101",
+      "municipio": "Olmeda de las Fuentes",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "260",
+            "261",
+            "321"
+          ],
+          "matched": [
+            "260",
+            "261",
+            "321"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 3,
+      "matched": 3,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28102": {
+      "codigo_ine": "28102",
+      "municipio": "Orusco de Tajuña",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "260",
+            "322",
+            "326"
+          ],
+          "matched": [
+            "260",
+            "322",
+            "326"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 3,
+      "matched": 3,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28104": {
+      "codigo_ine": "28104",
+      "municipio": "Paracuellos de Jarama",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "210",
+            "211",
+            "212",
+            "213",
+            "215",
+            "256",
+            "263",
+            "N204"
+          ],
+          "matched": [
+            "210",
+            "211",
+            "212",
+            "213",
+            "215",
+            "256",
+            "263",
+            "N204"
+          ],
+          "missing": []
+        },
+        "Autobús urbano": {
+          "expected": [
+            "1",
+            "1",
+            "2"
+          ],
+          "matched": [
+            "1",
+            "1",
+            "2"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 11,
+      "matched": 11,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28107": {
+      "codigo_ine": "28107",
+      "municipio": "Patones",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "197",
+            "197A",
+            "913"
+          ],
+          "matched": [
+            "197",
+            "197A",
+            "913"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 3,
+      "matched": 3,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28108": {
+      "codigo_ine": "28108",
+      "municipio": "Pedrezuela",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "191",
+            "193",
+            "193A",
+            "194",
+            "195",
+            "196",
+            "197D",
+            "N104"
+          ],
+          "matched": [
+            "191",
+            "193",
+            "193A",
+            "194",
+            "195",
+            "196",
+            "197D",
+            "N104"
+          ],
+          "missing": []
+        },
+        "Autobús urbano": {
+          "expected": [
+            "1"
+          ],
+          "matched": [
+            "1"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 9,
+      "matched": 9,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28109": {
+      "codigo_ine": "28109",
+      "municipio": "Pelayos de la Presa",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "551"
+          ],
+          "matched": [
+            "551"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 1,
+      "matched": 1,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28110": {
+      "codigo_ine": "28110",
+      "municipio": "Perales de Tajuña",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "322",
+            "326",
+            "330",
+            "350A",
+            "350B",
+            "350C",
+            "351",
+            "352",
+            "353"
+          ],
+          "matched": [
+            "322",
+            "326",
+            "330",
+            "350A",
+            "350B",
+            "350C",
+            "351",
+            "352",
+            "353"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 9,
+      "matched": 9,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28111": {
+      "codigo_ine": "28111",
+      "municipio": "Pezuela de las Torres",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "271",
+            "272"
+          ],
+          "matched": [
+            "271",
+            "272"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28112": {
+      "codigo_ine": "28112",
+      "municipio": "Pinilla del Valle",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "194",
+            "194A"
+          ],
+          "matched": [
+            "194",
+            "194A"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28114": {
+      "codigo_ine": "28114",
+      "municipio": "Piñuécar-Gandullas",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "191",
+            "191B",
+            "191C",
+            "196",
+            "199A",
+            "911",
+            "912"
+          ],
+          "matched": [
+            "191",
+            "191B",
+            "191C",
+            "196",
+            "199A",
+            "911",
+            "912"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 7,
+      "matched": 7,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28116": {
+      "codigo_ine": "28116",
+      "municipio": "Pozuelo del Rey",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "261",
+            "321"
+          ],
+          "matched": [
+            "261",
+            "321"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28117": {
+      "codigo_ine": "28117",
+      "municipio": "Prádena del Rincón",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "191C",
+            "199A",
+            "911",
+            "912"
+          ],
+          "matched": [
+            "191C",
+            "199A",
+            "911",
+            "912"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 4,
+      "matched": 4,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28118": {
+      "codigo_ine": "28118",
+      "municipio": "Puebla de la Sierra",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "912"
+          ],
+          "matched": [
+            "912"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 1,
+      "matched": 1,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28119": {
+      "codigo_ine": "28119",
+      "municipio": "Quijorna",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "581"
+          ],
+          "matched": [
+            "581"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 1,
+      "matched": 1,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28120": {
+      "codigo_ine": "28120",
+      "municipio": "Rascafría",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "194",
+            "194A",
+            "691",
+            "819"
+          ],
+          "matched": [
+            "194",
+            "194A",
+            "691",
+            "819"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 4,
+      "matched": 4,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28121": {
+      "codigo_ine": "28121",
+      "municipio": "Redueña",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "197",
+            "197C",
+            "913"
+          ],
+          "matched": [
+            "197",
+            "197C",
+            "913"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 3,
+      "matched": 3,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28122": {
+      "codigo_ine": "28122",
+      "municipio": "Ribatejada",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "182",
+            "251",
+            "256"
+          ],
+          "matched": [
+            "182",
+            "251",
+            "256"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 3,
+      "matched": 3,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28124": {
+      "codigo_ine": "28124",
+      "municipio": "Robledillo de la Jara",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "191D",
+            "191E",
+            "199A"
+          ],
+          "matched": [
+            "191D",
+            "191E",
+            "199A"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 3,
+      "matched": 3,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28125": {
+      "codigo_ine": "28125",
+      "municipio": "Robledo de Chavela",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "640",
+            "640A",
+            "645",
+            "669A",
+            "N604"
+          ],
+          "matched": [
+            "640",
+            "640A",
+            "645",
+            "669A",
+            "N604"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 5,
+      "matched": 5,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28126": {
+      "codigo_ine": "28126",
+      "municipio": "Robregordo",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "191",
+            "191B"
+          ],
+          "matched": [
+            "191",
+            "191B"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28128": {
+      "codigo_ine": "28128",
+      "municipio": "Rozas de Puerto Real",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "546"
+          ],
+          "matched": [
+            "546"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 1,
+      "matched": 1,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28129": {
+      "codigo_ine": "28129",
+      "municipio": "San Agustín del Guadalix",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "166",
+            "191",
+            "193",
+            "194",
+            "195",
+            "196",
+            "727",
+            "N104"
+          ],
+          "matched": [
+            "166",
+            "191",
+            "193",
+            "194",
+            "195",
+            "196",
+            "N104"
+          ],
+          "missing": [
+            "727"
+          ]
+        }
+      },
+      "expected": 8,
+      "matched": 7,
+      "missing": 1,
+      "status": "carencias_detectadas_frente_catalogo"
+    },
+    "28130": {
+      "codigo_ine": "28130",
+      "municipio": "San Fernando de Henares",
+      "modes": {
+        "Metro": {
+          "expected": [
+            "7"
+          ],
+          "matched": [],
+          "missing": [
+            "7"
+          ]
+        },
+        "Autobús interurbano": {
+          "expected": [
+            "220",
+            "222",
+            "223",
+            "224",
+            "224A",
+            "226",
+            "227",
+            "229",
+            "280",
+            "281",
+            "282",
+            "283",
+            "284",
+            "285",
+            "287",
+            "288",
+            "289",
+            "340",
+            "822",
+            "N202",
+            "N203"
+          ],
+          "matched": [
+            "220",
+            "222",
+            "223",
+            "224",
+            "224A",
+            "226",
+            "227",
+            "229",
+            "280",
+            "281",
+            "282",
+            "283",
+            "284",
+            "285",
+            "288",
+            "340",
+            "822",
+            "N202",
+            "N203"
+          ],
+          "missing": [
+            "287",
+            "289"
+          ]
+        },
+        "Autobús urbano": {
+          "expected": [
+            "1"
+          ],
+          "matched": [
+            "1"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 23,
+      "matched": 20,
+      "missing": 3,
+      "status": "carencias_detectadas_frente_catalogo"
+    },
+    "28131": {
+      "codigo_ine": "28131",
+      "municipio": "San Lorenzo de El Escorial",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "640",
+            "660",
+            "661",
+            "664",
+            "665",
+            "666",
+            "667",
+            "669",
+            "669A",
+            "N604"
+          ],
+          "matched": [
+            "640",
+            "660",
+            "661",
+            "664",
+            "665",
+            "666",
+            "667",
+            "669",
+            "669A",
+            "N604"
+          ],
+          "missing": []
+        },
+        "Autobús urbano": {
+          "expected": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "matched": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 14,
+      "matched": 14,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28132": {
+      "codigo_ine": "28132",
+      "municipio": "San Martín de la Vega",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "410",
+            "412",
+            "413",
+            "414",
+            "415",
+            "416",
+            "N403"
+          ],
+          "matched": [
+            "410",
+            "412",
+            "413",
+            "414",
+            "416",
+            "N403"
+          ],
+          "missing": [
+            "415"
+          ]
+        },
+        "Autobús urbano": {
+          "expected": [
+            "I1",
+            "1"
+          ],
+          "matched": [
+            "I1",
+            "1"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 9,
+      "matched": 8,
+      "missing": 1,
+      "status": "carencias_detectadas_frente_catalogo"
+    },
+    "28133": {
+      "codigo_ine": "28133",
+      "municipio": "San Martín de Valdeiglesias",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "551"
+          ],
+          "matched": [
+            "551"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 1,
+      "matched": 1,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28135": {
+      "codigo_ine": "28135",
+      "municipio": "Santa María de la Alameda",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "665",
+            "666"
+          ],
+          "matched": [
+            "665",
+            "666"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28136": {
+      "codigo_ine": "28136",
+      "municipio": "Santorcaz",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "275"
+          ],
+          "matched": [
+            "275"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 1,
+      "matched": 1,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28137": {
+      "codigo_ine": "28137",
+      "municipio": "Los Santos de la Humosa",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "275"
+          ],
+          "matched": [
+            "275"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 1,
+      "matched": 1,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28138": {
+      "codigo_ine": "28138",
+      "municipio": "La Serna del Monte",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "191",
+            "191A",
+            "195"
+          ],
+          "matched": [
+            "191",
+            "191A",
+            "195"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 3,
+      "matched": 3,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28140": {
+      "codigo_ine": "28140",
+      "municipio": "Serranillos del Valle",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "460",
+            "468"
+          ],
+          "matched": [
+            "460",
+            "468"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28141": {
+      "codigo_ine": "28141",
+      "municipio": "Sevilla la Nueva",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "530",
+            "531",
+            "531A",
+            "532",
+            "N505"
+          ],
+          "matched": [
+            "530",
+            "531",
+            "531A",
+            "532",
+            "N505"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 5,
+      "matched": 5,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28143": {
+      "codigo_ine": "28143",
+      "municipio": "Somosierra",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "191",
+            "191B"
+          ],
+          "matched": [
+            "191",
+            "191B"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28144": {
+      "codigo_ine": "28144",
+      "municipio": "Soto del Real",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "720",
+            "721",
+            "724",
+            "725",
+            "726",
+            "728"
+          ],
+          "matched": [],
+          "missing": [
+            "720",
+            "721",
+            "724",
+            "725",
+            "726",
+            "728"
+          ]
+        }
+      },
+      "expected": 6,
+      "matched": 0,
+      "missing": 6,
+      "status": "carencias_detectadas_frente_catalogo"
+    },
+    "28145": {
+      "codigo_ine": "28145",
+      "municipio": "Talamanca de Jarama",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "197",
+            "197E"
+          ],
+          "matched": [
+            "197",
+            "197E"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28146": {
+      "codigo_ine": "28146",
+      "municipio": "Tielmes",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "322",
+            "326"
+          ],
+          "matched": [
+            "322",
+            "326"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28147": {
+      "codigo_ine": "28147",
+      "municipio": "Titulcia",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "415",
+            "416"
+          ],
+          "matched": [
+            "416"
+          ],
+          "missing": [
+            "415"
+          ]
+        }
+      },
+      "expected": 2,
+      "matched": 1,
+      "missing": 1,
+      "status": "carencias_detectadas_frente_catalogo"
+    },
+    "28149": {
+      "codigo_ine": "28149",
+      "municipio": "Torrejón de la Calzada",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "460",
+            "463",
+            "464",
+            "466"
+          ],
+          "matched": [
+            "460",
+            "463",
+            "464",
+            "466"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 4,
+      "matched": 4,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28150": {
+      "codigo_ine": "28150",
+      "municipio": "Torrejón de Velasco",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "463",
+            "466"
+          ],
+          "matched": [
+            "463",
+            "466"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28151": {
+      "codigo_ine": "28151",
+      "municipio": "Torrelaguna",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "197",
+            "197A",
+            "197B",
+            "197C",
+            "197D",
+            "197E",
+            "913"
+          ],
+          "matched": [
+            "197",
+            "197A",
+            "197B",
+            "197C",
+            "197D",
+            "197E",
+            "913"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 7,
+      "matched": 7,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28152": {
+      "codigo_ine": "28152",
+      "municipio": "Torrelodones",
+      "modes": {
+        "Cercanías": {
+          "expected": [
+            "C-10",
+            "C-8"
+          ],
+          "matched": [
+            "C-10"
+          ],
+          "missing": [
+            "C-8"
+          ]
+        },
+        "Autobús interurbano": {
+          "expected": [
+            "610",
+            "611",
+            "611A",
+            "612",
+            "613",
+            "631",
+            "633",
+            "635",
+            "664",
+            "684",
+            "685",
+            "686",
+            "686A",
+            "691",
+            "N602",
+            "N904"
+          ],
+          "matched": [
+            "610",
+            "611",
+            "611A",
+            "612",
+            "613",
+            "631",
+            "633",
+            "664",
+            "684",
+            "685",
+            "686",
+            "686A",
+            "691",
+            "N602",
+            "N904"
+          ],
+          "missing": [
+            "635"
+          ]
+        },
+        "Autobús urbano": {
+          "expected": [
+            "1",
+            "2",
+            "4",
+            "5"
+          ],
+          "matched": [
+            "1",
+            "2",
+            "4",
+            "5"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 22,
+      "matched": 20,
+      "missing": 2,
+      "status": "carencias_detectadas_frente_catalogo"
+    },
+    "28153": {
+      "codigo_ine": "28153",
+      "municipio": "Torremocha de Jarama",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "197",
+            "197A",
+            "913"
+          ],
+          "matched": [
+            "197",
+            "197A",
+            "913"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 3,
+      "matched": 3,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28154": {
+      "codigo_ine": "28154",
+      "municipio": "Torres de la Alameda",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "231",
+            "232",
+            "261",
+            "320"
+          ],
+          "matched": [
+            "231",
+            "232",
+            "261",
+            "320"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 4,
+      "matched": 4,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28155": {
+      "codigo_ine": "28155",
+      "municipio": "Valdaracete",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "350A",
+            "351"
+          ],
+          "matched": [
+            "350A",
+            "351"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28156": {
+      "codigo_ine": "28156",
+      "municipio": "Valdeavero",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "251",
+            "255",
+            "256"
+          ],
+          "matched": [
+            "251",
+            "255",
+            "256"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 3,
+      "matched": 3,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28157": {
+      "codigo_ine": "28157",
+      "municipio": "Valdelaguna",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "337",
+            "430"
+          ],
+          "matched": [
+            "337",
+            "430"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28158": {
+      "codigo_ine": "28158",
+      "municipio": "Valdemanco",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "197B",
+            "197C",
+            "725"
+          ],
+          "matched": [
+            "197B",
+            "197C"
+          ],
+          "missing": [
+            "725"
+          ]
+        }
+      },
+      "expected": 3,
+      "matched": 2,
+      "missing": 1,
+      "status": "carencias_detectadas_frente_catalogo"
+    },
+    "28159": {
+      "codigo_ine": "28159",
+      "municipio": "Valdemaqueda",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "640",
+            "645",
+            "N604"
+          ],
+          "matched": [
+            "640",
+            "645",
+            "N604"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 3,
+      "matched": 3,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28160": {
+      "codigo_ine": "28160",
+      "municipio": "Valdemorillo",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "FS1",
+            "630",
+            "641",
+            "642",
+            "645",
+            "669",
+            "669A",
+            "N908"
+          ],
+          "matched": [
+            "630",
+            "641",
+            "642",
+            "645",
+            "669",
+            "669A"
+          ],
+          "missing": [
+            "FS1",
+            "N908"
+          ]
+        }
+      },
+      "expected": 8,
+      "matched": 6,
+      "missing": 2,
+      "status": "carencias_detectadas_frente_catalogo"
+    },
+    "28162": {
+      "codigo_ine": "28162",
+      "municipio": "Valdeolmos-Alalpardo",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "182",
+            "254"
+          ],
+          "matched": [
+            "182",
+            "254"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28163": {
+      "codigo_ine": "28163",
+      "municipio": "Valdepiélagos",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "197",
+            "197E"
+          ],
+          "matched": [
+            "197",
+            "197E"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28164": {
+      "codigo_ine": "28164",
+      "municipio": "Valdetorres de Jarama",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "184",
+            "197"
+          ],
+          "matched": [
+            "184",
+            "197"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28165": {
+      "codigo_ine": "28165",
+      "municipio": "Valdilecha",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "313"
+          ],
+          "matched": [
+            "313"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 1,
+      "matched": 1,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28166": {
+      "codigo_ine": "28166",
+      "municipio": "Valverde de Alcalá",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "232",
+            "260"
+          ],
+          "matched": [
+            "232",
+            "260"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28167": {
+      "codigo_ine": "28167",
+      "municipio": "Velilla de San Antonio",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "280",
+            "282",
+            "284",
+            "285",
+            "341",
+            "N203"
+          ],
+          "matched": [
+            "280",
+            "282",
+            "284",
+            "285",
+            "341",
+            "N203"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 6,
+      "matched": 6,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28168": {
+      "codigo_ine": "28168",
+      "municipio": "El Vellón",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "191",
+            "193",
+            "197D",
+            "197E",
+            "N104"
+          ],
+          "matched": [
+            "191",
+            "193",
+            "197D",
+            "197E",
+            "N104"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 5,
+      "matched": 5,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28169": {
+      "codigo_ine": "28169",
+      "municipio": "Venturada",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "191",
+            "193",
+            "193A",
+            "194",
+            "195",
+            "196",
+            "197C",
+            "N104"
+          ],
+          "matched": [
+            "191",
+            "193",
+            "193A",
+            "194",
+            "195",
+            "196",
+            "197C",
+            "N104"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 8,
+      "matched": 8,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28170": {
+      "codigo_ine": "28170",
+      "municipio": "Villaconejos",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "337",
+            "415",
+            "430"
+          ],
+          "matched": [
+            "337",
+            "430"
+          ],
+          "missing": [
+            "415"
+          ]
+        }
+      },
+      "expected": 3,
+      "matched": 2,
+      "missing": 1,
+      "status": "carencias_detectadas_frente_catalogo"
+    },
+    "28171": {
+      "codigo_ine": "28171",
+      "municipio": "Villa del Prado",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "545",
+            "546",
+            "547"
+          ],
+          "matched": [
+            "545",
+            "546",
+            "547"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 3,
+      "matched": 3,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28172": {
+      "codigo_ine": "28172",
+      "municipio": "Villalbilla",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "231",
+            "232",
+            "271",
+            "272",
+            "275",
+            "320",
+            "N200"
+          ],
+          "matched": [
+            "231",
+            "232",
+            "271",
+            "272",
+            "275",
+            "320",
+            "N200"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 7,
+      "matched": 7,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28173": {
+      "codigo_ine": "28173",
+      "municipio": "Villamanrique de Tajo",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "350B",
+            "353"
+          ],
+          "matched": [
+            "350B",
+            "353"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28174": {
+      "codigo_ine": "28174",
+      "municipio": "Villamanta",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "541",
+            "545",
+            "546",
+            "547",
+            "548"
+          ],
+          "matched": [
+            "541",
+            "545",
+            "546",
+            "547",
+            "548"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 5,
+      "matched": 5,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28175": {
+      "codigo_ine": "28175",
+      "municipio": "Villamantilla",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "531A"
+          ],
+          "matched": [
+            "531A"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 1,
+      "matched": 1,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28176": {
+      "codigo_ine": "28176",
+      "municipio": "Villanueva de la Cañada",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "530",
+            "575",
+            "580",
+            "581",
+            "623",
+            "626",
+            "627",
+            "641",
+            "642",
+            "669",
+            "N907",
+            "N908"
+          ],
+          "matched": [
+            "530",
+            "575",
+            "580",
+            "581",
+            "623",
+            "626",
+            "627",
+            "641",
+            "642",
+            "669",
+            "N907"
+          ],
+          "missing": [
+            "N908"
+          ]
+        }
+      },
+      "expected": 12,
+      "matched": 11,
+      "missing": 1,
+      "status": "carencias_detectadas_frente_catalogo"
+    },
+    "28177": {
+      "codigo_ine": "28177",
+      "municipio": "Villanueva del Pardillo",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "626",
+            "626A",
+            "627",
+            "641",
+            "642",
+            "643",
+            "645",
+            "N908"
+          ],
+          "matched": [
+            "626",
+            "626A",
+            "627",
+            "641",
+            "642",
+            "643",
+            "645"
+          ],
+          "missing": [
+            "N908"
+          ]
+        }
+      },
+      "expected": 8,
+      "matched": 7,
+      "missing": 1,
+      "status": "carencias_detectadas_frente_catalogo"
+    },
+    "28178": {
+      "codigo_ine": "28178",
+      "municipio": "Villanueva de Perales",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "531A",
+            "551"
+          ],
+          "matched": [
+            "531A",
+            "551"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 2,
+      "matched": 2,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28179": {
+      "codigo_ine": "28179",
+      "municipio": "Villar del Olmo",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "260",
+            "261",
+            "321"
+          ],
+          "matched": [
+            "260",
+            "261",
+            "321"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 3,
+      "matched": 3,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28180": {
+      "codigo_ine": "28180",
+      "municipio": "Villarejo de Salvanés",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "350A",
+            "350B",
+            "350C",
+            "351",
+            "352",
+            "353",
+            "430"
+          ],
+          "matched": [
+            "350A",
+            "350B",
+            "350C",
+            "351",
+            "352",
+            "353",
+            "430"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 7,
+      "matched": 7,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28181": {
+      "codigo_ine": "28181",
+      "municipio": "Villaviciosa de Odón",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "510",
+            "510A",
+            "518",
+            "519",
+            "519A",
+            "551",
+            "567",
+            "581",
+            "N504"
+          ],
+          "matched": [
+            "510",
+            "510A",
+            "518",
+            "519",
+            "519A",
+            "551",
+            "567",
+            "581",
+            "N504"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 9,
+      "matched": 9,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28182": {
+      "codigo_ine": "28182",
+      "municipio": "Villavieja del Lozoya",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "191",
+            "191A",
+            "195",
+            "195A",
+            "195B"
+          ],
+          "matched": [
+            "191",
+            "191A",
+            "195",
+            "195A",
+            "195B"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 5,
+      "matched": 5,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28183": {
+      "codigo_ine": "28183",
+      "municipio": "Zarzalejo",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "640",
+            "665",
+            "666",
+            "669A"
+          ],
+          "matched": [
+            "666",
+            "669A"
+          ],
+          "missing": [
+            "640",
+            "665"
+          ]
+        }
+      },
+      "expected": 4,
+      "matched": 2,
+      "missing": 2,
+      "status": "carencias_detectadas_frente_catalogo"
+    },
+    "28901": {
+      "codigo_ine": "28901",
+      "municipio": "Lozoyuela-Navas-Sieteiglesias",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "191",
+            "191E",
+            "194",
+            "194A",
+            "195",
+            "195A",
+            "195B",
+            "196"
+          ],
+          "matched": [
+            "191",
+            "191E",
+            "194",
+            "194A",
+            "195",
+            "195A",
+            "195B",
+            "196"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 8,
+      "matched": 8,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    },
+    "28902": {
+      "codigo_ine": "28902",
+      "municipio": "Puentes Viejas",
+      "modes": {
+        "Autobús interurbano": {
+          "expected": [
+            "191D",
+            "191E",
+            "196",
+            "199A"
+          ],
+          "matched": [
+            "191D",
+            "191E",
+            "196",
+            "199A"
+          ],
+          "missing": []
+        }
+      },
+      "expected": 4,
+      "matched": 4,
+      "missing": 0,
+      "status": "sin_carencias_detectadas_por_catalogo"
+    }
+  }
+}

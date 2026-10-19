@@ -1,0 +1,61 @@
+{
+  "metodologia_version": "ivp-2.0.0-transporte-programado",
+  "perfil_inicial": "VU",
+  "perfiles": {
+    "VC": {
+      "nombre": "Vivienda colectiva",
+      "indicador": "vivienda_alquiler_vc_m2_mediana"
+    },
+    "VU": {
+      "nombre": "Vivienda unifamiliar o rural",
+      "indicador": "vivienda_alquiler_vu_m2_mediana"
+    }
+  },
+  "indicadores_comunes": {
+    "sanidad": "distancia_atencion_primaria_directorio_m",
+    "educacion": "distancia_centro_educativo_general_m",
+    "transporte": "oferta_conectividad_programada"
+  },
+  "pesos_generales": {
+    "sanidad": 0.25,
+    "educacion": 0.25,
+    "transporte": 0.25,
+    "vivienda": 0.25
+  },
+  "pesos_personalizados": {
+    "sanidad": 0.25,
+    "educacion": 0.25,
+    "transporte": 0.25,
+    "vivienda": 0.25
+  },
+  "normalizacion_principal": "minmax",
+  "metodos_sensibilidad": [
+    "minmax",
+    "winsor_p05_p95",
+    "percentil"
+  ],
+  "sensibilidad": {
+    "transferencia_peso": 0.1,
+    "configuraciones_pesos": 13,
+    "escenarios_por_perfil": 39,
+    "top_n": 10,
+    "empates": "puesto mínimo compartido, sin redondeo previo"
+  },
+  "ausencias": "Sin índice si falta una dimensión con peso positivo; sin reponderación municipal.",
+  "bloqueos_dimensiones": [],
+  "anclas_fijas_tras_filtros": true,
+  "escala": [
+    0,
+    100
+  ],
+  "agregacion": "media aritmética ponderada compensatoria",
+  "publicacion": "Índice orientativo propio: proximidad sanitaria y educativa, oferta programada de transporte y alquiler declarado.",
+  "transporte": {
+    "indicador": "oferta_conectividad_programada",
+    "peso_frecuencia": 0.5,
+    "peso_conectividad": 0.5,
+    "semana_inicio": "2026-10-19",
+    "semana_fin": "2026-10-25",
+    "alcance": "Oferta publicada y destinos municipales directos sin transbordo. Sin tiempos reales ni garantía de exhaustividad."
+  }
+}
