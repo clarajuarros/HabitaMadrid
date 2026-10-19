@@ -76,6 +76,8 @@ def render_public_transport(root, code):
                              '<a href="'+esc(url)+'" target="_blank" rel="noopener noreferrer">'+label+'</a></article>')
             st.html('<div class="transport-lines">'+''.join(cards)+'</div>')
     st.caption('Fuente: CRTM, consulta por municipio · '+metadata.get('updated','Fecha no disponible')+'. El buscador puede incluir servicios próximos al municipio: consulta las paradas de cada línea. Los modos que no figuran no se presentan como inexistentes. Comprueba avisos y horarios oficiales antes del viaje. Este listado es información complementaria; la puntuación utiliza la edición indicada en Cómo se calcula y fuentes.')
+    if row.get('nearby_lines'):
+        st.caption('Servicios próximos: '+', '.join(row['nearby_lines'])+'. Sus paradas contrastadas están en otros municipios y no se atribuyen a este por aparecer en el buscador.')
     if official_url(row.get('source_url','')):
         st.link_button('Ver la consulta oficial del municipio',row['source_url'])
 

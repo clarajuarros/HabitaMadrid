@@ -1,0 +1,2885 @@
+{
+  "schema_version": 1,
+  "updated": "19/10/2026",
+  "investigados": 38,
+  "resueltos_para_calculo": 37,
+  "puntuables_total": 154,
+  "universo": 155,
+  "scope": "Horarios publicados; no certifica puntualidad ni funcionamiento observado. La fórmula 50/50 permanece intacta.",
+  "municipalities": {
+    "28004": {
+      "codigo_ine": "28004",
+      "municipio": "El Álamo",
+      "brechas_iniciales": "Relación municipio–línea pendiente de reconciliar: 528 (Autobús interurbano).",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_004&lang=es",
+      "resoluciones": [
+        "La 528 no tiene paradas en El Álamo en ninguno de los itinerarios oficiales consultados: pasa por Madrid, Móstoles y Navalcarnero. Se mantiene como servicio próximo, sin atribuir sus expediciones al municipio."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [],
+      "lineas_topologia_contrastada": [],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_004&lang=es"
+        }
+      ]
+    },
+    "28010": {
+      "codigo_ine": "28010",
+      "municipio": "Alpedrete",
+      "brechas_iniciales": "Relación municipio–línea pendiente de reconciliar: C-8 (Cercanías).; Renfe declara viajes activos sin secuencia de paradas en la familia de línea C8B; se bloquean conservadoramente sus variantes municipales hasta reconciliar el recorrido.",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_010&lang=es",
+      "resoluciones": [
+        "C-8 del catálogo CRTM se reconcilia con las ramas publicadas por Renfe. Los 31 viajes sin secuencia se contrastan individualmente en el GTFS Regional para su fecha; solo se incorpora el tramo que falta hasta Cercedilla/Fuenlabrada, sin añadir otra vez la continuación ya presente."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [],
+      "lineas_topologia_contrastada": [],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_010&lang=es"
+        },
+        {
+          "etiqueta": "Horarios oficiales de Renfe",
+          "url": "https://horarioscercanias.renfe.com/"
+        }
+      ]
+    },
+    "28018": {
+      "codigo_ine": "28018",
+      "municipio": "Becerril de la Sierra",
+      "brechas_iniciales": "Relación municipio–línea pendiente de reconciliar: 724 (Autobús interurbano).",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_018&lang=es",
+      "resoluciones": [
+        "Se han fechado las expediciones PDF de 724 para los siete días de referencia; se aplican temporadas, fines de semana, servicios lectivos y noches, y se conservan sin hora las paradas no cronometradas.",
+        "Paradas y variante exacta contrastadas con el inventario oficial de CRTM en 691."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [
+        {
+          "linea": "724",
+          "salidas_por_fecha": {
+            "2026-10-19": 42,
+            "2026-10-20": 42,
+            "2026-10-21": 42,
+            "2026-10-22": 42,
+            "2026-10-23": 44,
+            "2026-10-24": 24,
+            "2026-10-25": 22
+          },
+          "primera_hora_disponible_segundos": null,
+          "ultima_hora_disponible_segundos": null,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8724H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8724H2.pdf"
+          ]
+        }
+      ],
+      "lineas_topologia_contrastada": [
+        "691"
+      ],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_018&lang=es"
+        },
+        {
+          "etiqueta": "Horario oficial 8724H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8724H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8724H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8724H2.pdf"
+        }
+      ]
+    },
+    "28019": {
+      "codigo_ine": "28019",
+      "municipio": "Belmonte de Tajo",
+      "brechas_iniciales": "Línea 337: discrepancia entre expediciones PDF y GTFS pendiente de reconciliar; no se suman ambas fuentes.",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_019&lang=es",
+      "resoluciones": [
+        "La 337 utiliza el horario de viajeros actual enlazado por CRTM y La Veloz, con contenido idéntico en ambos sentidos. Se excluye toda la 337 del GTFS antes de reemplazarla; los recuentos discrepantes del GTFS se conservan en el informe de contraste. No se suman fuentes contradictorias.",
+        "Se han fechado las expediciones PDF de 337 para los siete días de referencia; se aplican temporadas, fines de semana, servicios lectivos y noches, y se conservan sin hora las paradas no cronometradas."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [
+        {
+          "linea": "337",
+          "salidas_por_fecha": {
+            "2026-10-19": 48,
+            "2026-10-20": 48,
+            "2026-10-21": 48,
+            "2026-10-22": 48,
+            "2026-10-23": 48,
+            "2026-10-24": 43,
+            "2026-10-25": 30
+          },
+          "primera_hora_disponible_segundos": 5580,
+          "ultima_hora_disponible_segundos": 147780,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8337H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8337H2.pdf"
+          ]
+        }
+      ],
+      "lineas_topologia_contrastada": [],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_019&lang=es"
+        },
+        {
+          "etiqueta": "Horario oficial 8337H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8337H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8337H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8337H2.pdf"
+        },
+        {
+          "etiqueta": "Horario actual del operador La Veloz",
+          "url": "https://laveloz.es/horarios-la-veloz-crtm/"
+        }
+      ]
+    },
+    "28023": {
+      "codigo_ine": "28023",
+      "municipio": "El Boalo",
+      "brechas_iniciales": "Relación municipio–línea pendiente de reconciliar: 720 (Autobús interurbano).; Relación municipio–línea pendiente de reconciliar: 724 (Autobús interurbano).; PDF: se han identificado expediciones ordinarias, pero falta cerrar calendario de festivos/lectivos, variantes, paradas sin hora y/o servicios nocturnos; los recuentos son parciales y no autorizan puntuación.",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_023&lang=es",
+      "resoluciones": [
+        "Se han fechado las expediciones PDF de 720, 724 para los siete días de referencia; se aplican temporadas, fines de semana, servicios lectivos y noches, y se conservan sin hora las paradas no cronometradas."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [
+        {
+          "linea": "720",
+          "salidas_por_fecha": {
+            "2026-10-19": 31,
+            "2026-10-20": 31,
+            "2026-10-21": 31,
+            "2026-10-22": 31,
+            "2026-10-23": 31,
+            "2026-10-24": 10,
+            "2026-10-25": 10
+          },
+          "primera_hora_disponible_segundos": 28200,
+          "ultima_hora_disponible_segundos": 69900,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8720H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8720H2.pdf"
+          ]
+        },
+        {
+          "linea": "724",
+          "salidas_por_fecha": {
+            "2026-10-19": 42,
+            "2026-10-20": 42,
+            "2026-10-21": 42,
+            "2026-10-22": 42,
+            "2026-10-23": 44,
+            "2026-10-24": 24,
+            "2026-10-25": 22
+          },
+          "primera_hora_disponible_segundos": 21600,
+          "ultima_hora_disponible_segundos": 93300,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8724H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8724H2.pdf"
+          ]
+        }
+      ],
+      "lineas_topologia_contrastada": [],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_023&lang=es"
+        },
+        {
+          "etiqueta": "Horario oficial 8720H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8720H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8720H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8720H2.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8724H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8724H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8724H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8724H2.pdf"
+        }
+      ]
+    },
+    "28027": {
+      "codigo_ine": "28027",
+      "municipio": "Buitrago del Lozoya",
+      "brechas_iniciales": "Relación municipio–línea pendiente de reconciliar: SD1 (Autobús interurbano).",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_027&lang=es",
+      "resoluciones": [
+        "SD1 está confirmado como transporte a demanda de fines de semana y festivos, con reserva de al menos dos horas. No publica expediciones fijas; se informa aparte de la oferta programada. Se aplica la misma exclusión a los nueve municipios de su ámbito, sin considerar cero la demanda desconocida."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [],
+      "lineas_topologia_contrastada": [],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_027&lang=es"
+        }
+      ]
+    },
+    "28028": {
+      "codigo_ine": "28028",
+      "municipio": "Bustarviejo",
+      "brechas_iniciales": "Relación municipio–línea pendiente de reconciliar: 725 (Autobús interurbano).; PDF: se han identificado expediciones ordinarias, pero falta cerrar calendario de festivos/lectivos, variantes, paradas sin hora y/o servicios nocturnos; los recuentos son parciales y no autorizan puntuación.",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_028&lang=es",
+      "resoluciones": [
+        "Se han fechado las expediciones PDF de 725 para los siete días de referencia; se aplican temporadas, fines de semana, servicios lectivos y noches, y se conservan sin hora las paradas no cronometradas."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [
+        {
+          "linea": "725",
+          "salidas_por_fecha": {
+            "2026-10-19": 39,
+            "2026-10-20": 39,
+            "2026-10-21": 39,
+            "2026-10-22": 39,
+            "2026-10-23": 39,
+            "2026-10-24": 24,
+            "2026-10-25": 24
+          },
+          "primera_hora_disponible_segundos": 21000,
+          "ultima_hora_disponible_segundos": 81900,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8725H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8725H2.pdf"
+          ]
+        }
+      ],
+      "lineas_topologia_contrastada": [],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_028&lang=es"
+        },
+        {
+          "etiqueta": "Horario oficial 8725H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8725H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8725H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8725H2.pdf"
+        }
+      ]
+    },
+    "28030": {
+      "codigo_ine": "28030",
+      "municipio": "La Cabrera",
+      "brechas_iniciales": "Relación municipio–línea pendiente de reconciliar: 725 (Autobús interurbano).; PDF: se han identificado expediciones ordinarias, pero falta cerrar calendario de festivos/lectivos, variantes, paradas sin hora y/o servicios nocturnos; los recuentos son parciales y no autorizan puntuación.",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_030&lang=es",
+      "resoluciones": [
+        "La variante c de la 725 llega a La Cabrera y la salida hacia Madrid figura como 15 minutos antes de Valdemanco. El festivo local del 19/10 se registra; no se suprimen por él servicios ordinarios con calendario de origen Madrid. Las expediciones lectivas publicadas no recorren esta rama.",
+        "Se han fechado las expediciones PDF de 725 para los siete días de referencia; se aplican temporadas, fines de semana, servicios lectivos y noches, y se conservan sin hora las paradas no cronometradas."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [
+        {
+          "linea": "725",
+          "salidas_por_fecha": {
+            "2026-10-19": 2,
+            "2026-10-20": 2,
+            "2026-10-21": 2,
+            "2026-10-22": 2,
+            "2026-10-23": 2,
+            "2026-10-24": 0,
+            "2026-10-25": 0
+          },
+          "primera_hora_disponible_segundos": 33900,
+          "ultima_hora_disponible_segundos": 59400,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8725H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8725H2.pdf"
+          ]
+        }
+      ],
+      "lineas_topologia_contrastada": [],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_030&lang=es"
+        },
+        {
+          "etiqueta": "Horario oficial 8725H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8725H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8725H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8725H2.pdf"
+        }
+      ]
+    },
+    "28038": {
+      "codigo_ine": "28038",
+      "municipio": "Cercedilla",
+      "brechas_iniciales": "Relación municipio–línea pendiente de reconciliar: C-8 (Cercanías).; Relación municipio–línea pendiente de reconciliar: 691 (Autobús interurbano).; Renfe declara viajes activos sin secuencia de paradas en la familia de línea C8B; se bloquean conservadoramente sus variantes municipales hasta reconciliar el recorrido.",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_038&lang=es",
+      "resoluciones": [
+        "La 691 sí tiene paradas en Cercedilla: El Ventorrillo, Puerto de Navacerrada y Club Alpino. Se incorporan con el identificador de itinerario y municipio oficiales, conservando como desconocidas las horas que el GTFS no publica.",
+        "C-8 del catálogo CRTM se reconcilia con las ramas publicadas por Renfe. Los 31 viajes sin secuencia se contrastan individualmente en el GTFS Regional para su fecha; solo se incorpora el tramo que falta hasta Cercedilla/Fuenlabrada, sin añadir otra vez la continuación ya presente.",
+        "Paradas y variante exacta contrastadas con el inventario oficial de CRTM en 691."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [],
+      "lineas_topologia_contrastada": [
+        "691"
+      ],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_038&lang=es"
+        },
+        {
+          "etiqueta": "Horarios oficiales de Renfe",
+          "url": "https://horarioscercanias.renfe.com/"
+        }
+      ]
+    },
+    "28040": {
+      "codigo_ine": "28040",
+      "municipio": "Ciempozuelos",
+      "brechas_iniciales": "Relación municipio–línea pendiente de reconciliar: 415 (Autobús interurbano).; Relación municipio–línea pendiente de reconciliar: 416 (Autobús interurbano).; PDF: se han identificado expediciones ordinarias, pero falta cerrar calendario de festivos/lectivos, variantes, paradas sin hora y/o servicios nocturnos; los recuentos son parciales y no autorizan puntuación.",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_040&lang=es",
+      "resoluciones": [
+        "Se han fechado las expediciones PDF de 415, 416 para los siete días de referencia; se aplican temporadas, fines de semana, servicios lectivos y noches, y se conservan sin hora las paradas no cronometradas."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [
+        {
+          "linea": "415",
+          "salidas_por_fecha": {
+            "2026-10-19": 16,
+            "2026-10-20": 16,
+            "2026-10-21": 16,
+            "2026-10-22": 16,
+            "2026-10-23": 16,
+            "2026-10-24": 8,
+            "2026-10-25": 8
+          },
+          "primera_hora_disponible_segundos": null,
+          "ultima_hora_disponible_segundos": null,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8415H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8415H2.pdf"
+          ]
+        },
+        {
+          "linea": "416",
+          "salidas_por_fecha": {
+            "2026-10-19": 16,
+            "2026-10-20": 16,
+            "2026-10-21": 16,
+            "2026-10-22": 16,
+            "2026-10-23": 16,
+            "2026-10-24": 14,
+            "2026-10-25": 14
+          },
+          "primera_hora_disponible_segundos": 25200,
+          "ultima_hora_disponible_segundos": 75600,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8416H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8416H2.pdf"
+          ]
+        }
+      ],
+      "lineas_topologia_contrastada": [],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_040&lang=es"
+        },
+        {
+          "etiqueta": "Horario oficial 8415H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8415H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8415H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8415H2.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8416H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8416H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8416H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8416H2.pdf"
+        }
+      ]
+    },
+    "28041": {
+      "codigo_ine": "28041",
+      "municipio": "Cobeña",
+      "brechas_iniciales": "Relación municipio–línea pendiente de reconciliar: N103 (Autobús interurbano).",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_041&lang=es",
+      "resoluciones": [
+        "La expedición c de N103 se ha contrastado como un único itinerario circular Madrid–Algete–Cobeña–Madrid: la salida 23:45 y el paso 00:20 por Algete no son dos vehículos independientes.",
+        "Se han fechado las expediciones PDF de N103 para los siete días de referencia; se aplican temporadas, fines de semana, servicios lectivos y noches, y se conservan sin hora las paradas no cronometradas."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [
+        {
+          "linea": "N103",
+          "salidas_por_fecha": {
+            "2026-10-19": 1,
+            "2026-10-20": 1,
+            "2026-10-21": 1,
+            "2026-10-22": 1,
+            "2026-10-23": 1,
+            "2026-10-24": 1,
+            "2026-10-25": 1
+          },
+          "primera_hora_disponible_segundos": null,
+          "ultima_hora_disponible_segundos": null,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8N103H1.pdf"
+          ]
+        }
+      ],
+      "lineas_topologia_contrastada": [],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_041&lang=es"
+        },
+        {
+          "etiqueta": "Horario oficial 8N103H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8N103H1.pdf"
+        }
+      ]
+    },
+    "28043": {
+      "codigo_ine": "28043",
+      "municipio": "Colmenar de Oreja",
+      "brechas_iniciales": "PDF: se han identificado expediciones ordinarias, pero falta cerrar calendario de festivos/lectivos, variantes, paradas sin hora y/o servicios nocturnos; los recuentos son parciales y no autorizan puntuación.; Línea 337: discrepancia entre expediciones PDF y GTFS pendiente de reconciliar; no se suman ambas fuentes.",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_043&lang=es",
+      "resoluciones": [
+        "La 337 utiliza el horario de viajeros actual enlazado por CRTM y La Veloz, con contenido idéntico en ambos sentidos. Se excluye toda la 337 del GTFS antes de reemplazarla; los recuentos discrepantes del GTFS se conservan en el informe de contraste. No se suman fuentes contradictorias.",
+        "Se han fechado las expediciones PDF de 337, 415, 416 para los siete días de referencia; se aplican temporadas, fines de semana, servicios lectivos y noches, y se conservan sin hora las paradas no cronometradas."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [
+        {
+          "linea": "337",
+          "salidas_por_fecha": {
+            "2026-10-19": 61,
+            "2026-10-20": 61,
+            "2026-10-21": 61,
+            "2026-10-22": 61,
+            "2026-10-23": 63,
+            "2026-10-24": 45,
+            "2026-10-25": 32
+          },
+          "primera_hora_disponible_segundos": 5100,
+          "ultima_hora_disponible_segundos": 99900,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8337H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8337H2.pdf"
+          ]
+        },
+        {
+          "linea": "415",
+          "salidas_por_fecha": {
+            "2026-10-19": 8,
+            "2026-10-20": 8,
+            "2026-10-21": 8,
+            "2026-10-22": 8,
+            "2026-10-23": 8,
+            "2026-10-24": 4,
+            "2026-10-25": 4
+          },
+          "primera_hora_disponible_segundos": 21600,
+          "ultima_hora_disponible_segundos": 75600,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8415H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8415H2.pdf"
+          ]
+        },
+        {
+          "linea": "416",
+          "salidas_por_fecha": {
+            "2026-10-19": 2,
+            "2026-10-20": 2,
+            "2026-10-21": 2,
+            "2026-10-22": 2,
+            "2026-10-23": 2,
+            "2026-10-24": 2,
+            "2026-10-25": 2
+          },
+          "primera_hora_disponible_segundos": 23700,
+          "ultima_hora_disponible_segundos": 54900,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8416H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8416H2.pdf"
+          ]
+        }
+      ],
+      "lineas_topologia_contrastada": [],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_043&lang=es"
+        },
+        {
+          "etiqueta": "Horario oficial 8337H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8337H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8337H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8337H2.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8415H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8415H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8415H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8415H2.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8416H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8416H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8416H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8416H2.pdf"
+        },
+        {
+          "etiqueta": "Horario actual del operador La Veloz",
+          "url": "https://laveloz.es/horarios-la-veloz-crtm/"
+        }
+      ]
+    },
+    "28046": {
+      "codigo_ine": "28046",
+      "municipio": "Collado Mediano",
+      "brechas_iniciales": "Relación municipio–línea pendiente de reconciliar: C-8 (Cercanías).; Renfe declara viajes activos sin secuencia de paradas en la familia de línea C8B; se bloquean conservadoramente sus variantes municipales hasta reconciliar el recorrido.",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_046&lang=es",
+      "resoluciones": [
+        "C-8 del catálogo CRTM se reconcilia con las ramas publicadas por Renfe. Los 31 viajes sin secuencia se contrastan individualmente en el GTFS Regional para su fecha; solo se incorpora el tramo que falta hasta Cercedilla/Fuenlabrada, sin añadir otra vez la continuación ya presente.",
+        "Paradas y variante exacta contrastadas con el inventario oficial de CRTM en 691."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [],
+      "lineas_topologia_contrastada": [
+        "691"
+      ],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_046&lang=es"
+        },
+        {
+          "etiqueta": "Horarios oficiales de Renfe",
+          "url": "https://horarioscercanias.renfe.com/"
+        }
+      ]
+    },
+    "28052": {
+      "codigo_ine": "28052",
+      "municipio": "Chinchón",
+      "brechas_iniciales": "Relación municipio–línea pendiente de reconciliar: 415 (Autobús interurbano).; Relación municipio–línea pendiente de reconciliar: 416 (Autobús interurbano).; PDF: se han identificado expediciones ordinarias, pero falta cerrar calendario de festivos/lectivos, variantes, paradas sin hora y/o servicios nocturnos; los recuentos son parciales y no autorizan puntuación.; Línea 337: discrepancia entre expediciones PDF y GTFS pendiente de reconciliar; no se suman ambas fuentes.",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_052&lang=es",
+      "resoluciones": [
+        "La 337 utiliza el horario de viajeros actual enlazado por CRTM y La Veloz, con contenido idéntico en ambos sentidos. Se excluye toda la 337 del GTFS antes de reemplazarla; los recuentos discrepantes del GTFS se conservan en el informe de contraste. No se suman fuentes contradictorias.",
+        "Se han fechado las expediciones PDF de 337, 415, 416 para los siete días de referencia; se aplican temporadas, fines de semana, servicios lectivos y noches, y se conservan sin hora las paradas no cronometradas."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [
+        {
+          "linea": "337",
+          "salidas_por_fecha": {
+            "2026-10-19": 72,
+            "2026-10-20": 72,
+            "2026-10-21": 72,
+            "2026-10-22": 72,
+            "2026-10-23": 76,
+            "2026-10-24": 47,
+            "2026-10-25": 34
+          },
+          "primera_hora_disponible_segundos": 4200,
+          "ultima_hora_disponible_segundos": 107400,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8337H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8337H2.pdf"
+          ]
+        },
+        {
+          "linea": "415",
+          "salidas_por_fecha": {
+            "2026-10-19": 16,
+            "2026-10-20": 16,
+            "2026-10-21": 16,
+            "2026-10-22": 16,
+            "2026-10-23": 16,
+            "2026-10-24": 8,
+            "2026-10-25": 8
+          },
+          "primera_hora_disponible_segundos": null,
+          "ultima_hora_disponible_segundos": null,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8415H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8415H2.pdf"
+          ]
+        },
+        {
+          "linea": "416",
+          "salidas_por_fecha": {
+            "2026-10-19": 4,
+            "2026-10-20": 4,
+            "2026-10-21": 4,
+            "2026-10-22": 4,
+            "2026-10-23": 4,
+            "2026-10-24": 4,
+            "2026-10-25": 4
+          },
+          "primera_hora_disponible_segundos": 24000,
+          "ultima_hora_disponible_segundos": 76800,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8416H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8416H2.pdf"
+          ]
+        }
+      ],
+      "lineas_topologia_contrastada": [],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_052&lang=es"
+        },
+        {
+          "etiqueta": "Horario oficial 8337H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8337H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8337H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8337H2.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8415H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8415H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8415H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8415H2.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8416H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8416H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8416H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8416H2.pdf"
+        },
+        {
+          "etiqueta": "Horario actual del operador La Veloz",
+          "url": "https://laveloz.es/horarios-la-veloz-crtm/"
+        }
+      ]
+    },
+    "28061": {
+      "codigo_ine": "28061",
+      "municipio": "Galapagar",
+      "brechas_iniciales": "Relación municipio–línea pendiente de reconciliar: C-8 (Cercanías).; Relación municipio–línea pendiente de reconciliar: 635 (Autobús interurbano).; Renfe declara viajes activos sin secuencia de paradas en la familia de línea C8B; se bloquean conservadoramente sus variantes municipales hasta reconciliar el recorrido.; PDF: se han identificado expediciones ordinarias, pero falta cerrar calendario de festivos/lectivos, variantes, paradas sin hora y/o servicios nocturnos; los recuentos son parciales y no autorizan puntuación.",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_061&lang=es",
+      "resoluciones": [
+        "Los servicios t de la 635 empiezan o terminan en Torrelodones, no en Madrid. Se incluyen los días lectivos 19–23/10, contrastados con el calendario universitario oficial.",
+        "C-8 del catálogo CRTM se reconcilia con las ramas publicadas por Renfe. Los 31 viajes sin secuencia se contrastan individualmente en el GTFS Regional para su fecha; solo se incorpora el tramo que falta hasta Cercedilla/Fuenlabrada, sin añadir otra vez la continuación ya presente.",
+        "Se han fechado las expediciones PDF de 635 para los siete días de referencia; se aplican temporadas, fines de semana, servicios lectivos y noches, y se conservan sin hora las paradas no cronometradas."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [
+        {
+          "linea": "635",
+          "salidas_por_fecha": {
+            "2026-10-19": 18,
+            "2026-10-20": 18,
+            "2026-10-21": 18,
+            "2026-10-22": 18,
+            "2026-10-23": 18,
+            "2026-10-24": 9,
+            "2026-10-25": 9
+          },
+          "primera_hora_disponible_segundos": 25200,
+          "ultima_hora_disponible_segundos": 79200,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8635H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8635H2.pdf"
+          ]
+        }
+      ],
+      "lineas_topologia_contrastada": [],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_061&lang=es"
+        },
+        {
+          "etiqueta": "Horario oficial 8635H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8635H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8635H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8635H2.pdf"
+        },
+        {
+          "etiqueta": "Horarios oficiales de Renfe",
+          "url": "https://horarioscercanias.renfe.com/"
+        }
+      ]
+    },
+    "28067": {
+      "codigo_ine": "28067",
+      "municipio": "Guadalix de la Sierra",
+      "brechas_iniciales": "Relación municipio–línea pendiente de reconciliar: 726 (Autobús interurbano).; PDF: se han identificado expediciones ordinarias, pero falta cerrar calendario de festivos/lectivos, variantes, paradas sin hora y/o servicios nocturnos; los recuentos son parciales y no autorizan puntuación.",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_067&lang=es",
+      "resoluciones": [
+        "Se han fechado las expediciones PDF de 726 para los siete días de referencia; se aplican temporadas, fines de semana, servicios lectivos y noches, y se conservan sin hora las paradas no cronometradas."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [
+        {
+          "linea": "726",
+          "salidas_por_fecha": {
+            "2026-10-19": 50,
+            "2026-10-20": 50,
+            "2026-10-21": 50,
+            "2026-10-22": 50,
+            "2026-10-23": 52,
+            "2026-10-24": 33,
+            "2026-10-25": 31
+          },
+          "primera_hora_disponible_segundos": 21300,
+          "ultima_hora_disponible_segundos": 90000,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8726H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8726H2.pdf"
+          ]
+        }
+      ],
+      "lineas_topologia_contrastada": [],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_067&lang=es"
+        },
+        {
+          "etiqueta": "Horario oficial 8726H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8726H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8726H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8726H2.pdf"
+        }
+      ]
+    },
+    "28073": {
+      "codigo_ine": "28073",
+      "municipio": "Humanes de Madrid",
+      "brechas_iniciales": "Renfe declara viajes activos sin secuencia de paradas en la familia de línea C5; se bloquean conservadoramente sus variantes municipales hasta reconciliar el recorrido.",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_073&lang=es",
+      "resoluciones": [
+        "Los cinco viajes C5 sin paradas corresponden al tren Regional 17707, cuyo recorrido oficial Talavera–Fuenlabrada no incluye Humanes. Se ha contrastado además Humanes–Fuenlabrada en el buscador de Renfe para los siete días."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [],
+      "lineas_topologia_contrastada": [],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_073&lang=es"
+        },
+        {
+          "etiqueta": "Horarios oficiales de Renfe",
+          "url": "https://horarioscercanias.renfe.com/"
+        }
+      ]
+    },
+    "28082": {
+      "codigo_ine": "28082",
+      "municipio": "Manzanares el Real",
+      "brechas_iniciales": "Relación municipio–línea pendiente de reconciliar: 720 (Autobús interurbano).; Relación municipio–línea pendiente de reconciliar: 724 (Autobús interurbano).; Relación municipio–línea pendiente de reconciliar: 728 (Autobús interurbano).; PDF: se han identificado expediciones ordinarias, pero falta cerrar calendario de festivos/lectivos, variantes, paradas sin hora y/o servicios nocturnos; los recuentos son parciales y no autorizan puntuación.",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_082&lang=es",
+      "resoluciones": [
+        "Se han fechado las expediciones PDF de 720, 724, 728 para los siete días de referencia; se aplican temporadas, fines de semana, servicios lectivos y noches, y se conservan sin hora las paradas no cronometradas."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [
+        {
+          "linea": "720",
+          "salidas_por_fecha": {
+            "2026-10-19": 38,
+            "2026-10-20": 38,
+            "2026-10-21": 38,
+            "2026-10-22": 38,
+            "2026-10-23": 38,
+            "2026-10-24": 10,
+            "2026-10-25": 10
+          },
+          "primera_hora_disponible_segundos": null,
+          "ultima_hora_disponible_segundos": null,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8720H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8720H2.pdf"
+          ]
+        },
+        {
+          "linea": "724",
+          "salidas_por_fecha": {
+            "2026-10-19": 57,
+            "2026-10-20": 57,
+            "2026-10-21": 57,
+            "2026-10-22": 57,
+            "2026-10-23": 60,
+            "2026-10-24": 35,
+            "2026-10-25": 32
+          },
+          "primera_hora_disponible_segundos": 21300,
+          "ultima_hora_disponible_segundos": 94800,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8724H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8724H2.pdf"
+          ]
+        },
+        {
+          "linea": "728",
+          "salidas_por_fecha": {
+            "2026-10-19": 3,
+            "2026-10-20": 3,
+            "2026-10-21": 3,
+            "2026-10-22": 3,
+            "2026-10-23": 3,
+            "2026-10-24": 0,
+            "2026-10-25": 0
+          },
+          "primera_hora_disponible_segundos": 23100,
+          "ultima_hora_disponible_segundos": 32100,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8728H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8728H2.pdf"
+          ]
+        }
+      ],
+      "lineas_topologia_contrastada": [],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_082&lang=es"
+        },
+        {
+          "etiqueta": "Horario oficial 8720H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8720H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8720H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8720H2.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8724H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8724H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8724H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8724H2.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8728H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8728H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8728H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8728H2.pdf"
+        }
+      ]
+    },
+    "28083": {
+      "codigo_ine": "28083",
+      "municipio": "Meco",
+      "brechas_iniciales": "Relación municipio–línea pendiente de reconciliar: C-8 (Cercanías).",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_083&lang=es",
+      "resoluciones": [
+        "C-8 del catálogo CRTM se reconcilia con las ramas publicadas por Renfe. Los 31 viajes sin secuencia se contrastan individualmente en el GTFS Regional para su fecha; solo se incorpora el tramo que falta hasta Cercedilla/Fuenlabrada, sin añadir otra vez la continuación ya presente."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [],
+      "lineas_topologia_contrastada": [],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_083&lang=es"
+        },
+        {
+          "etiqueta": "Horarios oficiales de Renfe",
+          "url": "https://horarioscercanias.renfe.com/"
+        }
+      ]
+    },
+    "28085": {
+      "codigo_ine": "28085",
+      "municipio": "Miraflores de la Sierra",
+      "brechas_iniciales": "Relación municipio–línea pendiente de reconciliar: 725 (Autobús interurbano).; PDF: se han identificado expediciones ordinarias, pero falta cerrar calendario de festivos/lectivos, variantes, paradas sin hora y/o servicios nocturnos; los recuentos son parciales y no autorizan puntuación.",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_085&lang=es",
+      "resoluciones": [
+        "Se han fechado las expediciones PDF de 725, 726 para los siete días de referencia; se aplican temporadas, fines de semana, servicios lectivos y noches, y se conservan sin hora las paradas no cronometradas."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [
+        {
+          "linea": "725",
+          "salidas_por_fecha": {
+            "2026-10-19": 63,
+            "2026-10-20": 63,
+            "2026-10-21": 63,
+            "2026-10-22": 63,
+            "2026-10-23": 65,
+            "2026-10-24": 33,
+            "2026-10-25": 31
+          },
+          "primera_hora_disponible_segundos": 20100,
+          "ultima_hora_disponible_segundos": 92700,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8725H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8725H2.pdf"
+          ]
+        },
+        {
+          "linea": "726",
+          "salidas_por_fecha": {
+            "2026-10-19": 67,
+            "2026-10-20": 67,
+            "2026-10-21": 67,
+            "2026-10-22": 67,
+            "2026-10-23": 71,
+            "2026-10-24": 36,
+            "2026-10-25": 32
+          },
+          "primera_hora_disponible_segundos": null,
+          "ultima_hora_disponible_segundos": null,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8726H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8726H2.pdf"
+          ]
+        }
+      ],
+      "lineas_topologia_contrastada": [],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_085&lang=es"
+        },
+        {
+          "etiqueta": "Horario oficial 8725H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8725H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8725H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8725H2.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8726H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8726H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8726H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8726H2.pdf"
+        }
+      ]
+    },
+    "28087": {
+      "codigo_ine": "28087",
+      "municipio": "Los Molinos",
+      "brechas_iniciales": "Relación municipio–línea pendiente de reconciliar: C-8 (Cercanías).; Renfe declara viajes activos sin secuencia de paradas en la familia de línea C8B; se bloquean conservadoramente sus variantes municipales hasta reconciliar el recorrido.",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_087&lang=es",
+      "resoluciones": [
+        "C-8 del catálogo CRTM se reconcilia con las ramas publicadas por Renfe. Los 31 viajes sin secuencia se contrastan individualmente en el GTFS Regional para su fecha; solo se incorpora el tramo que falta hasta Cercedilla/Fuenlabrada, sin añadir otra vez la continuación ya presente."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [],
+      "lineas_topologia_contrastada": [],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_087&lang=es"
+        },
+        {
+          "etiqueta": "Horarios oficiales de Renfe",
+          "url": "https://horarioscercanias.renfe.com/"
+        }
+      ]
+    },
+    "28090": {
+      "codigo_ine": "28090",
+      "municipio": "Moralzarzal",
+      "brechas_iniciales": "Relación municipio–línea pendiente de reconciliar: 720 (Autobús interurbano).; Relación municipio–línea pendiente de reconciliar: 724 (Autobús interurbano).; PDF: se han identificado expediciones ordinarias, pero falta cerrar calendario de festivos/lectivos, variantes, paradas sin hora y/o servicios nocturnos; los recuentos son parciales y no autorizan puntuación.",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_090&lang=es",
+      "resoluciones": [
+        "Se han fechado las expediciones PDF de 720, 724 para los siete días de referencia; se aplican temporadas, fines de semana, servicios lectivos y noches, y se conservan sin hora las paradas no cronometradas."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [
+        {
+          "linea": "720",
+          "salidas_por_fecha": {
+            "2026-10-19": 24,
+            "2026-10-20": 24,
+            "2026-10-21": 24,
+            "2026-10-22": 24,
+            "2026-10-23": 24,
+            "2026-10-24": 10,
+            "2026-10-25": 10
+          },
+          "primera_hora_disponible_segundos": null,
+          "ultima_hora_disponible_segundos": null,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8720H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8720H2.pdf"
+          ]
+        },
+        {
+          "linea": "724",
+          "salidas_por_fecha": {
+            "2026-10-19": 42,
+            "2026-10-20": 42,
+            "2026-10-21": 42,
+            "2026-10-22": 42,
+            "2026-10-23": 44,
+            "2026-10-24": 24,
+            "2026-10-25": 22
+          },
+          "primera_hora_disponible_segundos": null,
+          "ultima_hora_disponible_segundos": null,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8724H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8724H2.pdf"
+          ]
+        }
+      ],
+      "lineas_topologia_contrastada": [],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_090&lang=es"
+        },
+        {
+          "etiqueta": "Horario oficial 8720H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8720H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8720H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8720H2.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8724H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8724H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8724H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8724H2.pdf"
+        }
+      ]
+    },
+    "28091": {
+      "codigo_ine": "28091",
+      "municipio": "Morata de Tajuña",
+      "brechas_iniciales": "Línea 337: discrepancia entre expediciones PDF y GTFS pendiente de reconciliar; no se suman ambas fuentes.",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_091&lang=es",
+      "resoluciones": [
+        "La 337 utiliza el horario de viajeros actual enlazado por CRTM y La Veloz, con contenido idéntico en ambos sentidos. Se excluye toda la 337 del GTFS antes de reemplazarla; los recuentos discrepantes del GTFS se conservan en el informe de contraste. No se suman fuentes contradictorias.",
+        "Se han fechado las expediciones PDF de 337 para los siete días de referencia; se aplican temporadas, fines de semana, servicios lectivos y noches, y se conservan sin hora las paradas no cronometradas."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [
+        {
+          "linea": "337",
+          "salidas_por_fecha": {
+            "2026-10-19": 64,
+            "2026-10-20": 64,
+            "2026-10-21": 64,
+            "2026-10-22": 64,
+            "2026-10-23": 68,
+            "2026-10-24": 47,
+            "2026-10-25": 34
+          },
+          "primera_hora_disponible_segundos": 3600,
+          "ultima_hora_disponible_segundos": 106800,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8337H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8337H2.pdf"
+          ]
+        }
+      ],
+      "lineas_topologia_contrastada": [],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_091&lang=es"
+        },
+        {
+          "etiqueta": "Horario oficial 8337H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8337H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8337H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8337H2.pdf"
+        },
+        {
+          "etiqueta": "Horario actual del operador La Veloz",
+          "url": "https://laveloz.es/horarios-la-veloz-crtm/"
+        }
+      ]
+    },
+    "28094": {
+      "codigo_ine": "28094",
+      "municipio": "Navalafuente",
+      "brechas_iniciales": "Relación municipio–línea pendiente de reconciliar: 726 (Autobús interurbano).; PDF: se han identificado expediciones ordinarias, pero falta cerrar calendario de festivos/lectivos, variantes, paradas sin hora y/o servicios nocturnos; los recuentos son parciales y no autorizan puntuación.",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_094&lang=es",
+      "resoluciones": [
+        "Se han fechado las expediciones PDF de 726 para los siete días de referencia; se aplican temporadas, fines de semana, servicios lectivos y noches, y se conservan sin hora las paradas no cronometradas."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [
+        {
+          "linea": "726",
+          "salidas_por_fecha": {
+            "2026-10-19": 15,
+            "2026-10-20": 15,
+            "2026-10-21": 15,
+            "2026-10-22": 15,
+            "2026-10-23": 15,
+            "2026-10-24": 15,
+            "2026-10-25": 15
+          },
+          "primera_hora_disponible_segundos": 20400,
+          "ultima_hora_disponible_segundos": 77400,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8726H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8726H2.pdf"
+          ]
+        }
+      ],
+      "lineas_topologia_contrastada": [],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_094&lang=es"
+        },
+        {
+          "etiqueta": "Horario oficial 8726H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8726H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8726H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8726H2.pdf"
+        }
+      ]
+    },
+    "28096": {
+      "codigo_ine": "28096",
+      "municipio": "Navalcarnero",
+      "brechas_iniciales": "Relación municipio–línea pendiente de reconciliar: 535 (Autobús interurbano).; PDF: se han identificado expediciones ordinarias, pero falta cerrar calendario de festivos/lectivos, variantes, paradas sin hora y/o servicios nocturnos; los recuentos son parciales y no autorizan puntuación.",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_096&lang=es",
+      "resoluciones": [
+        "Se han fechado las expediciones PDF de 535 para los siete días de referencia; se aplican temporadas, fines de semana, servicios lectivos y noches, y se conservan sin hora las paradas no cronometradas."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [
+        {
+          "linea": "535",
+          "salidas_por_fecha": {
+            "2026-10-19": 16,
+            "2026-10-20": 16,
+            "2026-10-21": 16,
+            "2026-10-22": 16,
+            "2026-10-23": 16,
+            "2026-10-24": 8,
+            "2026-10-25": 8
+          },
+          "primera_hora_disponible_segundos": 23100,
+          "ultima_hora_disponible_segundos": 78900,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8535H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8535H2.pdf"
+          ]
+        }
+      ],
+      "lineas_topologia_contrastada": [],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_096&lang=es"
+        },
+        {
+          "etiqueta": "Horario oficial 8535H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8535H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8535H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8535H2.pdf"
+        }
+      ]
+    },
+    "28129": {
+      "codigo_ine": "28129",
+      "municipio": "San Agustín del Guadalix",
+      "brechas_iniciales": "Relación municipio–línea pendiente de reconciliar: 727 (Autobús interurbano).; PDF: se han identificado expediciones ordinarias, pero falta cerrar calendario de festivos/lectivos, variantes, paradas sin hora y/o servicios nocturnos; los recuentos son parciales y no autorizan puntuación.",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_129&lang=es",
+      "resoluciones": [
+        "Se han fechado las expediciones PDF de 727 para los siete días de referencia; se aplican temporadas, fines de semana, servicios lectivos y noches, y se conservan sin hora las paradas no cronometradas."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [
+        {
+          "linea": "727",
+          "salidas_por_fecha": {
+            "2026-10-19": 5,
+            "2026-10-20": 5,
+            "2026-10-21": 5,
+            "2026-10-22": 5,
+            "2026-10-23": 5,
+            "2026-10-24": 0,
+            "2026-10-25": 0
+          },
+          "primera_hora_disponible_segundos": 28800,
+          "ultima_hora_disponible_segundos": 75600,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8727H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8727H2.pdf"
+          ]
+        }
+      ],
+      "lineas_topologia_contrastada": [],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_129&lang=es"
+        },
+        {
+          "etiqueta": "Horario oficial 8727H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8727H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8727H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8727H2.pdf"
+        }
+      ]
+    },
+    "28130": {
+      "codigo_ine": "28130",
+      "municipio": "San Fernando de Henares",
+      "brechas_iniciales": "Relación municipio–línea pendiente de reconciliar: 7 (Metro).; Relación municipio–línea pendiente de reconciliar: 287 (Autobús interurbano).; Relación municipio–línea pendiente de reconciliar: 289 (Autobús interurbano).",
+      "estado": "pendiente_de_recuento_exacto",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_130&lang=es",
+      "resoluciones": [
+        "Las paradas Estación de San Fernando y Hospital del Henares de las líneas 287 y 289 están en Coslada: no se añaden a San Fernando por su nombre.",
+        "MetroEste está operativo según Metro y CRTM. Se han localizado ambos carteles oficiales 26.A y las tablas actuales por franjas; en laborables diurnos publican rangos variables (por ejemplo 4,5–6,5 min), no todas las salidas. Manteniendo el cálculo por expediciones exactas, no se convierte el rango en un número ficticio. El GTFS antiguo caducó el 27/05/2026 y el NAP requiere cuenta."
+      ],
+      "pendiente": [
+        "Metro 7B: recorrido vigente confirmado, pero falta el horario fechado de expediciones. El GTFS público anterior caducó en mayo; el NAP requiere cuenta. No se reutiliza el GTFS caducado ni se inventa una frecuencia."
+      ],
+      "lineas_pdf": [],
+      "lineas_topologia_contrastada": [],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_130&lang=es"
+        },
+        {
+          "etiqueta": "Horarios MetroEste 26.A · sentido Hospital",
+          "url": "https://www.metromadrid.es/sites/default/files/documentos/horario-trenes/07_L.7B_Sent-Hospital%20Henares_26A.pdf"
+        },
+        {
+          "etiqueta": "Horarios MetroEste 26.A · sentido Estadio",
+          "url": "https://www.metromadrid.es/sites/default/files/documentos/horario-trenes/07_L.7B_Sent-Estadio%20Metropolitano_26A.pdf"
+        }
+      ]
+    },
+    "28132": {
+      "codigo_ine": "28132",
+      "municipio": "San Martín de la Vega",
+      "brechas_iniciales": "Relación municipio–línea pendiente de reconciliar: 415 (Autobús interurbano).; PDF: se han identificado expediciones ordinarias, pero falta cerrar calendario de festivos/lectivos, variantes, paradas sin hora y/o servicios nocturnos; los recuentos son parciales y no autorizan puntuación.",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_132&lang=es",
+      "resoluciones": [
+        "Se han fechado las expediciones PDF de 415, 416 para los siete días de referencia; se aplican temporadas, fines de semana, servicios lectivos y noches, y se conservan sin hora las paradas no cronometradas."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [
+        {
+          "linea": "415",
+          "salidas_por_fecha": {
+            "2026-10-19": 16,
+            "2026-10-20": 16,
+            "2026-10-21": 16,
+            "2026-10-22": 16,
+            "2026-10-23": 16,
+            "2026-10-24": 8,
+            "2026-10-25": 8
+          },
+          "primera_hora_disponible_segundos": 24000,
+          "ultima_hora_disponible_segundos": 83100,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8415H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8415H2.pdf"
+          ]
+        },
+        {
+          "linea": "416",
+          "salidas_por_fecha": {
+            "2026-10-19": 19,
+            "2026-10-20": 19,
+            "2026-10-21": 19,
+            "2026-10-22": 19,
+            "2026-10-23": 19,
+            "2026-10-24": 14,
+            "2026-10-25": 14
+          },
+          "primera_hora_disponible_segundos": 25800,
+          "ultima_hora_disponible_segundos": 75600,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8416H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8416H2.pdf"
+          ]
+        }
+      ],
+      "lineas_topologia_contrastada": [],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_132&lang=es"
+        },
+        {
+          "etiqueta": "Horario oficial 8415H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8415H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8415H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8415H2.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8416H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8416H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8416H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8416H2.pdf"
+        }
+      ]
+    },
+    "28144": {
+      "codigo_ine": "28144",
+      "municipio": "Soto del Real",
+      "brechas_iniciales": "Relación municipio–línea pendiente de reconciliar: 720 (Autobús interurbano).; Relación municipio–línea pendiente de reconciliar: 721 (Autobús interurbano).; Relación municipio–línea pendiente de reconciliar: 724 (Autobús interurbano).; Relación municipio–línea pendiente de reconciliar: 725 (Autobús interurbano).; Relación municipio–línea pendiente de reconciliar: 726 (Autobús interurbano).; Relación municipio–línea pendiente de reconciliar: 728 (Autobús interurbano).; PDF: se han identificado expediciones ordinarias, pero falta cerrar calendario de festivos/lectivos, variantes, paradas sin hora y/o servicios nocturnos; los recuentos son parciales y no autorizan puntuación.",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_144&lang=es",
+      "resoluciones": [
+        "La extensión penitenciaria de la 721 está en Soto del Real (parada 18887). Las tablas inferiores son subconjuntos de los viajes principales, no expediciones adicionales. La 728 ofrece dos salidas de ida y tres de vuelta de lunes a viernes; no circula el fin de semana.",
+        "Se han fechado las expediciones PDF de 720, 721, 724, 725, 726, 728 para los siete días de referencia; se aplican temporadas, fines de semana, servicios lectivos y noches, y se conservan sin hora las paradas no cronometradas."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [
+        {
+          "linea": "720",
+          "salidas_por_fecha": {
+            "2026-10-19": 37,
+            "2026-10-20": 37,
+            "2026-10-21": 37,
+            "2026-10-22": 37,
+            "2026-10-23": 37,
+            "2026-10-24": 10,
+            "2026-10-25": 10
+          },
+          "primera_hora_disponible_segundos": null,
+          "ultima_hora_disponible_segundos": null,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8720H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8720H2.pdf"
+          ]
+        },
+        {
+          "linea": "721",
+          "salidas_por_fecha": {
+            "2026-10-19": 0,
+            "2026-10-20": 0,
+            "2026-10-21": 0,
+            "2026-10-22": 0,
+            "2026-10-23": 5,
+            "2026-10-24": 7,
+            "2026-10-25": 7
+          },
+          "primera_hora_disponible_segundos": 32100,
+          "ultima_hora_disponible_segundos": 75000,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8721H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8721H2.pdf"
+          ]
+        },
+        {
+          "linea": "724",
+          "salidas_por_fecha": {
+            "2026-10-19": 73,
+            "2026-10-20": 73,
+            "2026-10-21": 73,
+            "2026-10-22": 73,
+            "2026-10-23": 77,
+            "2026-10-24": 46,
+            "2026-10-25": 42
+          },
+          "primera_hora_disponible_segundos": null,
+          "ultima_hora_disponible_segundos": null,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8724H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8724H2.pdf"
+          ]
+        },
+        {
+          "linea": "725",
+          "salidas_por_fecha": {
+            "2026-10-19": 67,
+            "2026-10-20": 67,
+            "2026-10-21": 67,
+            "2026-10-22": 67,
+            "2026-10-23": 71,
+            "2026-10-24": 36,
+            "2026-10-25": 32
+          },
+          "primera_hora_disponible_segundos": 20700,
+          "ultima_hora_disponible_segundos": 101700,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8725H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8725H2.pdf"
+          ]
+        },
+        {
+          "linea": "726",
+          "salidas_por_fecha": {
+            "2026-10-19": 67,
+            "2026-10-20": 67,
+            "2026-10-21": 67,
+            "2026-10-22": 67,
+            "2026-10-23": 71,
+            "2026-10-24": 36,
+            "2026-10-25": 32
+          },
+          "primera_hora_disponible_segundos": 21900,
+          "ultima_hora_disponible_segundos": 98100,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8726H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8726H2.pdf"
+          ]
+        },
+        {
+          "linea": "728",
+          "salidas_por_fecha": {
+            "2026-10-19": 5,
+            "2026-10-20": 5,
+            "2026-10-21": 5,
+            "2026-10-22": 5,
+            "2026-10-23": 5,
+            "2026-10-24": 0,
+            "2026-10-25": 0
+          },
+          "primera_hora_disponible_segundos": 24000,
+          "ultima_hora_disponible_segundos": 67500,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8728H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8728H2.pdf"
+          ]
+        }
+      ],
+      "lineas_topologia_contrastada": [],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_144&lang=es"
+        },
+        {
+          "etiqueta": "Horario oficial 8720H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8720H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8720H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8720H2.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8721H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8721H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8721H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8721H2.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8724H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8724H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8724H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8724H2.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8725H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8725H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8725H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8725H2.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8726H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8726H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8726H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8726H2.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8728H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8728H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8728H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8728H2.pdf"
+        }
+      ]
+    },
+    "28147": {
+      "codigo_ine": "28147",
+      "municipio": "Titulcia",
+      "brechas_iniciales": "Relación municipio–línea pendiente de reconciliar: 415 (Autobús interurbano).; PDF: se han identificado expediciones ordinarias, pero falta cerrar calendario de festivos/lectivos, variantes, paradas sin hora y/o servicios nocturnos; los recuentos son parciales y no autorizan puntuación.",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_147&lang=es",
+      "resoluciones": [
+        "Se han fechado las expediciones PDF de 415, 416 para los siete días de referencia; se aplican temporadas, fines de semana, servicios lectivos y noches, y se conservan sin hora las paradas no cronometradas."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [
+        {
+          "linea": "415",
+          "salidas_por_fecha": {
+            "2026-10-19": 16,
+            "2026-10-20": 16,
+            "2026-10-21": 16,
+            "2026-10-22": 16,
+            "2026-10-23": 16,
+            "2026-10-24": 8,
+            "2026-10-25": 8
+          },
+          "primera_hora_disponible_segundos": null,
+          "ultima_hora_disponible_segundos": null,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8415H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8415H2.pdf"
+          ]
+        },
+        {
+          "linea": "416",
+          "salidas_por_fecha": {
+            "2026-10-19": 10,
+            "2026-10-20": 10,
+            "2026-10-21": 10,
+            "2026-10-22": 10,
+            "2026-10-23": 10,
+            "2026-10-24": 9,
+            "2026-10-25": 9
+          },
+          "primera_hora_disponible_segundos": 24900,
+          "ultima_hora_disponible_segundos": 75900,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8416H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8416H2.pdf"
+          ]
+        }
+      ],
+      "lineas_topologia_contrastada": [],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_147&lang=es"
+        },
+        {
+          "etiqueta": "Horario oficial 8415H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8415H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8415H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8415H2.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8416H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8416H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8416H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8416H2.pdf"
+        }
+      ]
+    },
+    "28152": {
+      "codigo_ine": "28152",
+      "municipio": "Torrelodones",
+      "brechas_iniciales": "Relación municipio–línea pendiente de reconciliar: C-8 (Cercanías).; Relación municipio–línea pendiente de reconciliar: 635 (Autobús interurbano).; Renfe declara viajes activos sin secuencia de paradas en la familia de línea C8B; se bloquean conservadoramente sus variantes municipales hasta reconciliar el recorrido.; PDF: se han identificado expediciones ordinarias, pero falta cerrar calendario de festivos/lectivos, variantes, paradas sin hora y/o servicios nocturnos; los recuentos son parciales y no autorizan puntuación.",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_152&lang=es",
+      "resoluciones": [
+        "Los servicios t de la 635 empiezan o terminan en Torrelodones, no en Madrid. Se incluyen los días lectivos 19–23/10, contrastados con el calendario universitario oficial.",
+        "C-8 del catálogo CRTM se reconcilia con las ramas publicadas por Renfe. Los 31 viajes sin secuencia se contrastan individualmente en el GTFS Regional para su fecha; solo se incorpora el tramo que falta hasta Cercedilla/Fuenlabrada, sin añadir otra vez la continuación ya presente.",
+        "Se han fechado las expediciones PDF de 635 para los siete días de referencia; se aplican temporadas, fines de semana, servicios lectivos y noches, y se conservan sin hora las paradas no cronometradas.",
+        "Paradas y variante exacta contrastadas con el inventario oficial de CRTM en 691."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [
+        {
+          "linea": "635",
+          "salidas_por_fecha": {
+            "2026-10-19": 34,
+            "2026-10-20": 34,
+            "2026-10-21": 34,
+            "2026-10-22": 34,
+            "2026-10-23": 34,
+            "2026-10-24": 18,
+            "2026-10-25": 18
+          },
+          "primera_hora_disponible_segundos": 28800,
+          "ultima_hora_disponible_segundos": 32400,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8635H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8635H2.pdf"
+          ]
+        }
+      ],
+      "lineas_topologia_contrastada": [
+        "691"
+      ],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_152&lang=es"
+        },
+        {
+          "etiqueta": "Horario oficial 8635H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8635H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8635H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8635H2.pdf"
+        },
+        {
+          "etiqueta": "Horarios oficiales de Renfe",
+          "url": "https://horarioscercanias.renfe.com/"
+        }
+      ]
+    },
+    "28157": {
+      "codigo_ine": "28157",
+      "municipio": "Valdelaguna",
+      "brechas_iniciales": "Línea 337: discrepancia entre expediciones PDF y GTFS pendiente de reconciliar; no se suman ambas fuentes.",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_157&lang=es",
+      "resoluciones": [
+        "La 337 utiliza el horario de viajeros actual enlazado por CRTM y La Veloz, con contenido idéntico en ambos sentidos. Se excluye toda la 337 del GTFS antes de reemplazarla; los recuentos discrepantes del GTFS se conservan en el informe de contraste. No se suman fuentes contradictorias.",
+        "Se han fechado las expediciones PDF de 337 para los siete días de referencia; se aplican temporadas, fines de semana, servicios lectivos y noches, y se conservan sin hora las paradas no cronometradas."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [
+        {
+          "linea": "337",
+          "salidas_por_fecha": {
+            "2026-10-19": 20,
+            "2026-10-20": 20,
+            "2026-10-21": 20,
+            "2026-10-22": 20,
+            "2026-10-23": 20,
+            "2026-10-24": 21,
+            "2026-10-25": 15
+          },
+          "primera_hora_disponible_segundos": 19800,
+          "ultima_hora_disponible_segundos": 84600,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8337H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8337H2.pdf"
+          ]
+        }
+      ],
+      "lineas_topologia_contrastada": [],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_157&lang=es"
+        },
+        {
+          "etiqueta": "Horario oficial 8337H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8337H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8337H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8337H2.pdf"
+        },
+        {
+          "etiqueta": "Horario actual del operador La Veloz",
+          "url": "https://laveloz.es/horarios-la-veloz-crtm/"
+        }
+      ]
+    },
+    "28158": {
+      "codigo_ine": "28158",
+      "municipio": "Valdemanco",
+      "brechas_iniciales": "Relación municipio–línea pendiente de reconciliar: 725 (Autobús interurbano).; PDF: se han identificado expediciones ordinarias, pero falta cerrar calendario de festivos/lectivos, variantes, paradas sin hora y/o servicios nocturnos; los recuentos son parciales y no autorizan puntuación.",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_158&lang=es",
+      "resoluciones": [
+        "Se han fechado las expediciones PDF de 725 para los siete días de referencia; se aplican temporadas, fines de semana, servicios lectivos y noches, y se conservan sin hora las paradas no cronometradas."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [
+        {
+          "linea": "725",
+          "salidas_por_fecha": {
+            "2026-10-19": 14,
+            "2026-10-20": 14,
+            "2026-10-21": 14,
+            "2026-10-22": 14,
+            "2026-10-23": 14,
+            "2026-10-24": 8,
+            "2026-10-25": 8
+          },
+          "primera_hora_disponible_segundos": 20400,
+          "ultima_hora_disponible_segundos": 75000,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8725H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8725H2.pdf"
+          ]
+        }
+      ],
+      "lineas_topologia_contrastada": [],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_158&lang=es"
+        },
+        {
+          "etiqueta": "Horario oficial 8725H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8725H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8725H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8725H2.pdf"
+        }
+      ]
+    },
+    "28160": {
+      "codigo_ine": "28160",
+      "municipio": "Valdemorillo",
+      "brechas_iniciales": "Relación municipio–línea pendiente de reconciliar: FS1 (Autobús interurbano).; Relación municipio–línea pendiente de reconciliar: N908 (Autobús interurbano).; PDF: se han identificado expediciones ordinarias, pero falta cerrar calendario de festivos/lectivos, variantes, paradas sin hora y/o servicios nocturnos; los recuentos son parciales y no autorizan puntuación.",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_160&lang=es",
+      "resoluciones": [
+        "FS1 incluye la parada real de Majadahonda; N908 incluye Villafranca/Los Brezos, en Villanueva de la Cañada. Se respetan los servicios de viernes/sábado, la ampliación del sábado y la prohibición de viajes Madrid–Las Rozas.",
+        "Se han fechado las expediciones PDF de FS1, N908 para los siete días de referencia; se aplican temporadas, fines de semana, servicios lectivos y noches, y se conservan sin hora las paradas no cronometradas."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [
+        {
+          "linea": "FS1",
+          "salidas_por_fecha": {
+            "2026-10-19": 0,
+            "2026-10-20": 0,
+            "2026-10-21": 0,
+            "2026-10-22": 0,
+            "2026-10-23": 0,
+            "2026-10-24": 15,
+            "2026-10-25": 15
+          },
+          "primera_hora_disponible_segundos": 30600,
+          "ultima_hora_disponible_segundos": 81000,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8FS1H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8FS1H2.pdf"
+          ]
+        },
+        {
+          "linea": "N908",
+          "salidas_por_fecha": {
+            "2026-10-19": 2,
+            "2026-10-20": 2,
+            "2026-10-21": 2,
+            "2026-10-22": 2,
+            "2026-10-23": 3,
+            "2026-10-24": 4,
+            "2026-10-25": 2
+          },
+          "primera_hora_disponible_segundos": 88200,
+          "ultima_hora_disponible_segundos": 102600,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8N908H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8N908H2.pdf"
+          ]
+        }
+      ],
+      "lineas_topologia_contrastada": [],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_160&lang=es"
+        },
+        {
+          "etiqueta": "Horario oficial 8FS1H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8FS1H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8FS1H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8FS1H2.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8N908H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8N908H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8N908H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8N908H2.pdf"
+        }
+      ]
+    },
+    "28170": {
+      "codigo_ine": "28170",
+      "municipio": "Villaconejos",
+      "brechas_iniciales": "Relación municipio–línea pendiente de reconciliar: 415 (Autobús interurbano).; PDF: se han identificado expediciones ordinarias, pero falta cerrar calendario de festivos/lectivos, variantes, paradas sin hora y/o servicios nocturnos; los recuentos son parciales y no autorizan puntuación.; Línea 337: discrepancia entre expediciones PDF y GTFS pendiente de reconciliar; no se suman ambas fuentes.",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_170&lang=es",
+      "resoluciones": [
+        "La 337 utiliza el horario de viajeros actual enlazado por CRTM y La Veloz, con contenido idéntico en ambos sentidos. Se excluye toda la 337 del GTFS antes de reemplazarla; los recuentos discrepantes del GTFS se conservan en el informe de contraste. No se suman fuentes contradictorias.",
+        "Se han fechado las expediciones PDF de 337, 415 para los siete días de referencia; se aplican temporadas, fines de semana, servicios lectivos y noches, y se conservan sin hora las paradas no cronometradas."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [
+        {
+          "linea": "337",
+          "salidas_por_fecha": {
+            "2026-10-19": 1,
+            "2026-10-20": 1,
+            "2026-10-21": 1,
+            "2026-10-22": 1,
+            "2026-10-23": 1,
+            "2026-10-24": 0,
+            "2026-10-25": 0
+          },
+          "primera_hora_disponible_segundos": 31500,
+          "ultima_hora_disponible_segundos": 31500,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8337H2.pdf"
+          ]
+        },
+        {
+          "linea": "415",
+          "salidas_por_fecha": {
+            "2026-10-19": 16,
+            "2026-10-20": 16,
+            "2026-10-21": 16,
+            "2026-10-22": 16,
+            "2026-10-23": 16,
+            "2026-10-24": 8,
+            "2026-10-25": 8
+          },
+          "primera_hora_disponible_segundos": 22500,
+          "ultima_hora_disponible_segundos": 84600,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8415H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8415H2.pdf"
+          ]
+        }
+      ],
+      "lineas_topologia_contrastada": [],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_170&lang=es"
+        },
+        {
+          "etiqueta": "Horario oficial 8337H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8337H2.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8415H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8415H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8415H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8415H2.pdf"
+        },
+        {
+          "etiqueta": "Horario actual del operador La Veloz",
+          "url": "https://laveloz.es/horarios-la-veloz-crtm/"
+        }
+      ]
+    },
+    "28176": {
+      "codigo_ine": "28176",
+      "municipio": "Villanueva de la Cañada",
+      "brechas_iniciales": "Relación municipio–línea pendiente de reconciliar: N908 (Autobús interurbano).; PDF: se han identificado expediciones ordinarias, pero falta cerrar calendario de festivos/lectivos, variantes, paradas sin hora y/o servicios nocturnos; los recuentos son parciales y no autorizan puntuación.",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_176&lang=es",
+      "resoluciones": [
+        "FS1 incluye la parada real de Majadahonda; N908 incluye Villafranca/Los Brezos, en Villanueva de la Cañada. Se respetan los servicios de viernes/sábado, la ampliación del sábado y la prohibición de viajes Madrid–Las Rozas.",
+        "Se han fechado las expediciones PDF de FS1, N908 para los siete días de referencia; se aplican temporadas, fines de semana, servicios lectivos y noches, y se conservan sin hora las paradas no cronometradas."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [
+        {
+          "linea": "FS1",
+          "salidas_por_fecha": {
+            "2026-10-19": 0,
+            "2026-10-20": 0,
+            "2026-10-21": 0,
+            "2026-10-22": 0,
+            "2026-10-23": 0,
+            "2026-10-24": 30,
+            "2026-10-25": 30
+          },
+          "primera_hora_disponible_segundos": null,
+          "ultima_hora_disponible_segundos": null,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8FS1H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8FS1H2.pdf"
+          ]
+        },
+        {
+          "linea": "N908",
+          "salidas_por_fecha": {
+            "2026-10-19": 4,
+            "2026-10-20": 4,
+            "2026-10-21": 4,
+            "2026-10-22": 4,
+            "2026-10-23": 6,
+            "2026-10-24": 6,
+            "2026-10-25": 4
+          },
+          "primera_hora_disponible_segundos": null,
+          "ultima_hora_disponible_segundos": null,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8N908H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8N908H2.pdf"
+          ]
+        }
+      ],
+      "lineas_topologia_contrastada": [],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_176&lang=es"
+        },
+        {
+          "etiqueta": "Horario oficial 8FS1H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8FS1H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8FS1H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8FS1H2.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8N908H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8N908H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8N908H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8N908H2.pdf"
+        }
+      ]
+    },
+    "28177": {
+      "codigo_ine": "28177",
+      "municipio": "Villanueva del Pardillo",
+      "brechas_iniciales": "Relación municipio–línea pendiente de reconciliar: N908 (Autobús interurbano).; PDF: se han identificado expediciones ordinarias, pero falta cerrar calendario de festivos/lectivos, variantes, paradas sin hora y/o servicios nocturnos; los recuentos son parciales y no autorizan puntuación.",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_177&lang=es",
+      "resoluciones": [
+        "FS1 incluye la parada real de Majadahonda; N908 incluye Villafranca/Los Brezos, en Villanueva de la Cañada. Se respetan los servicios de viernes/sábado, la ampliación del sábado y la prohibición de viajes Madrid–Las Rozas.",
+        "Se han fechado las expediciones PDF de FS1, N908 para los siete días de referencia; se aplican temporadas, fines de semana, servicios lectivos y noches, y se conservan sin hora las paradas no cronometradas."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [
+        {
+          "linea": "FS1",
+          "salidas_por_fecha": {
+            "2026-10-19": 0,
+            "2026-10-20": 0,
+            "2026-10-21": 0,
+            "2026-10-22": 0,
+            "2026-10-23": 0,
+            "2026-10-24": 30,
+            "2026-10-25": 30
+          },
+          "primera_hora_disponible_segundos": null,
+          "ultima_hora_disponible_segundos": null,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8FS1H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8FS1H2.pdf"
+          ]
+        },
+        {
+          "linea": "N908",
+          "salidas_por_fecha": {
+            "2026-10-19": 4,
+            "2026-10-20": 4,
+            "2026-10-21": 4,
+            "2026-10-22": 4,
+            "2026-10-23": 6,
+            "2026-10-24": 6,
+            "2026-10-25": 4
+          },
+          "primera_hora_disponible_segundos": null,
+          "ultima_hora_disponible_segundos": null,
+          "alcance_horas": "Horas publicadas de las referencias municipales disponibles; si faltan paradas sin hora, no son el primer/último servicio global.",
+          "horarios_oficiales": [
+            "https://crtm.es/datos_lineas/horarios/8N908H1.pdf",
+            "https://crtm.es/datos_lineas/horarios/8N908H2.pdf"
+          ]
+        }
+      ],
+      "lineas_topologia_contrastada": [],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_177&lang=es"
+        },
+        {
+          "etiqueta": "Horario oficial 8FS1H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8FS1H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8FS1H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8FS1H2.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8N908H1.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8N908H1.pdf"
+        },
+        {
+          "etiqueta": "Horario oficial 8N908H2.pdf",
+          "url": "https://crtm.es/datos_lineas/horarios/8N908H2.pdf"
+        }
+      ]
+    },
+    "28183": {
+      "codigo_ine": "28183",
+      "municipio": "Zarzalejo",
+      "brechas_iniciales": "Relación municipio–línea pendiente de reconciliar: 640 (Autobús interurbano).; Relación municipio–línea pendiente de reconciliar: 665 (Autobús interurbano).",
+      "estado": "horarios_contrastados_para_calculo",
+      "pagina_crtm": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_183&lang=es",
+      "resoluciones": [
+        "Las líneas 640 y 665 sí paran en Zarzalejo en el sentido hacia El Escorial: parada 18122, Ctra. M505–Puerto de la Cruz Verde, según el itinerario y estación oficiales. No se traslada al municipio la parada 18124 (Robledo) ni la 10222 (Santa María de la Alameda).",
+        "Paradas y variante exacta contrastadas con el inventario oficial de CRTM en 640, 665."
+      ],
+      "pendiente": [],
+      "lineas_pdf": [],
+      "lineas_topologia_contrastada": [
+        "640",
+        "665"
+      ],
+      "fecha_consulta": "2026-10-19",
+      "semana_referencia": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "fuentes": [
+        {
+          "etiqueta": "Consulta municipal CRTM",
+          "url": "https://www.crtm.es/tu-transporte-publico/info-por-municipio/lineas/?buscar=1&codMuni=28_183&lang=es"
+        },
+        {
+          "etiqueta": "Horarios oficiales de Renfe",
+          "url": "https://horarioscercanias.renfe.com/"
+        }
+      ]
+    }
+  },
+  "nearby_line_exclusions": {
+    "28004": [
+      "528"
+    ],
+    "28130": [
+      "287",
+      "289"
+    ]
+  },
+  "demand_responsive": {
+    "line": "SD1",
+    "municipalities": [
+      "28027",
+      "28114",
+      "28088",
+      "28117",
+      "28078",
+      "28070",
+      "28071",
+      "28069",
+      "28118"
+    ],
+    "url": "https://www.crtm.es/datos_lineas/horarios/8SD1H1.pdf",
+    "treatment": "Servicio a demanda confirmado, sin recuento fijo publicado. Separado del componente programado en todos los municipios."
+  },
+  "sources_sha256": {
+    "crtm_ordered_itineraries.json": "a8d676da28c017ebf716b6685afed162c015513e06074756ed959e419586fa6e",
+    "crtm_stations_official.json": "b6c81db270cab1ed22d97e6c96d3bb34e05be21596de11915eb9ad6f5080146b",
+    "metro7b_hospital_26A.pdf": "a9434e6fbbfd77ec2c1cfc45711e926061cfd32a5082cb23f99b3450446c4aaf",
+    "metro7b_estadio_26A.pdf": "5bb6c01895998edaa6db6ea3041126746ff8b2241a94bc6bdc8bcb929455dd9d",
+    "operator_8337H1.pdf": "90b24efa5a2754edb535f5205e77ab665ec143e1675c7aba04b002e33cb70b3a",
+    "operator_8337H2.pdf": "b499854b7c6cc78fa17bb133e36cc6761a9b1f426b355860723a92e770ceddd3",
+    "uam_calendario_2026.pdf": "1f743b9e25b04e7d08ae88d4f920eb418041dbfaad1a423d75aa2763a6862d25"
+  },
+  "metro_intervals": {
+    "source_url": "https://www.metromadrid.es/es/linea/linea-7#line-timetable",
+    "consulted": "2026-10-19",
+    "tables": [
+      "INTERVALO HORARIOS\tDE LUNES A JUEVES\tVIERNES\tSÁBADOS\tDOMINGOS Y FESTIVOS\n06:05 - 06:35\t5 - 9\t5 - 9\t7 - 9\t7 - 9\n06:35 - 07:00\t5 - 9\t5 - 9\t7 - 9\t7 - 9\n07:00 - 07:30\t5 - 6\t5 - 6\t7.5 - 7.5\t7.5 - 7.5\n07:30 - 08:00\t4.5 - 5.5\t4.5 - 5.5\t7.5 - 7.5\t7.5 - 7.5\n08:00 - 08:30\t4.5 - 5.5\t4.5 - 5.5\t7.5 - 7.5\t7.5 - 7.5\n08:30 - 09:00\t4.5 - 5.5\t4.5 - 5.5\t7.5 - 7.5\t7.5 - 7.5\n09:00 - 09:30\t4.5 - 5.5\t4.5 - 5.5\t7.5 - 7.5\t7.5 - 7.5\n09:30 - 10:00\t5.5 - 6.5\t5.5 - 6.5\t7.5 - 7.5\t7.5 - 7.5\n10:00 - 10:30\t5.5 - 6.5\t5.5 - 6.5\t7.5 - 7.5\t7.5 - 7.5\n10:30 - 11:00\t5.5 - 6.5\t5.5 - 6.5\t7.5 - 7.5\t7.5 - 7.5\n11:00 - 11:30\t5.5 - 6.5\t5.5 - 6.5\t7.5 - 7.5\t7.5 - 7.5\n11:30 - 12:00\t5.5 - 6.5\t5.5 - 6.5\t7.5 - 7.5\t7.5 - 7.5\n12:00 - 12:30\t5.5 - 6.5\t5.5 - 6.5\t7.5 - 7.5\t7.5 - 7.5\n12:30 - 13:00\t5.5 - 6.5\t5.5 - 6.5\t7.5 - 7.5\t7.5 - 7.5\n13:00 - 13:30\t5.5 - 6.5\t5.5 - 6.5\t7.5 - 7.5\t7.5 - 7.5\n13:30 - 14:00\t5.5 - 6.5\t5.5 - 6.5\t7.5 - 7.5\t7.5 - 7.5\n14:00 - 14:30\t5.5 - 6.5\t5.5 - 6.5\t7.5 - 7.5\t7.5 - 7.5\n14:30 - 15:00\t5.5 - 6.5\t5.5 - 6.5\t7.5 - 7.5\t7.5 - 7.5\n15:00 - 15:30\t5.5 - 6.5\t5.5 - 6.5\t7.5 - 7.5\t7.5 - 7.5\n15:30 - 16:00\t5.5 - 6.5\t5.5 - 6.5\t7.5 - 7.5\t7.5 - 7.5\n16:00 - 16:30\t5.5 - 6.5\t5.5 - 6.5\t7.5 - 7.5\t7.5 - 7.5\n16:30 - 17:00\t5.5 - 6.5\t5.5 - 6.5\t7.5 - 7.5\t7.5 - 7.5\n17:00 - 17:30\t5.5 - 6.5\t5.5 - 6.5\t7.5 - 7.5\t7.5 - 7.5\n17:30 - 18:00\t5.5 - 6.5\t5.5 - 6.5\t7.5 - 7.5\t7.5 - 7.5\n18:00 - 18:30\t5.5 - 6.5\t5.5 - 6.5\t7.5 - 7.5\t7.5 - 7.5\n18:30 - 19:00\t5.5 - 6.5\t5.5 - 6.5\t7.5 - 7.5\t7.5 - 7.5\n19:00 - 19:30\t5.5 - 6.5\t5.5 - 6.5\t7.5 - 7.5\t7.5 - 7.5\n19:30 - 20:00\t5.5 - 6.5\t5.5 - 6.5\t7.5 - 7.5\t7.5 - 7.5\n20:00 - 20:30\t5.5 - 6.5\t5.5 - 6.5\t7.5 - 7.5\t7.5 - 7.5\n20:30 - 21:00\t5.5 - 6.5\t5.5 - 6.5\t7.5 - 7.5\t7.5 - 7.5\n21:00 - 21:30\t5.5 - 6.5\t5.5 - 6.5\t7.5 - 7.5\t7.5 - 7.5\n21:30 - 22:00\t5.5 - 6.5\t5.5 - 6.5\t7.5 - 7.5\t7.5 - 7.5\n22:00 - 22:30\t7.5 - 7.5\t7.5 - 7.5\t7.5 - 7.5\t7.5 - 7.5\n22:30 - 23:00\t7.5 - 7.5\t7.5 - 7.5\t7.5 - 7.5\t7.5 - 7.5\n23:00 - 23:30\t7.5 - 7.5\t7.5 - 7.5\t7.5 - 7.5\t7.5 - 7.5\n23:30 - 00:00\t7.5 - 7.5\t7.5 - 7.5\t7.5 - 7.5\t7.5 - 7.5\n00:00 - 00:30\t15 - 15\t15 - 15\t15 - 15\t15 - 15\n00:30 - 01:00\t15 - 15\t15 - 15\t15 - 15\t15 - 15\n01:00 - 01:30\t15 - 15\t15 - 15\t15 - 15\t15 - 15\n01:30 - 02:00\t15 - 15\t15 - 15\t15 - 15\t15 - 15",
+      "INTERVALO HORARIOS\tDE LUNES A JUEVES\tVIERNES\tSÁBADOS\tDOMINGOS Y FESTIVOS\n06:05 - 06:35\t5.5 - 9\t5.5 - 9\t7 - 9\t7 - 9\n06:35 - 07:00\t5.5 - 9\t5.5 - 9\t7 - 9\t7 - 9\n07:00 - 07:30\t5 - 6\t5 - 6\t7 - 8\t7 - 8\n07:30 - 08:00\t4 - 5\t4 - 5\t7 - 8\t7 - 8\n08:00 - 08:30\t4 - 5\t4 - 5\t7 - 8\t7 - 8\n08:30 - 09:00\t4 - 5\t4 - 5\t7 - 8\t7 - 8\n09:00 - 09:30\t4 - 5\t4 - 5\t7 - 8\t7 - 8\n09:30 - 10:00\t4.5 - 5.5\t4.5 - 5.5\t7 - 8\t7 - 8\n10:00 - 10:30\t4.5 - 5.5\t4.5 - 5.5\t6 - 7\t6 - 7\n10:30 - 11:00\t4.5 - 5.5\t4.5 - 5.5\t6 - 7\t6 - 7\n11:00 - 11:30\t4.5 - 5.5\t4.5 - 5.5\t6 - 7\t6 - 7\n11:30 - 12:00\t4.5 - 5.5\t4.5 - 5.5\t6 - 7\t6 - 7\n12:00 - 12:30\t4.5 - 5.5\t4.5 - 5.5\t6 - 7\t6 - 7\n12:30 - 13:00\t4.5 - 5.5\t4.5 - 5.5\t6 - 7\t6 - 7\n13:00 - 13:30\t4.5 - 5.5\t4.5 - 5.5\t6 - 7\t6 - 7\n13:30 - 14:00\t4.5 - 5.5\t4.5 - 5.5\t6 - 7\t6 - 7\n14:00 - 14:30\t4.5 - 5.5\t4.5 - 5.5\t6 - 7\t6 - 7\n14:30 - 15:00\t4.5 - 5.5\t4.5 - 5.5\t6 - 7\t6 - 7\n15:00 - 15:30\t4.5 - 5.5\t4.5 - 5.5\t6 - 7\t6 - 7\n15:30 - 16:00\t4.5 - 5.5\t4.5 - 5.5\t6 - 7\t6 - 7\n16:00 - 16:30\t4.5 - 5.5\t5.5 - 6.5\t6 - 7\t6 - 7\n16:30 - 17:00\t4.5 - 5.5\t5.5 - 6.5\t6 - 7\t6 - 7\n17:00 - 17:30\t4.5 - 5.5\t5.5 - 6.5\t6 - 7\t6 - 7\n17:30 - 18:00\t4.5 - 5.5\t5.5 - 6.5\t6 - 7\t6 - 7\n18:00 - 18:30\t4.5 - 5.5\t5.5 - 6.5\t6 - 7\t6 - 7\n18:30 - 19:00\t4.5 - 5.5\t5.5 - 6.5\t6 - 7\t6 - 7\n19:00 - 19:30\t4.5 - 5.5\t5.5 - 6.5\t6 - 7\t6 - 7\n19:30 - 20:00\t4.5 - 5.5\t5.5 - 6.5\t6 - 7\t6 - 7\n20:00 - 20:30\t4.5 - 5.5\t5.5 - 6.5\t6 - 7\t6 - 7\n20:30 - 21:00\t4.5 - 5.5\t5.5 - 6.5\t6 - 7\t6 - 7\n21:00 - 21:30\t5.5 - 6.5\t5.5 - 6.5\t7 - 8\t7 - 8\n21:30 - 22:00\t5.5 - 6.5\t5.5 - 6.5\t7 - 8\t7 - 8\n22:00 - 22:30\t7.5 - 7.5\t7.5 - 7.5\t7.5 - 7.5\t7.5 - 7.5\n22:30 - 23:00\t7.5 - 7.5\t7.5 - 7.5\t7.5 - 7.5\t7.5 - 7.5\n23:00 - 23:30\t7.5 - 7.5\t7.5 - 7.5\t7.5 - 7.5\t7.5 - 7.5\n23:30 - 00:00\t7.5 - 7.5\t7.5 - 7.5\t7.5 - 7.5\t7.5 - 7.5\n00:00 - 00:30\t15 - 15\t15 - 15\t15 - 15\t15 - 15\n00:30 - 01:00\t15 - 15\t15 - 15\t15 - 15\t15 - 15\n01:00 - 01:30\t15 - 15\t15 - 15\t15 - 15\t15 - 15\n01:30 - 02:00\t15 - 15\t15 - 15\t15 - 15\t15 - 15",
+      "ADJUNTO\tTAMAÑO\n\nLínea 7 dirección Estadio Metropolitano\n\t4.03 MB\n\nLínea 7 dirección Pitis\n\t3.86 MB\n\nLínea MetroEste dirección Hospital del Henares\n\t3.45 MB\n\nLínea MetroEste dirección Estadio Metropolitano\n\t3.55 MB"
+    ]
+  },
+  "line337_conflict": [
+    {
+      "date": "2026-10-19",
+      "direction": "1",
+      "gtfs_count": 52,
+      "pdf_count": 40,
+      "same_origin_clocks": false,
+      "gtfs_only": [
+        30,
+        75,
+        150,
+        300,
+        1320,
+        1410
+      ],
+      "pdf_only": []
+    },
+    {
+      "date": "2026-10-19",
+      "direction": "2",
+      "gtfs_count": 48,
+      "pdf_count": 37,
+      "same_origin_clocks": false,
+      "gtfs_only": [
+        60,
+        225,
+        390,
+        525,
+        795,
+        1020,
+        1140,
+        1410
+      ],
+      "pdf_only": [
+        540
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "direction": "1",
+      "gtfs_count": 52,
+      "pdf_count": 40,
+      "same_origin_clocks": false,
+      "gtfs_only": [
+        30,
+        75,
+        150,
+        300,
+        1320,
+        1410
+      ],
+      "pdf_only": []
+    },
+    {
+      "date": "2026-10-20",
+      "direction": "2",
+      "gtfs_count": 48,
+      "pdf_count": 37,
+      "same_origin_clocks": false,
+      "gtfs_only": [
+        60,
+        225,
+        390,
+        525,
+        795,
+        1020,
+        1140,
+        1410
+      ],
+      "pdf_only": [
+        540
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "direction": "1",
+      "gtfs_count": 52,
+      "pdf_count": 40,
+      "same_origin_clocks": false,
+      "gtfs_only": [
+        30,
+        75,
+        150,
+        300,
+        1320,
+        1410
+      ],
+      "pdf_only": []
+    },
+    {
+      "date": "2026-10-21",
+      "direction": "2",
+      "gtfs_count": 48,
+      "pdf_count": 37,
+      "same_origin_clocks": false,
+      "gtfs_only": [
+        60,
+        225,
+        390,
+        525,
+        795,
+        1020,
+        1140,
+        1410
+      ],
+      "pdf_only": [
+        540
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "direction": "1",
+      "gtfs_count": 52,
+      "pdf_count": 40,
+      "same_origin_clocks": false,
+      "gtfs_only": [
+        30,
+        75,
+        150,
+        300,
+        1320,
+        1410
+      ],
+      "pdf_only": []
+    },
+    {
+      "date": "2026-10-22",
+      "direction": "2",
+      "gtfs_count": 48,
+      "pdf_count": 37,
+      "same_origin_clocks": false,
+      "gtfs_only": [
+        60,
+        225,
+        390,
+        525,
+        795,
+        1020,
+        1140,
+        1410
+      ],
+      "pdf_only": [
+        540
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "direction": "1",
+      "gtfs_count": 55,
+      "pdf_count": 42,
+      "same_origin_clocks": false,
+      "gtfs_only": [
+        30,
+        75,
+        1320,
+        1410
+      ],
+      "pdf_only": []
+    },
+    {
+      "date": "2026-10-23",
+      "direction": "2",
+      "gtfs_count": 50,
+      "pdf_count": 39,
+      "same_origin_clocks": false,
+      "gtfs_only": [
+        390,
+        525,
+        795,
+        1020,
+        1140,
+        1410
+      ],
+      "pdf_only": [
+        540
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "direction": "1",
+      "gtfs_count": 47,
+      "pdf_count": 24,
+      "same_origin_clocks": false,
+      "gtfs_only": [
+        0,
+        480,
+        495,
+        525,
+        645,
+        660,
+        705,
+        765,
+        780,
+        840,
+        915,
+        1005,
+        1065,
+        1125,
+        1185,
+        1245,
+        1305,
+        1365
+      ],
+      "pdf_only": []
+    },
+    {
+      "date": "2026-10-24",
+      "direction": "2",
+      "gtfs_count": 46,
+      "pdf_count": 23,
+      "same_origin_clocks": false,
+      "gtfs_only": [
+        365,
+        380,
+        420,
+        525,
+        585,
+        645,
+        720,
+        885,
+        945,
+        1005,
+        1065,
+        1125,
+        1185,
+        1245,
+        1320
+      ],
+      "pdf_only": []
+    },
+    {
+      "date": "2026-10-25",
+      "direction": "1",
+      "gtfs_count": 31,
+      "pdf_count": 17,
+      "same_origin_clocks": false,
+      "gtfs_only": [
+        450,
+        510,
+        630,
+        690,
+        750,
+        810,
+        870,
+        990,
+        1020,
+        1110,
+        1170,
+        1260,
+        1290,
+        1350
+      ],
+      "pdf_only": [
+        150,
+        300
+      ]
+    },
+    {
+      "date": "2026-10-25",
+      "direction": "2",
+      "gtfs_count": 31,
+      "pdf_count": 17,
+      "same_origin_clocks": false,
+      "gtfs_only": [
+        330,
+        510,
+        570,
+        630,
+        690,
+        750,
+        870,
+        930,
+        990,
+        1050,
+        1110,
+        1170,
+        1230
+      ],
+      "pdf_only": [
+        60,
+        225
+      ]
+    }
+  ]
+}

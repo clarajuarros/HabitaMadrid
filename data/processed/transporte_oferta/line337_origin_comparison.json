@@ -1,0 +1,284 @@
+[
+  {
+    "date": "2026-10-19",
+    "direction": "1",
+    "gtfs_count": 52,
+    "pdf_count": 40,
+    "same_origin_clocks": false,
+    "gtfs_only": [
+      30,
+      75,
+      150,
+      300,
+      1320,
+      1410
+    ],
+    "pdf_only": []
+  },
+  {
+    "date": "2026-10-19",
+    "direction": "2",
+    "gtfs_count": 48,
+    "pdf_count": 37,
+    "same_origin_clocks": false,
+    "gtfs_only": [
+      60,
+      225,
+      390,
+      525,
+      795,
+      1020,
+      1140,
+      1410
+    ],
+    "pdf_only": [
+      540
+    ]
+  },
+  {
+    "date": "2026-10-20",
+    "direction": "1",
+    "gtfs_count": 52,
+    "pdf_count": 40,
+    "same_origin_clocks": false,
+    "gtfs_only": [
+      30,
+      75,
+      150,
+      300,
+      1320,
+      1410
+    ],
+    "pdf_only": []
+  },
+  {
+    "date": "2026-10-20",
+    "direction": "2",
+    "gtfs_count": 48,
+    "pdf_count": 37,
+    "same_origin_clocks": false,
+    "gtfs_only": [
+      60,
+      225,
+      390,
+      525,
+      795,
+      1020,
+      1140,
+      1410
+    ],
+    "pdf_only": [
+      540
+    ]
+  },
+  {
+    "date": "2026-10-21",
+    "direction": "1",
+    "gtfs_count": 52,
+    "pdf_count": 40,
+    "same_origin_clocks": false,
+    "gtfs_only": [
+      30,
+      75,
+      150,
+      300,
+      1320,
+      1410
+    ],
+    "pdf_only": []
+  },
+  {
+    "date": "2026-10-21",
+    "direction": "2",
+    "gtfs_count": 48,
+    "pdf_count": 37,
+    "same_origin_clocks": false,
+    "gtfs_only": [
+      60,
+      225,
+      390,
+      525,
+      795,
+      1020,
+      1140,
+      1410
+    ],
+    "pdf_only": [
+      540
+    ]
+  },
+  {
+    "date": "2026-10-22",
+    "direction": "1",
+    "gtfs_count": 52,
+    "pdf_count": 40,
+    "same_origin_clocks": false,
+    "gtfs_only": [
+      30,
+      75,
+      150,
+      300,
+      1320,
+      1410
+    ],
+    "pdf_only": []
+  },
+  {
+    "date": "2026-10-22",
+    "direction": "2",
+    "gtfs_count": 48,
+    "pdf_count": 37,
+    "same_origin_clocks": false,
+    "gtfs_only": [
+      60,
+      225,
+      390,
+      525,
+      795,
+      1020,
+      1140,
+      1410
+    ],
+    "pdf_only": [
+      540
+    ]
+  },
+  {
+    "date": "2026-10-23",
+    "direction": "1",
+    "gtfs_count": 55,
+    "pdf_count": 42,
+    "same_origin_clocks": false,
+    "gtfs_only": [
+      30,
+      75,
+      1320,
+      1410
+    ],
+    "pdf_only": []
+  },
+  {
+    "date": "2026-10-23",
+    "direction": "2",
+    "gtfs_count": 50,
+    "pdf_count": 39,
+    "same_origin_clocks": false,
+    "gtfs_only": [
+      390,
+      525,
+      795,
+      1020,
+      1140,
+      1410
+    ],
+    "pdf_only": [
+      540
+    ]
+  },
+  {
+    "date": "2026-10-24",
+    "direction": "1",
+    "gtfs_count": 47,
+    "pdf_count": 24,
+    "same_origin_clocks": false,
+    "gtfs_only": [
+      0,
+      480,
+      495,
+      525,
+      645,
+      660,
+      705,
+      765,
+      780,
+      840,
+      915,
+      1005,
+      1065,
+      1125,
+      1185,
+      1245,
+      1305,
+      1365
+    ],
+    "pdf_only": []
+  },
+  {
+    "date": "2026-10-24",
+    "direction": "2",
+    "gtfs_count": 46,
+    "pdf_count": 23,
+    "same_origin_clocks": false,
+    "gtfs_only": [
+      365,
+      380,
+      420,
+      525,
+      585,
+      645,
+      720,
+      885,
+      945,
+      1005,
+      1065,
+      1125,
+      1185,
+      1245,
+      1320
+    ],
+    "pdf_only": []
+  },
+  {
+    "date": "2026-10-25",
+    "direction": "1",
+    "gtfs_count": 31,
+    "pdf_count": 17,
+    "same_origin_clocks": false,
+    "gtfs_only": [
+      450,
+      510,
+      630,
+      690,
+      750,
+      810,
+      870,
+      990,
+      1020,
+      1110,
+      1170,
+      1260,
+      1290,
+      1350
+    ],
+    "pdf_only": [
+      150,
+      300
+    ]
+  },
+  {
+    "date": "2026-10-25",
+    "direction": "2",
+    "gtfs_count": 31,
+    "pdf_count": 17,
+    "same_origin_clocks": false,
+    "gtfs_only": [
+      330,
+      510,
+      570,
+      630,
+      690,
+      750,
+      870,
+      930,
+      990,
+      1050,
+      1110,
+      1170,
+      1230
+    ],
+    "pdf_only": [
+      60,
+      225
+    ]
+  }
+]

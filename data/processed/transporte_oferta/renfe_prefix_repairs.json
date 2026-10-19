@@ -1,0 +1,1947 @@
+{
+  "source_url": "https://ssl.renfe.com/gtransit/Fichero_AV_LD/google_transit.zip",
+  "source_sha256": "709b0bba305f20a79df717f253683b6ee5cad6137e49d116462541c416dc83b3",
+  "repaired_original_trips": 31,
+  "dated_repairs": 31,
+  "output_sha256": "8d0fed0aef2f0296e2c4f3d8bbdb33c51ce66a47f9c7012228c3e3ceba15793c",
+  "records": [
+    {
+      "original_trip_id": "1090L17120C8b",
+      "date": "2026-10-19",
+      "train_number": "17120",
+      "original_route_id": "10T0097C8b",
+      "declared_terminus": "Cercedilla",
+      "md_source_trip_id": "1712012026-10-19",
+      "md_source_service_id": "2026-10-192026-11-01171201",
+      "prefix_stations": [
+        {
+          "stop_id": "12100",
+          "name": "Segovia",
+          "arrival": "7:43:00",
+          "departure": "7:43:00"
+        },
+        {
+          "stop_id": "12014",
+          "name": "Navas de Riofrío-La Losa",
+          "arrival": "7:51:00",
+          "departure": "7:51:00"
+        },
+        {
+          "stop_id": "12013",
+          "name": "Ortigosa del Monte",
+          "arrival": "7:55:00",
+          "departure": "7:55:00"
+        },
+        {
+          "stop_id": "12012",
+          "name": "Otero-Herreros",
+          "arrival": "8:00:00",
+          "departure": "8:00:00"
+        },
+        {
+          "stop_id": "12011",
+          "name": "Los Ángeles de San Rafael",
+          "arrival": "8:03:00",
+          "departure": "8:03:00"
+        },
+        {
+          "stop_id": "12010",
+          "name": "El Espinar",
+          "arrival": "8:09:00",
+          "departure": "8:09:00"
+        },
+        {
+          "stop_id": "12009",
+          "name": "San Rafael",
+          "arrival": "8:12:00",
+          "departure": "8:12:00"
+        },
+        {
+          "stop_id": "12008",
+          "name": "Gudillos",
+          "arrival": "8:16:00",
+          "departure": "8:16:00"
+        },
+        {
+          "stop_id": "12007",
+          "name": "Tablada",
+          "arrival": "8:20:00",
+          "departure": "8:20:00"
+        },
+        {
+          "stop_id": "12006",
+          "name": "Cercedilla",
+          "arrival": "8:28:00",
+          "departure": "8:31:00"
+        }
+      ],
+      "onward_stations_excluded_to_avoid_duplicate": 16
+    },
+    {
+      "original_trip_id": "1090L17128C8b",
+      "date": "2026-10-19",
+      "train_number": "17128",
+      "original_route_id": "10T0097C8b",
+      "declared_terminus": "Cercedilla",
+      "md_source_trip_id": "1712812026-10-19",
+      "md_source_service_id": "2026-10-192026-11-01171281",
+      "prefix_stations": [
+        {
+          "stop_id": "12100",
+          "name": "Segovia",
+          "arrival": "14:44:00",
+          "departure": "14:44:00"
+        },
+        {
+          "stop_id": "12014",
+          "name": "Navas de Riofrío-La Losa",
+          "arrival": "14:52:00",
+          "departure": "14:52:00"
+        },
+        {
+          "stop_id": "12013",
+          "name": "Ortigosa del Monte",
+          "arrival": "14:56:00",
+          "departure": "14:56:00"
+        },
+        {
+          "stop_id": "12012",
+          "name": "Otero-Herreros",
+          "arrival": "15:01:00",
+          "departure": "15:01:00"
+        },
+        {
+          "stop_id": "12011",
+          "name": "Los Ángeles de San Rafael",
+          "arrival": "15:04:00",
+          "departure": "15:04:00"
+        },
+        {
+          "stop_id": "12010",
+          "name": "El Espinar",
+          "arrival": "15:10:00",
+          "departure": "15:10:00"
+        },
+        {
+          "stop_id": "12009",
+          "name": "San Rafael",
+          "arrival": "15:13:00",
+          "departure": "15:13:00"
+        },
+        {
+          "stop_id": "12007",
+          "name": "Tablada",
+          "arrival": "15:20:00",
+          "departure": "15:20:00"
+        },
+        {
+          "stop_id": "12006",
+          "name": "Cercedilla",
+          "arrival": "15:28:00",
+          "departure": "15:31:00"
+        }
+      ],
+      "onward_stations_excluded_to_avoid_duplicate": 16
+    },
+    {
+      "original_trip_id": "1090L17134C8b",
+      "date": "2026-10-19",
+      "train_number": "17134",
+      "original_route_id": "10T0097C8b",
+      "declared_terminus": "Cercedilla",
+      "md_source_trip_id": "1713412026-10-19",
+      "md_source_service_id": "2026-10-192026-12-06171341",
+      "prefix_stations": [
+        {
+          "stop_id": "12100",
+          "name": "Segovia",
+          "arrival": "20:44:00",
+          "departure": "20:44:00"
+        },
+        {
+          "stop_id": "12014",
+          "name": "Navas de Riofrío-La Losa",
+          "arrival": "20:52:00",
+          "departure": "20:52:00"
+        },
+        {
+          "stop_id": "12013",
+          "name": "Ortigosa del Monte",
+          "arrival": "20:56:00",
+          "departure": "20:56:00"
+        },
+        {
+          "stop_id": "12012",
+          "name": "Otero-Herreros",
+          "arrival": "21:01:00",
+          "departure": "21:01:00"
+        },
+        {
+          "stop_id": "12011",
+          "name": "Los Ángeles de San Rafael",
+          "arrival": "21:04:00",
+          "departure": "21:04:00"
+        },
+        {
+          "stop_id": "12010",
+          "name": "El Espinar",
+          "arrival": "21:10:00",
+          "departure": "21:10:00"
+        },
+        {
+          "stop_id": "12009",
+          "name": "San Rafael",
+          "arrival": "21:13:00",
+          "departure": "21:13:00"
+        },
+        {
+          "stop_id": "12007",
+          "name": "Tablada",
+          "arrival": "21:20:00",
+          "departure": "21:20:00"
+        },
+        {
+          "stop_id": "12006",
+          "name": "Cercedilla",
+          "arrival": "21:28:00",
+          "departure": "21:28:00"
+        }
+      ],
+      "onward_stations_excluded_to_avoid_duplicate": 16
+    },
+    {
+      "original_trip_id": "1090L17707C5",
+      "date": "2026-10-19",
+      "train_number": "17707",
+      "original_route_id": "10T0035C5",
+      "declared_terminus": "Fuenlabrada",
+      "md_source_trip_id": "1770712026-10-19",
+      "md_source_service_id": "2026-10-192026-11-01177071",
+      "prefix_stations": [
+        {
+          "stop_id": "35200",
+          "name": "Talavera de la Reina",
+          "arrival": "5:37:00",
+          "departure": "5:37:00"
+        },
+        {
+          "stop_id": "35109",
+          "name": "Montearagón",
+          "arrival": "5:46:00",
+          "departure": "5:47:00"
+        },
+        {
+          "stop_id": "35105",
+          "name": "Torrijos",
+          "arrival": "6:05:00",
+          "departure": "6:06:00"
+        },
+        {
+          "stop_id": "35005",
+          "name": "Illescas",
+          "arrival": "6:27:00",
+          "departure": "6:28:00"
+        },
+        {
+          "stop_id": "35002",
+          "name": "Fuenlabrada",
+          "arrival": "6:42:00",
+          "departure": "6:47:00"
+        }
+      ],
+      "onward_stations_excluded_to_avoid_duplicate": 2
+    },
+    {
+      "original_trip_id": "1091M17120C8b",
+      "date": "2026-10-20",
+      "train_number": "17120",
+      "original_route_id": "10T0097C8b",
+      "declared_terminus": "Cercedilla",
+      "md_source_trip_id": "1712012026-10-19",
+      "md_source_service_id": "2026-10-192026-11-01171201",
+      "prefix_stations": [
+        {
+          "stop_id": "12100",
+          "name": "Segovia",
+          "arrival": "7:43:00",
+          "departure": "7:43:00"
+        },
+        {
+          "stop_id": "12014",
+          "name": "Navas de Riofrío-La Losa",
+          "arrival": "7:51:00",
+          "departure": "7:51:00"
+        },
+        {
+          "stop_id": "12013",
+          "name": "Ortigosa del Monte",
+          "arrival": "7:55:00",
+          "departure": "7:55:00"
+        },
+        {
+          "stop_id": "12012",
+          "name": "Otero-Herreros",
+          "arrival": "8:00:00",
+          "departure": "8:00:00"
+        },
+        {
+          "stop_id": "12011",
+          "name": "Los Ángeles de San Rafael",
+          "arrival": "8:03:00",
+          "departure": "8:03:00"
+        },
+        {
+          "stop_id": "12010",
+          "name": "El Espinar",
+          "arrival": "8:09:00",
+          "departure": "8:09:00"
+        },
+        {
+          "stop_id": "12009",
+          "name": "San Rafael",
+          "arrival": "8:12:00",
+          "departure": "8:12:00"
+        },
+        {
+          "stop_id": "12008",
+          "name": "Gudillos",
+          "arrival": "8:16:00",
+          "departure": "8:16:00"
+        },
+        {
+          "stop_id": "12007",
+          "name": "Tablada",
+          "arrival": "8:20:00",
+          "departure": "8:20:00"
+        },
+        {
+          "stop_id": "12006",
+          "name": "Cercedilla",
+          "arrival": "8:28:00",
+          "departure": "8:31:00"
+        }
+      ],
+      "onward_stations_excluded_to_avoid_duplicate": 16
+    },
+    {
+      "original_trip_id": "1091M17128C8b",
+      "date": "2026-10-20",
+      "train_number": "17128",
+      "original_route_id": "10T0097C8b",
+      "declared_terminus": "Cercedilla",
+      "md_source_trip_id": "1712812026-10-19",
+      "md_source_service_id": "2026-10-192026-11-01171281",
+      "prefix_stations": [
+        {
+          "stop_id": "12100",
+          "name": "Segovia",
+          "arrival": "14:44:00",
+          "departure": "14:44:00"
+        },
+        {
+          "stop_id": "12014",
+          "name": "Navas de Riofrío-La Losa",
+          "arrival": "14:52:00",
+          "departure": "14:52:00"
+        },
+        {
+          "stop_id": "12013",
+          "name": "Ortigosa del Monte",
+          "arrival": "14:56:00",
+          "departure": "14:56:00"
+        },
+        {
+          "stop_id": "12012",
+          "name": "Otero-Herreros",
+          "arrival": "15:01:00",
+          "departure": "15:01:00"
+        },
+        {
+          "stop_id": "12011",
+          "name": "Los Ángeles de San Rafael",
+          "arrival": "15:04:00",
+          "departure": "15:04:00"
+        },
+        {
+          "stop_id": "12010",
+          "name": "El Espinar",
+          "arrival": "15:10:00",
+          "departure": "15:10:00"
+        },
+        {
+          "stop_id": "12009",
+          "name": "San Rafael",
+          "arrival": "15:13:00",
+          "departure": "15:13:00"
+        },
+        {
+          "stop_id": "12007",
+          "name": "Tablada",
+          "arrival": "15:20:00",
+          "departure": "15:20:00"
+        },
+        {
+          "stop_id": "12006",
+          "name": "Cercedilla",
+          "arrival": "15:28:00",
+          "departure": "15:31:00"
+        }
+      ],
+      "onward_stations_excluded_to_avoid_duplicate": 16
+    },
+    {
+      "original_trip_id": "1091M17134C8b",
+      "date": "2026-10-20",
+      "train_number": "17134",
+      "original_route_id": "10T0097C8b",
+      "declared_terminus": "Cercedilla",
+      "md_source_trip_id": "1713412026-10-19",
+      "md_source_service_id": "2026-10-192026-12-06171341",
+      "prefix_stations": [
+        {
+          "stop_id": "12100",
+          "name": "Segovia",
+          "arrival": "20:44:00",
+          "departure": "20:44:00"
+        },
+        {
+          "stop_id": "12014",
+          "name": "Navas de Riofrío-La Losa",
+          "arrival": "20:52:00",
+          "departure": "20:52:00"
+        },
+        {
+          "stop_id": "12013",
+          "name": "Ortigosa del Monte",
+          "arrival": "20:56:00",
+          "departure": "20:56:00"
+        },
+        {
+          "stop_id": "12012",
+          "name": "Otero-Herreros",
+          "arrival": "21:01:00",
+          "departure": "21:01:00"
+        },
+        {
+          "stop_id": "12011",
+          "name": "Los Ángeles de San Rafael",
+          "arrival": "21:04:00",
+          "departure": "21:04:00"
+        },
+        {
+          "stop_id": "12010",
+          "name": "El Espinar",
+          "arrival": "21:10:00",
+          "departure": "21:10:00"
+        },
+        {
+          "stop_id": "12009",
+          "name": "San Rafael",
+          "arrival": "21:13:00",
+          "departure": "21:13:00"
+        },
+        {
+          "stop_id": "12007",
+          "name": "Tablada",
+          "arrival": "21:20:00",
+          "departure": "21:20:00"
+        },
+        {
+          "stop_id": "12006",
+          "name": "Cercedilla",
+          "arrival": "21:28:00",
+          "departure": "21:28:00"
+        }
+      ],
+      "onward_stations_excluded_to_avoid_duplicate": 16
+    },
+    {
+      "original_trip_id": "1091M17707C5",
+      "date": "2026-10-20",
+      "train_number": "17707",
+      "original_route_id": "10T0035C5",
+      "declared_terminus": "Fuenlabrada",
+      "md_source_trip_id": "1770712026-10-19",
+      "md_source_service_id": "2026-10-192026-11-01177071",
+      "prefix_stations": [
+        {
+          "stop_id": "35200",
+          "name": "Talavera de la Reina",
+          "arrival": "5:37:00",
+          "departure": "5:37:00"
+        },
+        {
+          "stop_id": "35109",
+          "name": "Montearagón",
+          "arrival": "5:46:00",
+          "departure": "5:47:00"
+        },
+        {
+          "stop_id": "35105",
+          "name": "Torrijos",
+          "arrival": "6:05:00",
+          "departure": "6:06:00"
+        },
+        {
+          "stop_id": "35005",
+          "name": "Illescas",
+          "arrival": "6:27:00",
+          "departure": "6:28:00"
+        },
+        {
+          "stop_id": "35002",
+          "name": "Fuenlabrada",
+          "arrival": "6:42:00",
+          "departure": "6:47:00"
+        }
+      ],
+      "onward_stations_excluded_to_avoid_duplicate": 2
+    },
+    {
+      "original_trip_id": "1092X17120C8b",
+      "date": "2026-10-21",
+      "train_number": "17120",
+      "original_route_id": "10T0097C8b",
+      "declared_terminus": "Cercedilla",
+      "md_source_trip_id": "1712012026-10-19",
+      "md_source_service_id": "2026-10-192026-11-01171201",
+      "prefix_stations": [
+        {
+          "stop_id": "12100",
+          "name": "Segovia",
+          "arrival": "7:43:00",
+          "departure": "7:43:00"
+        },
+        {
+          "stop_id": "12014",
+          "name": "Navas de Riofrío-La Losa",
+          "arrival": "7:51:00",
+          "departure": "7:51:00"
+        },
+        {
+          "stop_id": "12013",
+          "name": "Ortigosa del Monte",
+          "arrival": "7:55:00",
+          "departure": "7:55:00"
+        },
+        {
+          "stop_id": "12012",
+          "name": "Otero-Herreros",
+          "arrival": "8:00:00",
+          "departure": "8:00:00"
+        },
+        {
+          "stop_id": "12011",
+          "name": "Los Ángeles de San Rafael",
+          "arrival": "8:03:00",
+          "departure": "8:03:00"
+        },
+        {
+          "stop_id": "12010",
+          "name": "El Espinar",
+          "arrival": "8:09:00",
+          "departure": "8:09:00"
+        },
+        {
+          "stop_id": "12009",
+          "name": "San Rafael",
+          "arrival": "8:12:00",
+          "departure": "8:12:00"
+        },
+        {
+          "stop_id": "12008",
+          "name": "Gudillos",
+          "arrival": "8:16:00",
+          "departure": "8:16:00"
+        },
+        {
+          "stop_id": "12007",
+          "name": "Tablada",
+          "arrival": "8:20:00",
+          "departure": "8:20:00"
+        },
+        {
+          "stop_id": "12006",
+          "name": "Cercedilla",
+          "arrival": "8:28:00",
+          "departure": "8:31:00"
+        }
+      ],
+      "onward_stations_excluded_to_avoid_duplicate": 16
+    },
+    {
+      "original_trip_id": "1092X17128C8b",
+      "date": "2026-10-21",
+      "train_number": "17128",
+      "original_route_id": "10T0097C8b",
+      "declared_terminus": "Cercedilla",
+      "md_source_trip_id": "1712812026-10-19",
+      "md_source_service_id": "2026-10-192026-11-01171281",
+      "prefix_stations": [
+        {
+          "stop_id": "12100",
+          "name": "Segovia",
+          "arrival": "14:44:00",
+          "departure": "14:44:00"
+        },
+        {
+          "stop_id": "12014",
+          "name": "Navas de Riofrío-La Losa",
+          "arrival": "14:52:00",
+          "departure": "14:52:00"
+        },
+        {
+          "stop_id": "12013",
+          "name": "Ortigosa del Monte",
+          "arrival": "14:56:00",
+          "departure": "14:56:00"
+        },
+        {
+          "stop_id": "12012",
+          "name": "Otero-Herreros",
+          "arrival": "15:01:00",
+          "departure": "15:01:00"
+        },
+        {
+          "stop_id": "12011",
+          "name": "Los Ángeles de San Rafael",
+          "arrival": "15:04:00",
+          "departure": "15:04:00"
+        },
+        {
+          "stop_id": "12010",
+          "name": "El Espinar",
+          "arrival": "15:10:00",
+          "departure": "15:10:00"
+        },
+        {
+          "stop_id": "12009",
+          "name": "San Rafael",
+          "arrival": "15:13:00",
+          "departure": "15:13:00"
+        },
+        {
+          "stop_id": "12007",
+          "name": "Tablada",
+          "arrival": "15:20:00",
+          "departure": "15:20:00"
+        },
+        {
+          "stop_id": "12006",
+          "name": "Cercedilla",
+          "arrival": "15:28:00",
+          "departure": "15:31:00"
+        }
+      ],
+      "onward_stations_excluded_to_avoid_duplicate": 16
+    },
+    {
+      "original_trip_id": "1092X17134C8b",
+      "date": "2026-10-21",
+      "train_number": "17134",
+      "original_route_id": "10T0097C8b",
+      "declared_terminus": "Cercedilla",
+      "md_source_trip_id": "1713412026-10-19",
+      "md_source_service_id": "2026-10-192026-12-06171341",
+      "prefix_stations": [
+        {
+          "stop_id": "12100",
+          "name": "Segovia",
+          "arrival": "20:44:00",
+          "departure": "20:44:00"
+        },
+        {
+          "stop_id": "12014",
+          "name": "Navas de Riofrío-La Losa",
+          "arrival": "20:52:00",
+          "departure": "20:52:00"
+        },
+        {
+          "stop_id": "12013",
+          "name": "Ortigosa del Monte",
+          "arrival": "20:56:00",
+          "departure": "20:56:00"
+        },
+        {
+          "stop_id": "12012",
+          "name": "Otero-Herreros",
+          "arrival": "21:01:00",
+          "departure": "21:01:00"
+        },
+        {
+          "stop_id": "12011",
+          "name": "Los Ángeles de San Rafael",
+          "arrival": "21:04:00",
+          "departure": "21:04:00"
+        },
+        {
+          "stop_id": "12010",
+          "name": "El Espinar",
+          "arrival": "21:10:00",
+          "departure": "21:10:00"
+        },
+        {
+          "stop_id": "12009",
+          "name": "San Rafael",
+          "arrival": "21:13:00",
+          "departure": "21:13:00"
+        },
+        {
+          "stop_id": "12007",
+          "name": "Tablada",
+          "arrival": "21:20:00",
+          "departure": "21:20:00"
+        },
+        {
+          "stop_id": "12006",
+          "name": "Cercedilla",
+          "arrival": "21:28:00",
+          "departure": "21:28:00"
+        }
+      ],
+      "onward_stations_excluded_to_avoid_duplicate": 16
+    },
+    {
+      "original_trip_id": "1092X17707C5",
+      "date": "2026-10-21",
+      "train_number": "17707",
+      "original_route_id": "10T0035C5",
+      "declared_terminus": "Fuenlabrada",
+      "md_source_trip_id": "1770712026-10-19",
+      "md_source_service_id": "2026-10-192026-11-01177071",
+      "prefix_stations": [
+        {
+          "stop_id": "35200",
+          "name": "Talavera de la Reina",
+          "arrival": "5:37:00",
+          "departure": "5:37:00"
+        },
+        {
+          "stop_id": "35109",
+          "name": "Montearagón",
+          "arrival": "5:46:00",
+          "departure": "5:47:00"
+        },
+        {
+          "stop_id": "35105",
+          "name": "Torrijos",
+          "arrival": "6:05:00",
+          "departure": "6:06:00"
+        },
+        {
+          "stop_id": "35005",
+          "name": "Illescas",
+          "arrival": "6:27:00",
+          "departure": "6:28:00"
+        },
+        {
+          "stop_id": "35002",
+          "name": "Fuenlabrada",
+          "arrival": "6:42:00",
+          "departure": "6:47:00"
+        }
+      ],
+      "onward_stations_excluded_to_avoid_duplicate": 2
+    },
+    {
+      "original_trip_id": "1093J17120C8b",
+      "date": "2026-10-22",
+      "train_number": "17120",
+      "original_route_id": "10T0097C8b",
+      "declared_terminus": "Cercedilla",
+      "md_source_trip_id": "1712012026-10-19",
+      "md_source_service_id": "2026-10-192026-11-01171201",
+      "prefix_stations": [
+        {
+          "stop_id": "12100",
+          "name": "Segovia",
+          "arrival": "7:43:00",
+          "departure": "7:43:00"
+        },
+        {
+          "stop_id": "12014",
+          "name": "Navas de Riofrío-La Losa",
+          "arrival": "7:51:00",
+          "departure": "7:51:00"
+        },
+        {
+          "stop_id": "12013",
+          "name": "Ortigosa del Monte",
+          "arrival": "7:55:00",
+          "departure": "7:55:00"
+        },
+        {
+          "stop_id": "12012",
+          "name": "Otero-Herreros",
+          "arrival": "8:00:00",
+          "departure": "8:00:00"
+        },
+        {
+          "stop_id": "12011",
+          "name": "Los Ángeles de San Rafael",
+          "arrival": "8:03:00",
+          "departure": "8:03:00"
+        },
+        {
+          "stop_id": "12010",
+          "name": "El Espinar",
+          "arrival": "8:09:00",
+          "departure": "8:09:00"
+        },
+        {
+          "stop_id": "12009",
+          "name": "San Rafael",
+          "arrival": "8:12:00",
+          "departure": "8:12:00"
+        },
+        {
+          "stop_id": "12008",
+          "name": "Gudillos",
+          "arrival": "8:16:00",
+          "departure": "8:16:00"
+        },
+        {
+          "stop_id": "12007",
+          "name": "Tablada",
+          "arrival": "8:20:00",
+          "departure": "8:20:00"
+        },
+        {
+          "stop_id": "12006",
+          "name": "Cercedilla",
+          "arrival": "8:28:00",
+          "departure": "8:31:00"
+        }
+      ],
+      "onward_stations_excluded_to_avoid_duplicate": 16
+    },
+    {
+      "original_trip_id": "1093J17128C8b",
+      "date": "2026-10-22",
+      "train_number": "17128",
+      "original_route_id": "10T0097C8b",
+      "declared_terminus": "Cercedilla",
+      "md_source_trip_id": "1712812026-10-19",
+      "md_source_service_id": "2026-10-192026-11-01171281",
+      "prefix_stations": [
+        {
+          "stop_id": "12100",
+          "name": "Segovia",
+          "arrival": "14:44:00",
+          "departure": "14:44:00"
+        },
+        {
+          "stop_id": "12014",
+          "name": "Navas de Riofrío-La Losa",
+          "arrival": "14:52:00",
+          "departure": "14:52:00"
+        },
+        {
+          "stop_id": "12013",
+          "name": "Ortigosa del Monte",
+          "arrival": "14:56:00",
+          "departure": "14:56:00"
+        },
+        {
+          "stop_id": "12012",
+          "name": "Otero-Herreros",
+          "arrival": "15:01:00",
+          "departure": "15:01:00"
+        },
+        {
+          "stop_id": "12011",
+          "name": "Los Ángeles de San Rafael",
+          "arrival": "15:04:00",
+          "departure": "15:04:00"
+        },
+        {
+          "stop_id": "12010",
+          "name": "El Espinar",
+          "arrival": "15:10:00",
+          "departure": "15:10:00"
+        },
+        {
+          "stop_id": "12009",
+          "name": "San Rafael",
+          "arrival": "15:13:00",
+          "departure": "15:13:00"
+        },
+        {
+          "stop_id": "12007",
+          "name": "Tablada",
+          "arrival": "15:20:00",
+          "departure": "15:20:00"
+        },
+        {
+          "stop_id": "12006",
+          "name": "Cercedilla",
+          "arrival": "15:28:00",
+          "departure": "15:31:00"
+        }
+      ],
+      "onward_stations_excluded_to_avoid_duplicate": 16
+    },
+    {
+      "original_trip_id": "1093J17134C8b",
+      "date": "2026-10-22",
+      "train_number": "17134",
+      "original_route_id": "10T0097C8b",
+      "declared_terminus": "Cercedilla",
+      "md_source_trip_id": "1713412026-10-19",
+      "md_source_service_id": "2026-10-192026-12-06171341",
+      "prefix_stations": [
+        {
+          "stop_id": "12100",
+          "name": "Segovia",
+          "arrival": "20:44:00",
+          "departure": "20:44:00"
+        },
+        {
+          "stop_id": "12014",
+          "name": "Navas de Riofrío-La Losa",
+          "arrival": "20:52:00",
+          "departure": "20:52:00"
+        },
+        {
+          "stop_id": "12013",
+          "name": "Ortigosa del Monte",
+          "arrival": "20:56:00",
+          "departure": "20:56:00"
+        },
+        {
+          "stop_id": "12012",
+          "name": "Otero-Herreros",
+          "arrival": "21:01:00",
+          "departure": "21:01:00"
+        },
+        {
+          "stop_id": "12011",
+          "name": "Los Ángeles de San Rafael",
+          "arrival": "21:04:00",
+          "departure": "21:04:00"
+        },
+        {
+          "stop_id": "12010",
+          "name": "El Espinar",
+          "arrival": "21:10:00",
+          "departure": "21:10:00"
+        },
+        {
+          "stop_id": "12009",
+          "name": "San Rafael",
+          "arrival": "21:13:00",
+          "departure": "21:13:00"
+        },
+        {
+          "stop_id": "12007",
+          "name": "Tablada",
+          "arrival": "21:20:00",
+          "departure": "21:20:00"
+        },
+        {
+          "stop_id": "12006",
+          "name": "Cercedilla",
+          "arrival": "21:28:00",
+          "departure": "21:28:00"
+        }
+      ],
+      "onward_stations_excluded_to_avoid_duplicate": 16
+    },
+    {
+      "original_trip_id": "1093J17707C5",
+      "date": "2026-10-22",
+      "train_number": "17707",
+      "original_route_id": "10T0035C5",
+      "declared_terminus": "Fuenlabrada",
+      "md_source_trip_id": "1770712026-10-19",
+      "md_source_service_id": "2026-10-192026-11-01177071",
+      "prefix_stations": [
+        {
+          "stop_id": "35200",
+          "name": "Talavera de la Reina",
+          "arrival": "5:37:00",
+          "departure": "5:37:00"
+        },
+        {
+          "stop_id": "35109",
+          "name": "Montearagón",
+          "arrival": "5:46:00",
+          "departure": "5:47:00"
+        },
+        {
+          "stop_id": "35105",
+          "name": "Torrijos",
+          "arrival": "6:05:00",
+          "departure": "6:06:00"
+        },
+        {
+          "stop_id": "35005",
+          "name": "Illescas",
+          "arrival": "6:27:00",
+          "departure": "6:28:00"
+        },
+        {
+          "stop_id": "35002",
+          "name": "Fuenlabrada",
+          "arrival": "6:42:00",
+          "departure": "6:47:00"
+        }
+      ],
+      "onward_stations_excluded_to_avoid_duplicate": 2
+    },
+    {
+      "original_trip_id": "1094V17120C8b",
+      "date": "2026-10-23",
+      "train_number": "17120",
+      "original_route_id": "10T0097C8b",
+      "declared_terminus": "Cercedilla",
+      "md_source_trip_id": "1712012026-10-19",
+      "md_source_service_id": "2026-10-192026-11-01171201",
+      "prefix_stations": [
+        {
+          "stop_id": "12100",
+          "name": "Segovia",
+          "arrival": "7:43:00",
+          "departure": "7:43:00"
+        },
+        {
+          "stop_id": "12014",
+          "name": "Navas de Riofrío-La Losa",
+          "arrival": "7:51:00",
+          "departure": "7:51:00"
+        },
+        {
+          "stop_id": "12013",
+          "name": "Ortigosa del Monte",
+          "arrival": "7:55:00",
+          "departure": "7:55:00"
+        },
+        {
+          "stop_id": "12012",
+          "name": "Otero-Herreros",
+          "arrival": "8:00:00",
+          "departure": "8:00:00"
+        },
+        {
+          "stop_id": "12011",
+          "name": "Los Ángeles de San Rafael",
+          "arrival": "8:03:00",
+          "departure": "8:03:00"
+        },
+        {
+          "stop_id": "12010",
+          "name": "El Espinar",
+          "arrival": "8:09:00",
+          "departure": "8:09:00"
+        },
+        {
+          "stop_id": "12009",
+          "name": "San Rafael",
+          "arrival": "8:12:00",
+          "departure": "8:12:00"
+        },
+        {
+          "stop_id": "12008",
+          "name": "Gudillos",
+          "arrival": "8:16:00",
+          "departure": "8:16:00"
+        },
+        {
+          "stop_id": "12007",
+          "name": "Tablada",
+          "arrival": "8:20:00",
+          "departure": "8:20:00"
+        },
+        {
+          "stop_id": "12006",
+          "name": "Cercedilla",
+          "arrival": "8:28:00",
+          "departure": "8:31:00"
+        }
+      ],
+      "onward_stations_excluded_to_avoid_duplicate": 16
+    },
+    {
+      "original_trip_id": "1094V17128C8b",
+      "date": "2026-10-23",
+      "train_number": "17128",
+      "original_route_id": "10T0097C8b",
+      "declared_terminus": "Cercedilla",
+      "md_source_trip_id": "1712812026-10-19",
+      "md_source_service_id": "2026-10-192026-11-01171281",
+      "prefix_stations": [
+        {
+          "stop_id": "12100",
+          "name": "Segovia",
+          "arrival": "14:44:00",
+          "departure": "14:44:00"
+        },
+        {
+          "stop_id": "12014",
+          "name": "Navas de Riofrío-La Losa",
+          "arrival": "14:52:00",
+          "departure": "14:52:00"
+        },
+        {
+          "stop_id": "12013",
+          "name": "Ortigosa del Monte",
+          "arrival": "14:56:00",
+          "departure": "14:56:00"
+        },
+        {
+          "stop_id": "12012",
+          "name": "Otero-Herreros",
+          "arrival": "15:01:00",
+          "departure": "15:01:00"
+        },
+        {
+          "stop_id": "12011",
+          "name": "Los Ángeles de San Rafael",
+          "arrival": "15:04:00",
+          "departure": "15:04:00"
+        },
+        {
+          "stop_id": "12010",
+          "name": "El Espinar",
+          "arrival": "15:10:00",
+          "departure": "15:10:00"
+        },
+        {
+          "stop_id": "12009",
+          "name": "San Rafael",
+          "arrival": "15:13:00",
+          "departure": "15:13:00"
+        },
+        {
+          "stop_id": "12007",
+          "name": "Tablada",
+          "arrival": "15:20:00",
+          "departure": "15:20:00"
+        },
+        {
+          "stop_id": "12006",
+          "name": "Cercedilla",
+          "arrival": "15:28:00",
+          "departure": "15:31:00"
+        }
+      ],
+      "onward_stations_excluded_to_avoid_duplicate": 16
+    },
+    {
+      "original_trip_id": "1094V17130C8b",
+      "date": "2026-10-23",
+      "train_number": "17130",
+      "original_route_id": "10T0097C8b",
+      "declared_terminus": "Cercedilla",
+      "md_source_trip_id": "1713012026-10-18",
+      "md_source_service_id": "2026-10-182026-12-12171301",
+      "prefix_stations": [
+        {
+          "stop_id": "12100",
+          "name": "Segovia",
+          "arrival": "17:43:00",
+          "departure": "17:43:00"
+        },
+        {
+          "stop_id": "12014",
+          "name": "Navas de Riofrío-La Losa",
+          "arrival": "17:51:00",
+          "departure": "17:51:00"
+        },
+        {
+          "stop_id": "12013",
+          "name": "Ortigosa del Monte",
+          "arrival": "17:55:00",
+          "departure": "17:55:00"
+        },
+        {
+          "stop_id": "12012",
+          "name": "Otero-Herreros",
+          "arrival": "18:00:00",
+          "departure": "18:00:00"
+        },
+        {
+          "stop_id": "12011",
+          "name": "Los Ángeles de San Rafael",
+          "arrival": "18:03:00",
+          "departure": "18:03:00"
+        },
+        {
+          "stop_id": "12010",
+          "name": "El Espinar",
+          "arrival": "18:09:00",
+          "departure": "18:09:00"
+        },
+        {
+          "stop_id": "12009",
+          "name": "San Rafael",
+          "arrival": "18:12:00",
+          "departure": "18:12:00"
+        },
+        {
+          "stop_id": "12006",
+          "name": "Cercedilla",
+          "arrival": "18:26:00",
+          "departure": "18:29:00"
+        }
+      ],
+      "onward_stations_excluded_to_avoid_duplicate": 16
+    },
+    {
+      "original_trip_id": "1094V17134C8b",
+      "date": "2026-10-23",
+      "train_number": "17134",
+      "original_route_id": "10T0097C8b",
+      "declared_terminus": "Cercedilla",
+      "md_source_trip_id": "1713412026-10-19",
+      "md_source_service_id": "2026-10-192026-12-06171341",
+      "prefix_stations": [
+        {
+          "stop_id": "12100",
+          "name": "Segovia",
+          "arrival": "20:44:00",
+          "departure": "20:44:00"
+        },
+        {
+          "stop_id": "12014",
+          "name": "Navas de Riofrío-La Losa",
+          "arrival": "20:52:00",
+          "departure": "20:52:00"
+        },
+        {
+          "stop_id": "12013",
+          "name": "Ortigosa del Monte",
+          "arrival": "20:56:00",
+          "departure": "20:56:00"
+        },
+        {
+          "stop_id": "12012",
+          "name": "Otero-Herreros",
+          "arrival": "21:01:00",
+          "departure": "21:01:00"
+        },
+        {
+          "stop_id": "12011",
+          "name": "Los Ángeles de San Rafael",
+          "arrival": "21:04:00",
+          "departure": "21:04:00"
+        },
+        {
+          "stop_id": "12010",
+          "name": "El Espinar",
+          "arrival": "21:10:00",
+          "departure": "21:10:00"
+        },
+        {
+          "stop_id": "12009",
+          "name": "San Rafael",
+          "arrival": "21:13:00",
+          "departure": "21:13:00"
+        },
+        {
+          "stop_id": "12007",
+          "name": "Tablada",
+          "arrival": "21:20:00",
+          "departure": "21:20:00"
+        },
+        {
+          "stop_id": "12006",
+          "name": "Cercedilla",
+          "arrival": "21:28:00",
+          "departure": "21:28:00"
+        }
+      ],
+      "onward_stations_excluded_to_avoid_duplicate": 16
+    },
+    {
+      "original_trip_id": "1094V17707C5",
+      "date": "2026-10-23",
+      "train_number": "17707",
+      "original_route_id": "10T0035C5",
+      "declared_terminus": "Fuenlabrada",
+      "md_source_trip_id": "1770712026-10-19",
+      "md_source_service_id": "2026-10-192026-11-01177071",
+      "prefix_stations": [
+        {
+          "stop_id": "35200",
+          "name": "Talavera de la Reina",
+          "arrival": "5:37:00",
+          "departure": "5:37:00"
+        },
+        {
+          "stop_id": "35109",
+          "name": "Montearagón",
+          "arrival": "5:46:00",
+          "departure": "5:47:00"
+        },
+        {
+          "stop_id": "35105",
+          "name": "Torrijos",
+          "arrival": "6:05:00",
+          "departure": "6:06:00"
+        },
+        {
+          "stop_id": "35005",
+          "name": "Illescas",
+          "arrival": "6:27:00",
+          "departure": "6:28:00"
+        },
+        {
+          "stop_id": "35002",
+          "name": "Fuenlabrada",
+          "arrival": "6:42:00",
+          "departure": "6:47:00"
+        }
+      ],
+      "onward_stations_excluded_to_avoid_duplicate": 2
+    },
+    {
+      "original_trip_id": "1095S17122C8b",
+      "date": "2026-10-24",
+      "train_number": "17122",
+      "original_route_id": "10T0097C8b",
+      "declared_terminus": "Cercedilla",
+      "md_source_trip_id": "1712212026-10-18",
+      "md_source_service_id": "2026-10-182026-12-12171221",
+      "prefix_stations": [
+        {
+          "stop_id": "12100",
+          "name": "Segovia",
+          "arrival": "10:43:00",
+          "departure": "10:43:00"
+        },
+        {
+          "stop_id": "12014",
+          "name": "Navas de Riofrío-La Losa",
+          "arrival": "10:51:00",
+          "departure": "10:51:00"
+        },
+        {
+          "stop_id": "12013",
+          "name": "Ortigosa del Monte",
+          "arrival": "10:55:00",
+          "departure": "10:55:00"
+        },
+        {
+          "stop_id": "12012",
+          "name": "Otero-Herreros",
+          "arrival": "11:00:00",
+          "departure": "11:00:00"
+        },
+        {
+          "stop_id": "12011",
+          "name": "Los Ángeles de San Rafael",
+          "arrival": "11:03:00",
+          "departure": "11:03:00"
+        },
+        {
+          "stop_id": "12010",
+          "name": "El Espinar",
+          "arrival": "11:09:00",
+          "departure": "11:09:00"
+        },
+        {
+          "stop_id": "12009",
+          "name": "San Rafael",
+          "arrival": "11:12:00",
+          "departure": "11:12:00"
+        },
+        {
+          "stop_id": "12008",
+          "name": "Gudillos",
+          "arrival": "11:16:00",
+          "departure": "11:16:00"
+        },
+        {
+          "stop_id": "12007",
+          "name": "Tablada",
+          "arrival": "11:20:00",
+          "departure": "11:20:00"
+        },
+        {
+          "stop_id": "12006",
+          "name": "Cercedilla",
+          "arrival": "11:28:00",
+          "departure": "11:31:00"
+        }
+      ],
+      "onward_stations_excluded_to_avoid_duplicate": 16
+    },
+    {
+      "original_trip_id": "1095S17124C8b",
+      "date": "2026-10-24",
+      "train_number": "17124",
+      "original_route_id": "10T0097C8b",
+      "declared_terminus": "Cercedilla",
+      "md_source_trip_id": "1712412026-10-19",
+      "md_source_service_id": "2026-10-192026-11-01171241",
+      "prefix_stations": [
+        {
+          "stop_id": "12100",
+          "name": "Segovia",
+          "arrival": "12:45:00",
+          "departure": "12:45:00"
+        },
+        {
+          "stop_id": "12014",
+          "name": "Navas de Riofrío-La Losa",
+          "arrival": "12:53:00",
+          "departure": "12:53:00"
+        },
+        {
+          "stop_id": "12013",
+          "name": "Ortigosa del Monte",
+          "arrival": "12:57:00",
+          "departure": "12:57:00"
+        },
+        {
+          "stop_id": "12012",
+          "name": "Otero-Herreros",
+          "arrival": "13:02:00",
+          "departure": "13:02:00"
+        },
+        {
+          "stop_id": "12011",
+          "name": "Los Ángeles de San Rafael",
+          "arrival": "13:05:00",
+          "departure": "13:05:00"
+        },
+        {
+          "stop_id": "12010",
+          "name": "El Espinar",
+          "arrival": "13:11:00",
+          "departure": "13:11:00"
+        },
+        {
+          "stop_id": "12009",
+          "name": "San Rafael",
+          "arrival": "13:14:00",
+          "departure": "13:14:00"
+        },
+        {
+          "stop_id": "12006",
+          "name": "Cercedilla",
+          "arrival": "13:28:00",
+          "departure": "13:32:00"
+        }
+      ],
+      "onward_stations_excluded_to_avoid_duplicate": 16
+    },
+    {
+      "original_trip_id": "1095S17126C8b",
+      "date": "2026-10-24",
+      "train_number": "17126",
+      "original_route_id": "10T0097C8b",
+      "declared_terminus": "Cercedilla",
+      "md_source_trip_id": "1712612026-10-19",
+      "md_source_service_id": "2026-10-192026-11-01171261",
+      "prefix_stations": [
+        {
+          "stop_id": "12100",
+          "name": "Segovia",
+          "arrival": "14:43:00",
+          "departure": "14:43:00"
+        },
+        {
+          "stop_id": "12014",
+          "name": "Navas de Riofrío-La Losa",
+          "arrival": "14:51:00",
+          "departure": "14:51:00"
+        },
+        {
+          "stop_id": "12013",
+          "name": "Ortigosa del Monte",
+          "arrival": "14:55:00",
+          "departure": "14:55:00"
+        },
+        {
+          "stop_id": "12012",
+          "name": "Otero-Herreros",
+          "arrival": "15:00:00",
+          "departure": "15:00:00"
+        },
+        {
+          "stop_id": "12011",
+          "name": "Los Ángeles de San Rafael",
+          "arrival": "15:03:00",
+          "departure": "15:03:00"
+        },
+        {
+          "stop_id": "12010",
+          "name": "El Espinar",
+          "arrival": "15:09:00",
+          "departure": "15:09:00"
+        },
+        {
+          "stop_id": "12009",
+          "name": "San Rafael",
+          "arrival": "15:12:00",
+          "departure": "15:12:00"
+        },
+        {
+          "stop_id": "12007",
+          "name": "Tablada",
+          "arrival": "15:19:00",
+          "departure": "15:19:00"
+        },
+        {
+          "stop_id": "12006",
+          "name": "Cercedilla",
+          "arrival": "15:27:00",
+          "departure": "15:31:00"
+        }
+      ],
+      "onward_stations_excluded_to_avoid_duplicate": 16
+    },
+    {
+      "original_trip_id": "1095S17132C8b",
+      "date": "2026-10-24",
+      "train_number": "17132",
+      "original_route_id": "10T0097C8b",
+      "declared_terminus": "Cercedilla",
+      "md_source_trip_id": "1713212026-10-19",
+      "md_source_service_id": "2026-10-192026-11-01171321",
+      "prefix_stations": [
+        {
+          "stop_id": "12100",
+          "name": "Segovia",
+          "arrival": "18:45:00",
+          "departure": "18:45:00"
+        },
+        {
+          "stop_id": "12014",
+          "name": "Navas de Riofrío-La Losa",
+          "arrival": "18:53:00",
+          "departure": "18:53:00"
+        },
+        {
+          "stop_id": "12013",
+          "name": "Ortigosa del Monte",
+          "arrival": "18:57:00",
+          "departure": "18:57:00"
+        },
+        {
+          "stop_id": "12012",
+          "name": "Otero-Herreros",
+          "arrival": "19:02:00",
+          "departure": "19:02:00"
+        },
+        {
+          "stop_id": "12011",
+          "name": "Los Ángeles de San Rafael",
+          "arrival": "19:05:00",
+          "departure": "19:05:00"
+        },
+        {
+          "stop_id": "12010",
+          "name": "El Espinar",
+          "arrival": "19:11:00",
+          "departure": "19:11:00"
+        },
+        {
+          "stop_id": "12009",
+          "name": "San Rafael",
+          "arrival": "19:14:00",
+          "departure": "19:14:00"
+        },
+        {
+          "stop_id": "12006",
+          "name": "Cercedilla",
+          "arrival": "19:28:00",
+          "departure": "19:31:00"
+        }
+      ],
+      "onward_stations_excluded_to_avoid_duplicate": 16
+    },
+    {
+      "original_trip_id": "1095S17136C8b",
+      "date": "2026-10-24",
+      "train_number": "17136",
+      "original_route_id": "10T0097C8b",
+      "declared_terminus": "Cercedilla",
+      "md_source_trip_id": "1713612026-10-19",
+      "md_source_service_id": "2026-10-192026-11-01171361",
+      "prefix_stations": [
+        {
+          "stop_id": "12100",
+          "name": "Segovia",
+          "arrival": "21:24:00",
+          "departure": "21:24:00"
+        },
+        {
+          "stop_id": "12014",
+          "name": "Navas de Riofrío-La Losa",
+          "arrival": "21:32:00",
+          "departure": "21:32:00"
+        },
+        {
+          "stop_id": "12013",
+          "name": "Ortigosa del Monte",
+          "arrival": "21:36:00",
+          "departure": "21:36:00"
+        },
+        {
+          "stop_id": "12012",
+          "name": "Otero-Herreros",
+          "arrival": "21:41:00",
+          "departure": "21:41:00"
+        },
+        {
+          "stop_id": "12011",
+          "name": "Los Ángeles de San Rafael",
+          "arrival": "21:44:00",
+          "departure": "21:44:00"
+        },
+        {
+          "stop_id": "12010",
+          "name": "El Espinar",
+          "arrival": "21:50:00",
+          "departure": "21:50:00"
+        },
+        {
+          "stop_id": "12009",
+          "name": "San Rafael",
+          "arrival": "21:53:00",
+          "departure": "21:53:00"
+        },
+        {
+          "stop_id": "12007",
+          "name": "Tablada",
+          "arrival": "22:00:00",
+          "departure": "22:00:00"
+        },
+        {
+          "stop_id": "12006",
+          "name": "Cercedilla",
+          "arrival": "22:08:00",
+          "departure": "22:08:00"
+        }
+      ],
+      "onward_stations_excluded_to_avoid_duplicate": 0
+    },
+    {
+      "original_trip_id": "1096D17122C8b",
+      "date": "2026-10-25",
+      "train_number": "17122",
+      "original_route_id": "10T0097C8b",
+      "declared_terminus": "Cercedilla",
+      "md_source_trip_id": "1712212026-10-18",
+      "md_source_service_id": "2026-10-182026-12-12171221",
+      "prefix_stations": [
+        {
+          "stop_id": "12100",
+          "name": "Segovia",
+          "arrival": "10:43:00",
+          "departure": "10:43:00"
+        },
+        {
+          "stop_id": "12014",
+          "name": "Navas de Riofrío-La Losa",
+          "arrival": "10:51:00",
+          "departure": "10:51:00"
+        },
+        {
+          "stop_id": "12013",
+          "name": "Ortigosa del Monte",
+          "arrival": "10:55:00",
+          "departure": "10:55:00"
+        },
+        {
+          "stop_id": "12012",
+          "name": "Otero-Herreros",
+          "arrival": "11:00:00",
+          "departure": "11:00:00"
+        },
+        {
+          "stop_id": "12011",
+          "name": "Los Ángeles de San Rafael",
+          "arrival": "11:03:00",
+          "departure": "11:03:00"
+        },
+        {
+          "stop_id": "12010",
+          "name": "El Espinar",
+          "arrival": "11:09:00",
+          "departure": "11:09:00"
+        },
+        {
+          "stop_id": "12009",
+          "name": "San Rafael",
+          "arrival": "11:12:00",
+          "departure": "11:12:00"
+        },
+        {
+          "stop_id": "12008",
+          "name": "Gudillos",
+          "arrival": "11:16:00",
+          "departure": "11:16:00"
+        },
+        {
+          "stop_id": "12007",
+          "name": "Tablada",
+          "arrival": "11:20:00",
+          "departure": "11:20:00"
+        },
+        {
+          "stop_id": "12006",
+          "name": "Cercedilla",
+          "arrival": "11:28:00",
+          "departure": "11:31:00"
+        }
+      ],
+      "onward_stations_excluded_to_avoid_duplicate": 16
+    },
+    {
+      "original_trip_id": "1096D17124C8b",
+      "date": "2026-10-25",
+      "train_number": "17124",
+      "original_route_id": "10T0097C8b",
+      "declared_terminus": "Cercedilla",
+      "md_source_trip_id": "1712412026-10-19",
+      "md_source_service_id": "2026-10-192026-11-01171241",
+      "prefix_stations": [
+        {
+          "stop_id": "12100",
+          "name": "Segovia",
+          "arrival": "12:45:00",
+          "departure": "12:45:00"
+        },
+        {
+          "stop_id": "12014",
+          "name": "Navas de Riofrío-La Losa",
+          "arrival": "12:53:00",
+          "departure": "12:53:00"
+        },
+        {
+          "stop_id": "12013",
+          "name": "Ortigosa del Monte",
+          "arrival": "12:57:00",
+          "departure": "12:57:00"
+        },
+        {
+          "stop_id": "12012",
+          "name": "Otero-Herreros",
+          "arrival": "13:02:00",
+          "departure": "13:02:00"
+        },
+        {
+          "stop_id": "12011",
+          "name": "Los Ángeles de San Rafael",
+          "arrival": "13:05:00",
+          "departure": "13:05:00"
+        },
+        {
+          "stop_id": "12010",
+          "name": "El Espinar",
+          "arrival": "13:11:00",
+          "departure": "13:11:00"
+        },
+        {
+          "stop_id": "12009",
+          "name": "San Rafael",
+          "arrival": "13:14:00",
+          "departure": "13:14:00"
+        },
+        {
+          "stop_id": "12006",
+          "name": "Cercedilla",
+          "arrival": "13:28:00",
+          "departure": "13:32:00"
+        }
+      ],
+      "onward_stations_excluded_to_avoid_duplicate": 16
+    },
+    {
+      "original_trip_id": "1096D17126C8b",
+      "date": "2026-10-25",
+      "train_number": "17126",
+      "original_route_id": "10T0097C8b",
+      "declared_terminus": "Cercedilla",
+      "md_source_trip_id": "1712612026-10-19",
+      "md_source_service_id": "2026-10-192026-11-01171261",
+      "prefix_stations": [
+        {
+          "stop_id": "12100",
+          "name": "Segovia",
+          "arrival": "14:43:00",
+          "departure": "14:43:00"
+        },
+        {
+          "stop_id": "12014",
+          "name": "Navas de Riofrío-La Losa",
+          "arrival": "14:51:00",
+          "departure": "14:51:00"
+        },
+        {
+          "stop_id": "12013",
+          "name": "Ortigosa del Monte",
+          "arrival": "14:55:00",
+          "departure": "14:55:00"
+        },
+        {
+          "stop_id": "12012",
+          "name": "Otero-Herreros",
+          "arrival": "15:00:00",
+          "departure": "15:00:00"
+        },
+        {
+          "stop_id": "12011",
+          "name": "Los Ángeles de San Rafael",
+          "arrival": "15:03:00",
+          "departure": "15:03:00"
+        },
+        {
+          "stop_id": "12010",
+          "name": "El Espinar",
+          "arrival": "15:09:00",
+          "departure": "15:09:00"
+        },
+        {
+          "stop_id": "12009",
+          "name": "San Rafael",
+          "arrival": "15:12:00",
+          "departure": "15:12:00"
+        },
+        {
+          "stop_id": "12007",
+          "name": "Tablada",
+          "arrival": "15:19:00",
+          "departure": "15:19:00"
+        },
+        {
+          "stop_id": "12006",
+          "name": "Cercedilla",
+          "arrival": "15:27:00",
+          "departure": "15:31:00"
+        }
+      ],
+      "onward_stations_excluded_to_avoid_duplicate": 16
+    },
+    {
+      "original_trip_id": "1096D17132C8b",
+      "date": "2026-10-25",
+      "train_number": "17132",
+      "original_route_id": "10T0097C8b",
+      "declared_terminus": "Cercedilla",
+      "md_source_trip_id": "1713212026-10-19",
+      "md_source_service_id": "2026-10-192026-11-01171321",
+      "prefix_stations": [
+        {
+          "stop_id": "12100",
+          "name": "Segovia",
+          "arrival": "18:45:00",
+          "departure": "18:45:00"
+        },
+        {
+          "stop_id": "12014",
+          "name": "Navas de Riofrío-La Losa",
+          "arrival": "18:53:00",
+          "departure": "18:53:00"
+        },
+        {
+          "stop_id": "12013",
+          "name": "Ortigosa del Monte",
+          "arrival": "18:57:00",
+          "departure": "18:57:00"
+        },
+        {
+          "stop_id": "12012",
+          "name": "Otero-Herreros",
+          "arrival": "19:02:00",
+          "departure": "19:02:00"
+        },
+        {
+          "stop_id": "12011",
+          "name": "Los Ángeles de San Rafael",
+          "arrival": "19:05:00",
+          "departure": "19:05:00"
+        },
+        {
+          "stop_id": "12010",
+          "name": "El Espinar",
+          "arrival": "19:11:00",
+          "departure": "19:11:00"
+        },
+        {
+          "stop_id": "12009",
+          "name": "San Rafael",
+          "arrival": "19:14:00",
+          "departure": "19:14:00"
+        },
+        {
+          "stop_id": "12006",
+          "name": "Cercedilla",
+          "arrival": "19:28:00",
+          "departure": "19:31:00"
+        }
+      ],
+      "onward_stations_excluded_to_avoid_duplicate": 16
+    },
+    {
+      "original_trip_id": "1096D17136C8b",
+      "date": "2026-10-25",
+      "train_number": "17136",
+      "original_route_id": "10T0097C8b",
+      "declared_terminus": "Cercedilla",
+      "md_source_trip_id": "1713612026-10-19",
+      "md_source_service_id": "2026-10-192026-11-01171361",
+      "prefix_stations": [
+        {
+          "stop_id": "12100",
+          "name": "Segovia",
+          "arrival": "21:24:00",
+          "departure": "21:24:00"
+        },
+        {
+          "stop_id": "12014",
+          "name": "Navas de Riofrío-La Losa",
+          "arrival": "21:32:00",
+          "departure": "21:32:00"
+        },
+        {
+          "stop_id": "12013",
+          "name": "Ortigosa del Monte",
+          "arrival": "21:36:00",
+          "departure": "21:36:00"
+        },
+        {
+          "stop_id": "12012",
+          "name": "Otero-Herreros",
+          "arrival": "21:41:00",
+          "departure": "21:41:00"
+        },
+        {
+          "stop_id": "12011",
+          "name": "Los Ángeles de San Rafael",
+          "arrival": "21:44:00",
+          "departure": "21:44:00"
+        },
+        {
+          "stop_id": "12010",
+          "name": "El Espinar",
+          "arrival": "21:50:00",
+          "departure": "21:50:00"
+        },
+        {
+          "stop_id": "12009",
+          "name": "San Rafael",
+          "arrival": "21:53:00",
+          "departure": "21:53:00"
+        },
+        {
+          "stop_id": "12007",
+          "name": "Tablada",
+          "arrival": "22:00:00",
+          "departure": "22:00:00"
+        },
+        {
+          "stop_id": "12006",
+          "name": "Cercedilla",
+          "arrival": "22:08:00",
+          "departure": "22:08:00"
+        }
+      ],
+      "onward_stations_excluded_to_avoid_duplicate": 0
+    }
+  ]
+}

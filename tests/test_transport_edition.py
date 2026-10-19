@@ -26,7 +26,7 @@ class TransportEditionTests(unittest.TestCase):
     def test_active_revision_reproduces_four_dimension_mean_ranks_and_missingness(self):
         self.assertEqual(self.base['configuracion']['metodologia_version'], 'ivp-1.0.0')
         self.assertEqual(self.data['configuracion']['metodologia_version'], 'ivp-2.0.0-transporte-programado')
-        self.assertEqual(self.data['transporte_oferta'].puntuacion_transporte.notna().sum(), 117)
+        self.assertEqual(self.data['transporte_oferta'].puntuacion_transporte.notna().sum(), 154)
         for profile in ('VC', 'VU'):
             frame = build_explorer_frame(self.data, profile)
             cols = ['puntuacion_' + d for d in ('sanidad', 'educacion', 'transporte', 'vivienda')]
@@ -42,7 +42,8 @@ class TransportEditionTests(unittest.TestCase):
     def test_partial_counts_never_fall_back_to_stop_distance_or_redistribute_weights(self):
         frame = build_explorer_frame(self.data, 'VU')
         missing = frame.puntuacion_transporte.isna()
-        self.assertEqual(missing.sum(), 38)
+        self.assertEqual(missing.sum(), 1)
+        self.assertEqual(frame.loc[missing, 'codigo_ine'].tolist(), ['28130'])
         self.assertTrue(frame.loc[missing, 'ivp_general'].isna().all())
         self.assertTrue(frame.loc[missing, 'ivp_personalizado'].isna().all())
         self.assertTrue(frame.loc[missing, 'distancia_transporte_m'].notna().all())
@@ -50,14 +51,21 @@ class TransportEditionTests(unittest.TestCase):
         self.assertTrue(without.ivp_personalizado.notna().all())
         self.assertTrue(without.alcance_personalizado.str.startswith('parcial').all())
 
-    def test_humanes_c5_remains_unscored_when_another_variant_has_orphan_trips(self):
+    def test_humanes_c5_is_scored_only_after_all_orphans_have_source_backed_routes(self):
         row = self.data['transporte_oferta'].set_index('codigo_ine').loc['28073']
-        self.assertTrue(pd.isna(row.puntuacion_transporte))
-        self.assertIn('C5', row.nota_cobertura)
-        self.assertGreater(row.expediciones_dia, 0)  # Partial evidence is retained.
+        self.assertTrue(pd.notna(row.puntuacion_transporte))
+        audit = json.loads((ROOT / FOLDER / 'renfe_prefix_repairs.json').read_text())
+        self.assertEqual(audit['repaired_original_trips'], 31)
+        self.assertEqual(audit['dated_repairs'], 31)
+        c5 = [r for r in audit['records'] if r['train_number'] == '17707']
+        self.assertEqual(len(c5), 5)
+        for record in c5:
+            self.assertEqual(record['declared_terminus'], 'Fuenlabrada')
+            self.assertNotIn('Humanes', [s['name'] for s in record['prefix_stations']])
+            self.assertGreater(record['onward_stations_excluded_to_avoid_duplicate'], 0)
         for profile in ('VC', 'VU'):
             ficha = build_explorer_frame(self.data, profile).set_index('codigo_ine').loc['28073']
-            self.assertTrue(pd.isna(ficha.ivp_general))
+            self.assertTrue(pd.notna(ficha.ivp_general))
 
     def test_filters_leave_normalization_and_scores_unchanged(self):
         full = build_explorer_frame(self.data, 'VC')

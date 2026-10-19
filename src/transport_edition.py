@@ -8,6 +8,7 @@ import pandas as pd
 
 from src.integration_common import IntegrationError
 from src.transport_offer_model import VERSION, INDICATOR, METHODS, score_transport_offer
+from src.transport_completion import verify_completion_evidence
 
 FOLDER = 'data/processed/transporte_oferta'
 MANIFEST = FOLDER + '/edition.json'
@@ -84,6 +85,7 @@ def verify_transport_calculation(data, folder):
     """Check daily evidence, normalized components, all IVP rows and ranks."""
     offer = json.loads((folder / 'offer_daily.json').read_text(encoding='utf-8'))
     gaps = json.loads((folder / 'coverage_decisions.json').read_text(encoding='utf-8'))
+    verify_completion_evidence(folder, offer)
     dates = [date.fromisoformat(d) for d in offer['dates']]
     if len(dates) != 7 or dates[0].weekday() != 0 or dates != [dates[0] + timedelta(days=i) for i in range(7)]:
         raise IntegrationError('La semana de transporte no es consecutiva de lunes a domingo.')
