@@ -23,7 +23,7 @@ CODES = ["28001", "28120", "28052"]  # La Acebeda, Rascafría y Chinchón.
 class ComparisonDataTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.data = load_app_data(ROOT)
+        cls.data = load_app_data(ROOT, include_transport_revision=False)
         cls.services = load_service_tables(ROOT)
 
     def build(self, codes=CODES, profile="VU", explorer_frame=None):

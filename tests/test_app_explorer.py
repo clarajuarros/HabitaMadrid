@@ -22,7 +22,9 @@ ROOT = Path(__file__).resolve().parents[1]
 class ExplorerRealDataTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.data = load_app_data(ROOT)
+        # These regression cases describe the sealed phase-six edition. The
+        # active transport revision has its own real-data integration tests.
+        cls.data = load_app_data(ROOT, include_transport_revision=False)
         cls.frames = {profile: build_explorer_frame(cls.data, profile) for profile in ("VC", "VU")}
 
     def test_complete_eligible_universe_and_schema(self):

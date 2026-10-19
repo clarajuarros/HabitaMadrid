@@ -62,7 +62,7 @@ class SourceContractTests(unittest.TestCase):
 
 class RealHousingDataTests(unittest.TestCase):
  @classmethod
- def setUpClass(cls):cls.base=load_app_data(ROOT);cls.new=load_expansion(ROOT)
+ def setUpClass(cls):cls.base=load_app_data(ROOT,include_transport_revision=False);cls.new=load_expansion(ROOT)
  def test_full_ine_universe_no_code_loss_or_duplicates(self):
   expected=set(self.base['municipios'].codigo_ine)
   self.assertEqual(len(expected),155)
@@ -124,7 +124,9 @@ class HousingUiTests(unittest.TestCase):
  def test_home_stays_original_and_public_sources_hide_the_internal_proposal(self):
   app=AppTest.from_file(str(ROOT/'app.py'),default_timeout=60).run()
   self.assertFalse(app.exception)
-  self.assertEqual([b.key for b in app.button if b.key and b.key.startswith('top5_')],['top5_28128','top5_28055','top5_28120','top5_28180','top5_28060'])
+  active=load_app_data(ROOT)['ivp_general']
+  expected=active.loc[active.perfil_vivienda.eq('VU')&active.valor_indice.notna()].sort_values(['posicion','municipio','codigo_ine']).head(5).codigo_ine
+  self.assertEqual([b.key for b in app.button if b.key and b.key.startswith('top5_')],['top5_'+c for c in expected])
   app.button(key='home_methodology').click().run();self.assertFalse(app.exception)
   self.assertFalse(any('propuesta ampliada' in e.label for e in app.expander))
   self.assertFalse(any(e.key=='housing_proposal_csv' for e in app.get('download_button')))
