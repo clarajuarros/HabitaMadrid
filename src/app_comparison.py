@@ -1,7 +1,7 @@
 """Comparaciones de 2–3 municipios sobre las tablas preparadas, sin imputación.
 
-Los conteos son locales; las tres distancias conservan las observaciones
-seleccionadas por el IVP, cuyos destinos pueden estar en otro municipio. Este
+Los conteos son locales; las distancias y la oferta programada conservan las
+observaciones de su edición, cuyos destinos pueden estar en otro municipio. Este
 adaptador no modifica índices, referencias, pesos, fuentes o archivos.
 """
 from __future__ import annotations
@@ -18,6 +18,7 @@ import plotly.graph_objects as go
 
 from src.app_charts import BACKGROUND, FONT, GREEN, GRID, MUTED
 from src.app_data import DIMENSIONS, PROFILES, municipal_view
+from src.app_explorer import TRANSPORT_OFFER_FIELDS, transport_offer_rows, uses_transport_offer
 from src.ivp_calculation import normalize_weights
 
 
@@ -44,6 +45,7 @@ def _one(frame, label):
 
 
 def _column_metadata(data, profile):
+    scheduled_transport = uses_transport_offer(data)
     def source_period(source):
         dates = data["fuentes"].loc[data["fuentes"]["fuente"].eq(source), "fecha_descarga_utc"]
         return "Descarga " + str(dates.iloc[0])[:10] if len(dates) else "Fecha de vigencia no publicada"
@@ -69,13 +71,36 @@ def _column_metadata(data, profile):
     for dimension in DIMENSIONS:
         columns[f"puntuacion_{dimension}"] = (LABELS[dimension], "puntos / 100", "Fuentes de fechas distintas", "Normalización min–max de la fase 6")
     for dimension in DIMENSIONS[:3]:
-        indicator = data["configuracion"]["indicadores_comunes"][dimension]
-        observations = data["observaciones"].loc[data["observaciones"]["indicador_id"].eq(indicator)]
+        auxiliary = dimension == "transporte" and scheduled_transport
+        indicator = "distancia_parada_bus_parcial_m" if auxiliary else data["configuracion"]["indicadores_comunes"][dimension]
+        table = data["contexto"] if auxiliary else data["observaciones"]
+        observations = table.loc[table["indicador_id"].eq(indicator)]
         periods = sorted(set(observations["periodo"].dropna().astype(str)))
         sources = sorted({source for value in observations["fuentes_json"] for source in json.loads(value)})
         columns[f"distancia_{dimension}_m"] = (
-            f"Distancia IVP · {LABELS[dimension].lower()}", "m en línea recta", ", ".join(periods), ", ".join(sources),
+            "Parada interurbana más próxima · contexto" if auxiliary else f"Distancia IVP · {LABELS[dimension].lower()}", "m en línea recta", ", ".join(periods), ", ".join(sources),
         )
+    if scheduled_transport:
+        offer = data["transporte_oferta"]
+        start, end = str(offer["inicio_semana"].iloc[0]), str(offer["fin_semana"].iloc[0])
+        period = "Semana " + start + " a " + end
+        source = "Horarios GTFS documentados · oferta programada y cobertura contrastada"
+        for field, label, unit in (
+            ("expediciones_dia", "Expediciones intermunicipales programadas", "media / día"),
+            ("destinos_directos_dia", "Destinos municipales directos", "media / día"),
+            ("expediciones_laborable", "Expediciones de lunes a viernes", "media / día"),
+            ("expediciones_sabado", "Expediciones del sábado", "expediciones / día"),
+            ("expediciones_domingo", "Expediciones del domingo", "expediciones / día"),
+            ("estado_cobertura", "Estado de cobertura del horario", ""),
+            ("nota_cobertura", "Detalle de la cobertura", ""),
+            ("inicio_semana", "Inicio de la semana de referencia", "fecha"),
+            ("fin_semana", "Fin de la semana de referencia", "fecha"),
+            ("puntuacion_frecuencia", "Oferta de expediciones · puntuación", "puntos / 100"),
+            ("puntuacion_conectividad", "Conexiones directas · puntuación", "puntos / 100"),
+        ):
+            columns[field] = (label, unit, period, source)
+        columns["puntuacion_transporte"] = ("Transporte · oferta y conectividad programada", "puntos / 100", period,
+                                            "Media de las puntuaciones de expediciones y destinos directos, con la misma importancia")
     return {key: {"etiqueta": label, "unidad": unit, "periodo": period, "fuente": source,
                   **({"perfil_vivienda": profile} if key in {"alquiler_m2_mes", "alquiler_mes", "testigos_vivienda", "puntuacion_vivienda"} else {})}
             for key, (label, unit, period, source) in columns.items()}
@@ -112,6 +137,8 @@ def build_comparison(data, services, codes, profile, explorer_frame=None):
     else:
         personalized = pd.Series(dtype=float)
     counts = {kind: services[kind].groupby("codigo_ine").size() for kind in ("sanidad", "educacion", "transporte")}
+    scheduled_transport = uses_transport_offer(data)
+    offers = transport_offer_rows(data, eligible) if scheduled_transport else None
     rows = []
     for code in codes:
         view = municipal_view(data, code, profile)
@@ -128,14 +155,19 @@ def build_comparison(data, services, codes, profile, explorer_frame=None):
                     "centros_educativos_locales_alta": int(counts["educacion"].get(code, 0)),
                     "paradas_bus_locales": int(counts["transporte"].get(code, 0))})
         for dimension in DIMENSIONS[:3]:
-            indicator = data["configuracion"]["indicadores_comunes"][dimension]
-            observation = _one(view["observaciones"].loc[view["observaciones"]["indicador_id"].eq(indicator)], "observaciones del IVP")
+            auxiliary = dimension == "transporte" and scheduled_transport
+            indicator = "distancia_parada_bus_parcial_m" if auxiliary else data["configuracion"]["indicadores_comunes"][dimension]
+            table = view["contexto"] if auxiliary else view["observaciones"]
+            observation = _one(table.loc[table["indicador_id"].eq(indicator)], "distancia auxiliar" if auxiliary else "observaciones del IVP")
             row[f"distancia_{dimension}_m"] = observation.get("valor", np.nan)
+        if scheduled_transport:
+            row.update({field: offers.loc[code, field] for field in TRANSPORT_OFFER_FIELDS})
         for field in ("crecimiento_2020_2025_pct", "renta_disponible_per_capita_2023"):
             row[field] = view["contexto_demografico"].get(field, np.nan)
         rows.append(row)
     result = pd.DataFrame(rows)
     result.attrs = {
+        "transporte_oferta_programada": scheduled_transport,
         "perfil_vivienda": profile, "columnas": _column_metadata(data, profile),
         "normalizacion": "Min–max de la fase 6; referencias fijas sobre los 155 municipios, sin recalcular tras seleccionar.",
         "limitaciones": [
@@ -149,6 +181,11 @@ def build_comparison(data, services, codes, profile, explorer_frame=None):
             "La fecha de descarga de un catálogo no acredita su vigencia, un horario o una disponibilidad actuales.",
         ],
     }
+    if scheduled_transport:
+        result.attrs["limitaciones"][0] = "Índice orientativo propio de acceso a servicios, transporte programado y coste; no mide calidad de vida oficial."
+        result.attrs["limitaciones"][1] = "Sanidad y educación utilizan distancias rectas desde el núcleo principal, no tiempos de viaje. La distancia a una parada queda como contexto y no puntúa transporte."
+        result.attrs["limitaciones"][4] = "Transporte usa expediciones intermunicipales y destinos municipales directos de media diaria en la semana del 19 al 25 de octubre de 2026. Son conexiones directas, sin transbordos ni datos en tiempo real. Las carencias de cobertura se conservan y pueden impedir la puntuación."
+        result.attrs["normalizacion"] = "Referencias fijas de esta edición sobre los 155 municipios. Transporte combina las puntuaciones de expediciones y destinos directos con la misma importancia; seleccionar municipios no recalcula las referencias."
     return result
 
 

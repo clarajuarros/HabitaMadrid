@@ -180,7 +180,7 @@ def report_payload(root,data,frame,mode,codes,living,url,state):
         row=index.loc[code];r={k:(float(row[k]) if finite(row.get(k)) else None) for k in ('poblacion','alquiler_m2_mes')}
         r.update(codigo_ine=code,municipio=row.municipio,active_score=float(row['ivp_personalizado' if mode=='personalizado' else 'ivp_general']) if finite(row['ivp_personalizado' if mode=='personalizado' else 'ivp_general']) else None,explanation=describe(row,frame,mode),sources=observation_details(data,code,frame.attrs['perfil_vivienda']),fibra_pct=living.get('connectivity',{}).get('municipalities',{}).get(code,{}).get('fibra_pct'))
         records.append(r)
-    return {'mode':mode,'profile':frame.attrs['perfil_vivienda'],'weights':weights,'records':records,'share_url':url,'filters_text':_filters_text(state)}
+    return {'mode':mode,'profile':frame.attrs['perfil_vivienda'],'weights':weights,'records':records,'share_url':url,'filters_text':_filters_text(state),'transporte_oferta_programada':frame.attrs.get('transporte_oferta_programada',False),'metodologia_version':frame.attrs.get('metodologia_version')}
 
 
 @st.cache_data(show_spinner=False,max_entries=16)

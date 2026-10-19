@@ -208,6 +208,10 @@ def _read_csv(path: Path) -> pd.DataFrame:
         "poblacion_2024", "poblacion_2025", "crecimiento_2020_2025_pct",
         "renta_disponible_per_capita_2023", "saldo_migratorio_externo_cm_2024",
         "saldo_migratorio_externo_cm_2024_por1000",
+        "expediciones_dia", "destinos_directos_dia", "expediciones_laborable",
+        "expediciones_sabado", "expediciones_domingo", "destinos_laborable",
+        "destinos_sabado", "destinos_domingo", "puntuacion_frecuencia",
+        "puntuacion_conectividad", "puntuacion_transporte",
     }
     for column in numbers.intersection(table.columns):
         nonempty = table[column].ne("")
@@ -280,7 +284,8 @@ def _validate_model(data: dict) -> None:
     if set(data["seleccion"]["indicador_id"]) != wanted:
         raise AppDataError("El catálogo seleccionado no coincide con la configuración")
     for row in data["seleccion"].to_dict("records"):
-        expected_unit = "EUR/m²/mes" if row["dimension"] == "vivienda" else "m"
+        expected_unit = ("EUR/m²/mes" if row["dimension"] == "vivienda" else
+                         "puntos/100" if row["indicador_id"] == "oferta_conectividad_programada" else "m")
         if row["unidad"] != expected_unit:
             raise AppDataError(f"Unidad incompatible: {row['indicador_id']}")
         try:
@@ -313,7 +318,7 @@ def _validate_model(data: dict) -> None:
         raise AppDataError("La configuración debe distinguir las tipologías VC y VU")
 
 
-def load_app_data(root: str | Path) -> dict:
+def load_app_data(root: str | Path, *, include_transport_revision=True) -> dict:
     """Load an integrity-checked snapshot, preserving missing measures as NaN."""
     root = Path(root).resolve()
     validations, integrity = _verify_snapshot(root)
@@ -337,6 +342,10 @@ def load_app_data(root: str | Path) -> dict:
     }])
     data["fuentes"] = pd.concat([data["fuentes"], directory_source], ignore_index=True)
     data["validaciones"], data["integridad"], data["root"] = validations, integrity, root
+    if include_transport_revision:
+        from src.transport_edition import apply_transport_edition
+        data = apply_transport_edition(data, root, _read_csv)
+        _validate_model(data)
     return data
 
 
@@ -374,6 +383,7 @@ def municipal_view(data: dict, codigo_ine: str, profile: str) -> dict:
         "sensibilidad": rows("sensibilidad").iloc[0].to_dict(),
         "escenarios": rows("escenarios"),
         "perfil_vivienda": profile,
+        "transporte_oferta": (rows("transporte_oferta").iloc[0].to_dict() if "transporte_oferta" in data else None),
     }
 
 

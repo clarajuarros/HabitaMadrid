@@ -30,6 +30,28 @@ ACTIVE_COLUMNS = {
 }
 FULL_SCOPE = "cuatro_dimensiones"
 PARTIAL_SCOPE = "parcial_dimensiones_seleccionadas"
+TRANSPORT_OFFER_ID = "oferta_conectividad_programada"
+TRANSPORT_OFFER_FIELDS = (
+    "expediciones_dia", "destinos_directos_dia", "expediciones_laborable",
+    "expediciones_sabado", "expediciones_domingo", "estado_cobertura",
+    "nota_cobertura", "inicio_semana", "fin_semana", "puntuacion_frecuencia",
+    "puntuacion_conectividad",
+)
+
+
+def uses_transport_offer(data: dict) -> bool:
+    """Keep the published distance edition separate from the candidate offer edition."""
+    return data.get("configuracion", {}).get("indicadores_comunes", {}).get("transporte") == TRANSPORT_OFFER_ID
+
+
+def transport_offer_rows(data: dict, codes) -> pd.DataFrame:
+    """Align the optional prepared offer without imputing coverage or scores."""
+    table = data.get("transporte_oferta")
+    if not isinstance(table, pd.DataFrame) or not {"codigo_ine", *TRANSPORT_OFFER_FIELDS}.issubset(table):
+        raise IntegrationError("La edición de transporte programado necesita su tabla de oferta y cobertura.")
+    if table["codigo_ine"].duplicated().any() or set(table["codigo_ine"]) != set(codes):
+        raise IntegrationError("La oferta de transporte no coincide con el universo municipal.")
+    return table.set_index("codigo_ine").reindex(list(codes)).copy()
 
 
 def _plain(value: str) -> str:
@@ -138,12 +160,29 @@ def build_explorer_frame(data: dict, profile: str, weights=None) -> pd.DataFrame
         "sanidad": "distancia_sanidad_m", "educacion": "distancia_educacion_m",
         "transporte": "distancia_transporte_m", "vivienda": "alquiler_m2_mes",
     }
+    scheduled_transport = uses_transport_offer(data)
+    if scheduled_transport:
+        # The new observation is a score, never a distance in metres. Keep the
+        # former stop-distance filter as independent auxiliary context.
+        column_by_dimension["transporte"] = TRANSPORT_OFFER_ID
     for dimension, column in column_by_dimension.items():
         selected = observations.loc[observations["indicador_id"].eq(identifiers[dimension])]
         if selected["codigo_ine"].duplicated().any() or set(selected["codigo_ine"]) != set(codes):
             raise IntegrationError(f"Observaciones incompletas o duplicadas: {dimension}.")
         values = selected.set_index("codigo_ine")["valor"].reindex(codes)
         frame[column] = _numeric(values, column)
+    if scheduled_transport:
+        context = data.get("contexto", pd.DataFrame())
+        if {"codigo_ine", "indicador_id", "valor"}.issubset(context):
+            stop_distance = context.loc[context["indicador_id"].eq("distancia_parada_bus_parcial_m")]
+            if stop_distance["codigo_ine"].duplicated().any():
+                raise IntegrationError("Distancias auxiliares de paradas duplicadas.")
+            frame["distancia_transporte_m"] = _numeric(stop_distance.set_index("codigo_ine")["valor"].reindex(codes), "distancia_transporte_m")
+        else:
+            frame["distancia_transporte_m"] = np.nan
+        offer = transport_offer_rows(data, codes)
+        for field in TRANSPORT_OFFER_FIELDS:
+            frame[field] = offer[field]
     frame = frame.reset_index()
     frame.attrs = {
         "pesos_normalizados": normalized, "perfil_vivienda": profile,
@@ -152,6 +191,7 @@ def build_explorer_frame(data: dict, profile: str, weights=None) -> pd.DataFrame
         "dimensiones_activas": active,
         "alcance_personalizado": FULL_SCOPE if len(active) == 4 else PARTIAL_SCOPE,
         "bloqueos_dimensiones": list(blocked),
+        "transporte_oferta_programada": scheduled_transport,
     }
     return frame
 
