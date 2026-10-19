@@ -271,10 +271,25 @@ def render_summary(view):
             section_heading("Lo que hay detrás del índice", "Datos originales")
             items = [raw_item("Atención primaria más próxima", distance(selected_value(obs, "distancia_atencion_primaria_directorio_m")), "Centro de salud o consultorio · directorio revisado"),
                      raw_item("Centro educativo más próximo", distance(selected_value(obs, "distancia_centro_educativo_general_m")), "Tipologías generales seleccionadas · todas las titularidades"),
-                     raw_item("Parada de autobús más próxima", distance(selected_value(obs, "distancia_parada_bus_parcial_m")), "Autobuses interurbanos · catálogo parcial"),
                      raw_item("Alquiler de esta tipología", number(selected_value(obs, "vivienda_alquiler_" + view["perfil_vivienda"].lower() + "_m2_mediana"), 2), "EUR/m²/mes · declarado en 2024")]
+            offer = view.get("transporte_oferta")
+            if offer:
+                items.insert(2, raw_item("Expediciones intermunicipales", number(offer['expediciones_dia'], 1), "Media/día identificada · consulta cobertura debajo"))
+                items.insert(3, raw_item("Destinos municipales directos", number(offer['destinos_directos_dia'], 1), "Media/día · sin transbordos · Comunidad de Madrid"))
+            else:
+                items.insert(2, raw_item("Parada de autobús más próxima", distance(selected_value(obs, "distancia_parada_bus_parcial_m")), "Autobuses interurbanos · catálogo parcial"))
             st.html('<div class="raw-grid">' + "".join(items) + '</div>')
             st.html('<div class="quiet-strip">Las distancias son en línea recta desde un punto representativo del núcleo principal. No equivalen a trayectos ni minutos de viaje.</div>')
+    if view.get('transporte_oferta'):
+        offer = view['transporte_oferta']
+        with st.container(border=True):
+            section_heading('Tu municipio, conectado', 'Oferta programada · 19–25 octubre 2026')
+            st.write('Expediciones identificadas por día: laborables '+number(offer['expediciones_laborable'],1)+', sábado '+number(offer['expediciones_sabado'],1)+' y domingo '+number(offer['expediciones_domingo'],1)+'.')
+            st.caption('Cada viaje cuenta una vez por municipio si permite subir y llegar a otro municipio madrileño sin transbordos. Se incluyen los autobuses, Cercanías y Metro Ligero disponibles en las fuentes de esta edición. No es información en tiempo real.')
+            if offer['estado_cobertura'] != 'publicado_con_contraste_de_lineas':
+                st.info('Recuento parcial · este municipio no recibe puntuación de transporte. '+str(offer['nota_cobertura']))
+            else:
+                st.caption(offer['nota_cobertura'])
 
 
 def render_service_group(tables, code, kind, title):
@@ -372,11 +387,16 @@ def render_population(view):
 
 
 def render_methodology(data, view=None):
-    section_heading("Un índice que puedes revisar", "IVP propio · edición 1.0")
-    st.write("El IVP combina proximidad a atención primaria, centros educativos seleccionados, paradas del feed parcial de autobús y coste del alquiler de la tipología elegida. En el índice general cada dimensión pesa un 25 %. El personalizado utiliza los pesos efectivos del panel de prioridades.")
+    scheduled = 'transporte_oferta' in data
+    section_heading("Un índice que puedes revisar", "IVP propio · "+("edición 2.0" if scheduled else "edición 1.0"))
+    st.write(("El IVP combina proximidad a atención primaria y centros educativos, oferta y conectividad directa programada del transporte y coste del alquiler de la tipología elegida." if scheduled else "El IVP combina proximidad a atención primaria, centros educativos seleccionados, paradas del feed parcial de autobús y coste del alquiler de la tipología elegida.")+" En el índice general cada dimensión pesa un 25 %. El personalizado utiliza los pesos efectivos del panel de prioridades.")
     st.caption("La escala principal compara cada indicador con sus extremos observados: 0 es el extremo menos favorable y 100 el más favorable dentro de esta edición. No representa un umbral de suficiencia. Los pesos iguales no garantizan igual influencia de cada variable.")
     with st.expander("Fórmula, ausencias y posiciones"):
-        st.code("Puntuación = 100 × (máximo de referencia − valor) / (máximo − mínimo)\nIVP = 0,25 × sanidad + 0,25 × educación + 0,25 × transporte + 0,25 × vivienda", language="text")
+        formula = ("Sanidad, educación y alquiler: 100 × (máximo − valor) / (máximo − mínimo)\nFrecuencia y conectividad: 100 × (valor − mínimo) / (máximo − mínimo)\nTransporte = 0,5 × frecuencia normalizada + 0,5 × conectividad normalizada" if scheduled else "Puntuación = 100 × (máximo de referencia − valor) / (máximo − mínimo)")
+        st.code(formula+"\nIVP = 0,25 × sanidad + 0,25 × educación + 0,25 × transporte + 0,25 × vivienda", language="text")
+        if scheduled:
+            st.write('La frecuencia es la media diaria de expediciones intermunicipales identificadas; la conectividad, la media diaria de municipios madrileños alcanzables sin transbordos. Una expedición no se multiplica por sus paradas. Las referencias se fijan con los municipios puntuables de esta edición antes de filtrar. El reparto 50/50 es una decisión del modelo; no acredita equivalencia entre ambos componentes.')
+            st.write('Semana de referencia: 19–25/10/2026. Autobuses y Metro Ligero del CRTM, Cercanías de Renfe. Se excluyen feeds caducados. Los PDF seleccionados aportan recuentos parciales de diagnóstico, con calendarios o variantes pendientes: esos municipios no puntúan. Los viajes de Renfe sin recorrido también bloquean la puntuación donde afectan. No se miden puntualidad, capacidad, duración ni conexiones con transbordos.')
         st.write("Cada tipología utiliza sus referencias de alquiler guardadas; no se recalculan al cambiar de municipio. Si falta una dimensión con peso positivo, no hay índice: no se redistribuyen sus pesos. Los empates comparten puesto y las posiciones se calculan antes de redondear.")
         st.write("VC y VU tienen distintas referencias de alquiler y distinta cobertura. Sus puestos pertenecen a clasificaciones separadas. El IVP no es una medición oficial de calidad de vida y permite compensaciones entre dimensiones.")
     with st.expander("Qué contrasta la sensibilidad"):
@@ -390,7 +410,7 @@ def render_methodology(data, view=None):
         st.link_button("Fuente oficial de conectividad", "https://digital.gob.es/telecomunicaciones-infraestructuras-digitales/areas-interes/banda-ancha/informacion-cobertura")
         st.write("Horarios de autobuses interurbanos CRTM descargados el 15/10/2026, versión 20260910. Cada consulta aplica el calendario semanal y las altas/bajas de fechas excepcionales. Se pueden comparar fechas laborables y de fin de semana desde Servicios cercanos.")
         st.link_button("Fuente oficial de transporte", "https://datos.crtm.es/")
-    section_heading("Datos y procedencia", "Consulta: 15 de octubre de 2026")
+    section_heading("Datos y procedencia", "Transporte: 19 de octubre de 2026" if scheduled else "Consulta: 15 de octubre de 2026")
     source_lookup = data["fuentes"].set_index("fuente")
     def source_url(identifier):
         return safe_link(source_lookup.loc[identifier, "url"]) if identifier in source_lookup.index else ""
@@ -431,7 +451,7 @@ def render_sheet(data, services, map_data, living, view, explorer_frame, filtere
     st.button("Cerrar ficha", key="close_municipal_sheet", on_click=close_sheet,
               args=(st.session_state, st.query_params), help="Vuelve a la portada y conserva tus filtros y prioridades.")
     render_description(ROOT, code)
-    st.caption("El IVP combina cercanía a sanidad, educación y transporte con el alquiler, en una escala de 0 a 100. Una cifra más alta indica un resultado más favorable en estos datos; no mide por sí sola toda la calidad de vida. Si falta un dato necesario, no asignamos puntuación.")
+    st.caption(("El IVP combina cercanía a sanidad y educación, oferta programada de transporte y alquiler" if 'transporte_oferta' in data else "El IVP combina cercanía a sanidad, educación y transporte con el alquiler")+", en una escala de 0 a 100. Una cifra más alta indica un resultado más favorable en estos datos; no mide por sí sola toda la calidad de vida. Si falta un dato necesario, no asignamos puntuación.")
     render_evidence(data, explorer_frame, code, profile, mode)
     tabs = st.tabs(["Resumen", "Servicios cercanos", "Vivienda", "Población", "Ranking", "Comparar", "Cómo se calcula y fuentes"],
                    key="vistas_municipales")
@@ -525,8 +545,10 @@ def main():
         render_comparison(data, services, explorer_frame, profile, code, mode, choose_municipality)
     elif active == 'fuentes':
         render_methodology(data, view)
-    st.html('<div class="footer-line"><span>HabitaMadrid · Datos abiertos para decisiones informadas.<br>Proyecto independiente · Índice orientativo propio.<br><a href="https://www.crtm.es/" target="_blank" rel="noopener noreferrer">Powered by CRTM</a> · Datos de transporte elaborados a partir del CRTM.</span>'
-            '<span>Comunidad de Madrid · Municipios de hasta 50.000 habitantes<br>Revisión de datos · 18 de octubre de 2026</span></div>')
+    attribution = (' · Horarios de Cercanías: <a href="https://data.renfe.com/dataset/horarios-cercanias" target="_blank" rel="noopener noreferrer">Renfe</a>.' if 'transporte_oferta' in data else '')
+    revision = '19 de octubre de 2026' if 'transporte_oferta' in data else '18 de octubre de 2026'
+    st.html('<div class="footer-line"><span>HabitaMadrid · Datos abiertos para decisiones informadas.<br>Proyecto independiente · Índice orientativo propio.<br><a href="https://www.crtm.es/" target="_blank" rel="noopener noreferrer">Powered by CRTM</a> · Datos de transporte elaborados a partir del CRTM.'+attribution+'</span>'
+            '<span>Comunidad de Madrid · Municipios de hasta 50.000 habitantes<br>Revisión de datos · '+revision+'</span></div>')
     render_navigation()
 
 
