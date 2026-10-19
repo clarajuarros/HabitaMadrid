@@ -12,8 +12,8 @@ de los feeds vigentes. Los recuentos PDF son parciales y no autorizan una
 puntuación hasta reconciliar calendarios y variantes. No hay imputación por
 distancia a una parada, seguimiento en tiempo real ni estimación de transbordos.
 
-En esta revisión hay 118 municipios con transporte puntuable y 37 sin
-puntuación suficiente; el IVP completo cubre 78 municipios en VC y 102 en VU.
+En esta revisión hay 117 municipios con transporte puntuable y 38 sin
+puntuación suficiente; el IVP completo cubre 77 municipios en VC y 101 en VU.
 La propuesta histórica de vivienda sigue archivada con su referencia IVP 1.0;
 se rechaza mezclarla con la nueva edición de transporte.
 [Metodología, cobertura y conservación de la base](docs/TRANSPORTE_2026-10-19.md).

@@ -4,7 +4,7 @@
 
 Repositorio autorizado: [clarajuarros/HabitaMadrid](https://github.com/clarajuarros/HabitaMadrid), rama `main`, archivo de entrada `app.py`. Dirección pública: [HabitaMadrid](https://habitamadrid.streamlit.app/). Streamlit Community Cloud utiliza **Python 3.14** y las versiones fijadas en `requirements.txt`.
 
-La propietaria ha autorizado activar la edición IVP 2.0 de transporte programado con 118 municipios puntuables en transporte y 37 sin puntuación suficiente. Esta documentación describe la edición y su procedimiento de despliegue; la verificación externa se registra después de publicar y reiniciar.
+La propietaria ha autorizado activar la edición IVP 2.0 de transporte programado con 117 municipios puntuables en transporte y 38 sin puntuación suficiente. Esta documentación describe la edición y su procedimiento de despliegue; la verificación externa se registra después de publicar y reiniciar.
 
 Conservar las atribuciones y condiciones del [inventario de fuentes](FUENTES_Y_LICENCIAS.md). No incluir secretos ni archivos locales de autenticación. Si se requieren claves en el futuro, configurarlas en los ajustes seguros del proveedor. Las rutas se resuelven desde el proyecto, sin depender de macOS; no se fuerza la dirección ni el puerto del ordenador local.
 
